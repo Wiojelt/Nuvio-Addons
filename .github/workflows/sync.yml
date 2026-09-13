@@ -29,6 +29,7 @@ jobs:
           node-version: '24'
       - name: Sync upstream repositories
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           UPSTREAM_GH_TOKEN: ${{ secrets.UPSTREAM_GH_TOKEN }}
         run: npm run sync
       - name: Generate Nuvio outputs
