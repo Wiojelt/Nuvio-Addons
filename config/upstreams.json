@@ -1,0 +1,35 @@
+{
+  "repositories": [
+    {
+      "id": "wiospor-public",
+      "repo": "Wiojelt/WioSpor",
+      "ref": "main",
+      "private": false,
+      "files": [
+        { "path": "src/main/kotlin/wiospor/WioChannels.kt", "target": ".upstream-cache/wiospor-public/WioChannels.kt" },
+        { "path": "src/main/kotlin/wiospor/SourceAggregator.kt", "target": ".upstream-cache/wiospor-public/SourceAggregator.kt" }
+      ]
+    },
+    {
+      "id": "turksinema-source",
+      "repo": "Wiojelt/TurkSinema-Source",
+      "ref": "main",
+      "private": true,
+      "files": [
+        { "path": "WioSinema/src/main/kotlin/dev/wiojelt/wiosinema/StreamAggregator.kt", "target": ".upstream-cache/turksinema-source/StreamAggregator.kt" },
+        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/gold_clipbox/ClipBoxProvider.kt", "target": ".upstream-cache/turksinema-source/ClipBoxProvider.kt" }
+      ]
+    },
+    {
+      "id": "turkspor-source",
+      "repo": "Wiojelt/TurkSpor-Source",
+      "ref": "main",
+      "private": true,
+      "files": [
+        { "path": "shared/src/main/kotlin/turkspor/shared/SourceSpec.kt", "target": ".upstream-cache/turkspor-source/SourceSpec.kt" },
+        { "path": "shared/src/main/kotlin/turkspor/shared/SportsProvider.kt", "target": ".upstream-cache/turkspor-source/SportsProvider.kt" },
+        { "path": "shared/src/main/kotlin/turkspor/shared/PlayerParser.kt", "target": ".upstream-cache/turkspor-source/PlayerParser.kt" }
+      ]
+    }
+  ]
+}
