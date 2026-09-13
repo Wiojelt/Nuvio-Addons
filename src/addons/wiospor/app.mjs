@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getStreamsForWioChannel } from './resolver.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(here, '../../..');
@@ -17,7 +18,7 @@ function channels() {
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.1.0',
+  version: '0.2.0',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğunun Nuvio/Stremio addon uyarlaması.',
   resources: ['catalog', 'meta', 'stream'],
@@ -44,7 +45,7 @@ export async function handleRequest(urlString) {
   const p = url.pathname.replace(/\/+$/, '');
 
   if (p === '' || p === '/manifest.json') return json(manifest);
-  if (p === '/health.json') return json({ ok: true, channelCount: channels().length, resolver: 'player-parser-ported_domain-resolver-pending' });
+  if (p === '/health.json') return json({ ok: true, channelCount: channels().length, resolver: 'shared-resolver-ready' });
   if (p === '/catalog/tv/wiospor-live.json') return json({ metas: channels().map(metaFor) });
 
   const metaMatch = p.match(/^\/meta\/tv\/(wiospor:[^/]+)\.json$/);
@@ -57,7 +58,8 @@ export async function handleRequest(urlString) {
   if (streamMatch) {
     const c = findChannel(decodeURIComponent(streamMatch[1]));
     if (!c) return json({ streams: [] }, 404);
-    return json({ streams: [] });
+    try { return json({ streams: await getStreamsForWioChannel(c) }); }
+    catch (error) { console.error('[WioSpor resolver]', error); return json({ streams: [] }); }
   }
 
   return json({ error: 'not_found' }, 404);
