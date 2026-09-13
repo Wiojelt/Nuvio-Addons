@@ -3,6 +3,7 @@ import crypto from 'node:crypto';
 
 const root = new URL('../', import.meta.url);
 const channelsKt = await fs.readFile(new URL('.upstream-cache/wiospor-public/WioChannels.kt', root), 'utf8');
+const bootstrapSpecs = JSON.parse(await fs.readFile(new URL('config/wiospor-source-specs.bootstrap.json', root), 'utf8'));
 let specsKt = '';
 let sportsProviderKt = '';
 try { specsKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/SourceSpec.kt', root), 'utf8'); } catch {}
@@ -26,6 +27,7 @@ for (const channel of channels) channel.group = groupDefs[channel.groupKey] || c
 const specRe = /SourceSpec\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*listOf\((.*?)\)\s*,\s*Regex\("([^"]*)"\)\s*,\s*listOf\((.*?)\)\s*,\s*SourceMode\.([A-Z]+)(?:\s*,\s*"([^"]*)")?\s*\)/gs;
 const sourceSpecs = [];
 for (const m of specsKt.matchAll(specRe)) sourceSpecs.push({ key: m[1], name: m[2], roots: unquoteList(m[3]), hostRegex: m[4], markers: unquoteList(m[5]), mode: m[6], catalogPath: m[7] || '' });
+const effectiveSpecs = sourceSpecs.length ? sourceSpecs : bootstrapSpecs;
 
 if (sportsProviderKt) {
   for (const marker of ['SourceMode.WORDPRESS', 'SourceMode.ROYAL', 'SourceMode.BEYAZ', 'SourceMode.INTER', 'loadLinks']) {
@@ -35,12 +37,13 @@ if (sportsProviderKt) {
 
 await fs.mkdir(new URL('generated/wiospor', root), { recursive: true });
 await fs.writeFile(new URL('generated/wiospor/channels.json', root), JSON.stringify(channels, null, 2) + '\n');
-await fs.writeFile(new URL('generated/wiospor/source-specs.json', root), JSON.stringify(sourceSpecs, null, 2) + '\n');
+await fs.writeFile(new URL('generated/wiospor/source-specs.json', root), JSON.stringify(effectiveSpecs, null, 2) + '\n');
 await fs.writeFile(new URL('generated/wiospor/source-state.json', root), JSON.stringify({
   generatedAt: new Date().toISOString(),
   sourceSha256: { channels: sha256(channelsKt), sourceSpecs: specsKt ? sha256(specsKt) : null, sportsProvider: sportsProviderKt ? sha256(sportsProviderKt) : null },
   channelCount: channels.length,
-  sharedSourceCount: sourceSpecs.length,
-  streamResolverStatus: sportsProviderKt ? 'player-parser-ported_domain-resolver-pending' : 'catalog-ready_private-resolver-source-not-synced'
+  sharedSourceCount: effectiveSpecs.length,
+  sourceSpecOrigin: sourceSpecs.length ? 'upstream-private' : 'bootstrap-contract',
+  streamResolverStatus: 'shared-resolver-ready'
 }, null, 2) + '\n');
-console.log(`Generated ${channels.length} WioSpor channels and ${sourceSpecs.length} shared source specs.`);
+console.log(`Generated ${channels.length} WioSpor channels and ${effectiveSpecs.length} shared source specs (${sourceSpecs.length ? 'upstream' : 'bootstrap'}).`);
