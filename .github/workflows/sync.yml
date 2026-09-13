@@ -2,6 +2,13 @@ name: Sync Wio upstreams
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'generated/**'
+      - '.upstream-cache/**'
+      - 'providers/**'
+      - 'manifest.json'
   schedule:
     - cron: '17 */6 * * *'
 
