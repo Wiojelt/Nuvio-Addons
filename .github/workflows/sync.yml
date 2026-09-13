@@ -37,7 +37,7 @@ jobs:
         run: npm test
       - name: Commit generated updates
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "No generated changes"
             exit 0
           fi
