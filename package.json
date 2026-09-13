@@ -1,0 +1,17 @@
+{
+  "name": "wio-nuvio-addons",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "sync": "node scripts/sync-upstreams.mjs",
+    "generate": "node scripts/generate-wiosinema.mjs && node scripts/generate-wiospor.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "npm run validate && node --test tests/*.test.mjs",
+    "wiospor:dev": "node src/addons/wiospor/server.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
