@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-09-13T23:52:15.785Z",
+  "sourceSha256": {
+    "channels": "db10ec66883ec9ea1808f6aba3b980aa3f522ce19417b762a65dd39db2ef6800",
+    "sourceSpecs": null,
+    "sportsProvider": null
+  },
+  "channelCount": 80,
+  "sharedSourceCount": 0,
+  "streamResolverStatus": "catalog-ready_private-resolver-source-not-synced"
+}

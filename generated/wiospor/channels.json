@@ -1,0 +1,1184 @@
+[
+  {
+    "id": "mor_1",
+    "name": "🟣 Mor Spor 1",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports 1",
+    "aliases": [
+      "beinsports1",
+      "bein1",
+      "beinsport1",
+      "bein sports 1",
+      "mor spor 1",
+      "mor 1",
+      "bein 1",
+      "b1",
+      "bs1",
+      "beinsport 1",
+      "spor 1",
+      "sport 1",
+      "patron"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_1.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_2",
+    "name": "🟣 Mor Spor 2",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports 2",
+    "aliases": [
+      "beinsports2",
+      "bein2",
+      "beinsport2",
+      "bein sports 2",
+      "mor spor 2",
+      "mor 2",
+      "bein 2",
+      "b2",
+      "bs2",
+      "beinsport 2",
+      "spor 2",
+      "sport 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_2.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_3",
+    "name": "🟣 Mor Spor 3",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports 3",
+    "aliases": [
+      "beinsports3",
+      "bein3",
+      "beinsport3",
+      "bein sports 3",
+      "mor spor 3",
+      "mor 3",
+      "bein 3",
+      "b3",
+      "bs3",
+      "beinsport 3",
+      "spor 3",
+      "sport 3"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_3.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_4",
+    "name": "🟣 Mor Spor 4",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports 4",
+    "aliases": [
+      "beinsports4",
+      "bein4",
+      "beinsport4",
+      "bein sports 4",
+      "mor spor 4",
+      "mor 4",
+      "bein 4",
+      "b4",
+      "bs4",
+      "beinsport 4",
+      "spor 4",
+      "sport 4"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_4.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_5",
+    "name": "🟣 Mor Spor 5",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports 5",
+    "aliases": [
+      "beinsports5",
+      "bein5",
+      "beinsport5",
+      "bein sports 5",
+      "mor spor 5",
+      "mor 5",
+      "bein 5",
+      "b5",
+      "bs5",
+      "beinsport 5",
+      "spor 5",
+      "sport 5"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_5.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_max_1",
+    "name": "🟣 Mor Spor Max 1",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports Max 1",
+    "aliases": [
+      "beinsportsmax1",
+      "beinmax1",
+      "beinsportmax1",
+      "bein max 1",
+      "mor max 1",
+      "bein max1",
+      "spor max 1",
+      "sport max 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_max_1.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_max_2",
+    "name": "🟣 Mor Spor Max 2",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports Max 2",
+    "aliases": [
+      "beinsportsmax2",
+      "beinmax2",
+      "beinsportmax2",
+      "bein max 2",
+      "mor max 2",
+      "bein max2",
+      "spor max 2",
+      "sport max 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_max_2.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "mor_haber",
+    "name": "🟣 Mor Spor Haber",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports Haber",
+    "aliases": [
+      "beinsportshaber",
+      "beinhaber",
+      "beinsport haber",
+      "mor spor haber",
+      "mor haber",
+      "bein haber",
+      "spor haber",
+      "sport haber"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_haber.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
+    "id": "yesil_1",
+    "name": "🟢 Yeşil Spor 1",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 1",
+    "aliases": [
+      "tabiispor1",
+      "tabiispor",
+      "tabii1",
+      "tabii spor 1",
+      "yesil spor 1",
+      "yesil 1",
+      "tabi spor 1",
+      "tabispor1",
+      "tabi1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_1.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "yesil_2",
+    "name": "🟢 Yeşil Spor 2",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 2",
+    "aliases": [
+      "tabiispor2",
+      "tabii2",
+      "tabii spor 2",
+      "yesil spor 2",
+      "yesil 2",
+      "tabi spor 2",
+      "tabispor2",
+      "tabi2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_2.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "yesil_3",
+    "name": "🟢 Yeşil Spor 3",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 3",
+    "aliases": [
+      "tabiispor3",
+      "tabii3",
+      "tabii spor 3",
+      "yesil spor 3",
+      "yesil 3",
+      "tabi spor 3",
+      "tabispor3",
+      "tabi3"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_3.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "yesil_4",
+    "name": "🟢 Yeşil Spor 4",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 4",
+    "aliases": [
+      "tabiispor4",
+      "tabii4",
+      "tabii spor 4",
+      "yesil spor 4",
+      "yesil 4",
+      "tabi spor 4",
+      "tabispor4",
+      "tabi4"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_4.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "yesil_5",
+    "name": "🟢 Yeşil Spor 5",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 5",
+    "aliases": [
+      "tabiispor5",
+      "tabii5",
+      "tabii spor 5",
+      "yesil spor 5",
+      "yesil 5",
+      "tabi spor 5",
+      "tabispor5",
+      "tabi5"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_5.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "yesil_6",
+    "name": "🟢 Yeşil Spor 6",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 6",
+    "aliases": [
+      "tabiispor6",
+      "tabii6",
+      "tabii spor 6",
+      "yesil spor 6",
+      "yesil 6",
+      "tabi spor 6",
+      "tabispor6",
+      "tabi6"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_6.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "turuncu_1",
+    "name": "🟠 Turuncu Spor 1",
+    "groupKey": "GROUP_TURUNCU",
+    "standardTitle": "Tivibu Spor 1",
+    "aliases": [
+      "tivibuspor",
+      "tivibuspor1",
+      "tivibu1",
+      "tivibu spor 1",
+      "turuncu spor 1",
+      "turuncu 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_1.png",
+    "group": "🟠 Turuncu Spor"
+  },
+  {
+    "id": "turuncu_2",
+    "name": "🟠 Turuncu Spor 2",
+    "groupKey": "GROUP_TURUNCU",
+    "standardTitle": "Tivibu Spor 2",
+    "aliases": [
+      "tivibuspor2",
+      "tivibu2",
+      "tivibu spor 2",
+      "turuncu spor 2",
+      "turuncu 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_2.png",
+    "group": "🟠 Turuncu Spor"
+  },
+  {
+    "id": "turuncu_3",
+    "name": "🟠 Turuncu Spor 3",
+    "groupKey": "GROUP_TURUNCU",
+    "standardTitle": "Tivibu Spor 3",
+    "aliases": [
+      "tivibuspor3",
+      "tivibu3",
+      "tivibu spor 3",
+      "turuncu spor 3",
+      "turuncu 3"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_3.png",
+    "group": "🟠 Turuncu Spor"
+  },
+  {
+    "id": "turuncu_4",
+    "name": "🟠 Turuncu Spor 4",
+    "groupKey": "GROUP_TURUNCU",
+    "standardTitle": "Tivibu Spor 4",
+    "aliases": [
+      "tivibuspor4",
+      "tivibu4",
+      "tivibu spor 4",
+      "turuncu spor 4",
+      "turuncu 4"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_4.png",
+    "group": "🟠 Turuncu Spor"
+  },
+  {
+    "id": "sari_1",
+    "name": "🟡 Sarı Spor 1",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 1",
+    "aliases": [
+      "exxenspor1",
+      "exxen1",
+      "exxenspor",
+      "exxen 1",
+      "exxen sports 1",
+      "sari spor 1",
+      "sari 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_1.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_2",
+    "name": "🟡 Sarı Spor 2",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 2",
+    "aliases": [
+      "exxenspor2",
+      "exxen2",
+      "exxen 2",
+      "exxen sports 2",
+      "sari spor 2",
+      "sari 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_2.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_3",
+    "name": "🟡 Sarı Spor 3",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 3",
+    "aliases": [
+      "exxenspor3",
+      "exxen3",
+      "exxen 3",
+      "exxen sports 3",
+      "sari spor 3",
+      "sari 3"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_3.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_4",
+    "name": "🟡 Sarı Spor 4",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 4",
+    "aliases": [
+      "exxenspor4",
+      "exxen4",
+      "exxen 4",
+      "exxen sports 4",
+      "sari spor 4",
+      "sari 4"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_4.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_5",
+    "name": "🟡 Sarı Spor 5",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 5",
+    "aliases": [
+      "exxenspor5",
+      "exxen5",
+      "exxen 5",
+      "exxen sports 5",
+      "sari spor 5",
+      "sari 5"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_5.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_6",
+    "name": "🟡 Sarı Spor 6",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 6",
+    "aliases": [
+      "exxenspor6",
+      "exxen6",
+      "exxen 6",
+      "exxen sports 6",
+      "sari spor 6",
+      "sari 6"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_6.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_7",
+    "name": "🟡 Sarı Spor 7",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 7",
+    "aliases": [
+      "exxenspor7",
+      "exxen7",
+      "exxen 7",
+      "exxen sports 7",
+      "sari spor 7",
+      "sari 7"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_7.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "sari_8",
+    "name": "🟡 Sarı Spor 8",
+    "groupKey": "GROUP_SARI",
+    "standardTitle": "Exxen Spor 8",
+    "aliases": [
+      "exxenspor8",
+      "exxen8",
+      "exxen 8",
+      "exxen sports 8",
+      "sari spor 8",
+      "sari 8"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_8.png",
+    "group": "🟡 Sarı Spor"
+  },
+  {
+    "id": "mavi_1",
+    "name": "🔵 Mavi Spor 1",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport",
+    "aliases": [
+      "ssport",
+      "ssport1",
+      "s sport 1",
+      "s sport",
+      "mavi spor 1",
+      "mavi 1",
+      "ssports",
+      "s sports"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_1.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
+    "id": "mavi_2",
+    "name": "🔵 Mavi Spor 2",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport 2",
+    "aliases": [
+      "ssport2",
+      "s sport 2",
+      "mavi spor 2",
+      "mavi 2",
+      "ssports 2",
+      "s sports 2",
+      "ssports2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_2.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
+    "id": "mavi_plus_1",
+    "name": "🔵 Mavi Spor Plus 1",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport Plus 1",
+    "aliases": [
+      "ssportplus1",
+      "splus1",
+      "ssportplus",
+      "splus",
+      "s+1",
+      "s+",
+      "mavi plus 1",
+      "ssport plus",
+      "s sport plus"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_1.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
+    "id": "mavi_plus_2",
+    "name": "🔵 Mavi Spor Plus 2",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport Plus 2",
+    "aliases": [
+      "ssportplus2",
+      "splus2",
+      "s+2",
+      "mavi plus 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_2.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
+    "id": "yildiz_euro_1",
+    "name": "⭐ Yıldız Spor 1",
+    "groupKey": "GROUP_YILDIZ",
+    "standardTitle": "Eurosport 1",
+    "aliases": [
+      "eurosport1",
+      "eurosport 1",
+      "eurosport",
+      "euro sport 1",
+      "euro sports 1",
+      "eurosports 1",
+      "euro sport",
+      "eu1",
+      "es1",
+      "yildiz spor 1",
+      "yildiz 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_euro_1.png",
+    "group": "⭐ Yıldız Spor"
+  },
+  {
+    "id": "yildiz_euro_2",
+    "name": "⭐ Yıldız Spor 2",
+    "groupKey": "GROUP_YILDIZ",
+    "standardTitle": "Eurosport 2",
+    "aliases": [
+      "eurosport2",
+      "eurosport 2",
+      "euro sport 2",
+      "euro sports 2",
+      "eurosports 2",
+      "euro sport 2",
+      "eu2",
+      "es2",
+      "yildiz spor 2",
+      "yildiz 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_euro_2.png",
+    "group": "⭐ Yıldız Spor"
+  },
+  {
+    "id": "yildiz_smart_1",
+    "name": "⭐ Yıldız Smart 1",
+    "groupKey": "GROUP_YILDIZ",
+    "standardTitle": "Spor Smart",
+    "aliases": [
+      "sporsmart",
+      "sporsmart1",
+      "smartspor",
+      "smartspor1",
+      "spor smart 1",
+      "smart spor 1",
+      "smart spor",
+      "smart1",
+      "sm1",
+      "yildiz smart 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_smart_1.png",
+    "group": "⭐ Yıldız Spor"
+  },
+  {
+    "id": "yildiz_smart_2",
+    "name": "⭐ Yıldız Smart 2",
+    "groupKey": "GROUP_YILDIZ",
+    "standardTitle": "Spor Smart 2",
+    "aliases": [
+      "sporsmart2",
+      "smartspor2",
+      "spor smart 2",
+      "smart spor 2",
+      "smart2",
+      "sm2",
+      "yildiz smart 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_smart_2.png",
+    "group": "⭐ Yıldız Spor"
+  },
+  {
+    "id": "ulusal_trt_spor",
+    "name": "📺 TRT Spor",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "TRT Spor",
+    "aliases": [
+      "trtspor",
+      "trtspor1",
+      "trt spor"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt_spor.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_trt_yildiz",
+    "name": "📺 TRT Spor Yıldız",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "TRT Spor Yıldız",
+    "aliases": [
+      "trtsporyildiz",
+      "trtspor2",
+      "trt spor yildiz"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt_yildiz.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_aspor",
+    "name": "📺 A Spor",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "A Spor",
+    "aliases": [
+      "aspor",
+      "a spor"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_aspor.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_htspor",
+    "name": "📺 HT Spor",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "HT Spor",
+    "aliases": [
+      "htspor",
+      "ht spor"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_htspor.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_sportstv",
+    "name": "📺 Sports TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Sports TV",
+    "aliases": [
+      "sportstv",
+      "sports tv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_sportstv.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_fbtv",
+    "name": "📺 FB TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "FB TV",
+    "aliases": [
+      "fbtv",
+      "fenerbahce tv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_fbtv.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_gstv",
+    "name": "📺 GS TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "GS TV",
+    "aliases": [
+      "gstv",
+      "galatasaray tv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_gstv.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_trt1",
+    "name": "📺 TRT 1",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "TRT 1",
+    "aliases": [
+      "trt1",
+      "trt 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt1.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_atv",
+    "name": "📺 ATV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "ATV",
+    "aliases": [
+      "atv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_atv.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_kanald",
+    "name": "📺 Kanal D",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Kanal D",
+    "aliases": [
+      "kanald",
+      "kanal d"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_kanald.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_show",
+    "name": "📺 Show TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Show TV",
+    "aliases": [
+      "showtv",
+      "show tv",
+      "show"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_show.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_star",
+    "name": "📺 Star TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Star TV",
+    "aliases": [
+      "startv",
+      "star tv",
+      "star"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_star.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_tv8",
+    "name": "📺 TV8",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "TV8",
+    "aliases": [
+      "tv8"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_tv8.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_tv85",
+    "name": "📺 TV8.5",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "TV8.5",
+    "aliases": [
+      "tv85",
+      "tv8bucuk",
+      "tv 8.5",
+      "tv8,5"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_tv85.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_now",
+    "name": "📺 NOW TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "NOW TV",
+    "aliases": [
+      "nowtv",
+      "now tv",
+      "now",
+      "fox",
+      "foxtv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_now.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_kanal7",
+    "name": "📺 Kanal 7",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Kanal 7",
+    "aliases": [
+      "kanal7",
+      "kanal 7"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_kanal7.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_beyaz",
+    "name": "📺 Beyaz TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Beyaz TV",
+    "aliases": [
+      "beyaztv",
+      "beyaz tv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_beyaz.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_a2",
+    "name": "📺 A2",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "A2",
+    "aliases": [
+      "a2",
+      "a2tv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_a2.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_haberturk",
+    "name": "📺 HaberTürk",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "HaberTürk",
+    "aliases": [
+      "haberturk",
+      "haber turk"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_haberturk.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_ntv",
+    "name": "📺 NTV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "NTV",
+    "aliases": [
+      "ntv"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_ntv.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_cnnturk",
+    "name": "📺 CNN Türk",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "CNN Türk",
+    "aliases": [
+      "cnnturk",
+      "cnn turk"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_cnnturk.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_sozcu",
+    "name": "📺 Sözcü TV",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "Sözcü TV",
+    "aliases": [
+      "sozcutv",
+      "sozcu tv",
+      "sozcu"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_sozcu.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "ulusal_trthaber",
+    "name": "📺 TRT Haber",
+    "groupKey": "GROUP_ULUSAL",
+    "standardTitle": "TRT Haber",
+    "aliases": [
+      "trthaber",
+      "trt haber"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trthaber.png",
+    "group": "📺 Ulusal Kanallar"
+  },
+  {
+    "id": "world_tnt_1",
+    "name": "🌐 World TNT Sports 1",
+    "groupKey": "GROUP_WORLD_TNT",
+    "standardTitle": "TNT Sports 1",
+    "aliases": [
+      "tntsports1",
+      "tnt1",
+      "tnt sports 1",
+      "bt sport 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_1.png",
+    "group": "🌐 World TNT"
+  },
+  {
+    "id": "world_tnt_2",
+    "name": "🌐 World TNT Sports 2",
+    "groupKey": "GROUP_WORLD_TNT",
+    "standardTitle": "TNT Sports 2",
+    "aliases": [
+      "tntsports2",
+      "tnt2",
+      "tnt sports 2",
+      "bt sport 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_2.png",
+    "group": "🌐 World TNT"
+  },
+  {
+    "id": "world_tnt_3",
+    "name": "🌐 World TNT Sports 3",
+    "groupKey": "GROUP_WORLD_TNT",
+    "standardTitle": "TNT Sports 3",
+    "aliases": [
+      "tntsports3",
+      "tnt3",
+      "tnt sports 3",
+      "bt sport 3"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_3.png",
+    "group": "🌐 World TNT"
+  },
+  {
+    "id": "world_tnt_4",
+    "name": "🌐 World TNT Sports 4",
+    "groupKey": "GROUP_WORLD_TNT",
+    "standardTitle": "TNT Sports 4",
+    "aliases": [
+      "tntsports4",
+      "tnt4",
+      "tnt sports 4",
+      "bt sport 4"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_4.png",
+    "group": "🌐 World TNT"
+  },
+  {
+    "id": "world_sky_calcio",
+    "name": "🌐 World Sky Sport Calcio",
+    "groupKey": "GROUP_WORLD_SKY",
+    "standardTitle": "Sky Sport Calcio",
+    "aliases": [
+      "skycalcio",
+      "sky sport calcio"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_calcio.png",
+    "group": "🌐 World Sky"
+  },
+  {
+    "id": "world_sky_austria_1",
+    "name": "🌐 World Sky Sport Austria 1",
+    "groupKey": "GROUP_WORLD_SKY",
+    "standardTitle": "Sky Sport Austria 1",
+    "aliases": [
+      "skysportaustria1",
+      "sky sport austria 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_austria_1.png",
+    "group": "🌐 World Sky"
+  },
+  {
+    "id": "world_sky_austria_2",
+    "name": "🌐 World Sky Sport Austria 2",
+    "groupKey": "GROUP_WORLD_SKY",
+    "standardTitle": "Sky Sport Austria 2",
+    "aliases": [
+      "skysportaustria2",
+      "sky sport austria 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_austria_2.png",
+    "group": "🌐 World Sky"
+  },
+  {
+    "id": "world_sky_uno",
+    "name": "🌐 World Sky Sport Uno",
+    "groupKey": "GROUP_WORLD_SKY",
+    "standardTitle": "Sky Sport Uno",
+    "aliases": [
+      "skyuno",
+      "sky sport uno"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_uno.png",
+    "group": "🌐 World Sky"
+  },
+  {
+    "id": "world_dazn_1",
+    "name": "🌐 World DAZN 1",
+    "groupKey": "GROUP_WORLD_DAZN",
+    "standardTitle": "DAZN 1",
+    "aliases": [
+      "dazn1",
+      "dazn 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_dazn_1.png",
+    "group": "🌐 World DAZN"
+  },
+  {
+    "id": "world_dazn_2",
+    "name": "🌐 World DAZN 2",
+    "groupKey": "GROUP_WORLD_DAZN",
+    "standardTitle": "DAZN 2",
+    "aliases": [
+      "dazn2",
+      "dazn 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_dazn_2.png",
+    "group": "🌐 World DAZN"
+  },
+  {
+    "id": "world_canal_sport",
+    "name": "🌐 World Canal+ Sport",
+    "groupKey": "GROUP_WORLD_CANAL",
+    "standardTitle": "Canal+ Sport",
+    "aliases": [
+      "canalsport",
+      "canalplus sport",
+      "canal+ sport"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_sport.png",
+    "group": "🌐 World Canal+"
+  },
+  {
+    "id": "world_canal_foot",
+    "name": "🌐 World Canal+ Foot",
+    "groupKey": "GROUP_WORLD_CANAL",
+    "standardTitle": "Canal+ Foot",
+    "aliases": [
+      "canalfoot",
+      "canalplus foot",
+      "canal+ foot"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_foot.png",
+    "group": "🌐 World Canal+"
+  },
+  {
+    "id": "world_canal_live_1",
+    "name": "🌐 World Canal+ Live 1",
+    "groupKey": "GROUP_WORLD_CANAL",
+    "standardTitle": "Canal+ Live 1",
+    "aliases": [
+      "canallive1",
+      "canal+ live 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_live_1.png",
+    "group": "🌐 World Canal+"
+  },
+  {
+    "id": "world_canal_extra_1",
+    "name": "🌐 World Canal+ Extra 1",
+    "groupKey": "GROUP_WORLD_CANAL",
+    "standardTitle": "Canal+ Extra 1",
+    "aliases": [
+      "canalextra1",
+      "canal+ extra 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_extra_1.png",
+    "group": "🌐 World Canal+"
+  },
+  {
+    "id": "world_espn_1",
+    "name": "🌐 World ESPN 1",
+    "groupKey": "GROUP_WORLD_ESPN",
+    "standardTitle": "ESPN 1",
+    "aliases": [
+      "espn1",
+      "espn 1",
+      "espn"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_espn_1.png",
+    "group": "🌐 World ESPN"
+  },
+  {
+    "id": "world_espn_2",
+    "name": "🌐 World ESPN 2",
+    "groupKey": "GROUP_WORLD_ESPN",
+    "standardTitle": "ESPN 2",
+    "aliases": [
+      "espn2",
+      "espn 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_espn_2.png",
+    "group": "🌐 World ESPN"
+  },
+  {
+    "id": "world_ziggo_1",
+    "name": "🌐 World Ziggo Sport 1",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "Ziggo Sport 1",
+    "aliases": [
+      "ziggosport1",
+      "ziggo sport 1",
+      "ziggo sport"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_ziggo_1.png",
+    "group": "🌐 World Diğer"
+  },
+  {
+    "id": "world_ziggo_2",
+    "name": "🌐 World Ziggo Sport 2",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "Ziggo Sport 2",
+    "aliases": [
+      "ziggosport2",
+      "ziggo sport 2"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_ziggo_2.png",
+    "group": "🌐 World Diğer"
+  },
+  {
+    "id": "world_movistar_liga",
+    "name": "🌐 World M+ Liga de Campeones",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "M+ Liga de Campeones",
+    "aliases": [
+      "movistarligadecampeones",
+      "liga de campeones",
+      "m+ liga"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_movistar_liga.png",
+    "group": "🌐 World Diğer"
+  },
+  {
+    "id": "world_sporttv_1",
+    "name": "🌐 World Sport TV 1",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "Sport TV 1",
+    "aliases": [
+      "sporttv1",
+      "sport tv 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sporttv_1.png",
+    "group": "🌐 World Diğer"
+  },
+  {
+    "id": "world_digisport_1",
+    "name": "🌐 World Digi Sport 1",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "Digi Sport 1",
+    "aliases": [
+      "digisport1",
+      "digi sport 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_digisport_1.png",
+    "group": "🌐 World Diğer"
+  },
+  {
+    "id": "world_cosmote_1",
+    "name": "🌐 World Cosmote Sport 1",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "Cosmote Sport 1",
+    "aliases": [
+      "cosmotesport1",
+      "cosmote sport 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_cosmote_1.png",
+    "group": "🌐 World Diğer"
+  },
+  {
+    "id": "world_arena_1",
+    "name": "🌐 World Arena Sport 1",
+    "groupKey": "GROUP_WORLD_OTHER",
+    "standardTitle": "Arena Sport 1",
+    "aliases": [
+      "arenasport1",
+      "arena sport 1"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_arena_1.png",
+    "group": "🌐 World Diğer"
+  }
+]
