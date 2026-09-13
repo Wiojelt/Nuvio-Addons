@@ -1,7 +1,8 @@
 import fs from 'node:fs/promises';
 import { getRefSha, getTextFile, writeText } from './github.mjs';
 
-const token = process.env.UPSTREAM_GH_TOKEN || process.env.GITHUB_TOKEN || '';
+const privateToken = process.env.UPSTREAM_GH_TOKEN || '';
+const publicToken = process.env.GITHUB_TOKEN || privateToken || '';
 const config = JSON.parse(await fs.readFile(new URL('../config/upstreams.json', import.meta.url), 'utf8'));
 const statePath = new URL('../generated/upstream-state.json', import.meta.url);
 
@@ -12,12 +13,13 @@ const next = { updatedAt: new Date().toISOString(), repositories: {} };
 const changes = [];
 
 for (const source of config.repositories) {
-  if (source.private && !token) {
+  if (source.private && !privateToken) {
     console.warn(`Skipping private upstream ${source.repo}; UPSTREAM_GH_TOKEN is not configured.`);
     next.repositories[source.id] = { repo: source.repo, ref: source.ref, skipped: true, reason: 'missing-token', sha: previous.repositories?.[source.id]?.sha || null };
     continue;
   }
 
+  const token = source.private ? privateToken : publicToken;
   const sha = await getRefSha(source.repo, source.ref, token);
   const oldSha = previous.repositories?.[source.id]?.sha || null;
   const changed = oldSha !== sha;
