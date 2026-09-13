@@ -1,0 +1,18 @@
+[
+  {
+    "id": "wiosinema-clipbox",
+    "name": "WioSinema • ClipBox",
+    "description": "WioSinema kaynak kodundan uyarlanan TMDB tabanlı ClipBox/VixSrc Nuvio provider.",
+    "version": "0.1.0",
+    "author": "Wiojelt",
+    "supportedTypes": ["movie", "tv"],
+    "filename": "providers/wiosinema-clipbox.js",
+    "enabled": true,
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+    "contentLanguage": ["tr"],
+    "formats": ["m3u8"],
+    "limited": false,
+    "disabledPlatforms": [],
+    "supportsExternalPlayer": true
+  }
+]
