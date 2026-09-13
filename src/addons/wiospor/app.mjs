@@ -42,7 +42,9 @@ function metaFor(c) {
 
 export async function handleRequest(urlString) {
   const url = new URL(urlString, 'https://local.invalid');
-  const p = url.pathname.replace(/\/+$/, '');
+  let pathname = url.pathname;
+  try { pathname = decodeURIComponent(pathname); } catch {}
+  const p = pathname.replace(/\/+$/, '');
 
   if (p === '' || p === '/manifest.json') return json(manifest);
   if (p === '/health.json') return json({ ok: true, channelCount: channels().length, resolver: 'shared-resolver-ready' });
@@ -50,13 +52,13 @@ export async function handleRequest(urlString) {
 
   const metaMatch = p.match(/^\/meta\/tv\/(wiospor:[^/]+)\.json$/);
   if (metaMatch) {
-    const c = findChannel(decodeURIComponent(metaMatch[1]));
+    const c = findChannel(metaMatch[1]);
     return c ? json({ meta: metaFor(c) }) : json({ meta: null }, 404);
   }
 
   const streamMatch = p.match(/^\/stream\/tv\/(wiospor:[^/]+)\.json$/);
   if (streamMatch) {
-    const c = findChannel(decodeURIComponent(streamMatch[1]));
+    const c = findChannel(streamMatch[1]);
     if (!c) return json({ streams: [] }, 404);
     try { return json({ streams: await getStreamsForWioChannel(c) }); }
     catch (error) { console.error('[WioSpor resolver]', error); return json({ streams: [] }); }
