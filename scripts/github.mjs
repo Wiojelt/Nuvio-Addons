@@ -27,6 +27,7 @@ export async function getTextFile(repo, filePath, ref, token) {
 }
 
 export async function writeText(target, content) {
-  await fs.mkdir(path.dirname(target), { recursive: true });
+  const directory = target instanceof URL ? new URL('.', target) : path.dirname(target);
+  await fs.mkdir(directory, { recursive: true });
   await fs.writeFile(target, content, 'utf8');
 }
