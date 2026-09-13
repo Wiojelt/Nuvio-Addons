@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "key": "mackeyfi",
+    "name": "Maçkeyfi / Canlımaçlar",
+    "roots": [
+      "https://www.mackeyfi559.sbs/",
+      "https://www.canlimaclar559.sbs/"
+    ],
+    "hostRegex": "(www\\.)?(mackeyfi|canlimaclar)[0-9]+\\.sbs",
+    "markers": [
+      "Maçkeyfi",
+      "Canlımaclar"
+    ],
+    "mode": "WORDPRESS",
+    "catalogPath": ""
+  },
+  {
+    "key": "zbahistv",
+    "name": "Zbahis / Baywin TV",
+    "roots": [
+      "https://zbahistv65.com/",
+      "https://99baywintv.live/"
+    ],
+    "hostRegex": "(www\\.)?(zbahistv[0-9]+\\.com|[0-9]+baywintv\\.live)",
+    "markers": [
+      "Zbahis",
+      "Baywin"
+    ],
+    "mode": "ROYAL",
+    "catalogPath": ""
+  },
+  {
+    "key": "betmatiktv",
+    "name": "Betmatik TV",
+    "roots": [
+      "https://betmatiktv155.com/"
+    ],
+    "hostRegex": "(www\\.)?betmatiktv[0-9]+\\.com",
+    "markers": [
+      "Betmatik TV"
+    ],
+    "mode": "ROYAL",
+    "catalogPath": ""
+  },
+  {
+    "key": "intersportv",
+    "name": "İntersportv",
+    "roots": [
+      "https://intersportv1.live/"
+    ],
+    "hostRegex": "(www\\.)?intersportv[0-9]+\\.live",
+    "markers": [
+      "İntersportv",
+      "Intersportv"
+    ],
+    "mode": "INTER",
+    "catalogPath": ""
+  },
+  {
+    "key": "beyazelma",
+    "name": "BeyazElma",
+    "roots": [
+      "https://beyazelma78.com/"
+    ],
+    "hostRegex": "(www\\.)?beyazelma[0-9]+\\.com",
+    "markers": [
+      "BeyazElma"
+    ],
+    "mode": "BEYAZ",
+    "catalogPath": "kanallar"
+  }
+]
