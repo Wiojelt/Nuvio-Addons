@@ -1,0 +1,41 @@
+name: Sync Wio upstreams
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wio-upstream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Sync upstream repositories
+        env:
+          UPSTREAM_GH_TOKEN: ${{ secrets.UPSTREAM_GH_TOKEN }}
+        run: npm run sync
+      - name: Generate Nuvio outputs
+        run: npm run generate
+      - name: Validate generated outputs
+        run: npm test
+      - name: Commit generated updates
+        run: |
+          if git diff --quiet; then
+            echo "No generated changes"
+            exit 0
+          fi
+          git config user.name "wio-sync-bot"
+          git config user.email "wio-sync-bot@users.noreply.github.com"
+          git add generated providers manifest.json .upstream-cache
+          git commit -m "chore(sync): refresh Wio upstreams"
+          git push
