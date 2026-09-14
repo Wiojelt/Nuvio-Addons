@@ -1,5 +1,30 @@
 import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+
+const here = path.dirname(fileURLToPath(import.meta.url));
+const repoRoot = path.resolve(here, '..');
+const googleApiKey = /AIza[0-9A-Za-z_-]{35}/;
+
+async function assertNoCommittedGoogleKeys(dir) {
+  for (const entry of await fs.readdir(dir, { withFileTypes: true })) {
+    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'dist-live') continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      await assertNoCommittedGoogleKeys(full);
+      continue;
+    }
+    if (!entry.isFile()) continue;
+    let text;
+    try { text = await fs.readFile(full, 'utf8'); } catch { continue; }
+    if (googleApiKey.test(text)) {
+      throw new Error(`Refusing committed Google API key in ${path.relative(repoRoot, full)}`);
+    }
+  }
+}
+
+await assertNoCommittedGoogleKeys(repoRoot);
 
 const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import.meta.url), 'utf8'));
 const scrapers = Array.isArray(manifest) ? manifest : manifest?.scrapers;
