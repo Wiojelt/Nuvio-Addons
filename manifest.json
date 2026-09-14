@@ -1,50 +1,57 @@
-[
-  {
-    "id": "wiosinema-clipbox",
-    "name": "WioSinema • ClipBox",
-    "description": "WioSinema kaynak kodundan uyarlanan TMDB tabanlı ClipBox/VixSrc Nuvio provider.",
-    "version": "0.1.0",
-    "author": "Wiojelt",
-    "supportedTypes": ["movie", "tv"],
-    "filename": "providers/wiosinema-clipbox.js",
-    "enabled": true,
-    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
-    "contentLanguage": ["tr"],
-    "formats": ["m3u8"],
-    "limited": false,
-    "disabledPlatforms": [],
-    "supportsExternalPlayer": true
-  },
-  {
-    "id": "wiosinema-vidup",
-    "name": "WioSinema • Vidup",
-    "description": "WioSinema/CineStream invokeVidup kaynağından uyarlanan doğrudan TMDB Nuvio provider.",
-    "version": "0.1.0",
-    "author": "Wiojelt",
-    "supportedTypes": ["movie", "tv"],
-    "filename": "providers/wiosinema-vidup.js",
-    "enabled": true,
-    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
-    "contentLanguage": ["tr", "en"],
-    "formats": ["m3u8", "mp4"],
-    "limited": false,
-    "disabledPlatforms": [],
-    "supportsExternalPlayer": true
-  },
-  {
-    "id": "wiosinema-hexa",
-    "name": "WioSinema • Hexa",
-    "description": "WioSinema/CineStream invokeHexa kaynağından uyarlanan doğrudan TMDB Nuvio provider.",
-    "version": "0.1.0",
-    "author": "Wiojelt",
-    "supportedTypes": ["movie", "tv"],
-    "filename": "providers/wiosinema-hexa.js",
-    "enabled": true,
-    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
-    "contentLanguage": ["tr", "en"],
-    "formats": ["m3u8", "mp4"],
-    "limited": false,
-    "disabledPlatforms": [],
-    "supportsExternalPlayer": true
-  }
-]
+{
+  "name": "WioSinema",
+  "version": "1.0.0",
+  "scrapers": [
+    {
+      "id": "wiosinema-clipbox",
+      "name": "WioSinema • ClipBox",
+      "description": "WioSinema TMDB tabanlı ClipBox/VixSrc sağlayıcısı.",
+      "version": "0.2.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/wiosinema-clipbox.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+      "contentLanguage": ["tr"],
+      "formats": ["m3u8"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-vidup",
+      "name": "WioSinema • Vidup",
+      "description": "CineStream Vidup doğrudan TMDB sağlayıcısı.",
+      "version": "0.2.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/wiosinema-vidup.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["m3u8", "mp4"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-hexa",
+      "name": "WioSinema • Hexa",
+      "description": "CineStream Hexa doğrudan TMDB sağlayıcısı.",
+      "version": "0.2.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/wiosinema-hexa.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["m3u8", "mp4"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    }
+  ]
+}
