@@ -61,7 +61,7 @@ jobs:
       - name: Resolve channels and build static addon
         env:
           LIVE_PREVIOUS_DIR: .previous-live
-          WIOSPOR_LIVE_CONCURRENCY: '4'
+          WIOSPOR_LIVE_CONCURRENCY: '8'
           WIOSPOR_STALE_MAX_MS: '5400000'
           MIN_LIVE_STREAM_CHANNELS: '1'
         run: npm run build:live
