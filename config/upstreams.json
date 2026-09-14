@@ -30,7 +30,11 @@
       "files": [
         { "path": "shared/src/main/kotlin/turkspor/shared/SourceSpec.kt", "target": ".upstream-cache/turkspor-source/SourceSpec.kt" },
         { "path": "shared/src/main/kotlin/turkspor/shared/SportsProvider.kt", "target": ".upstream-cache/turkspor-source/SportsProvider.kt" },
-        { "path": "shared/src/main/kotlin/turkspor/shared/PlayerParser.kt", "target": ".upstream-cache/turkspor-source/PlayerParser.kt" }
+        { "path": "shared/src/main/kotlin/turkspor/shared/PlayerParser.kt", "target": ".upstream-cache/turkspor-source/PlayerParser.kt" },
+        { "path": "WioSpor/src/main/kotlin/wiospor/SourceAggregator.kt", "target": ".upstream-cache/turkspor-source/WioSourceAggregator.kt" },
+        { "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanSources.kt", "target": ".upstream-cache/turkspor-source/AslanSources.kt" },
+        { "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanBootstrap.kt", "target": ".upstream-cache/turkspor-source/AslanBootstrap.kt" },
+        { "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanData.kt", "target": ".upstream-cache/turkspor-source/AslanData.kt" }
       ]
     }
   ]
