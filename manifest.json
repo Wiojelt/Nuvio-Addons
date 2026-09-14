@@ -1,6 +1,6 @@
 {
   "name": "WioSinema",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scrapers": [
     {
       "id": "wiosinema-clipbox",
@@ -44,6 +44,23 @@
       "author": "Wiojelt",
       "supportedTypes": ["movie", "tv"],
       "filename": "providers/wiosinema-hexa.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["m3u8", "mp4"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-vidfastpro",
+      "name": "WioSinema • VidFastPro",
+      "description": "CineStream VidFastPro doğrudan TMDB sağlayıcısı.",
+      "version": "0.1.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/wiosinema-vidfastpro.js",
       "enabled": true,
       "hasSettings": false,
       "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
