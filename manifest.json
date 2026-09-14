@@ -14,5 +14,21 @@
     "limited": false,
     "disabledPlatforms": [],
     "supportsExternalPlayer": true
+  },
+  {
+    "id": "wiosinema-vidup",
+    "name": "WioSinema • Vidup",
+    "description": "WioSinema/CineStream invokeVidup kaynağından uyarlanan doğrudan TMDB Nuvio provider.",
+    "version": "0.1.0",
+    "author": "Wiojelt",
+    "supportedTypes": ["movie", "tv"],
+    "filename": "providers/wiosinema-vidup.js",
+    "enabled": true,
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+    "contentLanguage": ["tr", "en"],
+    "formats": ["m3u8", "mp4"],
+    "limited": false,
+    "disabledPlatforms": [],
+    "supportsExternalPlayer": true
   }
 ]
