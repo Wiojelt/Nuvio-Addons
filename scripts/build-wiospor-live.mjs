@@ -23,9 +23,10 @@ async function writeJson(file, value) {
   await fs.mkdir(path.dirname(file), { recursive: true });
   await fs.writeFile(file, JSON.stringify(value, null, 2) + '\n', 'utf8');
 }
+function liveId(c) { return `wiospor_${c.id}`; }
 function metaFor(c) {
   return {
-    id: `wiospor:${c.id}`,
+    id: liveId(c),
     type: 'tv',
     name: c.name,
     poster: c.logo,
@@ -49,19 +50,19 @@ await fs.mkdir(outRoot, { recursive: true });
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.3.0',
+  version: '0.3.1',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğunun GitHub-hosted Nuvio/Stremio addon uyarlaması.',
   resources: ['catalog', 'meta', 'stream'],
   types: ['tv'],
   catalogs: [{ type: 'tv', id: 'wiospor-live', name: 'WioSpor Canlı' }],
-  idPrefixes: ['wiospor:']
+  idPrefixes: ['wiospor_']
 };
 await writeJson(path.join(outRoot, 'manifest.json'), manifest);
 await writeJson(path.join(outRoot, 'catalog', 'tv', 'wiospor-live.json'), { metas: channels.map(metaFor) });
 
 for (const channel of channels) {
-  await writeJson(path.join(outRoot, 'meta', 'tv', `wiospor:${channel.id}.json`), { meta: metaFor(channel) });
+  await writeJson(path.join(outRoot, 'meta', 'tv', `${liveId(channel)}.json`), { meta: metaFor(channel) });
 }
 
 const previousState = previousRoot ? await readJson(path.join(previousRoot, 'state.json'), { channels: {} }) : { channels: {} };
@@ -81,7 +82,8 @@ async function worker() {
     const index = cursor++;
     if (index >= channels.length) return;
     const channel = channels[index];
-    const file = path.join(outRoot, 'stream', 'tv', `wiospor:${channel.id}.json`);
+    const fileName = `${liveId(channel)}.json`;
+    const file = path.join(outRoot, 'stream', 'tv', fileName);
     let streams = [];
     let source = 'fresh';
     let lastSuccess = null;
@@ -100,7 +102,7 @@ async function worker() {
       const prevMeta = previousState?.channels?.[channel.id];
       const prevTime = Date.parse(prevMeta?.lastSuccess || '');
       if (Number.isFinite(prevTime) && now - prevTime <= staleMaxMs) {
-        const prev = await readJson(path.join(previousRoot, 'stream', 'tv', `wiospor:${channel.id}.json`), null);
+        const prev = await readJson(path.join(previousRoot, 'stream', 'tv', fileName), null);
         const prevStreams = validStreams(prev?.streams);
         if (prevStreams.length) {
           streams = prevStreams;
@@ -116,6 +118,7 @@ async function worker() {
       state.streamCount += streams.length;
     }
     state.channels[channel.id] = {
+      resourceId: liveId(channel),
       streamCount: streams.length,
       source,
       lastSuccess,
