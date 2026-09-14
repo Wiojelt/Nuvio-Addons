@@ -93,7 +93,7 @@ test('Vidup provider follows upstream decrypt flow and emits unique streams', as
 
   const streams = await provider.getStreams(550, 'movie', null, null);
   assert.equal(streams.length, 2);
-  assert.deepEqual(streams.map(x => x.url).sort(), ['https://cdn.example/a.m3u8', 'https://cdn.example/b.mp4']);
+  assert.deepEqual(Array.from(streams, x => x.url).sort(), ['https://cdn.example/a.m3u8', 'https://cdn.example/b.mp4']);
   assert.equal(streams.find(x => x.url.endsWith('.m3u8')).format, 'm3u8');
   assert.equal(streams.find(x => x.url.endsWith('.mp4')).format, 'video');
   assert.ok(calls.some(c => c.url === 'https://vidup.to/api/servers' && c.method === 'POST'));
