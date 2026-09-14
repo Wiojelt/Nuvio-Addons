@@ -5,11 +5,11 @@ const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import
 if (!Array.isArray(manifest) || manifest.length === 0) throw new Error('manifest.json is empty');
 
 const syntaxFiles = new Set([
-  'api/index.mjs',
   'src/addons/wiospor/app.mjs',
   'src/addons/wiospor/server.mjs',
   'src/addons/wiospor/player-parser.mjs',
-  'src/addons/wiospor/resolver.mjs'
+  'src/addons/wiospor/resolver.mjs',
+  'scripts/build-wiospor-live.mjs'
 ]);
 for (const entry of manifest) {
   if (!entry.id || !entry.filename) throw new Error('Invalid manifest entry');
