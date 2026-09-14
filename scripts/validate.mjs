@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 
 const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import.meta.url), 'utf8'));
-if (!Array.isArray(manifest) || manifest.length === 0) throw new Error('manifest.json is empty');
+const scrapers = Array.isArray(manifest) ? manifest : manifest?.scrapers;
+if (!Array.isArray(scrapers) || scrapers.length === 0) throw new Error('manifest.json has no scrapers');
 
 const syntaxFiles = new Set([
   'src/addons/wiospor/app.mjs',
@@ -11,8 +12,8 @@ const syntaxFiles = new Set([
   'src/addons/wiospor/resolver.mjs',
   'scripts/build-wiospor-live.mjs'
 ]);
-for (const entry of manifest) {
-  if (!entry.id || !entry.filename) throw new Error('Invalid manifest entry');
+for (const entry of scrapers) {
+  if (!entry.id || !entry.filename) throw new Error('Invalid manifest scraper entry');
   syntaxFiles.add(entry.filename);
 }
 for (const filename of syntaxFiles) {
@@ -34,4 +35,4 @@ try {
   console.warn('WioSpor generated catalog is not present yet; run npm run sync && npm run generate.');
 }
 
-console.log(`Validated ${manifest.length} Nuvio provider(s), ${syntaxFiles.size} JS entrypoints${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
+console.log(`Validated ${scrapers.length} Nuvio scraper(s), ${syntaxFiles.size} JS entrypoints${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
