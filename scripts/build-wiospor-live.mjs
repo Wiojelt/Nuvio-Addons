@@ -3,6 +3,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getStreamsForWioChannel } from '../src/addons/wiospor/resolver.mjs';
 import { getLegacyStreams } from '../src/addons/wiospor/legacy-sources.mjs';
+import { getAslanStreams } from '../src/addons/wiospor/aslan-sources.mjs';
+import { ASLAN_SOURCES, WIOSPOR_SOURCE_COUNT } from '../src/addons/wiospor/source-registry.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
@@ -63,7 +65,7 @@ await fs.mkdir(outRoot, { recursive: true });
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.4.1',
+  version: '0.5.0',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğu.',
   resources: ['catalog', 'meta', 'stream'],
@@ -82,6 +84,8 @@ const previousState = previousRoot ? await readJson(path.join(previousRoot, 'sta
 const state = {
   generatedAt,
   channelCount: channels.length,
+  sourceCount: WIOSPOR_SOURCE_COUNT,
+  aslanSourceCount: ASLAN_SOURCES.length,
   channelsWithStreams: 0,
   freshChannels: 0,
   staleFallbackChannels: 0,
@@ -103,16 +107,14 @@ async function worker() {
     let error = null;
 
     try {
-      const [shared, legacy] = await Promise.allSettled([
+      const results = await Promise.allSettled([
         getStreamsForWioChannel(channel),
-        getLegacyStreams(channel)
+        getLegacyStreams(channel),
+        getAslanStreams(channel)
       ]);
-      const merged = [
-        ...(shared.status === 'fulfilled' ? shared.value : []),
-        ...(legacy.status === 'fulfilled' ? legacy.value : [])
-      ];
-      streams = validStreams(merged).slice(0, 48);
-      const errors = [shared, legacy].filter(x => x.status === 'rejected').map(x => x.reason?.message || String(x.reason));
+      const merged = results.flatMap(result => result.status === 'fulfilled' && Array.isArray(result.value) ? result.value : []);
+      streams = validStreams(merged).slice(0, 96);
+      const errors = results.filter(result => result.status === 'rejected').map(result => result.reason?.message || String(result.reason));
       if (errors.length) error = errors.join(' | ');
     } catch (err) {
       error = err?.message || String(err);
@@ -157,6 +159,9 @@ await writeJson(path.join(outRoot, 'health.json'), {
   ok: state.channelsWithStreams > 0,
   generatedAt,
   channelCount: state.channelCount,
+  sourceCount: state.sourceCount,
+  aslanSourceCount: state.aslanSourceCount,
+  sourceCoverage: `${state.sourceCount}/${WIOSPOR_SOURCE_COUNT}`,
   channelsWithStreams: state.channelsWithStreams,
   freshChannels: state.freshChannels,
   staleFallbackChannels: state.staleFallbackChannels,
@@ -169,4 +174,4 @@ if (state.channelsWithStreams < Number(process.env.MIN_LIVE_STREAM_CHANNELS || 1
   throw new Error(`Refusing to publish: only ${state.channelsWithStreams} WioSpor channels have streams.`);
 }
 
-console.log(`Built GitHub live addon: ${state.channelsWithStreams}/${state.channelCount} channels, ${state.streamCount} streams (${state.freshChannels} fresh, ${state.staleFallbackChannels} fallback).`);
+console.log(`Built GitHub live addon: ${state.channelsWithStreams}/${state.channelCount} channels, ${state.streamCount} streams, ${state.sourceCount}/${WIOSPOR_SOURCE_COUNT} sources (${state.freshChannels} fresh, ${state.staleFallbackChannels} fallback).`);
