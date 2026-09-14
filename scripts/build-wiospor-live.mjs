@@ -35,12 +35,24 @@ function metaFor(c) {
     description: c.standardTitle || c.group
   };
 }
+function looksPlayable(url) {
+  try {
+    const u = new URL(url);
+    if (!/^https?:$/.test(u.protocol)) return false;
+    const value = `${u.pathname}${u.search}`.toLowerCase();
+    if (/\.(?:js|css|json|png|jpe?g|gif|svg|webp|woff2?|ttf)(?:$|[?#])/.test(value)) return false;
+    return /(?:\.m3u8|\.mpd|\.mp4|\.mkv)(?:$|[?#&])/i.test(value)
+      || /(?:live|stream|playlist|manifest|chunklist)\.php(?:$|[?#])/i.test(value)
+      || /\/(?:hls|dash|playlist|manifest|chunklist)(?:\/|\.|$)/i.test(value)
+      || /(?:^|[?&])format=[^&]*(?:m3u8|mpd)/i.test(value);
+  } catch { return false; }
+}
 function validStreams(streams) {
   if (!Array.isArray(streams)) return [];
   const seen = new Set();
   return streams.filter(stream => {
     const url = String(stream?.url || '');
-    if (!/^https?:\/\//i.test(url) || seen.has(url)) return false;
+    if (!looksPlayable(url) || seen.has(url)) return false;
     seen.add(url);
     return true;
   });
@@ -51,7 +63,7 @@ await fs.mkdir(outRoot, { recursive: true });
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.4.0',
+  version: '0.4.1',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğu.',
   resources: ['catalog', 'meta', 'stream'],
