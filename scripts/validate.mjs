@@ -10,6 +10,7 @@ const syntaxFiles = new Set([
   'src/addons/wiospor/server.mjs',
   'src/addons/wiospor/player-parser.mjs',
   'src/addons/wiospor/resolver.mjs',
+  'src/addons/wiospor/legacy-sources.mjs',
   'scripts/build-wiospor-live.mjs'
 ]);
 for (const entry of scrapers) {
