@@ -13,27 +13,44 @@ Nuvio pluginleri sadece stream sağlar; canlı kanal kataloğu için HTTP addon 
 
 ## Şu anki durum
 
-**Çalışan ilk port:** `providers/wiosinema-clipbox.js`. WioSinema kaynak kodundaki ClipBox/VixSrc TMDB rotasının bağımsız Nuvio karşılığıdır. Film ve dizilerde `getStreams(tmdbId, mediaType, season, episode)` export eder.
+**WioSinema:** iki yerel Nuvio provider çalışır durumda:
 
-**Otomatik senkron altyapısı:** `WioSpor` public deposunu tokensız, `TurkSinema-Source` ve `TurkSpor-Source` private depolarını varsa salt-okunur token ile izler. Upstream SHA değişince Kotlin kaynak snapshot'larını yeniler, adapter'ları çalıştırır, doğrular ve yalnızca testler geçerse generated çıktıları commit eder.
+- `providers/wiosinema-clipbox.js` — WioSinema ClipBox/VixSrc TMDB rotası.
+- `providers/wiosinema-vidup.js` — CineStream içindeki Vidup doğrudan TMDB rotası; upstream'in kullandığı HTTP decrypt akışını Nuvio/Hermes uyumlu Promise tabanlı JavaScript ile uygular.
 
-**WioSpor:** kanal kataloğu ve `SourceSpec` verisi otomatik dönüştürülebilir durumda. HTTP addon'ın `manifest`, `catalog` ve `meta` katmanı hazır. Player parser katmanı JS'e portlandı ve upstream testleri Node testlerine taşındı. Domain/catalog resolver portu tamamlanana kadar `/stream/...` bilinçli olarak boş döner; bozuk link yayınlamaz.
+Her ikisi de film ve dizilerde `getStreams(tmdbId, mediaType, season, episode)` export eder. Private `TurkSinema-Source` senkronu açıksa ClipBox tamamen yeniden üretilir; Vidup API adresleri ve davranış marker'ları upstream kaynaktan doğrulanır. Tanınmayan kritik değişiklikte build fail olur ve eski çalışan çıktı korunur.
 
-**WioSinema tam kapsam:** `StreamAggregator.kt` içinden sağlayıcı listeleri otomatik keşfediliyor. ClipBox ilk adapter. CineStream miras alınan resolver'ları ve scraper/search tabanlı sağlayıcılar sırayla JS adapter'larına taşınmalı.
+**WioSpor:** public `WioSpor` kaynağından şu anda 80 kanal üretiliyor. HTTP addon `manifest`, `catalog`, `meta` ve **gerçek `stream` resolver** katmanlarına sahiptir. WORDPRESS, ROYAL, INTER ve BEYAZ ortak kaynak aileleri JS'e portlandı; player parser upstream regresyon testleriyle doğrulanıyor. Aktif domain adayları public `Wiojelt/TurkSpor/domains.json` manifestinden alınır. Böylece WioSpor stream çözümü private secret olmadan da çalışabilir.
 
-## İlk kurulum
+**Otomatik senkron altyapısı:** `WioSpor` public deposunu GitHub Actions tokenıyla; `TurkSinema-Source` ve `TurkSpor-Source` private depolarını varsa ayrı salt-okunur token ile izler. Upstream SHA değişince snapshot'lar yenilenir, adapter'lar çalıştırılır, test edilir ve yalnızca başarılıysa generated çıktılar commit edilir. Workflow 6 saatte bir ve kod değişikliklerinde çalışır.
 
-Private kaynak depolarını okuyabilmesi için repoda `UPSTREAM_GH_TOKEN` adlı bir Actions secret tanımla. Token'ın yalnızca `Wiojelt/TurkSinema-Source` ve `Wiojelt/TurkSpor-Source` için **Contents: Read** izni olması yeterlidir. Bu repo için Actions'ın kendi `GITHUB_TOKEN`'ı generated dosyaları commit etmek için kullanılır.
+## Nuvio'ya ekleme
 
-Ardından:
+WioSinema plugin repository için:
+
+```text
+https://raw.githubusercontent.com/Wiojelt/Nuvio-Addons/main/manifest.json
+```
+
+WioSpor canlı TV addon'ı için repo önce Vercel gibi kalıcı bir HTTPS Node 24 ortamına deploy edilmelidir. Deploy edilen alan adında Nuvio'ya eklenecek adres:
+
+```text
+https://<alan-adin>/manifest.json
+```
+
+Repo `api/index.mjs` ve `vercel.json` ile Vercel'e hazırdır.
+
+## Private upstream doğrulamasını açma
+
+Public WioSpor senkronu ve canlı resolver secret istemez. Private kaynak değişikliklerini de otomatik guard etmek için bu repoda `UPSTREAM_GH_TOKEN` adlı Actions secret tanımla. Token'ın yalnızca `Wiojelt/TurkSinema-Source` ve `Wiojelt/TurkSpor-Source` için **Contents: Read** izni olması yeterlidir.
+
+Yerelde:
 
 ```bash
 UPSTREAM_GH_TOKEN=... npm run sync
 npm run generate
 npm test
 ```
-
-GitHub Actions ayrıca 6 saatte bir upstream SHA kontrolü yapar. `workflow_dispatch` ile elle de tetiklenebilir.
 
 ## Neden genel Kotlin → JavaScript transpiler değil?
 
@@ -53,13 +70,14 @@ Bu sayede günlük domain/kanal güncellemeleri gerçekten otomatik taşınabili
 ```text
 manifest.json                     # Nuvio plugin repository manifesti
 providers/                        # Nuvio'nun doğrudan yüklediği JS çıktıları
-src/addons/wiospor/               # WioSpor Stremio/Nuvio HTTP addon
+src/addons/wiospor/               # WioSpor HTTP addon + resolver
 scripts/                          # upstream sync + adapter generator'ları
 config/upstreams.json             # hangi kaynakların izlendiği
+config/wiospor-source-specs.bootstrap.json
 .upstream-cache/                  # son senkronlanan Kotlin snapshot'ları
 generated/                        # katalog/spec/state çıktıları
 .github/workflows/sync.yml        # 6 saatte bir güvenli otomatik senkron
-api/index.mjs + vercel.json       # WioSpor HTTP addon için Vercel/Node 24 giriş noktası
+api/index.mjs + vercel.json       # Vercel/Node 24 giriş noktası
 ```
 
 ## Güvenli yayın prensibi
