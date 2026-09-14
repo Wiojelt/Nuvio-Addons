@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getStreamsForWioChannel } from '../src/addons/wiospor/resolver.mjs';
+import { getLegacyStreams } from '../src/addons/wiospor/legacy-sources.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
@@ -50,9 +51,9 @@ await fs.mkdir(outRoot, { recursive: true });
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.3.1',
+  version: '0.4.0',
   name: 'WioSpor',
-  description: 'WioSpor canlı kanal kataloğunun GitHub-hosted Nuvio/Stremio addon uyarlaması.',
+  description: 'WioSpor canlı kanal kataloğu.',
   resources: ['catalog', 'meta', 'stream'],
   types: ['tv'],
   catalogs: [{ type: 'tv', id: 'wiospor-live', name: 'WioSpor Canlı' }],
@@ -90,7 +91,17 @@ async function worker() {
     let error = null;
 
     try {
-      streams = validStreams(await getStreamsForWioChannel(channel));
+      const [shared, legacy] = await Promise.allSettled([
+        getStreamsForWioChannel(channel),
+        getLegacyStreams(channel)
+      ]);
+      const merged = [
+        ...(shared.status === 'fulfilled' ? shared.value : []),
+        ...(legacy.status === 'fulfilled' ? legacy.value : [])
+      ];
+      streams = validStreams(merged).slice(0, 48);
+      const errors = [shared, legacy].filter(x => x.status === 'rejected').map(x => x.reason?.message || String(x.reason));
+      if (errors.length) error = errors.join(' | ');
     } catch (err) {
       error = err?.message || String(err);
     }
