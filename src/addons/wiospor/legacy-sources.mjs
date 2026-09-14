@@ -118,7 +118,7 @@ async function domino(wioChannel) {
 }
 
 const DOMATES_IDENTITY = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=';
-const DOMATES_KEY = 'REMOVED_GOOGLE_API_KEY';
+const DOMATES_KEY = process.env.DOMATES_GOOGLE_API_KEY || '';
 const DOMATES_DB = 'https://domates-tv-live-sports6.europe-west1.firebasedatabase.app/channels.json?auth=';
 let domatesToken = '', domatesTokenAt = 0, domatesChannels = [], domatesAt = 0;
 
