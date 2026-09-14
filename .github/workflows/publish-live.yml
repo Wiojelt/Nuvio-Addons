@@ -111,7 +111,7 @@ jobs:
           git add -A
           git config user.name 'wio-live-bot'
           git config user.email 'wio-live-bot@users.noreply.github.com'
-          git commit -m 'chore(live): refresh WioSpor streams'
+          git commit -m '  '
           git push --force origin HEAD:live
 
 # Runtime credentials are injected by Actions and are never committed to this repository.
