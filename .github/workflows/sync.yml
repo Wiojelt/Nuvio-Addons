@@ -7,8 +7,6 @@ on:
     paths-ignore:
       - 'generated/**'
       - '.upstream-cache/**'
-      - 'providers/**'
-      - 'manifest.json'
   schedule:
     - cron: '17 */6 * * *'
 
