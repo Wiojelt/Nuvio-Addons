@@ -17,7 +17,9 @@
       "private": true,
       "files": [
         { "path": "WioSinema/src/main/kotlin/dev/wiojelt/wiosinema/StreamAggregator.kt", "target": ".upstream-cache/turksinema-source/StreamAggregator.kt" },
-        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/gold_clipbox/ClipBoxProvider.kt", "target": ".upstream-cache/turksinema-source/ClipBoxProvider.kt" }
+        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/gold_clipbox/ClipBoxProvider.kt", "target": ".upstream-cache/turksinema-source/ClipBoxProvider.kt" },
+        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/bronze_cinestream/com/megix/ApiConstants.kt", "target": ".upstream-cache/turksinema-source/ApiConstants.kt" },
+        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/bronze_cinestream/com/megix/CineStreamExtractors.kt", "target": ".upstream-cache/turksinema-source/CineStreamExtractors.kt" }
       ]
     },
     {
