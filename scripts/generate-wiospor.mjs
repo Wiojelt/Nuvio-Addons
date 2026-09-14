@@ -1,16 +1,28 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
+import { ASLAN_SOURCES, BASE_SOURCES, WIOSPOR_SOURCE_COUNT } from '../src/addons/wiospor/source-registry.mjs';
 
 const root = new URL('../', import.meta.url);
 const channelsKt = await fs.readFile(new URL('.upstream-cache/wiospor-public/WioChannels.kt', root), 'utf8');
 const bootstrapSpecs = JSON.parse(await fs.readFile(new URL('config/wiospor-source-specs.bootstrap.json', root), 'utf8'));
 let specsKt = '';
 let sportsProviderKt = '';
+let wioAggregatorKt = '';
+let aslanSourcesKt = '';
+let aslanBootstrapKt = '';
+let aslanDataKt = '';
 try { specsKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/SourceSpec.kt', root), 'utf8'); } catch {}
 try { sportsProviderKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/SportsProvider.kt', root), 'utf8'); } catch {}
+try { wioAggregatorKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/WioSourceAggregator.kt', root), 'utf8'); } catch {}
+try { aslanSourcesKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/AslanSources.kt', root), 'utf8'); } catch {}
+try { aslanBootstrapKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/AslanBootstrap.kt', root), 'utf8'); } catch {}
+try { aslanDataKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/AslanData.kt', root), 'utf8'); } catch {}
 
 function sha256(text) { return crypto.createHash('sha256').update(text).digest('hex'); }
 function unquoteList(text) { return [...text.matchAll(/"((?:\\.|[^"])*)"/g)].map(m => m[1].replace(/\\"/g, '"')); }
+function requireMarkers(label, text, markers) {
+  for (const marker of markers) if (!text.includes(marker)) throw new Error(`${label} contract changed (missing ${marker}); resolver port requires review.`);
+}
 
 const baseLogo = channelsKt.match(/BASE_LOGO\s*=\s*"([^"]+)"/)?.[1] || 'https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/';
 const channelRe = /WioChannel\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*([A-Z0-9_]+)\s*,\s*"([^"]+)"\s*,\s*listOf\((.*?)\)\s*,\s*"\$\{BASE_LOGO\}([^"]+)"\s*\)/gs;
@@ -29,21 +41,44 @@ const sourceSpecs = [];
 for (const m of specsKt.matchAll(specRe)) sourceSpecs.push({ key: m[1], name: m[2], roots: unquoteList(m[3]), hostRegex: m[4], markers: unquoteList(m[5]), mode: m[6], catalogPath: m[7] || '' });
 const effectiveSpecs = sourceSpecs.length ? sourceSpecs : bootstrapSpecs;
 
-if (sportsProviderKt) {
-  for (const marker of ['SourceMode.WORDPRESS', 'SourceMode.ROYAL', 'SourceMode.BEYAZ', 'SourceMode.INTER', 'loadLinks']) {
-    if (!sportsProviderKt.includes(marker)) throw new Error(`SportsProvider contract changed (missing ${marker}); resolver port requires review.`);
-  }
+if (sportsProviderKt) requireMarkers('SportsProvider', sportsProviderKt, ['SourceMode.WORDPRESS', 'SourceMode.ROYAL', 'SourceMode.BEYAZ', 'SourceMode.INTER', 'loadLinks']);
+
+let upstreamCoverageVerified = false;
+if (wioAggregatorKt && aslanSourcesKt && aslanBootstrapKt && aslanDataKt) {
+  requireMarkers('WioSpor SourceAggregator', wioAggregatorKt, ['AslanSources.items', 'aslan_$sourceId', 'createSharedWorker("beyazelma"', 'createSharedWorker("betmatiktv"', 'createSharedWorker("intersportv"', 'createSharedWorker("mackeyfi"', 'createSharedWorker("zbahistv"']);
+  requireMarkers('Aslan bootstrap', aslanBootstrapKt, ['AES/GCM/NoPadding', 'registry-v1', 'GCMParameterSpec(128']);
+  requireMarkers('Aslan data', aslanDataKt, ['#EXTVLCOPT:', '#KODIPROP:', '.mpd', 'players=rows.flatMap']);
+  const upstreamAslan = [...aslanSourcesKt.matchAll(/"([^"]+)"\s+to\s+"([^"]+)"/g)].map(match => ({ sourceId: match[1], title: match[2] }));
+  if (upstreamAslan.length !== ASLAN_SOURCES.length) throw new Error(`Aslan source count changed: upstream=${upstreamAslan.length}, port=${ASLAN_SOURCES.length}`);
+  const upstreamIds = new Set(upstreamAslan.map(item => item.sourceId));
+  for (const source of ASLAN_SOURCES) if (!upstreamIds.has(source.sourceId)) throw new Error(`Aslan source missing from upstream: ${source.sourceId}`);
+  upstreamCoverageVerified = true;
 }
+
+if (BASE_SOURCES.length !== 15 || ASLAN_SOURCES.length !== 27 || WIOSPOR_SOURCE_COUNT !== 42) throw new Error('WioSpor source registry coverage is not 42/42');
 
 await fs.mkdir(new URL('generated/wiospor', root), { recursive: true });
 await fs.writeFile(new URL('generated/wiospor/channels.json', root), JSON.stringify(channels, null, 2) + '\n');
 await fs.writeFile(new URL('generated/wiospor/source-specs.json', root), JSON.stringify(effectiveSpecs, null, 2) + '\n');
 await fs.writeFile(new URL('generated/wiospor/source-state.json', root), JSON.stringify({
   generatedAt: new Date().toISOString(),
-  sourceSha256: { channels: sha256(channelsKt), sourceSpecs: specsKt ? sha256(specsKt) : null, sportsProvider: sportsProviderKt ? sha256(sportsProviderKt) : null },
+  sourceSha256: {
+    channels: sha256(channelsKt),
+    sourceSpecs: specsKt ? sha256(specsKt) : null,
+    sportsProvider: sportsProviderKt ? sha256(sportsProviderKt) : null,
+    wioSourceAggregator: wioAggregatorKt ? sha256(wioAggregatorKt) : null,
+    aslanSources: aslanSourcesKt ? sha256(aslanSourcesKt) : null,
+    aslanBootstrap: aslanBootstrapKt ? sha256(aslanBootstrapKt) : null,
+    aslanData: aslanDataKt ? sha256(aslanDataKt) : null
+  },
   channelCount: channels.length,
   sharedSourceCount: effectiveSpecs.length,
+  baseSourceCount: BASE_SOURCES.length,
+  aslanSourceCount: ASLAN_SOURCES.length,
+  totalSourceCount: WIOSPOR_SOURCE_COUNT,
+  sourceCoverage: `${WIOSPOR_SOURCE_COUNT}/42`,
   sourceSpecOrigin: sourceSpecs.length ? 'upstream-private' : 'bootstrap-contract',
-  streamResolverStatus: 'shared-resolver-ready'
+  upstreamCoverageVerified,
+  streamResolverStatus: 'full-resolver-ready'
 }, null, 2) + '\n');
-console.log(`Generated ${channels.length} WioSpor channels and ${effectiveSpecs.length} shared source specs (${sourceSpecs.length ? 'upstream' : 'bootstrap'}).`);
+console.log(`Generated ${channels.length} WioSpor channels; source coverage ${WIOSPOR_SOURCE_COUNT}/42 (${BASE_SOURCES.length} base + ${ASLAN_SOURCES.length} Aslan).`);
