@@ -8,6 +8,8 @@ on:
       - 'src/addons/wiospor/**'
       - 'scripts/build-wiospor-live.mjs'
       - 'scripts/generate-wiospor.mjs'
+      - 'scripts/validate.mjs'
+      - 'tests/**'
       - 'generated/wiospor/**'
       - 'config/wiospor-source-specs.bootstrap.json'
       - 'package.json'
