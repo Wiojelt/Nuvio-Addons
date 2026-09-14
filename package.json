@@ -7,6 +7,7 @@
   "scripts": {
     "sync": "node scripts/sync-upstreams.mjs",
     "generate": "node scripts/generate-wiosinema.mjs && node scripts/generate-wiospor.mjs",
+    "build:live": "node scripts/build-wiospor-live.mjs",
     "validate": "node scripts/validate.mjs",
     "test": "npm run validate && node --test tests/*.test.mjs",
     "wiospor:dev": "node src/addons/wiospor/server.mjs"
