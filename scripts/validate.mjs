@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { ASLAN_SOURCES, BASE_SOURCES, WIOSPOR_SOURCES, WIOSPOR_SOURCE_COUNT } from '../src/addons/wiospor/source-registry.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(here, '..');
@@ -18,13 +19,16 @@ async function assertNoCommittedGoogleKeys(dir) {
     if (!entry.isFile()) continue;
     let text;
     try { text = await fs.readFile(full, 'utf8'); } catch { continue; }
-    if (googleApiKey.test(text)) {
-      throw new Error(`Refusing committed Google API key in ${path.relative(repoRoot, full)}`);
-    }
+    if (googleApiKey.test(text)) throw new Error(`Refusing committed Google API key in ${path.relative(repoRoot, full)}`);
   }
 }
 
 await assertNoCommittedGoogleKeys(repoRoot);
+
+if (BASE_SOURCES.length !== 15) throw new Error(`Expected 15 base WioSpor sources, got ${BASE_SOURCES.length}`);
+if (ASLAN_SOURCES.length !== 27) throw new Error(`Expected 27 Aslan WioSpor sources, got ${ASLAN_SOURCES.length}`);
+if (WIOSPOR_SOURCE_COUNT !== 42 || WIOSPOR_SOURCES.length !== 42) throw new Error(`Expected 42 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
+if (new Set(WIOSPOR_SOURCES.map(source => source.id)).size !== WIOSPOR_SOURCE_COUNT) throw new Error('Duplicate WioSpor source id');
 
 const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import.meta.url), 'utf8'));
 const scrapers = Array.isArray(manifest) ? manifest : manifest?.scrapers;
@@ -36,6 +40,8 @@ const syntaxFiles = new Set([
   'src/addons/wiospor/player-parser.mjs',
   'src/addons/wiospor/resolver.mjs',
   'src/addons/wiospor/legacy-sources.mjs',
+  'src/addons/wiospor/source-registry.mjs',
+  'src/addons/wiospor/aslan-sources.mjs',
   'scripts/build-wiospor-live.mjs'
 ]);
 for (const entry of scrapers) {
@@ -61,4 +67,4 @@ try {
   console.warn('WioSpor generated catalog is not present yet; run npm run sync && npm run generate.');
 }
 
-console.log(`Validated ${scrapers.length} Nuvio scraper(s), ${syntaxFiles.size} JS entrypoints${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
+console.log(`Validated ${scrapers.length} Nuvio scraper(s), ${syntaxFiles.size} JS entrypoints, ${WIOSPOR_SOURCE_COUNT}/42 WioSpor sources${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
