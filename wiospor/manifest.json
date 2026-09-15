@@ -1,0 +1,24 @@
+{
+  "id": "community.wiojelt.wiospor",
+  "version": "0.5.0",
+  "name": "WioSpor",
+  "description": "WioSpor canlı kanal kataloğu.",
+  "resources": [
+    "catalog",
+    "meta",
+    "stream"
+  ],
+  "types": [
+    "tv"
+  ],
+  "catalogs": [
+    {
+      "type": "tv",
+      "id": "wiospor-live",
+      "name": "WioSpor Canlı"
+    }
+  ],
+  "idPrefixes": [
+    "wiospor_"
+  ]
+}

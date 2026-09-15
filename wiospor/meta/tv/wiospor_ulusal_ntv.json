@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_ntv",
+    "type": "tv",
+    "name": "📺 NTV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_ntv.png",
+    "posterShape": "landscape",
+    "description": "NTV"
+  }
+}

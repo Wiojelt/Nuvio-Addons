@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_trt_yildiz",
+    "type": "tv",
+    "name": "📺 TRT Spor Yıldız",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt_yildiz.png",
+    "posterShape": "landscape",
+    "description": "TRT Spor Yıldız"
+  }
+}

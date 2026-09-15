@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_sozcu",
+    "type": "tv",
+    "name": "📺 Sözcü TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_sozcu.png",
+    "posterShape": "landscape",
+    "description": "Sözcü TV"
+  }
+}

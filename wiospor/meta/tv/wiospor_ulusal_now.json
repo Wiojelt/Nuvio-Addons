@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_now",
+    "type": "tv",
+    "name": "📺 NOW TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_now.png",
+    "posterShape": "landscape",
+    "description": "NOW TV"
+  }
+}

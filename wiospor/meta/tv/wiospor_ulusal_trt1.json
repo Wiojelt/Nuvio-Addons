@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_trt1",
+    "type": "tv",
+    "name": "📺 TRT 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt1.png",
+    "posterShape": "landscape",
+    "description": "TRT 1"
+  }
+}

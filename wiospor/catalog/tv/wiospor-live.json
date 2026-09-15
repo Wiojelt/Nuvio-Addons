@@ -1,0 +1,644 @@
+{
+  "metas": [
+    {
+      "id": "wiospor_mor_1",
+      "type": "tv",
+      "name": "🟣 Mor Spor 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_1.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports 1"
+    },
+    {
+      "id": "wiospor_mor_2",
+      "type": "tv",
+      "name": "🟣 Mor Spor 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_2.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports 2"
+    },
+    {
+      "id": "wiospor_mor_3",
+      "type": "tv",
+      "name": "🟣 Mor Spor 3",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_3.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports 3"
+    },
+    {
+      "id": "wiospor_mor_4",
+      "type": "tv",
+      "name": "🟣 Mor Spor 4",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_4.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports 4"
+    },
+    {
+      "id": "wiospor_mor_5",
+      "type": "tv",
+      "name": "🟣 Mor Spor 5",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_5.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports 5"
+    },
+    {
+      "id": "wiospor_mor_max_1",
+      "type": "tv",
+      "name": "🟣 Mor Spor Max 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_max_1.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports Max 1"
+    },
+    {
+      "id": "wiospor_mor_max_2",
+      "type": "tv",
+      "name": "🟣 Mor Spor Max 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_max_2.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports Max 2"
+    },
+    {
+      "id": "wiospor_mor_haber",
+      "type": "tv",
+      "name": "🟣 Mor Spor Haber",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_haber.png",
+      "posterShape": "landscape",
+      "description": "beIN Sports Haber"
+    },
+    {
+      "id": "wiospor_yesil_1",
+      "type": "tv",
+      "name": "🟢 Yeşil Spor 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_1.png",
+      "posterShape": "landscape",
+      "description": "tabii Spor 1"
+    },
+    {
+      "id": "wiospor_yesil_2",
+      "type": "tv",
+      "name": "🟢 Yeşil Spor 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_2.png",
+      "posterShape": "landscape",
+      "description": "tabii Spor 2"
+    },
+    {
+      "id": "wiospor_yesil_3",
+      "type": "tv",
+      "name": "🟢 Yeşil Spor 3",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_3.png",
+      "posterShape": "landscape",
+      "description": "tabii Spor 3"
+    },
+    {
+      "id": "wiospor_yesil_4",
+      "type": "tv",
+      "name": "🟢 Yeşil Spor 4",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_4.png",
+      "posterShape": "landscape",
+      "description": "tabii Spor 4"
+    },
+    {
+      "id": "wiospor_yesil_5",
+      "type": "tv",
+      "name": "🟢 Yeşil Spor 5",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_5.png",
+      "posterShape": "landscape",
+      "description": "tabii Spor 5"
+    },
+    {
+      "id": "wiospor_yesil_6",
+      "type": "tv",
+      "name": "🟢 Yeşil Spor 6",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_6.png",
+      "posterShape": "landscape",
+      "description": "tabii Spor 6"
+    },
+    {
+      "id": "wiospor_turuncu_1",
+      "type": "tv",
+      "name": "🟠 Turuncu Spor 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_1.png",
+      "posterShape": "landscape",
+      "description": "Tivibu Spor 1"
+    },
+    {
+      "id": "wiospor_turuncu_2",
+      "type": "tv",
+      "name": "🟠 Turuncu Spor 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_2.png",
+      "posterShape": "landscape",
+      "description": "Tivibu Spor 2"
+    },
+    {
+      "id": "wiospor_turuncu_3",
+      "type": "tv",
+      "name": "🟠 Turuncu Spor 3",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_3.png",
+      "posterShape": "landscape",
+      "description": "Tivibu Spor 3"
+    },
+    {
+      "id": "wiospor_turuncu_4",
+      "type": "tv",
+      "name": "🟠 Turuncu Spor 4",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/turuncu_4.png",
+      "posterShape": "landscape",
+      "description": "Tivibu Spor 4"
+    },
+    {
+      "id": "wiospor_sari_1",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_1.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 1"
+    },
+    {
+      "id": "wiospor_sari_2",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_2.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 2"
+    },
+    {
+      "id": "wiospor_sari_3",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 3",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_3.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 3"
+    },
+    {
+      "id": "wiospor_sari_4",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 4",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_4.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 4"
+    },
+    {
+      "id": "wiospor_sari_5",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 5",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_5.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 5"
+    },
+    {
+      "id": "wiospor_sari_6",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 6",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_6.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 6"
+    },
+    {
+      "id": "wiospor_sari_7",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 7",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_7.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 7"
+    },
+    {
+      "id": "wiospor_sari_8",
+      "type": "tv",
+      "name": "🟡 Sarı Spor 8",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_8.png",
+      "posterShape": "landscape",
+      "description": "Exxen Spor 8"
+    },
+    {
+      "id": "wiospor_mavi_1",
+      "type": "tv",
+      "name": "🔵 Mavi Spor 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_1.png",
+      "posterShape": "landscape",
+      "description": "S Sport"
+    },
+    {
+      "id": "wiospor_mavi_2",
+      "type": "tv",
+      "name": "🔵 Mavi Spor 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_2.png",
+      "posterShape": "landscape",
+      "description": "S Sport 2"
+    },
+    {
+      "id": "wiospor_mavi_plus_1",
+      "type": "tv",
+      "name": "🔵 Mavi Spor Plus 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_1.png",
+      "posterShape": "landscape",
+      "description": "S Sport Plus 1"
+    },
+    {
+      "id": "wiospor_mavi_plus_2",
+      "type": "tv",
+      "name": "🔵 Mavi Spor Plus 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_2.png",
+      "posterShape": "landscape",
+      "description": "S Sport Plus 2"
+    },
+    {
+      "id": "wiospor_yildiz_euro_1",
+      "type": "tv",
+      "name": "⭐ Yıldız Spor 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_euro_1.png",
+      "posterShape": "landscape",
+      "description": "Eurosport 1"
+    },
+    {
+      "id": "wiospor_yildiz_euro_2",
+      "type": "tv",
+      "name": "⭐ Yıldız Spor 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_euro_2.png",
+      "posterShape": "landscape",
+      "description": "Eurosport 2"
+    },
+    {
+      "id": "wiospor_yildiz_smart_1",
+      "type": "tv",
+      "name": "⭐ Yıldız Smart 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_smart_1.png",
+      "posterShape": "landscape",
+      "description": "Spor Smart"
+    },
+    {
+      "id": "wiospor_yildiz_smart_2",
+      "type": "tv",
+      "name": "⭐ Yıldız Smart 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_smart_2.png",
+      "posterShape": "landscape",
+      "description": "Spor Smart 2"
+    },
+    {
+      "id": "wiospor_ulusal_trt_spor",
+      "type": "tv",
+      "name": "📺 TRT Spor",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt_spor.png",
+      "posterShape": "landscape",
+      "description": "TRT Spor"
+    },
+    {
+      "id": "wiospor_ulusal_trt_yildiz",
+      "type": "tv",
+      "name": "📺 TRT Spor Yıldız",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt_yildiz.png",
+      "posterShape": "landscape",
+      "description": "TRT Spor Yıldız"
+    },
+    {
+      "id": "wiospor_ulusal_aspor",
+      "type": "tv",
+      "name": "📺 A Spor",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_aspor.png",
+      "posterShape": "landscape",
+      "description": "A Spor"
+    },
+    {
+      "id": "wiospor_ulusal_htspor",
+      "type": "tv",
+      "name": "📺 HT Spor",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_htspor.png",
+      "posterShape": "landscape",
+      "description": "HT Spor"
+    },
+    {
+      "id": "wiospor_ulusal_sportstv",
+      "type": "tv",
+      "name": "📺 Sports TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_sportstv.png",
+      "posterShape": "landscape",
+      "description": "Sports TV"
+    },
+    {
+      "id": "wiospor_ulusal_fbtv",
+      "type": "tv",
+      "name": "📺 FB TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_fbtv.png",
+      "posterShape": "landscape",
+      "description": "FB TV"
+    },
+    {
+      "id": "wiospor_ulusal_gstv",
+      "type": "tv",
+      "name": "📺 GS TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_gstv.png",
+      "posterShape": "landscape",
+      "description": "GS TV"
+    },
+    {
+      "id": "wiospor_ulusal_trt1",
+      "type": "tv",
+      "name": "📺 TRT 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trt1.png",
+      "posterShape": "landscape",
+      "description": "TRT 1"
+    },
+    {
+      "id": "wiospor_ulusal_atv",
+      "type": "tv",
+      "name": "📺 ATV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_atv.png",
+      "posterShape": "landscape",
+      "description": "ATV"
+    },
+    {
+      "id": "wiospor_ulusal_kanald",
+      "type": "tv",
+      "name": "📺 Kanal D",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_kanald.png",
+      "posterShape": "landscape",
+      "description": "Kanal D"
+    },
+    {
+      "id": "wiospor_ulusal_show",
+      "type": "tv",
+      "name": "📺 Show TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_show.png",
+      "posterShape": "landscape",
+      "description": "Show TV"
+    },
+    {
+      "id": "wiospor_ulusal_star",
+      "type": "tv",
+      "name": "📺 Star TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_star.png",
+      "posterShape": "landscape",
+      "description": "Star TV"
+    },
+    {
+      "id": "wiospor_ulusal_tv8",
+      "type": "tv",
+      "name": "📺 TV8",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_tv8.png",
+      "posterShape": "landscape",
+      "description": "TV8"
+    },
+    {
+      "id": "wiospor_ulusal_tv85",
+      "type": "tv",
+      "name": "📺 TV8.5",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_tv85.png",
+      "posterShape": "landscape",
+      "description": "TV8.5"
+    },
+    {
+      "id": "wiospor_ulusal_now",
+      "type": "tv",
+      "name": "📺 NOW TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_now.png",
+      "posterShape": "landscape",
+      "description": "NOW TV"
+    },
+    {
+      "id": "wiospor_ulusal_kanal7",
+      "type": "tv",
+      "name": "📺 Kanal 7",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_kanal7.png",
+      "posterShape": "landscape",
+      "description": "Kanal 7"
+    },
+    {
+      "id": "wiospor_ulusal_beyaz",
+      "type": "tv",
+      "name": "📺 Beyaz TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_beyaz.png",
+      "posterShape": "landscape",
+      "description": "Beyaz TV"
+    },
+    {
+      "id": "wiospor_ulusal_a2",
+      "type": "tv",
+      "name": "📺 A2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_a2.png",
+      "posterShape": "landscape",
+      "description": "A2"
+    },
+    {
+      "id": "wiospor_ulusal_haberturk",
+      "type": "tv",
+      "name": "📺 HaberTürk",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_haberturk.png",
+      "posterShape": "landscape",
+      "description": "HaberTürk"
+    },
+    {
+      "id": "wiospor_ulusal_ntv",
+      "type": "tv",
+      "name": "📺 NTV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_ntv.png",
+      "posterShape": "landscape",
+      "description": "NTV"
+    },
+    {
+      "id": "wiospor_ulusal_cnnturk",
+      "type": "tv",
+      "name": "📺 CNN Türk",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_cnnturk.png",
+      "posterShape": "landscape",
+      "description": "CNN Türk"
+    },
+    {
+      "id": "wiospor_ulusal_sozcu",
+      "type": "tv",
+      "name": "📺 Sözcü TV",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_sozcu.png",
+      "posterShape": "landscape",
+      "description": "Sözcü TV"
+    },
+    {
+      "id": "wiospor_ulusal_trthaber",
+      "type": "tv",
+      "name": "📺 TRT Haber",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trthaber.png",
+      "posterShape": "landscape",
+      "description": "TRT Haber"
+    },
+    {
+      "id": "wiospor_world_tnt_1",
+      "type": "tv",
+      "name": "🌐 World TNT Sports 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_1.png",
+      "posterShape": "landscape",
+      "description": "TNT Sports 1"
+    },
+    {
+      "id": "wiospor_world_tnt_2",
+      "type": "tv",
+      "name": "🌐 World TNT Sports 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_2.png",
+      "posterShape": "landscape",
+      "description": "TNT Sports 2"
+    },
+    {
+      "id": "wiospor_world_tnt_3",
+      "type": "tv",
+      "name": "🌐 World TNT Sports 3",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_3.png",
+      "posterShape": "landscape",
+      "description": "TNT Sports 3"
+    },
+    {
+      "id": "wiospor_world_tnt_4",
+      "type": "tv",
+      "name": "🌐 World TNT Sports 4",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_tnt_4.png",
+      "posterShape": "landscape",
+      "description": "TNT Sports 4"
+    },
+    {
+      "id": "wiospor_world_sky_calcio",
+      "type": "tv",
+      "name": "🌐 World Sky Sport Calcio",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_calcio.png",
+      "posterShape": "landscape",
+      "description": "Sky Sport Calcio"
+    },
+    {
+      "id": "wiospor_world_sky_austria_1",
+      "type": "tv",
+      "name": "🌐 World Sky Sport Austria 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_austria_1.png",
+      "posterShape": "landscape",
+      "description": "Sky Sport Austria 1"
+    },
+    {
+      "id": "wiospor_world_sky_austria_2",
+      "type": "tv",
+      "name": "🌐 World Sky Sport Austria 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_austria_2.png",
+      "posterShape": "landscape",
+      "description": "Sky Sport Austria 2"
+    },
+    {
+      "id": "wiospor_world_sky_uno",
+      "type": "tv",
+      "name": "🌐 World Sky Sport Uno",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_uno.png",
+      "posterShape": "landscape",
+      "description": "Sky Sport Uno"
+    },
+    {
+      "id": "wiospor_world_dazn_1",
+      "type": "tv",
+      "name": "🌐 World DAZN 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_dazn_1.png",
+      "posterShape": "landscape",
+      "description": "DAZN 1"
+    },
+    {
+      "id": "wiospor_world_dazn_2",
+      "type": "tv",
+      "name": "🌐 World DAZN 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_dazn_2.png",
+      "posterShape": "landscape",
+      "description": "DAZN 2"
+    },
+    {
+      "id": "wiospor_world_canal_sport",
+      "type": "tv",
+      "name": "🌐 World Canal+ Sport",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_sport.png",
+      "posterShape": "landscape",
+      "description": "Canal+ Sport"
+    },
+    {
+      "id": "wiospor_world_canal_foot",
+      "type": "tv",
+      "name": "🌐 World Canal+ Foot",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_foot.png",
+      "posterShape": "landscape",
+      "description": "Canal+ Foot"
+    },
+    {
+      "id": "wiospor_world_canal_live_1",
+      "type": "tv",
+      "name": "🌐 World Canal+ Live 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_live_1.png",
+      "posterShape": "landscape",
+      "description": "Canal+ Live 1"
+    },
+    {
+      "id": "wiospor_world_canal_extra_1",
+      "type": "tv",
+      "name": "🌐 World Canal+ Extra 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_extra_1.png",
+      "posterShape": "landscape",
+      "description": "Canal+ Extra 1"
+    },
+    {
+      "id": "wiospor_world_espn_1",
+      "type": "tv",
+      "name": "🌐 World ESPN 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_espn_1.png",
+      "posterShape": "landscape",
+      "description": "ESPN 1"
+    },
+    {
+      "id": "wiospor_world_espn_2",
+      "type": "tv",
+      "name": "🌐 World ESPN 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_espn_2.png",
+      "posterShape": "landscape",
+      "description": "ESPN 2"
+    },
+    {
+      "id": "wiospor_world_ziggo_1",
+      "type": "tv",
+      "name": "🌐 World Ziggo Sport 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_ziggo_1.png",
+      "posterShape": "landscape",
+      "description": "Ziggo Sport 1"
+    },
+    {
+      "id": "wiospor_world_ziggo_2",
+      "type": "tv",
+      "name": "🌐 World Ziggo Sport 2",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_ziggo_2.png",
+      "posterShape": "landscape",
+      "description": "Ziggo Sport 2"
+    },
+    {
+      "id": "wiospor_world_movistar_liga",
+      "type": "tv",
+      "name": "🌐 World M+ Liga de Campeones",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_movistar_liga.png",
+      "posterShape": "landscape",
+      "description": "M+ Liga de Campeones"
+    },
+    {
+      "id": "wiospor_world_sporttv_1",
+      "type": "tv",
+      "name": "🌐 World Sport TV 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sporttv_1.png",
+      "posterShape": "landscape",
+      "description": "Sport TV 1"
+    },
+    {
+      "id": "wiospor_world_digisport_1",
+      "type": "tv",
+      "name": "🌐 World Digi Sport 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_digisport_1.png",
+      "posterShape": "landscape",
+      "description": "Digi Sport 1"
+    },
+    {
+      "id": "wiospor_world_cosmote_1",
+      "type": "tv",
+      "name": "🌐 World Cosmote Sport 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_cosmote_1.png",
+      "posterShape": "landscape",
+      "description": "Cosmote Sport 1"
+    },
+    {
+      "id": "wiospor_world_arena_1",
+      "type": "tv",
+      "name": "🌐 World Arena Sport 1",
+      "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_arena_1.png",
+      "posterShape": "landscape",
+      "description": "Arena Sport 1"
+    }
+  ]
+}
