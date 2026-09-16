@@ -165,13 +165,33 @@
     "group": "🟣 Mor Spor"
   },
   {
+    "id": "yesil",
+    "name": "🟢 Yeşil Spor",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor",
+    "aliases": [
+      "tabiispor",
+      "tabii spor",
+      "tabi spor",
+      "tabispor",
+      "yesil spor",
+      "yesil",
+      "tabii ana",
+      "tabiisporana",
+      "trt tabii spor",
+      "trt tabii",
+      "tabii"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
     "id": "yesil_1",
     "name": "🟢 Yeşil Spor 1",
     "groupKey": "GROUP_YESIL",
     "standardTitle": "tabii Spor 1",
     "aliases": [
       "tabiispor1",
-      "tabiispor",
       "tabii1",
       "tabii spor 1",
       "yesil spor 1",
@@ -271,6 +291,24 @@
       "tabi6"
     ],
     "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_6.png",
+    "group": "🟢 Yeşil Spor"
+  },
+  {
+    "id": "yesil_7",
+    "name": "🟢 Yeşil Spor 7",
+    "groupKey": "GROUP_YESIL",
+    "standardTitle": "tabii Spor 7",
+    "aliases": [
+      "tabiispor7",
+      "tabii7",
+      "tabii spor 7",
+      "yesil spor 7",
+      "yesil 7",
+      "tabi spor 7",
+      "tabispor7",
+      "tabi7"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil_7.png",
     "group": "🟢 Yeşil Spor"
   },
   {
