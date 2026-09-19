@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_atv",
+    "type": "tv",
+    "name": "📺 ATV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_atv.png",
+    "posterShape": "landscape",
+    "description": "ATV"
+  }
+}

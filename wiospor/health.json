@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-19T17:11:32.904Z",
+  "channelCount": 82,
+  "sourceCount": 42,
+  "aslanSourceCount": 27,
+  "sourceCoverage": "42/42",
+  "channelsWithStreams": 82,
+  "freshChannels": 82,
+  "staleFallbackChannels": 0,
+  "streamCount": 1277,
+  "hosting": "github-raw-live-branch"
+}

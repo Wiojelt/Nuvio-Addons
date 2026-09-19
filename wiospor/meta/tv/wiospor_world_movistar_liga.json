@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_world_movistar_liga",
+    "type": "tv",
+    "name": "🌐 World M+ Liga de Campeones",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_movistar_liga.png",
+    "posterShape": "landscape",
+    "description": "M+ Liga de Campeones"
+  }
+}

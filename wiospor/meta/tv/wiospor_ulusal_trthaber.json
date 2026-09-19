@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_trthaber",
+    "type": "tv",
+    "name": "📺 TRT Haber",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_trthaber.png",
+    "posterShape": "landscape",
+    "description": "TRT Haber"
+  }
+}

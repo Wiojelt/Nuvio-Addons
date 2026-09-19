@@ -1,0 +1,586 @@
+{
+  "generatedAt": "2026-09-19T17:11:32.904Z",
+  "channelCount": 82,
+  "sourceCount": 42,
+  "aslanSourceCount": 27,
+  "channelsWithStreams": 82,
+  "freshChannels": 82,
+  "staleFallbackChannels": 0,
+  "streamCount": 1277,
+  "channels": {
+    "mor_1": {
+      "resourceId": "wiospor_mor_1",
+      "streamCount": 34,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_3": {
+      "resourceId": "wiospor_mor_3",
+      "streamCount": 31,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_4": {
+      "resourceId": "wiospor_mor_4",
+      "streamCount": 32,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_2": {
+      "resourceId": "wiospor_mor_2",
+      "streamCount": 34,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_5": {
+      "resourceId": "wiospor_mor_5",
+      "streamCount": 29,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_max_2": {
+      "resourceId": "wiospor_mor_max_2",
+      "streamCount": 19,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_max_1": {
+      "resourceId": "wiospor_mor_max_1",
+      "streamCount": 21,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mor_haber": {
+      "resourceId": "wiospor_mor_haber",
+      "streamCount": 16,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil": {
+      "resourceId": "wiospor_yesil",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_4": {
+      "resourceId": "wiospor_yesil_4",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_2": {
+      "resourceId": "wiospor_yesil_2",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_1": {
+      "resourceId": "wiospor_yesil_1",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_5": {
+      "resourceId": "wiospor_yesil_5",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_3": {
+      "resourceId": "wiospor_yesil_3",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_7": {
+      "resourceId": "wiospor_yesil_7",
+      "streamCount": 18,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yesil_6": {
+      "resourceId": "wiospor_yesil_6",
+      "streamCount": 23,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "turuncu_1": {
+      "resourceId": "wiospor_turuncu_1",
+      "streamCount": 27,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "turuncu_2": {
+      "resourceId": "wiospor_turuncu_2",
+      "streamCount": 23,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_3": {
+      "resourceId": "wiospor_sari_3",
+      "streamCount": 13,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_1": {
+      "resourceId": "wiospor_sari_1",
+      "streamCount": 15,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_2": {
+      "resourceId": "wiospor_sari_2",
+      "streamCount": 14,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "turuncu_3": {
+      "resourceId": "wiospor_turuncu_3",
+      "streamCount": 22,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "turuncu_4": {
+      "resourceId": "wiospor_turuncu_4",
+      "streamCount": 20,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_4": {
+      "resourceId": "wiospor_sari_4",
+      "streamCount": 12,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_5": {
+      "resourceId": "wiospor_sari_5",
+      "streamCount": 12,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mavi_plus_1": {
+      "resourceId": "wiospor_mavi_plus_1",
+      "streamCount": 12,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_8": {
+      "resourceId": "wiospor_sari_8",
+      "streamCount": 12,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mavi_plus_2": {
+      "resourceId": "wiospor_mavi_plus_2",
+      "streamCount": 10,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mavi_2": {
+      "resourceId": "wiospor_mavi_2",
+      "streamCount": 27,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_6": {
+      "resourceId": "wiospor_sari_6",
+      "streamCount": 12,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "mavi_1": {
+      "resourceId": "wiospor_mavi_1",
+      "streamCount": 28,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "sari_7": {
+      "resourceId": "wiospor_sari_7",
+      "streamCount": 12,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yildiz_euro_2": {
+      "resourceId": "wiospor_yildiz_euro_2",
+      "streamCount": 25,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yildiz_euro_1": {
+      "resourceId": "wiospor_yildiz_euro_1",
+      "streamCount": 30,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yildiz_smart_1": {
+      "resourceId": "wiospor_yildiz_smart_1",
+      "streamCount": 21,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_trt_yildiz": {
+      "resourceId": "wiospor_ulusal_trt_yildiz",
+      "streamCount": 22,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "yildiz_smart_2": {
+      "resourceId": "wiospor_yildiz_smart_2",
+      "streamCount": 20,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_aspor": {
+      "resourceId": "wiospor_ulusal_aspor",
+      "streamCount": 23,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_htspor": {
+      "resourceId": "wiospor_ulusal_htspor",
+      "streamCount": 15,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_trt_spor": {
+      "resourceId": "wiospor_ulusal_trt_spor",
+      "streamCount": 24,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_fbtv": {
+      "resourceId": "wiospor_ulusal_fbtv",
+      "streamCount": 11,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_sportstv": {
+      "resourceId": "wiospor_ulusal_sportstv",
+      "streamCount": 18,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_kanald": {
+      "resourceId": "wiospor_ulusal_kanald",
+      "streamCount": 17,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_gstv": {
+      "resourceId": "wiospor_ulusal_gstv",
+      "streamCount": 7,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_show": {
+      "resourceId": "wiospor_ulusal_show",
+      "streamCount": 17,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_atv": {
+      "resourceId": "wiospor_ulusal_atv",
+      "streamCount": 20,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_star": {
+      "resourceId": "wiospor_ulusal_star",
+      "streamCount": 23,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_trt1": {
+      "resourceId": "wiospor_ulusal_trt1",
+      "streamCount": 23,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_tv85": {
+      "resourceId": "wiospor_ulusal_tv85",
+      "streamCount": 18,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_a2": {
+      "resourceId": "wiospor_ulusal_a2",
+      "streamCount": 14,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_ntv": {
+      "resourceId": "wiospor_ulusal_ntv",
+      "streamCount": 17,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_haberturk": {
+      "resourceId": "wiospor_ulusal_haberturk",
+      "streamCount": 17,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_kanal7": {
+      "resourceId": "wiospor_ulusal_kanal7",
+      "streamCount": 10,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_tv8": {
+      "resourceId": "wiospor_ulusal_tv8",
+      "streamCount": 21,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_beyaz": {
+      "resourceId": "wiospor_ulusal_beyaz",
+      "streamCount": 13,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_now": {
+      "resourceId": "wiospor_ulusal_now",
+      "streamCount": 11,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_tnt_1": {
+      "resourceId": "wiospor_world_tnt_1",
+      "streamCount": 8,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_sozcu": {
+      "resourceId": "wiospor_ulusal_sozcu",
+      "streamCount": 7,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_trthaber": {
+      "resourceId": "wiospor_ulusal_trthaber",
+      "streamCount": 13,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "ulusal_cnnturk": {
+      "resourceId": "wiospor_ulusal_cnnturk",
+      "streamCount": 11,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_tnt_2": {
+      "resourceId": "wiospor_world_tnt_2",
+      "streamCount": 7,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_tnt_4": {
+      "resourceId": "wiospor_world_tnt_4",
+      "streamCount": 6,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_sky_calcio": {
+      "resourceId": "wiospor_world_sky_calcio",
+      "streamCount": 5,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_tnt_3": {
+      "resourceId": "wiospor_world_tnt_3",
+      "streamCount": 6,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_sky_austria_1": {
+      "resourceId": "wiospor_world_sky_austria_1",
+      "streamCount": 5,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_canal_sport": {
+      "resourceId": "wiospor_world_canal_sport",
+      "streamCount": 10,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_sky_austria_2": {
+      "resourceId": "wiospor_world_sky_austria_2",
+      "streamCount": 5,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_dazn_2": {
+      "resourceId": "wiospor_world_dazn_2",
+      "streamCount": 2,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_canal_foot": {
+      "resourceId": "wiospor_world_canal_foot",
+      "streamCount": 2,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_canal_live_1": {
+      "resourceId": "wiospor_world_canal_live_1",
+      "streamCount": 2,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_sky_uno": {
+      "resourceId": "wiospor_world_sky_uno",
+      "streamCount": 4,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_dazn_1": {
+      "resourceId": "wiospor_world_dazn_1",
+      "streamCount": 2,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_canal_extra_1": {
+      "resourceId": "wiospor_world_canal_extra_1",
+      "streamCount": 2,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_sporttv_1": {
+      "resourceId": "wiospor_world_sporttv_1",
+      "streamCount": 14,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_espn_2": {
+      "resourceId": "wiospor_world_espn_2",
+      "streamCount": 3,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_movistar_liga": {
+      "resourceId": "wiospor_world_movistar_liga",
+      "streamCount": 8,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_ziggo_1": {
+      "resourceId": "wiospor_world_ziggo_1",
+      "streamCount": 6,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_espn_1": {
+      "resourceId": "wiospor_world_espn_1",
+      "streamCount": 6,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_ziggo_2": {
+      "resourceId": "wiospor_world_ziggo_2",
+      "streamCount": 5,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_digisport_1": {
+      "resourceId": "wiospor_world_digisport_1",
+      "streamCount": 6,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_arena_1": {
+      "resourceId": "wiospor_world_arena_1",
+      "streamCount": 17,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    },
+    "world_cosmote_1": {
+      "resourceId": "wiospor_world_cosmote_1",
+      "streamCount": 6,
+      "source": "fresh",
+      "lastSuccess": "2026-09-19T17:11:32.904Z",
+      "error": null
+    }
+  }
+}
