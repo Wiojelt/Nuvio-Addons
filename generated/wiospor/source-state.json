@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-22T16:58:06.848Z",
+  "generatedAt": "2026-09-22T21:20:09.719Z",
   "sourceSha256": {
-    "channels": "2dabbf7a1dc822efea0f39b793ce17a13d53e7fdf71a6f943f9cde5604e8e2d9",
+    "channels": "11e54dfae42cf79c768c996bd3d899025a99eca81b8222345ae94b1976eef59c",
     "sourceSpecs": null,
     "sportsProvider": null,
     "wioSourceAggregator": null,
@@ -9,7 +9,7 @@
     "aslanBootstrap": null,
     "aslanData": null
   },
-  "channelCount": 82,
+  "channelCount": 83,
   "sharedSourceCount": 5,
   "baseSourceCount": 15,
   "aslanSourceCount": 27,

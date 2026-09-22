@@ -23,6 +23,26 @@
     "group": "🟣 Mor Spor"
   },
   {
+    "id": "mor_1_4k",
+    "name": "🟣 Mor Spor 1 4K",
+    "groupKey": "GROUP_MOR",
+    "standardTitle": "beIN Sports 1 4K",
+    "aliases": [
+      "beinsports14k",
+      "bein14k",
+      "beinsport14k",
+      "bein sports 1 4k",
+      "beinsports 1 4k",
+      "mor spor 1 4k",
+      "mor 1 4k",
+      "beinsports4k",
+      "bein4k",
+      "mor 4k"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_1.png",
+    "group": "🟣 Mor Spor"
+  },
+  {
     "id": "mor_2",
     "name": "🟣 Mor Spor 2",
     "groupKey": "GROUP_MOR",
