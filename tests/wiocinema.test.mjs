@@ -108,13 +108,16 @@ test('WioCinema CineStream provider consolidates Vidup and Hexa streams', async 
 test('WioCinema Mapple provider extracts multi-source streams', async () => {
   const provider = await loadProvider('wiocinema/providers/wiocinema-mapple.js', async (url) => {
     const u = String(url);
-    if (u.includes('/api/movie/550')) return response({ json: { src: '/embed/map' } });
+    if (u.includes('/api/movie/550')) return response({ text: JSON.stringify({ src: '/embed/map' }) });
     if (u.endsWith('/embed/map')) return response({ text: `player({file:'https://cdn.example/mapple.m3u8',token:'tok',expires:'exp'})` });
     return response({ ok: false });
   });
   const streams = await provider.getStreams('550', 'movie', null, null);
-  assert.ok(streams.length >= 1);
-  assert.ok(streams.some(s => s.name === 'WioCinema • Mapple'));
+  assert.equal(streams.length, 10);
+  assert.ok(streams.some(s => s.name === 'WioCinema • Mapple' && s.title.includes('VixSrc')));
+  assert.ok(streams.some(s => s.name === 'WioCinema • Mapple' && s.title.includes('VidSrc Me')));
+  assert.ok(streams.some(s => s.name === 'WioCinema • Mapple' && s.title.includes('VidLink')));
+  assert.ok(streams.some(s => s.name === 'WioCinema • Mapple' && s.title.includes('SuperEmbed')));
   assert.equal(streams[0].provider, 'wiocinema-mapple');
 });
 
