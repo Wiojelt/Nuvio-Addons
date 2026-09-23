@@ -6,6 +6,12 @@
 https://raw.githubusercontent.com/Wiojelt/Nuvio-Addons/main/manifest.json
 ```
 
+## WioCinema
+
+```text
+https://raw.githubusercontent.com/Wiojelt/Nuvio-Addons/main/wiocinema/manifest.json
+```
+
 ## WioSpor
 
 ```text

@@ -1,0 +1,155 @@
+{
+  "name": "WioCinema",
+  "version": "1.0.0",
+  "scrapers": [
+    {
+      "id": "wiocinema-clipbox",
+      "name": "WioCinema • ClipBox",
+      "description": "WioCinema TMDB tabanlı ClipBox/VixSrc sağlayıcısı (Global/Multi).",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-clipbox.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-vidup",
+      "name": "WioCinema • Vidup",
+      "description": "CineStream Vidup doğrudan TMDB sağlayıcısı.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-vidup.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-hexa",
+      "name": "WioCinema • Hexa",
+      "description": "CineStream Hexa doğrudan TMDB sağlayıcısı.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-hexa.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-vidfastpro",
+      "name": "WioCinema • VidFastPro",
+      "description": "CineStream VidFastPro doğrudan TMDB sağlayıcısı.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-vidfastpro.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-vidcore",
+      "name": "WioCinema • Vidcore",
+      "description": "CineStream Vidcore doğrudan TMDB sağlayıcısı.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-vidcore.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-xpass",
+      "name": "WioCinema • Xpass",
+      "description": "CineStream Xpass doğrudan TMDB sağlayıcısı.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-xpass.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    }
+  ]
+}

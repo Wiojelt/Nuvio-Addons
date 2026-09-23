@@ -34,6 +34,10 @@ const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import
 const scrapers = Array.isArray(manifest) ? manifest : manifest?.scrapers;
 if (!Array.isArray(scrapers) || scrapers.length === 0) throw new Error('manifest.json has no scrapers');
 
+const cinemaManifest = JSON.parse(await fs.readFile(new URL('../wiocinema/manifest.json', import.meta.url), 'utf8'));
+const cinemaScrapers = Array.isArray(cinemaManifest) ? cinemaManifest : cinemaManifest?.scrapers;
+if (!Array.isArray(cinemaScrapers) || cinemaScrapers.length === 0) throw new Error('wiocinema/manifest.json has no scrapers');
+
 const syntaxFiles = new Set([
   'src/addons/wiospor/app.mjs',
   'src/addons/wiospor/server.mjs',
@@ -42,16 +46,23 @@ const syntaxFiles = new Set([
   'src/addons/wiospor/legacy-sources.mjs',
   'src/addons/wiospor/source-registry.mjs',
   'src/addons/wiospor/aslan-sources.mjs',
-  'scripts/build-wiospor-live.mjs'
+  'scripts/build-wiospor-live.mjs',
+  'scripts/generate-wiocinema.mjs'
 ]);
 for (const entry of scrapers) {
   if (!entry.id || !entry.filename) throw new Error('Invalid manifest scraper entry');
   syntaxFiles.add(entry.filename);
 }
+for (const entry of cinemaScrapers) {
+  if (!entry.id || !entry.filename) throw new Error('Invalid WioCinema scraper entry');
+  syntaxFiles.add(`wiocinema/${entry.filename}`);
+  syntaxFiles.add(entry.filename);
+}
 for (const filename of syntaxFiles) {
   const fileUrl = new URL(`../${filename}`, import.meta.url);
   await fs.access(fileUrl);
-  const result = spawnSync(process.execPath, ['--check', fileUrl.pathname], { encoding: 'utf8' });
+  const filePath = fileURLToPath(fileUrl);
+  const result = spawnSync(process.execPath, ['--check', filePath], { encoding: 'utf8' });
   if (result.status !== 0) throw new Error(result.stderr || `Syntax check failed: ${filename}`);
 }
 
@@ -67,4 +78,4 @@ try {
   console.warn('WioSpor generated catalog is not present yet; run npm run sync && npm run generate.');
 }
 
-console.log(`Validated ${scrapers.length} Nuvio scraper(s), ${syntaxFiles.size} JS entrypoints, ${WIOSPOR_SOURCE_COUNT}/42 WioSpor sources${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
+console.log(`Validated ${scrapers.length} WioSinema scraper(s), ${cinemaScrapers.length} WioCinema scraper(s), ${syntaxFiles.size} JS entrypoints, ${WIOSPOR_SOURCE_COUNT}/42 WioSpor sources${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
