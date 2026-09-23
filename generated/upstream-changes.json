@@ -1,11 +1,4 @@
 {
-  "changed": true,
-  "changes": [
-    {
-      "id": "wiospor-public",
-      "repo": "Wiojelt/WioSpor",
-      "from": "06d1a285c555e40219492a609c1b4eea641eb9f8",
-      "to": "daa1b5ccc1b7b968eab78945fd298e1b7276cbfa"
-    }
-  ]
+  "changed": false,
+  "changes": []
 }
