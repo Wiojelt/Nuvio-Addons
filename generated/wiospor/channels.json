@@ -590,6 +590,51 @@
     "group": "🔵 Mavi Spor"
   },
   {
+    "id": "mavi_plus_3",
+    "name": "🔵 Mavi Spor Plus 3",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport Plus 3",
+    "aliases": [
+      "ssportplus3",
+      "splus3",
+      "s+3",
+      "mavi plus 3",
+      "s sport plus 3"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_3.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
+    "id": "mavi_plus_4",
+    "name": "🔵 Mavi Spor Plus 4",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport Plus 4",
+    "aliases": [
+      "ssportplus4",
+      "splus4",
+      "s+4",
+      "mavi plus 4",
+      "s sport plus 4"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_4.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
+    "id": "mavi_plus_5",
+    "name": "🔵 Mavi Spor Plus 5",
+    "groupKey": "GROUP_MAVI",
+    "standardTitle": "S Sport Plus 5",
+    "aliases": [
+      "ssportplus5",
+      "splus5",
+      "s+5",
+      "mavi plus 5",
+      "s sport plus 5"
+    ],
+    "logo": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_plus_5.png",
+    "group": "🔵 Mavi Spor"
+  },
+  {
     "id": "yildiz_euro_1",
     "name": "⭐ Yıldız Spor 1",
     "groupKey": "GROUP_YILDIZ",
