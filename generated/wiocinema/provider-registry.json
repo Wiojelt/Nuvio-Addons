@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T20:21:58.588Z",
+  "generatedAt": "2026-09-23T20:34:05.184Z",
   "manifestName": "WioCinema",
   "version": "1.0.0",
   "providers": [
@@ -9,29 +9,34 @@
       "filename": "providers/wiocinema-clipbox.js"
     },
     {
-      "id": "wiocinema-vidup",
-      "name": "WioCinema • Vidup",
-      "filename": "providers/wiocinema-vidup.js"
+      "id": "wiocinema-cinestream",
+      "name": "WioCinema • CineStream",
+      "filename": "providers/wiocinema-cinestream.js"
     },
     {
-      "id": "wiocinema-hexa",
-      "name": "WioCinema • Hexa",
-      "filename": "providers/wiocinema-hexa.js"
+      "id": "wiocinema-mapple",
+      "name": "WioCinema • Mapple",
+      "filename": "providers/wiocinema-mapple.js"
     },
     {
-      "id": "wiocinema-vidfastpro",
-      "name": "WioCinema • VidFastPro",
-      "filename": "providers/wiocinema-vidfastpro.js"
+      "id": "wiocinema-bingebang",
+      "name": "WioCinema • BingeBang",
+      "filename": "providers/wiocinema-bingebang.js"
     },
     {
-      "id": "wiocinema-vidcore",
-      "name": "WioCinema • Vidcore",
-      "filename": "providers/wiocinema-vidcore.js"
+      "id": "wiocinema-cinecat",
+      "name": "WioCinema • CineCat",
+      "filename": "providers/wiocinema-cinecat.js"
     },
     {
-      "id": "wiocinema-xpass",
-      "name": "WioCinema • Xpass",
-      "filename": "providers/wiocinema-xpass.js"
+      "id": "wiocinema-flixnetwork",
+      "name": "WioCinema • FlixNetwork",
+      "filename": "providers/wiocinema-flixnetwork.js"
+    },
+    {
+      "id": "wiocinema-watch2movies",
+      "name": "WioCinema • Watch2Movies",
+      "filename": "providers/wiocinema-watch2movies.js"
     }
   ]
 }

@@ -5,7 +5,7 @@
     {
       "id": "wiocinema-clipbox",
       "name": "WioCinema • ClipBox",
-      "description": "WioCinema TMDB tabanlı ClipBox/VixSrc sağlayıcısı (Global/Multi).",
+      "description": "Global ClipBox movie and series provider (VixSrc direct TMDB route).",
       "version": "1.0.0",
       "author": "Wiojelt",
       "supportedTypes": [
@@ -15,7 +15,7 @@
       "filename": "providers/wiocinema-clipbox.js",
       "enabled": true,
       "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "logo": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/main/assets/providers/ClipBox.png",
       "contentLanguage": [
         "en"
       ],
@@ -27,19 +27,19 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "wiocinema-vidup",
-      "name": "WioCinema • Vidup",
-      "description": "CineStream Vidup doğrudan TMDB sağlayıcısı.",
+      "id": "wiocinema-cinestream",
+      "name": "WioCinema • CineStream",
+      "description": "Global multi-source movie and series provider (Vidup, Hexa, VidFast, Vidcore, Xpass).",
       "version": "1.0.0",
       "author": "Wiojelt",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/wiocinema-vidup.js",
+      "filename": "providers/wiocinema-cinestream.js",
       "enabled": true,
       "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "logo": "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/master/CineStream/icon.png",
       "contentLanguage": [
         "en"
       ],
@@ -52,19 +52,19 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "wiocinema-hexa",
-      "name": "WioCinema • Hexa",
-      "description": "CineStream Hexa doğrudan TMDB sağlayıcısı.",
+      "id": "wiocinema-mapple",
+      "name": "WioCinema • Mapple",
+      "description": "Global Mapple movie and series provider (VixSrc, VidSrc, Videasy).",
       "version": "1.0.0",
       "author": "Wiojelt",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/wiocinema-hexa.js",
+      "filename": "providers/wiocinema-mapple.js",
       "enabled": true,
       "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "logo": "https://raw.githubusercontent.com/Wiojelt/test/builds/logos/mapple.png",
       "contentLanguage": [
         "en"
       ],
@@ -77,19 +77,19 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "wiocinema-vidfastpro",
-      "name": "WioCinema • VidFastPro",
-      "description": "CineStream VidFastPro doğrudan TMDB sağlayıcısı.",
+      "id": "wiocinema-bingebang",
+      "name": "WioCinema • BingeBang",
+      "description": "Global BingeBang movie and series provider.",
       "version": "1.0.0",
       "author": "Wiojelt",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/wiocinema-vidfastpro.js",
+      "filename": "providers/wiocinema-bingebang.js",
       "enabled": true,
       "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "logo": "https://bingebang.tv/icon-512.png",
       "contentLanguage": [
         "en"
       ],
@@ -102,19 +102,19 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "wiocinema-vidcore",
-      "name": "WioCinema • Vidcore",
-      "description": "CineStream Vidcore doğrudan TMDB sağlayıcısı.",
+      "id": "wiocinema-cinecat",
+      "name": "WioCinema • CineCat",
+      "description": "Global CineCat movie and series provider.",
       "version": "1.0.0",
       "author": "Wiojelt",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/wiocinema-vidcore.js",
+      "filename": "providers/wiocinema-cinecat.js",
       "enabled": true,
       "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "logo": "https://cinecat.eu/android-chrome-192x192.png?v=3",
       "contentLanguage": [
         "en"
       ],
@@ -127,19 +127,44 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "wiocinema-xpass",
-      "name": "WioCinema • Xpass",
-      "description": "CineStream Xpass doğrudan TMDB sağlayıcısı.",
+      "id": "wiocinema-flixnetwork",
+      "name": "WioCinema • FlixNetwork",
+      "description": "Global FlixNetwork movie and series provider.",
       "version": "1.0.0",
       "author": "Wiojelt",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/wiocinema-xpass.js",
+      "filename": "providers/wiocinema-flixnetwork.js",
       "enabled": true,
       "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
+      "logo": "https://www.google.com/s2/favicons?domain=flixnetwork.is&sz=128",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-watch2movies",
+      "name": "WioCinema • Watch2Movies",
+      "description": "Global Watch2Movies provider.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-watch2movies.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://www.google.com/s2/favicons?domain=movies2watch.watch&sz=128",
       "contentLanguage": [
         "en"
       ],

@@ -35,13 +35,26 @@ function response({ json, text = '', ok = true }) {
   };
 }
 
-test('WioCinema uses the Nuvio scraper repository manifest schema', async () => {
+test('WioCinema uses the Nuvio scraper repository manifest schema with 7 native providers', async () => {
   const manifest = JSON.parse(await fs.readFile(new URL('../wiocinema/manifest.json', import.meta.url), 'utf8'));
   assert.equal(manifest.name, 'WioCinema');
   assert.ok(Array.isArray(manifest.scrapers));
-  assert.equal(manifest.scrapers.length, 6);
+  assert.equal(manifest.scrapers.length, 7);
+
+  const expectedProviders = [
+    'wiocinema-clipbox',
+    'wiocinema-cinestream',
+    'wiocinema-mapple',
+    'wiocinema-bingebang',
+    'wiocinema-cinecat',
+    'wiocinema-flixnetwork',
+    'wiocinema-watch2movies'
+  ];
+
+  const actualIds = manifest.scrapers.map(s => s.id);
+  assert.deepEqual(actualIds, expectedProviders);
+
   for (const scraper of manifest.scrapers) {
-    assert.ok(scraper.id.startsWith('wiocinema-'));
     assert.ok(scraper.name.startsWith('WioCinema •'));
     assert.ok(scraper.filename);
     assert.equal(typeof scraper.enabled, 'boolean');
@@ -68,8 +81,8 @@ test('WioCinema ClipBox provider extracts stream with WioCinema branding', async
   assert.equal(streams[0].url, 'https://cdn.example/wiocinema.m3u8?token=tok123&expires=456&h=1');
 });
 
-test('WioCinema Vidup provider extracts streams with WioCinema branding', async () => {
-  const provider = await loadProvider('wiocinema/providers/wiocinema-vidup.js', async (url, options = {}) => {
+test('WioCinema CineStream provider consolidates Vidup and Hexa streams', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-cinestream.js', async (url, options = {}) => {
     const u = String(url);
     if (u === 'https://vidup.to/movie/603') return response({ text: '{"token":"ENC_TOK"}' });
     if (u.startsWith('https://enc-dec.app/api/enc-vidup?text=')) return response({ text: JSON.stringify({ status: 200, result: { servers: 'https://vidup.to/api/servers', stream: 'https://vidup.to/api/stream', token: 'csrf-1' } }) });
@@ -80,62 +93,71 @@ test('WioCinema Vidup provider extracts streams with WioCinema branding', async 
       if (payload.text === 'SERVERS_RAW') return response({ text: JSON.stringify({ status: 200, result: [{ name: 'Server1', data: 'srv1' }] }) });
       if (payload.text === 'STREAM_RAW') return response({ text: JSON.stringify({ status: 200, result: { url: 'https://cdn.example/matrix.m3u8', tracks: [] } }) });
     }
-    return response({ ok: false });
-  });
-  const streams = await provider.getStreams(603, 'movie', null, null);
-  assert.equal(streams.length, 1);
-  assert.equal(streams[0].name, 'WioCinema • Vidup');
-  assert.equal(streams[0].provider, 'wiocinema-vidup');
-  assert.equal(streams[0].url, 'https://cdn.example/matrix.m3u8');
-});
-
-test('WioCinema Hexa provider extracts streams with WioCinema branding', async () => {
-  const provider = await loadProvider('wiocinema/providers/wiocinema-hexa.js', async (url, options = {}) => {
-    const u = String(url);
     if (u === 'https://enc-dec.app/api/enc-hexa') return response({ text: JSON.stringify({ result: { token: 'cap-tok' } }) });
     if (u === 'https://theemoviedb.hexa.su/api/tmdb/movie/603/images') return response({ text: 'HEXA_RAW' });
     if (u === 'https://enc-dec.app/api/dec-hexa') return response({ text: JSON.stringify({ result: { sources: [{ server: 'Fast', url: 'https://cdn.example/hexa-stream.m3u8' }] } }) });
     return response({ ok: false });
   });
   const streams = await provider.getStreams(603, 'movie', null, null);
-  assert.equal(streams.length, 1);
-  assert.equal(streams[0].name, 'WioCinema • Hexa');
-  assert.equal(streams[0].provider, 'wiocinema-hexa');
-  assert.equal(streams[0].url, 'https://cdn.example/hexa-stream.m3u8');
+  assert.ok(streams.length >= 2);
+  assert.ok(streams.some(s => s.name === 'WioCinema • CineStream' && s.title.includes('Vidup')));
+  assert.ok(streams.some(s => s.name === 'WioCinema • CineStream' && s.title.includes('Hexa')));
+  assert.equal(streams[0].provider, 'wiocinema-cinestream');
 });
 
-test('WioCinema VidFastPro provider extracts streams with WioCinema branding', async () => {
-  const provider = await loadProvider('wiocinema/providers/wiocinema-vidfastpro.js', async (url, options = {}) => {
+test('WioCinema Mapple provider extracts multi-source streams', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-mapple.js', async (url) => {
     const u = String(url);
-    if (u === 'https://vidfast.vc/movie/603/') return response({ text: '{"token":"PAGE"}' });
-    if (u.startsWith('https://enc-dec.app/api/enc-vidfast?text=')) return response({ text: JSON.stringify({ result: { servers: 'https://vidfast.vc/api/servers', stream: 'https://vidfast.vc/api/stream', token: 'csrf' } }) });
-    if (u === 'https://vidfast.vc/api/servers') return response({ text: 'SERVERS' });
-    if (u === 'https://vidfast.vc/api/stream/a') return response({ text: 'STREAM' });
-    if (u === 'https://enc-dec.app/api/dec-vidfast') {
-      const payload = JSON.parse(options.body || '{}');
-      if (payload.text === 'SERVERS') return response({ text: JSON.stringify({ result: [{ name: 'A', description: '4K', data: 'a' }] }) });
-      if (payload.text === 'STREAM') return response({ text: JSON.stringify({ result: { url: 'https://cdn.example/vidfast.m3u8', is4kAvailable: true } }) });
-    }
+    if (u.includes('/api/movie/550')) return response({ json: { src: '/embed/map' } });
+    if (u.endsWith('/embed/map')) return response({ text: `player({file:'https://cdn.example/mapple.m3u8',token:'tok',expires:'exp'})` });
     return response({ ok: false });
   });
-  const streams = await provider.getStreams(603, 'movie', null, null);
-  assert.equal(streams.length, 1);
-  assert.equal(streams[0].name, 'WioCinema • VidFastPro');
-  assert.equal(streams[0].provider, 'wiocinema-vidfastpro');
-  assert.equal(streams[0].quality, 2160);
+  const streams = await provider.getStreams('550', 'movie', null, null);
+  assert.ok(streams.length >= 1);
+  assert.ok(streams.some(s => s.name === 'WioCinema • Mapple'));
+  assert.equal(streams[0].provider, 'wiocinema-mapple');
 });
 
-test('WioCinema Xpass provider parses backup sources', async () => {
-  const provider = await loadProvider('wiocinema/providers/wiocinema-xpass.js', async (url) => {
-    const u = String(url);
-    if (u === 'https://play.xpass.top/e/movie/603') return response({ text: '<html>var backups = [{"name":"Server1","url":"/api/source1"}];</html>' });
-    if (u === 'https://play.xpass.top/api/source1') return response({ text: JSON.stringify({ playlist: [{ sources: [{ file: 'https://cdn.example/xpass.mp4', type: 'mp4' }] }] }) });
-    return response({ ok: false });
+test('WioCinema BingeBang provider extracts stream', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-bingebang.js', async (url) => {
+    return response({ text: '<html><script>var file = "https://cdn.example/binge.m3u8";</script></html>' });
   });
-  const streams = await provider.getStreams(603, 'movie', null, null);
+  const streams = await provider.getStreams('550', 'movie', null, null);
   assert.equal(streams.length, 1);
-  assert.equal(streams[0].name, 'WioCinema • Xpass');
-  assert.equal(streams[0].provider, 'wiocinema-xpass');
-  assert.equal(streams[0].url, 'https://cdn.example/xpass.mp4');
-  assert.equal(streams[0].format, 'video');
+  assert.equal(streams[0].name, 'WioCinema • BingeBang');
+  assert.equal(streams[0].provider, 'wiocinema-bingebang');
+  assert.equal(streams[0].url, 'https://cdn.example/binge.m3u8');
+});
+
+test('WioCinema CineCat provider extracts stream', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-cinecat.js', async (url) => {
+    return response({ text: '<html><script>var file = "https://cdn.example/cinecat.m3u8";</script></html>' });
+  });
+  const streams = await provider.getStreams('550', 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].name, 'WioCinema • CineCat');
+  assert.equal(streams[0].provider, 'wiocinema-cinecat');
+  assert.equal(streams[0].url, 'https://cdn.example/cinecat.m3u8');
+});
+
+test('WioCinema FlixNetwork provider extracts stream', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-flixnetwork.js', async (url) => {
+    return response({ text: '<html><script>var file = "https://cdn.example/flix.m3u8";</script></html>' });
+  });
+  const streams = await provider.getStreams('550', 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].name, 'WioCinema • FlixNetwork');
+  assert.equal(streams[0].provider, 'wiocinema-flixnetwork');
+  assert.equal(streams[0].url, 'https://cdn.example/flix.m3u8');
+});
+
+test('WioCinema Watch2Movies provider extracts stream', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-watch2movies.js', async (url) => {
+    return response({ text: '<html><script>var file = "https://cdn.example/watch2.m3u8";</script></html>' });
+  });
+  const streams = await provider.getStreams('550', 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].name, 'WioCinema • Watch2Movies');
+  assert.equal(streams[0].provider, 'wiocinema-watch2movies');
+  assert.equal(streams[0].url, 'https://cdn.example/watch2.m3u8');
 });

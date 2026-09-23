@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-3.0-only
- * WioCinema ClipBox/VixSrc direct TMDB route.
+ * WioCinema ClipBox Provider
  */
 "use strict";
 
