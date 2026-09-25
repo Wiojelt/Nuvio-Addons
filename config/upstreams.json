@@ -6,8 +6,14 @@
       "ref": "main",
       "private": false,
       "files": [
-        { "path": "src/main/kotlin/wiospor/WioChannels.kt", "target": ".upstream-cache/wiospor-public/WioChannels.kt" },
-        { "path": "src/main/kotlin/wiospor/SourceAggregator.kt", "target": ".upstream-cache/wiospor-public/SourceAggregator.kt" }
+        {
+          "path": "src/main/kotlin/wiospor/WioChannels.kt",
+          "target": ".upstream-cache/wiospor-public/WioChannels.kt"
+        },
+        {
+          "path": "src/main/kotlin/wiospor/SourceAggregator.kt",
+          "target": ".upstream-cache/wiospor-public/SourceAggregator.kt"
+        }
       ]
     },
     {
@@ -16,10 +22,26 @@
       "ref": "main",
       "private": true,
       "files": [
-        { "path": "WioSinema/src/main/kotlin/dev/wiojelt/wiosinema/StreamAggregator.kt", "target": ".upstream-cache/turksinema-source/StreamAggregator.kt" },
-        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/gold_clipbox/ClipBoxProvider.kt", "target": ".upstream-cache/turksinema-source/ClipBoxProvider.kt" },
-        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/bronze_cinestream/com/megix/ApiConstants.kt", "target": ".upstream-cache/turksinema-source/ApiConstants.kt" },
-        { "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/bronze_cinestream/com/megix/CineStreamExtractors.kt", "target": ".upstream-cache/turksinema-source/CineStreamExtractors.kt" }
+        {
+          "path": "WioSinema/src/main/kotlin/dev/wiojelt/wiosinema/StreamAggregator.kt",
+          "target": ".upstream-cache/turksinema-source/StreamAggregator.kt"
+        },
+        {
+          "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/gold_clipbox/ClipBoxProvider.kt",
+          "target": ".upstream-cache/turksinema-source/ClipBoxProvider.kt"
+        },
+        {
+          "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/bronze_cinestream/com/megix/ApiConstants.kt",
+          "target": ".upstream-cache/turksinema-source/ApiConstants.kt"
+        },
+        {
+          "path": "TurkSinema/src/main/kotlin/dev/wiojelt/turksinema/vendor/bronze_cinestream/com/megix/CineStreamExtractors.kt",
+          "target": ".upstream-cache/turksinema-source/CineStreamExtractors.kt"
+        },
+        {
+          "path": "WioIPTVPanels/src/main/kotlin/dev/wiojelt/wioiptvpanels/ChannelDatabase.kt",
+          "target": ".upstream-cache/turksinema-source/WioIPTVPanelsChannelDatabase.kt"
+        }
       ]
     },
     {
@@ -28,13 +50,46 @@
       "ref": "main",
       "private": true,
       "files": [
-        { "path": "shared/src/main/kotlin/turkspor/shared/SourceSpec.kt", "target": ".upstream-cache/turkspor-source/SourceSpec.kt" },
-        { "path": "shared/src/main/kotlin/turkspor/shared/SportsProvider.kt", "target": ".upstream-cache/turkspor-source/SportsProvider.kt" },
-        { "path": "shared/src/main/kotlin/turkspor/shared/PlayerParser.kt", "target": ".upstream-cache/turkspor-source/PlayerParser.kt" },
-        { "path": "WioSpor/src/main/kotlin/wiospor/SourceAggregator.kt", "target": ".upstream-cache/turkspor-source/WioSourceAggregator.kt" },
-        { "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanSources.kt", "target": ".upstream-cache/turkspor-source/AslanSources.kt" },
-        { "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanBootstrap.kt", "target": ".upstream-cache/turkspor-source/AslanBootstrap.kt" },
-        { "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanData.kt", "target": ".upstream-cache/turkspor-source/AslanData.kt" }
+        {
+          "path": "shared/src/main/kotlin/turkspor/shared/SourceSpec.kt",
+          "target": ".upstream-cache/turkspor-source/SourceSpec.kt"
+        },
+        {
+          "path": "shared/src/main/kotlin/turkspor/shared/SportsProvider.kt",
+          "target": ".upstream-cache/turkspor-source/SportsProvider.kt"
+        },
+        {
+          "path": "shared/src/main/kotlin/turkspor/shared/PlayerParser.kt",
+          "target": ".upstream-cache/turkspor-source/PlayerParser.kt"
+        },
+        {
+          "path": "WioSpor/src/main/kotlin/wiospor/SourceAggregator.kt",
+          "target": ".upstream-cache/turkspor-source/WioSourceAggregator.kt"
+        },
+        {
+          "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanSources.kt",
+          "target": ".upstream-cache/turkspor-source/AslanSources.kt"
+        },
+        {
+          "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanBootstrap.kt",
+          "target": ".upstream-cache/turkspor-source/AslanBootstrap.kt"
+        },
+        {
+          "path": "AslanTV/src/main/kotlin/turkspor/aslan/AslanData.kt",
+          "target": ".upstream-cache/turkspor-source/AslanData.kt"
+        },
+        {
+          "path": "VionTV/src/main/kotlin/dev/wiojelt/viontv/VionTVProvider.kt",
+          "target": ".upstream-cache/turkspor-source/VionTVProvider.kt"
+        },
+        {
+          "path": "PapazSports/src/main/kotlin/turkspor/papazsports/PapazSportsProvider.kt",
+          "target": ".upstream-cache/turkspor-source/PapazSportsProvider.kt"
+        },
+        {
+          "path": "JestYayin/src/main/kotlin/turkspor/jestyayin/JestYayinProvider.kt",
+          "target": ".upstream-cache/turkspor-source/JestYayinProvider.kt"
+        }
       ]
     }
   ]
