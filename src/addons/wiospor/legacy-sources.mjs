@@ -1,4 +1,4 @@
-import { createHash, createHmac, createDecipheriv, randomBytes } from 'node:crypto';
+import { createHash, createHmac, createCipheriv, createDecipheriv, randomBytes } from 'node:crypto';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36';
 const DOMAIN_MANIFEST = 'https://raw.githubusercontent.com/Wiojelt/TurkSpor/main/domains.json';
@@ -77,11 +77,19 @@ function extractPlayerUrls(html, playerUrl) {
 }
 
 function stream(sourceName, title, url, referer, headers = {}) {
-  const request = { 'User-Agent': headers['User-Agent'] || UA };
-  const ref = headers.Referer || referer || ''; if (ref) request.Referer = ref;
-  const org = headers.Origin || origin(ref); if (org) request.Origin = org;
-  if (headers.Cookie) request.Cookie = headers.Cookie;
-  if (headers['X-Requested-With']) request['X-Requested-With'] = headers['X-Requested-With'];
+  const request = {};
+  for (const [key, value] of Object.entries(headers || {})) {
+    if (typeof value !== 'string' || !value || /[\r\n]/.test(value)) continue;
+    if (['host', 'content-length'].includes(key.toLowerCase())) continue;
+    request[key] = value;
+  }
+  if (!request['User-Agent']) request['User-Agent'] = UA;
+  const ref = request.Referer || request.referer || referer || '';
+  if (ref && !request.Referer && !request.referer) request.Referer = ref;
+  if (!request.Origin && !request.origin && ref) {
+    const org = origin(ref);
+    if (org) request.Origin = org;
+  }
   return { name: `WioSpor • ${sourceName}`, title: `${title} • Auto`, url, behaviorHints: { notWebReady: true, proxyHeaders: { request } } };
 }
 
@@ -242,8 +250,222 @@ async function inatBox(wioChannel) {
   } catch { return []; }
 }
 
+const PATRON_ROOT = 'https://patronsports2.cfd';
+async function patron(wioChannel) {
+  try {
+    const [domain, list] = await Promise.all([
+      text(`${PATRON_ROOT}/domain.php`, `${PATRON_ROOT}/`, 9000),
+      text(`${PATRON_ROOT}/channels.php`, `${PATRON_ROOT}/`, 11000)
+    ]);
+    if (domain.code !== 200 || list.code !== 200) return [];
+    const base = http(String(JSON.parse(domain.text)?.baseurl || '').trim().replace(/\/?$/, '/'));
+    const rows = JSON.parse(list.text);
+    if (!base || !Array.isArray(rows)) return [];
+    const headers = {
+      'User-Agent': 'Mozilla/5.0 (Linux; Android 14; Mobile)',
+      Origin: PATRON_ROOT,
+      Referer: `${PATRON_ROOT}/`,
+      'Sec-Fetch-Site': 'cross-site',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Dest': 'empty'
+    };
+    const out = [];
+    for (const row of rows) {
+      const title = String(row?.Mac || '').trim();
+      const raw = String(row?.URL || '');
+      let id = '';
+      try { id = new URL(raw, PATRON_ROOT).searchParams.get('id') || ''; } catch {}
+      if (!id || !matches(wioChannel, { title, id })) continue;
+      out.push(stream('PatronHD', title || wioChannel.name, `${base}${encodeURIComponent(id)}/mono.m3u8`, `${PATRON_ROOT}/`, headers));
+    }
+    return out;
+  } catch { return []; }
+}
+
+const VION_ROOT = 'https://mahmutabi.qzz.io';
+const VION_API_PASSPHRASE = 'babaylazoryarışırlar';
+const VION_PLAYBACK_KEY = 'tvvion01tvvion01';
+const VION_UA = 'Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36';
+function vionDecryptEnvelope(envelope) {
+  const encrypted = JSON.parse(envelope)?.r;
+  if (!encrypted) return [];
+  const seed = Buffer.from(VION_API_PASSPHRASE, 'utf8');
+  const key = createHash('sha256').update(seed).digest();
+  const iv = createHash('md5').update(seed).digest();
+  const decipher = createDecipheriv('aes-256-cbc', key, iv);
+  const plain = Buffer.concat([decipher.update(Buffer.from(encrypted, 'base64')), decipher.final()]).toString('utf8');
+  const rows = JSON.parse(plain);
+  return Array.isArray(rows) ? rows : [];
+}
+function vionPlaybackSign() {
+  const payload = JSON.stringify({ ts: Date.now() + 24 * 60 * 60 * 1000 });
+  const key = Buffer.from(VION_PLAYBACK_KEY, 'utf8');
+  const cipher = createCipheriv('aes-128-cbc', key, key);
+  return Buffer.concat([cipher.update(Buffer.from(payload, 'utf8')), cipher.final()])
+    .toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+}
+async function vion(wioChannel) {
+  try {
+    const r = await fetch(`${VION_ROOT}/api/channels`, {
+      headers: { 'User-Agent': VION_UA, Accept: 'application/json' },
+      redirect: 'follow',
+      signal: AbortSignal.timeout(12000)
+    });
+    if (!r.ok) return [];
+    const rows = vionDecryptEnvelope(await r.text());
+    const out = [];
+    for (const row of rows) {
+      if (!row?.url || !matches(wioChannel, { title: row.name, id: row.id })) continue;
+      const headers = {
+        Referer: 'https://google.com',
+        'User-Agent': VION_UA,
+        Connection: 'Keep-Alive',
+        Accept: '*/*',
+        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+        ...(row.headers && typeof row.headers === 'object' ? row.headers : {}),
+        'x-vion-sign': vionPlaybackSign()
+      };
+      out.push(stream('VİONTV', row.name || wioChannel.name, row.url, headers.Referer, headers));
+    }
+    return out;
+  } catch { return []; }
+}
+
+function papazRows(html) {
+  const out = [];
+  for (const m of String(html || '').matchAll(/<[^>]+\bdata-url\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)[^>]*>/gi)) {
+    const raw = m[0];
+    const slug = attr(raw, 'data-url').replace(/^#/, '').trim();
+    const title = stripTags(attr(raw, 'data-name')).trim();
+    const target = attr(raw, 'data-target').trim();
+    const source = attr(raw, 'data-source').trim();
+    if (slug && title && target && source) out.push({ slug, title, target, source });
+  }
+  return out;
+}
+async function papaz(wioChannel) {
+  const manifest = await domainManifest();
+  const entry = manifest?.sources?.papazsports || {};
+  const roots = [
+    ...(entry.candidates || []),
+    ...(entry.gateways || []),
+    'https://www.papazsports1024.pro/',
+    'https://www.papazsports1023.pro/',
+    'https://www.papazsports1022.pro/'
+  ].filter(url => /^https:\/\//i.test(url));
+  for (const root of [...new Set(roots)]) try {
+    const home = await text(root, '', 12000);
+    if (home.code !== 200) continue;
+    const base = origin(home.url);
+    if (!base) continue;
+    const selected = papazRows(home.text).filter(row => matches(wioChannel, row));
+    const out = [];
+    for (const row of selected) try {
+      if (row.target === 'm3u8') {
+        if (http(row.source)) out.push(stream('PapazSports', row.title, row.source, `${base}/`, { 'User-Agent': UA }));
+        continue;
+      }
+      const field = row.target === 'viptv' ? 'channel' : 'id';
+      const form = new URLSearchParams({ [field]: row.source });
+      const authRes = await fetch(`${base}/auth.php`, {
+        method: 'POST',
+        headers: {
+          'User-Agent': UA,
+          'X-Requested-With': 'XMLHttpRequest',
+          Origin: base,
+          Referer: `${base}/`,
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: form,
+        redirect: 'follow',
+        signal: AbortSignal.timeout(10000)
+      });
+      if (!authRes.ok) continue;
+      const auth = await authRes.json();
+      const url = http(auth?.URL);
+      if (!url) continue;
+      const headers = { 'User-Agent': UA };
+      if (auth?.TOKEN) {
+        headers.usertoken = String(auth.TOKEN);
+        headers.pl = 'PapazSports';
+      }
+      out.push(stream('PapazSports', row.title, url, `${base}/`, headers));
+    } catch {}
+    if (out.length) return out;
+  } catch {}
+  return [];
+}
+
+const JEST_START = 'https://www.jestyayin970.com';
+const JEST_CHANNELS = 'https://data-reality.com/channels.php';
+const JEST_DOMAIN = 'https://data-reality.com/domain.php';
+const JEST_UA = 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36';
+const JEST_NAMES = {
+  zirve:'beIN Sports 1', b2:'beIN Sports 2', b3:'beIN Sports 3', b4:'beIN Sports 4', b5:'beIN Sports 5',
+  bm1:'beIN Sports Max 1', bm2:'beIN Sports Max 2', ss:'S Sport', ss2:'S Sport 2', smarts:'Smart Spor',
+  sms2:'Smart Spor 2', t1:'Tivibu Spor 1', t2:'Tivibu Spor 2', t3:'Tivibu Spor 3', t4:'Tivibu Spor 4',
+  ex7:'Tabii Spor', ex1:'Tabii Spor 1', ex2:'Tabii Spor 2', ex3:'Tabii Spor 3', ex4:'Tabii Spor 4',
+  ex5:'Tabii Spor 5', ex6:'Tabii Spor 6', eu1:'Eurosport 1', eu2:'Eurosport 2', trt1:'TRT 1',
+  trtspor:'TRT Spor', trtspor2:'TRT Spor Yıldız', as:'A Spor', atv:'ATV', tv8:'TV8', tv85:'TV8.5'
+};
+const JEST_FALLBACK = {
+  zirve:'androstreamlivekral', b2:'androstreamlivebs2', b3:'androstreamlivebs3', b4:'androstreamlivebs4',
+  b5:'androstreamlivebs5', ss2:'androstreamlivess2', as:'androstreamliveas'
+};
+function jestRows(html) {
+  const out = [];
+  for (const m of String(html || '').matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const href = attr(m[1], 'href');
+    if (!href.includes('channel?id=')) continue;
+    const id = href.split('channel?id=')[1]?.split(/[&#]/)[0]?.trim() || '';
+    if (!id) continue;
+    const inner = m[2];
+    const titlePart = /class\s*=\s*["'][^"']*(?:match-name|match-title|home)[^"']*["'][^>]*>([\s\S]*?)<\//i.exec(inner)?.[1];
+    const title = stripTags(titlePart || attr(m[1], 'data-name') || JEST_NAMES[id] || `JestYayın ${id.toUpperCase()}`);
+    out.push({ id, title });
+  }
+  return out;
+}
+async function jestRoot() {
+  try {
+    const r = await fetch(JEST_START, { headers: { 'User-Agent': JEST_UA }, redirect: 'follow', signal: AbortSignal.timeout(9000) });
+    return r.ok ? origin(r.url) || JEST_START : JEST_START;
+  } catch { return JEST_START; }
+}
+async function jest(wioChannel) {
+  try {
+    const root = await jestRoot();
+    const headers = { 'User-Agent': JEST_UA, Referer: `${root}/`, Origin: root };
+    const listRes = await fetch(JEST_CHANNELS, { headers, redirect:'follow', signal:AbortSignal.timeout(12000) });
+    if (!listRes.ok) return [];
+    const selected = jestRows(await listRes.text()).filter(row => matches(wioChannel, row));
+    if (!selected.length) return [];
+    let streamBase = '';
+    if (selected.some(row => !JEST_FALLBACK[row.id])) {
+      try {
+        const baseRes = await fetch(JEST_DOMAIN, { headers, signal:AbortSignal.timeout(9000) });
+        if (baseRes.ok) streamBase = String((await baseRes.json())?.baseurl || '').trim().replace(/\/$/, '');
+      } catch {}
+    }
+    const out = [];
+    for (const row of selected) {
+      const fallback = JEST_FALLBACK[row.id];
+      const url = fallback
+        ? `https://andro.evrenesoglu99.click/checklist/${fallback}.m3u8`
+        : (streamBase ? `${streamBase}/${row.id}/mono.m3u8` : '');
+      if (!http(url)) continue;
+      const referer = fallback ? 'https://kralsportshd.com/' : `${root}/channel?id=${encodeURIComponent(row.id)}`;
+      out.push(stream('JestYayın', row.title, url, referer, {
+        'User-Agent': JEST_UA,
+        Origin: origin(referer)
+      }));
+    }
+    return out;
+  } catch { return []; }
+}
+
 export async function getLegacyStreams(wioChannel) {
-  const settled = await Promise.allSettled([domino(wioChannel), domates(wioChannel), inatBox(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
+  const settled = await Promise.allSettled([domino(wioChannel), domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), papaz(wioChannel), jest(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
   const out = []; for (const item of settled) if (item.status === 'fulfilled') out.push(...item.value);
   const seen = new Set(); return out.filter(x => x.url && !seen.has(x.url) && seen.add(x.url));
 }
