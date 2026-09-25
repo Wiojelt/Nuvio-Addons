@@ -8,12 +8,14 @@ const bootstrapSpecs = JSON.parse(await fs.readFile(new URL('config/wiospor-sour
 let specsKt = '';
 let sportsProviderKt = '';
 let wioAggregatorKt = '';
+let publicAggregatorKt = '';
 let aslanSourcesKt = '';
 let aslanBootstrapKt = '';
 let aslanDataKt = '';
 try { specsKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/SourceSpec.kt', root), 'utf8'); } catch {}
 try { sportsProviderKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/SportsProvider.kt', root), 'utf8'); } catch {}
 try { wioAggregatorKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/WioSourceAggregator.kt', root), 'utf8'); } catch {}
+try { publicAggregatorKt = await fs.readFile(new URL('.upstream-cache/wiospor-public/SourceAggregator.kt', root), 'utf8'); } catch {}
 try { aslanSourcesKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/AslanSources.kt', root), 'utf8'); } catch {}
 try { aslanBootstrapKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/AslanBootstrap.kt', root), 'utf8'); } catch {}
 try { aslanDataKt = await fs.readFile(new URL('.upstream-cache/turkspor-source/AslanData.kt', root), 'utf8'); } catch {}
@@ -43,19 +45,54 @@ const effectiveSpecs = sourceSpecs.length ? sourceSpecs : bootstrapSpecs;
 
 if (sportsProviderKt) requireMarkers('SportsProvider', sportsProviderKt, ['SourceMode.WORDPRESS', 'SourceMode.ROYAL', 'SourceMode.BEYAZ', 'SourceMode.INTER', 'loadLinks']);
 
-let upstreamCoverageVerified = false;
-if (wioAggregatorKt && aslanSourcesKt && aslanBootstrapKt && aslanDataKt) {
-  requireMarkers('WioSpor SourceAggregator', wioAggregatorKt, ['AslanSources.items', 'aslan_$sourceId', 'createSharedWorker("beyazelma"', 'createSharedWorker("betmatiktv"', 'createSharedWorker("intersportv"', 'createSharedWorker("mackeyfi"', 'createSharedWorker("zbahistv"']);
-  requireMarkers('Aslan bootstrap', aslanBootstrapKt, ['AES/GCM/NoPadding', 'registry-v1', 'GCMParameterSpec(128']);
-  requireMarkers('Aslan data', aslanDataKt, ['#EXTVLCOPT:', '#KODIPROP:', '.mpd', 'players=rows.flatMap']);
-  const upstreamAslan = [...aslanSourcesKt.matchAll(/"([^"]+)"\s+to\s+"([^"]+)"/g)].map(match => ({ sourceId: match[1], title: match[2] }));
-  if (upstreamAslan.length !== ASLAN_SOURCES.length) throw new Error(`Aslan source count changed: upstream=${upstreamAslan.length}, port=${ASLAN_SOURCES.length}`);
-  const upstreamIds = new Set(upstreamAslan.map(item => item.sourceId));
-  for (const source of ASLAN_SOURCES) if (!upstreamIds.has(source.sourceId)) throw new Error(`Aslan source missing from upstream: ${source.sourceId}`);
-  upstreamCoverageVerified = true;
+let baseCoverageVerified = false;
+let aslanCoverageVerified = false;
+const aggregatorForCoverage = publicAggregatorKt || wioAggregatorKt;
+
+if (aggregatorForCoverage) {
+  requireMarkers('WioSpor SourceAggregator', aggregatorForCoverage, [
+    'AslanSources.items',
+    'aslan_$sourceId',
+    'createSharedWorker("beyazelma"',
+    'createSharedWorker("betmatiktv"',
+    'override val id: String = "patron"',
+    'override val id: String = "viontv"',
+    'override val id: String = "papazsports"',
+    'override val id: String = "jestyayin"'
+  ]);
+  const rows = [];
+  for (const match of aggregatorForCoverage.matchAll(/override val id:\s*String\s*=\s*"([^"]+)"/g)) {
+    if (!match[1].includes('$')) rows.push(match[1]);
+  }
+  for (const match of aggregatorForCoverage.matchAll(/createSharedWorker\("([^"]+)",\s*"([^"]+)"\)/g)) rows.push(match[1]);
+  const upstreamIds = new Set(rows);
+  const portIds = new Set(BASE_SOURCES.map(source => source.id));
+  if (upstreamIds.size !== portIds.size) {
+    throw new Error(`WioSpor base source count changed: upstream=${upstreamIds.size}, port=${portIds.size}`);
+  }
+  for (const id of portIds) if (!upstreamIds.has(id)) throw new Error(`WioSpor base source missing from upstream: ${id}`);
+  baseCoverageVerified = true;
 }
 
-if (BASE_SOURCES.length !== 15 || ASLAN_SOURCES.length !== 27 || WIOSPOR_SOURCE_COUNT !== 42) throw new Error('WioSpor source registry coverage is not 42/42');
+if (aslanSourcesKt && aslanBootstrapKt && aslanDataKt) {
+  requireMarkers('Aslan bootstrap', aslanBootstrapKt, ['AES/GCM/NoPadding', 'registry-v1', 'GCMParameterSpec(128']);
+  requireMarkers('Aslan data', aslanDataKt, ['#EXTVLCOPT:', '#KODIPROP:', '.mpd', 'players=rows.flatMap']);
+  const upstreamAslan = [...aslanSourcesKt.matchAll(/"([^"]+)"\s+to\s+"([^"]+)"/g)]
+    .map(match => ({ sourceId: match[1], title: match[2] }));
+  if (upstreamAslan.length !== ASLAN_SOURCES.length) {
+    throw new Error(`Aslan source count changed: upstream=${upstreamAslan.length}, port=${ASLAN_SOURCES.length}`);
+  }
+  const upstreamIds = new Set(upstreamAslan.map(item => item.sourceId));
+  for (const source of ASLAN_SOURCES) if (!upstreamIds.has(source.sourceId)) {
+    throw new Error(`Aslan source missing from upstream: ${source.sourceId}`);
+  }
+  aslanCoverageVerified = true;
+}
+
+if (BASE_SOURCES.length !== 19 || ASLAN_SOURCES.length !== 27 || WIOSPOR_SOURCE_COUNT !== 46) {
+  throw new Error('WioSpor source registry coverage is not 46/46');
+}
+const upstreamCoverageVerified = baseCoverageVerified && aslanCoverageVerified;
 
 await fs.mkdir(new URL('generated/wiospor', root), { recursive: true });
 await fs.writeFile(new URL('generated/wiospor/channels.json', root), JSON.stringify(channels, null, 2) + '\n');
@@ -66,7 +103,7 @@ await fs.writeFile(new URL('generated/wiospor/source-state.json', root), JSON.st
     channels: sha256(channelsKt),
     sourceSpecs: specsKt ? sha256(specsKt) : null,
     sportsProvider: sportsProviderKt ? sha256(sportsProviderKt) : null,
-    wioSourceAggregator: wioAggregatorKt ? sha256(wioAggregatorKt) : null,
+    wioSourceAggregator: aggregatorForCoverage ? sha256(aggregatorForCoverage) : null,
     aslanSources: aslanSourcesKt ? sha256(aslanSourcesKt) : null,
     aslanBootstrap: aslanBootstrapKt ? sha256(aslanBootstrapKt) : null,
     aslanData: aslanDataKt ? sha256(aslanDataKt) : null
@@ -76,9 +113,11 @@ await fs.writeFile(new URL('generated/wiospor/source-state.json', root), JSON.st
   baseSourceCount: BASE_SOURCES.length,
   aslanSourceCount: ASLAN_SOURCES.length,
   totalSourceCount: WIOSPOR_SOURCE_COUNT,
-  sourceCoverage: `${WIOSPOR_SOURCE_COUNT}/42`,
+  sourceCoverage: `${WIOSPOR_SOURCE_COUNT}/${WIOSPOR_SOURCE_COUNT}`,
+  baseCoverageVerified,
+  aslanCoverageVerified,
   sourceSpecOrigin: sourceSpecs.length ? 'upstream-private' : 'bootstrap-contract',
   upstreamCoverageVerified,
   streamResolverStatus: 'full-resolver-ready'
 }, null, 2) + '\n');
-console.log(`Generated ${channels.length} WioSpor channels; source coverage ${WIOSPOR_SOURCE_COUNT}/42 (${BASE_SOURCES.length} base + ${ASLAN_SOURCES.length} Aslan).`);
+console.log(`Generated ${channels.length} WioSpor channels; source coverage ${WIOSPOR_SOURCE_COUNT}/${WIOSPOR_SOURCE_COUNT} (${BASE_SOURCES.length} base + ${ASLAN_SOURCES.length} Aslan).`);
