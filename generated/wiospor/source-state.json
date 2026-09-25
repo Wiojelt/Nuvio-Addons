@@ -1,20 +1,22 @@
 {
-  "generatedAt": "2026-09-25T21:36:01.719Z",
+  "generatedAt": "2026-09-25T23:51:29.885Z",
   "sourceSha256": {
     "channels": "c6efb097f9c309c3da3db1c277aef8c3947e9b60cb70df51b72634772de720f9",
     "sourceSpecs": null,
     "sportsProvider": null,
-    "wioSourceAggregator": null,
+    "wioSourceAggregator": "fb28d296c926176fbb2f7f9510042148cdfa760b583c29e0836a3e9aa6062a40",
     "aslanSources": null,
     "aslanBootstrap": null,
     "aslanData": null
   },
   "channelCount": 86,
   "sharedSourceCount": 5,
-  "baseSourceCount": 15,
+  "baseSourceCount": 19,
   "aslanSourceCount": 27,
-  "totalSourceCount": 42,
-  "sourceCoverage": "42/42",
+  "totalSourceCount": 46,
+  "sourceCoverage": "46/46",
+  "baseCoverageVerified": true,
+  "aslanCoverageVerified": false,
   "sourceSpecOrigin": "bootstrap-contract",
   "upstreamCoverageVerified": false,
   "streamResolverStatus": "full-resolver-ready"

@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-09-25T23:51:29.932Z",
+  "origin": "committed-snapshot",
+  "sourceModule": "WioIPTVPanels/ChannelDatabase.kt",
+  "snapshotSha256": "2c3454c040477fadda40dc6f49f77da3c9bc28bb72885b636fe17d91658482e8",
+  "categoryCount": 4,
+  "channelCount": 77,
+  "streamCount": 1709,
+  "panelCount": 4,
+  "panelCounts": {
+    "Spor20x": 751,
+    "8kGold": 529,
+    "Eagle": 121,
+    "WorldSport": 308
+  },
+  "categoryCounts": {
+    "tr_spor": 25,
+    "tr_ulusal": 25,
+    "world_sports_uk_us": 14,
+    "world_sports_eu": 13
+  }
+}
