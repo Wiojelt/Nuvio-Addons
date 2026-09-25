@@ -30,3 +30,16 @@ test('known WioSpor channel has meta endpoint', async () => {
   assert.equal(res.status, 200);
   assert.equal(JSON.parse(res.body).meta.id, first.id);
 });
+
+
+test('Birdirbir catalog is exposed inside the same WioSpor addon', async () => {
+  const manifest = JSON.parse((await handleRequest('/manifest.json')).body);
+  assert.ok(manifest.catalogs.some(item => item.id === 'birdirbir-live'));
+
+  const res = await handleRequest('/catalog/tv/birdirbir-live.json');
+  assert.equal(res.status, 200);
+  const body = JSON.parse(res.body);
+  assert.ok(Array.isArray(body.metas));
+  assert.ok(body.metas.length >= 50);
+  assert.ok(body.metas.every(item => item.id.startsWith('birdirbir:')));
+});
