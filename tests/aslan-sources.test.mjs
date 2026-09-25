@@ -4,11 +4,11 @@ import { ASLAN_SOURCES, BASE_SOURCES, WIOSPOR_SOURCES, WIOSPOR_SOURCE_COUNT } fr
 import { decodeAslanRegistry, matchAslanChannel, parseAslanM3u } from '../src/addons/wiospor/aslan-sources.mjs';
 
 test('WioSpor registry covers all upstream workers', () => {
-  assert.equal(BASE_SOURCES.length, 15);
+  assert.equal(BASE_SOURCES.length, 19);
   assert.equal(ASLAN_SOURCES.length, 27);
-  assert.equal(WIOSPOR_SOURCE_COUNT, 42);
-  assert.equal(WIOSPOR_SOURCES.length, 42);
-  assert.equal(new Set(WIOSPOR_SOURCES.map(source => source.id)).size, 42);
+  assert.equal(WIOSPOR_SOURCE_COUNT, 46);
+  assert.equal(WIOSPOR_SOURCES.length, 46);
+  assert.equal(new Set(WIOSPOR_SOURCES.map(source => source.id)).size, 46);
 });
 
 test('Aslan encrypted bootstrap covers every configured Aslan source', () => {
