@@ -25,9 +25,9 @@ async function assertNoCommittedGoogleKeys(dir) {
 
 await assertNoCommittedGoogleKeys(repoRoot);
 
-if (BASE_SOURCES.length !== 15) throw new Error(`Expected 15 base WioSpor sources, got ${BASE_SOURCES.length}`);
+if (BASE_SOURCES.length !== 19) throw new Error(`Expected 19 base WioSpor sources, got ${BASE_SOURCES.length}`);
 if (ASLAN_SOURCES.length !== 27) throw new Error(`Expected 27 Aslan WioSpor sources, got ${ASLAN_SOURCES.length}`);
-if (WIOSPOR_SOURCE_COUNT !== 42 || WIOSPOR_SOURCES.length !== 42) throw new Error(`Expected 42 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
+if (WIOSPOR_SOURCE_COUNT !== 46 || WIOSPOR_SOURCES.length !== 46) throw new Error(`Expected 46 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
 if (new Set(WIOSPOR_SOURCES.map(source => source.id)).size !== WIOSPOR_SOURCE_COUNT) throw new Error('Duplicate WioSpor source id');
 
 const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import.meta.url), 'utf8'));
@@ -45,8 +45,10 @@ const syntaxFiles = new Set([
   'src/addons/wiospor/resolver.mjs',
   'src/addons/wiospor/legacy-sources.mjs',
   'src/addons/wiospor/source-registry.mjs',
+  'src/addons/wiospor/birdirbir.mjs',
   'src/addons/wiospor/aslan-sources.mjs',
   'scripts/build-wiospor-live.mjs',
+  'scripts/generate-birdirbir.mjs',
   'scripts/generate-wiocinema.mjs'
 ]);
 for (const entry of scrapers) {
@@ -67,6 +69,8 @@ for (const filename of syntaxFiles) {
 }
 
 let channelCount = 0;
+let birdirbirChannelCount = 0;
+let birdirbirStreamCount = 0;
 try {
   const channels = JSON.parse(await fs.readFile(new URL('../generated/wiospor/channels.json', import.meta.url), 'utf8'));
   channelCount = channels.length;
@@ -77,5 +81,22 @@ try {
   if (error.code !== 'ENOENT') throw error;
   console.warn('WioSpor generated catalog is not present yet; run npm run sync && npm run generate.');
 }
+try {
+  const birdirbir = JSON.parse(await fs.readFile(new URL('../generated/birdirbir/channels.json', import.meta.url), 'utf8'));
+  if (!Array.isArray(birdirbir) || birdirbir.length < 50) throw new Error(`Expected at least 50 Birdirbir channels, got ${birdirbir?.length || 0}`);
+  birdirbirChannelCount = birdirbir.length;
+  const panels = new Set();
+  for (const channel of birdirbir) for (const source of channel?.streams || []) {
+    birdirbirStreamCount += 1;
+    if (source?.panel) panels.add(source.panel);
+  }
+  if (birdirbirStreamCount < 100) throw new Error(`Expected at least 100 Birdirbir streams, got ${birdirbirStreamCount}`);
+  for (const panel of ['Eagle', '8kGold', 'Spor20x', 'WorldSport']) {
+    if (!panels.has(panel)) throw new Error(`Birdirbir panel missing: ${panel}`);
+  }
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+  console.warn('Birdirbir generated database is not present yet; run npm run generate.');
+}
 
-console.log(`Validated ${scrapers.length} WioSinema scraper(s), ${cinemaScrapers.length} WioCinema scraper(s), ${syntaxFiles.size} JS entrypoints, ${WIOSPOR_SOURCE_COUNT}/42 WioSpor sources${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}.`);
+console.log(`Validated ${scrapers.length} WioSinema scraper(s), ${cinemaScrapers.length} WioCinema scraper(s), ${syntaxFiles.size} JS entrypoints, ${WIOSPOR_SOURCE_COUNT}/${WIOSPOR_SOURCE_COUNT} WioSpor sources${channelCount ? ` and ${channelCount} WioSpor catalog entries` : ''}${birdirbirChannelCount ? `; Birdirbir ${birdirbirChannelCount} channels / ${birdirbirStreamCount} streams` : ''}.`);
