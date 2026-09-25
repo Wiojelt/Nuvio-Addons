@@ -4,6 +4,8 @@ export const BASE_SOURCES = Object.freeze([
   { id: 'inat', name: 'İnat TV' },
   { id: 'kralspor', name: 'KralSporHD' },
   { id: 'betmatiktv', name: 'BetmatikTV' },
+  { id: 'patron', name: 'PatronHD' },
+  { id: 'viontv', name: 'VİONTV' },
   { id: 'selcuk', name: 'SelçukSports' },
   { id: 'taraftarium', name: 'Taraftarium24' },
   { id: 'arda', name: 'ArdaSpor' },
@@ -13,7 +15,9 @@ export const BASE_SOURCES = Object.freeze([
   { id: 'intersportv', name: 'İnterSporTV' },
   { id: 'mackeyfi', name: 'MaçKeyfi' },
   { id: 'zbahistv', name: 'ZbahisTV' },
-  { id: 'inatbox', name: 'İnat Box' }
+  { id: 'inatbox', name: 'İnat Box' },
+  { id: 'papazsports', name: 'PapazSports' },
+  { id: 'jestyayin', name: 'JestYayın' }
 ]);
 
 const aslanItems = [
