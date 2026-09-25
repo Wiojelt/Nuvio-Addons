@@ -71,7 +71,8 @@ function validStreams(streams) {
   return streams.filter(stream => {
     const url = String(stream?.url || '');
     const key = `${stream?.name || ''}\0${stream?.title || ''}\0${url}`;
-    if (!looksPlayable(url) || seen.has(key)) return false;
+    const birdirbir = String(stream?.name || '').startsWith('Birdirbir •');
+    if ((!birdirbir && !looksPlayable(url)) || !/^https?:\/\//i.test(url) || seen.has(key)) return false;
     seen.add(key);
     return true;
   });
@@ -103,7 +104,7 @@ for (const channel of channels) {
 for (const channel of birdirbirChannels) {
   const id = birdirbirId(channel);
   await writeJson(path.join(outRoot, 'meta', 'tv', `${id}.json`), { meta: birdirbirMeta(channel) });
-  await writeJson(path.join(outRoot, 'stream', 'tv', `${id}.json`), { streams: validStreams(toBirdirbirStreams(channel)) });
+  await writeJson(path.join(outRoot, 'stream', 'tv', `${id}.json`), { streams: toBirdirbirStreams(channel) });
 }
 
 const previousState = previousRoot ? await readJson(path.join(previousRoot, 'state.json'), { channels: {} }) : { channels: {} };
