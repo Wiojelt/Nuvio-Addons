@@ -1,0 +1,325 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "ACI Sport TV (1080p) • Auto",
+      "url": "https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "AS3 Sport TV (1080p) • Auto",
+      "url": "https://streamtv.as3sport.online:3394/hybrid/play.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "More Than Sports TV (1080p) • Auto",
+      "url": "https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Oman Sports TV (1080p) [Not 24/7] • Auto",
+      "url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "SPORT TV ᵏᵃᵑᵏᵃ • Auto",
+      "url": "http://tv.oosa.workers.dev/ch864/tv.m3u8?tv=v6",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "SPORTS TV • Auto",
+      "url": "http://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "EKOL SPORT TV • Auto",
+      "url": "https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "Sports TV • Auto",
+      "url": "https://live.sportstv.com.tr/hls/low/sportstv_hd/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "Sport TV+ HD PT • 720p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/31590/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "SPOR⚽️⚽️ • Auto",
+      "url": "https://videos.pexels.com/video-files/31387378/13392869_1080_1920_60fps.mp4?=.mpg",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • World Has IPTV",
+      "title": "AntenaSport (720p) [Not 24/7] • 720p",
+      "url": "https://stream1.antenaplay.ro/as/asrolive1/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "SPORTS TV • Auto",
+      "url": "http://tv.smartglwiz.workers.dev/?ID=SportsTV_HD.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "Sports Tv • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivesportstv.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Karma Sports",
+      "title": "Sports TV • Auto",
+      "url": "https://andro.3749206.xyz/checklist/androstreamlivesptstv.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Referer": "https://taraftariumizle.org/",
+            "Origin": "https://taraftariumizle.org/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Uğur Sports",
+      "title": "Sports Tv • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivesptstv.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Atom Spor",
+      "title": "S SPORT • Auto",
+      "url": "https://ladyboy.yedektv.cfd//s-sport/tracks-v1a1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://www.atomsportv515.top"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Özcan TV",
+      "title": "Sports TV • Auto",
+      "url": "https://live.sportstv.com.tr/hls/low/sportstv.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 1)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 2)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 3)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 4)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 5)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 6)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 7)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 8)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sport TV 1 (PT) SD (Yayın 1)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562936&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sport TV 1 (PT) SD (Yayın 2)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562936&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sport TV 1 (PT) SD (Yayın 3)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562936&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sport TV 1 (PT) SD (Yayın 4)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562936&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

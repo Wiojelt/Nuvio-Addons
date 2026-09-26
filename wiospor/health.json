@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T17:47:16.710Z",
+  "channelCount": 86,
+  "sourceCount": 46,
+  "aslanSourceCount": 27,
+  "birdirbirChannelCount": 77,
+  "birdirbirPanelCount": 4,
+  "birdirbirPanelCounts": {
+    "Spor20x": 751,
+    "8kGold": 529,
+    "Eagle": 121,
+    "WorldSport": 308
+  },
+  "birdirbirStreamCount": 1709,
+  "sourceCoverage": "46/46",
+  "channelsWithStreams": 86,
+  "freshChannels": 86,
+  "staleFallbackChannels": 0,
+  "streamCount": 4148,
+  "hosting": "github-raw-live-branch"
+}

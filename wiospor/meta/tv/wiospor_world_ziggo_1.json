@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_world_ziggo_1",
+    "type": "tv",
+    "name": "🌐 World Ziggo Sport 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_ziggo_1.png",
+    "posterShape": "landscape",
+    "description": "Ziggo Sport 1"
+  }
+}

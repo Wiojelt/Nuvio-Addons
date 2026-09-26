@@ -1,0 +1,100 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 1)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1968682&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 2)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562491&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 3)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562711&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 4)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1968682&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 5)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562491&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 6)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562711&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 7)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1968682&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 8)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562491&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 9)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562711&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 10)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1968682&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 11)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562491&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] ESPN 1 SD (Yayın 12)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562711&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

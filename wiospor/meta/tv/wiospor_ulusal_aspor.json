@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_aspor",
+    "type": "tv",
+    "name": "📺 A Spor",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_aspor.png",
+    "posterShape": "landscape",
+    "description": "A Spor"
+  }
+}

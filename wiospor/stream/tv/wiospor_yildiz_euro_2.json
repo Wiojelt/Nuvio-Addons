@@ -1,0 +1,936 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Zbahis / Baywin TV",
+      "title": "EURO SPORT 2 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/eu2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://zbahistv66.com/",
+            "Origin": "https://zbahistv66.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Spor 2 • Auto",
+      "url": "https://sc.xgs6gx7s8axbnhs682908459sxbnha61838shs.biz/702/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://benjabettv190.biz/",
+            "Origin": "https://benjabettv190.biz"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Euro Sports 2 • Auto",
+      "url": "https://andro.evrenesoglu99.click/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://justintvturkiye.org/",
+            "Origin": "https://justintvturkiye.org"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Euro Sports 2-A • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/eu2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://pasizle862.com/",
+            "Origin": "https://pasizle862.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "TİVİBU SPOR 2 • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/t2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "TIVIBU SPOR 2 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/t2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=t2"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "EURO SPORT 2 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/eu2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=eu2"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "EUROSPORT 2  ᵏᵃᵑᵏᵃ • Auto",
+      "url": "https://andro.okan9gote10sokan.cfd/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "EUROSPORT 2  ᵏᵃᵑᵏᵃ • Auto",
+      "url": "http://flussonic.izone.az/eurosport2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "EUROSPORT 2  ᵏᵃᵑᵏᵃ • Auto",
+      "url": "https://iptv.prosto.tv/id92/video.m3u8?secret=0h67fdob&21yo=0",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "EUROSPORT 2 • Auto",
+      "url": "https://raw.githubusercontent.com/Playtvapp/Playdeneme/main/channels/Euro_Sport_2_HD.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "EURO SPORT 2 • Auto",
+      "url": "https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "45. Euro Sport 2 • Auto",
+      "url": "https://bstelevision.com/proxy_stream.php?u=http://109.205.187.51/live/PromaciosTelegram/VyjUvxQcbcNJ/804.m3u8?token=HkdcAhcJRw9GAAgEBFRTBAxSDVYCVFADVQFXAQEEC1BTVw1QB1JVV1AbFBFAQUcDVA5qCFUXX1cBXFMcExdAUxc6XQdGW0cEXQgBBhEZFxJcDlBDCwVJREMMBxILQAACV1EDQUhDAE0QXEpdUllqAlAVXAJUF18IRgkPHBMNXWkBAFkCCgVHD0YIGh8RXEYWF1lbFF1ZSURRDBdCUBZWFF9HAVdVUkcZRlpXRl1BRx8XWRcldBdJRFYdF1VfEVpZC0cOQQlSEA1GFRpaQGpHA0YXRwRQWAAUEV9BARNOEVsEHWsACw8LUAdNUVxdRhdcF1EFURMZRwtcCwpEXhBsRgwBFllGUlEEUggaTg==",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "Eurosport 2 UHD • 2160p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/19431/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "SPOR⚽️⚽️ • Auto",
+      "url": "https://videos.pexels.com/video-files/31387378/13392869_1080_1920_60fps.mp4?=.mpg",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Canlı TV Türk",
+      "title": "Eurosport 2 HD • 720p",
+      "url": "https://andro.evrenesoglu57.click/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • World Has IPTV",
+      "title": "ORTS (480p) • 480p",
+      "url": "http://ms7.mx-cd.net/tv/200-1006554/ORTS_TV.smil/HasBahCa.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "EURO SPORT 2 • Auto",
+      "url": "http://me.mdmfista.com/play/live.php?mac=00:1A:79:F5:CE:D7&stream=707&extension=ts&play_token=2mg4QJgGT9",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "EURO SPORT 2 • Auto",
+      "url": "http://me.mdmfista.com/play/live.php?mac=00:1A:79:F5:CE:D7&stream=699&extension=ts&play_token=iLrHXcmvEN",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "Euro Sport 2 • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yaşar Sports",
+      "title": "TR:Euro Sport 2 HD • 720p",
+      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yaşar Sports",
+      "title": "TR:Euro Sport 2 HD • 720p",
+      "url": "https://andro.evrenesoglu65.lat/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://mahsunsports25.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Betconnet Sports",
+      "title": "Eurosport 2 • Auto",
+      "url": "https://test.bc4.live//eurosport2/index.m3u8?md5=9cHW2QDlFaR89cAHBPKD_g&expires=1790289847",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+            "Referer": "https://iframe.bc4.live/",
+            "Origin": "https://iframe.bc4.live"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Karma Sports",
+      "title": "Eurosport 2 • Auto",
+      "url": "https://andro.mangeinde4.lat/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Referer": "https://taraftariumizle.org/",
+            "Origin": "https://taraftariumizle.org/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Uğur Sports",
+      "title": "Euro Sport 2 • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivees2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Selçuk Sportss",
+      "title": "Eurosport 27/24 • Auto",
+      "url": "https://dga1op10s1u3leo.33a6243d11525c.click/live/selcukeurosport2/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://www.selcuksportshd1846.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • IPTV Sevgisi",
+      "title": "Z Spor • Auto",
+      "url": "https://andro.evrenesoglu99.click/checklist/androstreamlivess1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Özcan TV",
+      "title": "Eurosport 2 • Auto",
+      "url": "http://zabava-htlive.cdn.ngenix.net/hls/CH_EUROSPORT4K_HLS/variant.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 1)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 2) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 3)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 4) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 5)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 6) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 7)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 8) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 9)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 10) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 11)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 12) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 13)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 14) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 15)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 16) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 17)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 18) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR SD (Yayın 19)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868619&extension=ts&play_token=gV4mnivsvd",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 20) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=401278&extension=ts&play_token=HEUpkLU9zf",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 21) • 720p",
+      "url": "http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:D4:C6:B3&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 22) • 720p",
+      "url": "http://iptvnow.nl:80/play/live.php?mac=00:1A:79:C9:B2:3F&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 23) • 720p",
+      "url": "http://line.wishiptv.vip:80/play/live.php?mac=00:1A:79:79:AB:89&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 24) • 720p",
+      "url": "http://technologycloud.eu:80/play/live.php?mac=00:1A:79:BF:94:44&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 25) • 720p",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:75:BE:1C&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 26) • 720p",
+      "url": "http://nk.team-tx.st:80/play/live.php?mac=00:1A:79:FB:50:64&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 27) • 720p",
+      "url": "http://innovationtv.eu:80/play/live.php?mac=00:1A:79:7B:AD:78&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 28) • 720p",
+      "url": "http://7tv.pro:80/play/live.php?mac=00:1A:79:B6:47:90&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 29) • 720p",
+      "url": "http://weaseltv.live:80/play/live.php?mac=00:1A:79:22:16:63&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] Eurosport 2 TR HD (Yayın 30) • 720p",
+      "url": "http://vod.supremetv.live:80/play/live.php?mac=00:1A:79:B6:C8:39&stream=1851352&extension=ts&play_token=zVu26SSsJn",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR SD (Yayın 1)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868619&extension=ts&play_token=iA5zMSbeFb",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR HD (Yayın 2) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401278&extension=ts&play_token=nN2yi8oOos",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR SD (Yayın 3)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868619&extension=ts&play_token=iA5zMSbeFb",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR HD (Yayın 4) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401278&extension=ts&play_token=nN2yi8oOos",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR SD (Yayın 5)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868619&extension=ts&play_token=iA5zMSbeFb",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR HD (Yayın 6) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401278&extension=ts&play_token=nN2yi8oOos",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR SD (Yayın 7)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868619&extension=ts&play_token=iA5zMSbeFb",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Eurosport 2 TR HD (Yayın 8) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401278&extension=ts&play_token=nN2yi8oOos",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Eurosport 2 TR SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=196845&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Eurosport 2 TR SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10691&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 1)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562516&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 2)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562700&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 3)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562717&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 4)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562886&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 5)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562972&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 6)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562915&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 7)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562894&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 8)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562516&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 9)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562700&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 10)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562717&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 11)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562886&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 12)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562972&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 13)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562915&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 14)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562894&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 15)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562516&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 16)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562700&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 17)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562717&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 18)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562886&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 19)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562972&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 20)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562915&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 21)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562894&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 22)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562516&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 23)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562700&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 24)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562717&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 25)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562886&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 26)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562972&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 27)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562915&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Eurosport 2 TR SD (Yayın 28)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562894&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

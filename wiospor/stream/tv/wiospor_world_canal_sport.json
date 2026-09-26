@@ -1,0 +1,652 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "S SPORTS • Auto",
+      "url": "https://sc.xgs6gx7s8axbnhs682908459sxbnha61838shs.biz/705/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://benjabettv190.biz/",
+            "Origin": "https://benjabettv190.biz"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "S SPORT • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/ss/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "S SPORT • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/ss/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=ss"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "S SPORT • Auto",
+      "url": "https://tinyurl.com/Fiat-linea-multijet/yula/ceydus1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "SSPORT • Auto",
+      "url": "https://dga1op10s1u3leo.33a6243d11525c.click/live/xssport/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://www.xsportv56.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "SSPORT • Auto",
+      "url": "https://netspor.tecostream.xyz/ss1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "Anal 4K • 2160p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/12190/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "SPOR⚽️⚽️ • Auto",
+      "url": "https://videos.pexels.com/video-files/31387378/13392869_1080_1920_60fps.mp4?=.mpg",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • World Has IPTV",
+      "title": "韩国 Ⅰ 阿里郎WORLD • Auto",
+      "url": "http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch/master.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "S Sport • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivess1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Uğur Sports",
+      "title": "S Sport • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Atom Spor",
+      "title": "S SPORT • Auto",
+      "url": "https://ladyboy.yedektv.cfd//s-sport/tracks-v1a1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://www.atomsportv515.top"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 1)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562554&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 2)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562553&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 3)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562552&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 4)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562551&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 5)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562550&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 6)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562549&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 7)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562829&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 8)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562725&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 9)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562724&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 10)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562723&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 11)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562722&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 12)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562721&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 13)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562715&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 14)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562554&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 15)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562553&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 16)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562552&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 17)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562551&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 18)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562550&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 19)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562549&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 20)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562829&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 21)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562725&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 22)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562724&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 23)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562723&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 24)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562722&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 25)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562721&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 26)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562715&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 27)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562554&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 28)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562553&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 29)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562552&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 30)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562551&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 31)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562550&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 32)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562549&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 33)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562829&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 34)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562725&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 35)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562724&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 36)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562723&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 37)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562722&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 38)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562721&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 39)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562715&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 40)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562554&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 41)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562553&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 42)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562552&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 43)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562551&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 44)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562550&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 45)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562549&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 46)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562829&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 47)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562725&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 48)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562724&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 49)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562723&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 50)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562722&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 51)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562721&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport (FR) SD (Yayın 52)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562715&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 1)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562574&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 2)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562789&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 3)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562574&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 4)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562789&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 5)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562574&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 6)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562789&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 7)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562574&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Canal+ Sport 360 SD (Yayın 8)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562789&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

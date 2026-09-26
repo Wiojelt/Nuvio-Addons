@@ -1,0 +1,405 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Zbahis / Baywin TV",
+      "title": "TABII SPOR 4 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/ex4/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://zbahistv66.com/",
+            "Origin": "https://zbahistv66.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Spor 4 • Auto",
+      "url": "https://sc.xgs6gx7s8axbnhs682908459sxbnha61838shs.biz/704/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Referer": "https://benjabettv190.biz/",
+            "Origin": "https://benjabettv190.biz"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Tabi Spor • Auto",
+      "url": "https://1bhscdn.live/tabiisporr/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Tabi Spor 4 • Auto",
+      "url": "https://1bhscdn.live/tabii4/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://justintvturkiye.org/",
+            "Origin": "https://justintvturkiye.org"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Tabi Spor 4-A • Auto",
+      "url": "https://andro.evrenesoglu99.click/checklist/androstreamlivetb4.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://justintvturkiye.org/",
+            "Origin": "https://justintvturkiye.org"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Tabi Spor 4-A • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/ex4/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://pasizle862.com/",
+            "Origin": "https://pasizle862.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "TABİİ SPOR • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/ex7/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • VİONTV",
+      "title": "TABII SPOR • Auto",
+      "url": "https://mahmutabi.qzz.io/images/ch_12b5g6enk/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "Referer": "https://google.com",
+            "User-Agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "Connection": "Keep-Alive",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "x-vion-sign": "dl2g42V1QeOlKYa2b7s-qRdlSYe3O1vijzCQDW3-cHE",
+            "Origin": "https://google.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • VİONTV",
+      "title": "TABII SPOR 4 • Auto",
+      "url": "https://mahmutabi.qzz.io/images/ch_xvdg9iwuw/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "Referer": "https://google.com",
+            "User-Agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "Connection": "Keep-Alive",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "x-vion-sign": "dl2g42V1QeOlKYa2b7s-qXAMCxLfNu7omJsvAiUPkDc",
+            "Origin": "https://google.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "TABII SPOR • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/ex7/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=ex7"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "TABII SPOR 4 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/ex4/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=ex4"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "Tabii 4(andro) • Auto",
+      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamlivetb4.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Tabii Spor",
+      "title": "tabii spor • Auto",
+      "url": "https://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kral TV",
+      "title": "Tabii Spor • Auto",
+      "url": "https://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1440p.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "TABII SPOR • Auto",
+      "url": "https://raw.githubusercontent.com/Playtvapp/Playdeneme/main/channels/Tabii_HD.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "SPOR • Auto",
+      "url": "https://trn03.tulix.tv/gt-ntv-tv/index-1790066700-600.m3u8?token=0631e8753bcdf25bb2a5015db22ec082",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "SPOR • Auto",
+      "url": "https://trn03.tulix.tv/gt-ntv-tv/index-1790076000-600.m3u8?token=0631e8753bcdf25bb2a5015db22ec082",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "Tabii Spor • Auto",
+      "url": "https://zeus324232.cfd/tabiispor/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "SPOR⚽️⚽️ • Auto",
+      "url": "https://videos.pexels.com/video-files/31387378/13392869_1080_1920_60fps.mp4?=.mpg",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Canlı TV Türk",
+      "title": "TABII 4 • Auto",
+      "url": "https://yastikkavgasi.lol/static/tabi4.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 13; Samsung F1833B Build/TP1A.280629.015)",
+            "Referer": "https://trgoals1537.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "TABII SPOR • Auto",
+      "url": "https://andro.226503.xyz/checklist/androstreamlivetb.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 13; Samsung F1833B Build/TP1A.280629.015)"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "TABII • Auto",
+      "url": "https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "Tabi Spor • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivetb.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yaşar Sports",
+      "title": "TR:Tabii 4 HD • 720p",
+      "url": "https://andro.evrenesoglu65.lat/checklist/androstreamlivetb4.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://mahsunsports25.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Karma Sports",
+      "title": "Tabii Spor 4 • Auto",
+      "url": "https://deathless.pantonum1.workers.dev/ex4.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Referer": "https://deathless.pantonum1.workers.dev",
+            "Origin": "https://deathless.pantonum1.workers.dev"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Uğur Sports",
+      "title": "Tabii Spor • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivetb.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Selçuk Sportss",
+      "title": "tabii Spor 47/24 • Auto",
+      "url": "https://dga1op10s1u3leo.33a6243d11525c.click/live/selcuktabiispor5/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://www.selcuksportshd1846.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Özcan TV",
+      "title": "Tabii Spor • Auto",
+      "url": "https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    }
+  ]
+}

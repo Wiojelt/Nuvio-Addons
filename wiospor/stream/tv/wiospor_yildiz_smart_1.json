@@ -1,0 +1,386 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Zbahis / Baywin TV",
+      "title": "Spor Smart • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/smarts/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://zbahistv66.com/",
+            "Origin": "https://zbahistv66.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • İntersportv",
+      "title": "SPORSMART • Auto",
+      "url": "https://pix.mralix.workers.dev/spor-smart.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://intersportv1.live/",
+            "Origin": "https://intersportv1.live"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Spor 1- • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/patron/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://patronskor.cfd/",
+            "Origin": "https://patronskor.cfd"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "SMART SPOR • Auto",
+      "url": "https://sc.xgs6gx7s8axbnhs682908459sxbnha61838shs.biz/707/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://benjabettv190.biz/",
+            "Origin": "https://benjabettv190.biz"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "SMART SPOR • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://justintvturkiye.org/",
+            "Origin": "https://justintvturkiye.org"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "SMART SPOR-A • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/smarts/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://pasizle862.com/",
+            "Origin": "https://pasizle862.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "SMART SPOR 2 • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/smarts2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "TİVİBU SPOR 1 • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/t1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "SMART SPOR • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/smarts/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=smarts"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "SMART SPOR 2 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/sms2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=sms2"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "TIVIBU SPOR 1 • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/t1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=t1"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "spor SMART 1(biraz) • Auto",
+      "url": "https://biraz.6781237.xyz/checklist/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kral TV",
+      "title": "Spor Smart • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/smarts/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "ARTS • Auto",
+      "url": "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "SMART SPORT 1 • Auto",
+      "url": "https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "SMART SPORT 1 • Auto",
+      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "Spor Smart 1 • Auto",
+      "url": "https://zeus324232.cfd/smart1/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "Spor Smart 2 HD TR • 720p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/19073/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "SPOR⚽️⚽️ • Auto",
+      "url": "https://videos.pexels.com/video-files/31387378/13392869_1080_1920_60fps.mp4?=.mpg",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "Smart Spor 1 • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yaşar Sports",
+      "title": "TR:Smart Sport 1 HD • 720p",
+      "url": "https://andro.evrenesoglu65.lat/checklist/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://mahsunsports25.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Betconnet Sports",
+      "title": "Smart Spor 1 • Auto",
+      "url": "https://test.bc4.live//609/index.m3u8?md5=IyOWWERMa-HP3KfAAx2n5A&expires=1790289847",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+            "Referer": "https://iframe.bc4.live/",
+            "Origin": "https://iframe.bc4.live"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Karma Sports",
+      "title": "Smart Spor 1 • Auto",
+      "url": "https://andro.mangeinde4.lat/checklist/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 13; Samsung F1833B Build/TP1A.280629.015)"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Uğur Sports",
+      "title": "Smart Spor 1 • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Selçuk Sportss",
+      "title": "Smart Spor7/24 • Auto",
+      "url": "https://dga1op10s1u3leo.33a6243d11525c.click/live/selcuksmartspor/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://www.selcuksportshd1846.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Smart Spor 1 SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10688&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Smart Spor 1 SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=314802&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Smart Spor 2 SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=314801&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,1653 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Zbahis / Baywin TV",
+      "title": "TRT SPOR YILDIZ • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/trtspor2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://zbahistv66.com/",
+            "Origin": "https://zbahistv66.com"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "Spor 2 • Auto",
+      "url": "https://sc.xgs6gx7s8axbnhs682908459sxbnha61838shs.biz/702/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://benjabettv190.biz/",
+            "Origin": "https://benjabettv190.biz"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "TRT SPOR • Auto",
+      "url": "https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Domino TV",
+      "title": "TRT SPOR Yıldız • Auto",
+      "url": "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor&ppid=f2ae21920132c99f604810b5330d21f2",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "TRT SPOR • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • PatronHD",
+      "title": "TRT SPOR YILDIZ • Auto",
+      "url": "https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "TRT SPOR • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/trtspor/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=trtspor"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • JestYayın",
+      "title": "TRT SPOR YILDIZ • Auto",
+      "url": "https://5ln.zirvedesin244.cfd/trtspor2/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=trtspor2"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "TRT SPOR ᵏᵃᵑᵏᵃ • Auto",
+      "url": "https://vavoo.biz-az.workers.dev/play/21143354249278653ec9e2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Tabii Spor",
+      "title": "TRT SPOR YILDIZ • Auto",
+      "url": "https://tv-trtspor2.medya.trt.com.tr/master.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "TRT SPOR • Auto",
+      "url": "https://tv-trtspor1.medya.trt.com.tr/master.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "TRT SPOR • Auto",
+      "url": "https://tv-trtspor-esdai.medya.trt.com.tr/master_1440p.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "TRT SPOR • Auto",
+      "url": "http://162.212.179.33/dvrfl05/gin-trtspor/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "TRT Spor Yildiz HD TR • 720p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/2145/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "TRT SPOR • Auto",
+      "url": "https://trt.daioncdn.net/trtspor/master_480p.m3u8?platform=trtspor&sid=6sknaoigvegn&app=9b65474e-8197-4899-aabb-321fcf6dd9eb&ce=2",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "TRT SPOR • Auto",
+      "url": "https://trt.daioncdn.net/trtspor/master_720p.m3u8?sig=699fa5004fbbe8bf879af4f2fc3aa8d5&sid=7uku1nmrj8k8&app=71ff325a-50b6-48f4-8a67-3daa89386c24&ce=2",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "TRT SPOR • Auto",
+      "url": "https://trt.daioncdn.net/trtspor/master_720p.m3u8?platform=trtspor&sig=15dd874bbaa069fbad46e47ba2fedb65&sid=7umetkstx0z1&app=71ff325a-50b6-48f4-8a67-3daa89386c24&ce=2",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "TRT SPOR • Auto",
+      "url": "https://api.hitnova.net/s/trtspor/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "TRT SPOR • Auto",
+      "url": "https://trt.daioncdn.net/trtspor/master.m3u8?app=clean",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "TRT SPOR • Auto",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:76:D0:D3&stream=374967&extension=ts&play_token=nRtYTGfnn5",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "TRT SPOR • Auto",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:76:D0:D3&stream=860767&extension=ts&play_token=cC7aPOO9cu",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "Trt Spor • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivetrtspor.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Karma Sports",
+      "title": "TRT Spor Yıldız • Auto",
+      "url": "https://andro.mangeinde4.lat/checklist/androstreamlivetrtsy.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Referer": "https://taraftariumizle.org/",
+            "Origin": "https://taraftariumizle.org/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Uğur Sports",
+      "title": "Trt Spor • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Atom Spor",
+      "title": "TRT SPOR • Auto",
+      "url": "https://ladyboy.yedektv.cfd//trt-spor/tracks-v1a1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+            "Referer": "https://www.atomsportv515.top"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Selçuk Sportss",
+      "title": "TRT Spor 27/24 • Auto",
+      "url": "https://dga1op10s1u3leo.33a6243d11525c.click/live/selcuktrtspor2/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://www.selcuksportshd1846.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 1) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 2) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 3) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 4) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 5) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 6) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 7) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 8) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 9) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 10) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 11) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 12) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 13) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 14) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 15) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 16) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 17) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 18) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 19) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=374967&extension=ts&play_token=xeFmdfxerQ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 20) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=860767&extension=ts&play_token=U25Wy84KBT",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 21) • 2160p",
+      "url": "http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:D4:C6:B3&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 22) • 2160p",
+      "url": "http://iptvnow.nl:80/play/live.php?mac=00:1A:79:C9:B2:3F&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 23) • 2160p",
+      "url": "http://line.wishiptv.vip:80/play/live.php?mac=00:1A:79:79:AB:89&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 24) • 2160p",
+      "url": "http://technologycloud.eu:80/play/live.php?mac=00:1A:79:BF:94:44&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 25) • 2160p",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:75:BE:1C&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 26) • 2160p",
+      "url": "http://nk.team-tx.st:80/play/live.php?mac=00:1A:79:FB:50:64&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 27) • 2160p",
+      "url": "http://innovationtv.eu:80/play/live.php?mac=00:1A:79:7B:AD:78&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 28) • 2160p",
+      "url": "http://7tv.pro:80/play/live.php?mac=00:1A:79:B6:47:90&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 29) • 2160p",
+      "url": "http://weaseltv.live:80/play/live.php?mac=00:1A:79:22:16:63&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor 4K (Yayın 30) • 2160p",
+      "url": "http://vod.supremetv.live:80/play/live.php?mac=00:1A:79:B6:C8:39&stream=913402&extension=ts&play_token=P1DRrOA7bW",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 31) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 32) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 33) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 34) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 35) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 36) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 37) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 38) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 39) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor FHD (Yayın 40) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=860766&extension=ts&play_token=G2ksPiTRym",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 41)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 42)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 43)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 44)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 45)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 46)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 47)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 48)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 49)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 50)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 51)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 52)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 53)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 54)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 55)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 56)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 57)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 58)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 59)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868630&extension=ts&play_token=7mOcbeksTz",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor SD (Yayın 60)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868613&extension=ts&play_token=FRDWYY1kvR",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 61) • 720p",
+      "url": "http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:D4:C6:B3&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 62) • 720p",
+      "url": "http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:D4:C6:B3&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 63) • 720p",
+      "url": "http://iptvnow.nl:80/play/live.php?mac=00:1A:79:C9:B2:3F&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 64) • 720p",
+      "url": "http://iptvnow.nl:80/play/live.php?mac=00:1A:79:C9:B2:3F&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 65) • 720p",
+      "url": "http://line.wishiptv.vip:80/play/live.php?mac=00:1A:79:79:AB:89&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 66) • 720p",
+      "url": "http://line.wishiptv.vip:80/play/live.php?mac=00:1A:79:79:AB:89&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 67) • 720p",
+      "url": "http://technologycloud.eu:80/play/live.php?mac=00:1A:79:BF:94:44&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 68) • 720p",
+      "url": "http://technologycloud.eu:80/play/live.php?mac=00:1A:79:BF:94:44&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 69) • 720p",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:75:BE:1C&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 70) • 720p",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:75:BE:1C&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 71) • 720p",
+      "url": "http://nk.team-tx.st:80/play/live.php?mac=00:1A:79:FB:50:64&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 72) • 720p",
+      "url": "http://nk.team-tx.st:80/play/live.php?mac=00:1A:79:FB:50:64&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 73) • 720p",
+      "url": "http://innovationtv.eu:80/play/live.php?mac=00:1A:79:7B:AD:78&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 74) • 720p",
+      "url": "http://innovationtv.eu:80/play/live.php?mac=00:1A:79:7B:AD:78&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 75) • 720p",
+      "url": "http://7tv.pro:80/play/live.php?mac=00:1A:79:B6:47:90&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 76) • 720p",
+      "url": "http://7tv.pro:80/play/live.php?mac=00:1A:79:B6:47:90&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 77) • 720p",
+      "url": "http://weaseltv.live:80/play/live.php?mac=00:1A:79:22:16:63&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 78) • 720p",
+      "url": "http://weaseltv.live:80/play/live.php?mac=00:1A:79:22:16:63&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 79) • 720p",
+      "url": "http://vod.supremetv.live:80/play/live.php?mac=00:1A:79:B6:C8:39&stream=913401&extension=ts&play_token=p0cmzOIjMX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor HD (Yayın 80) • 720p",
+      "url": "http://vod.supremetv.live:80/play/live.php?mac=00:1A:79:B6:C8:39&stream=913382&extension=ts&play_token=N5Yx1xKDz1",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 1) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=374967&extension=ts&play_token=nRtYTGfnn5",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 2) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=860767&extension=ts&play_token=cC7aPOO9cu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 3) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=374967&extension=ts&play_token=nRtYTGfnn5",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 4) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=860767&extension=ts&play_token=cC7aPOO9cu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 5) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=374967&extension=ts&play_token=nRtYTGfnn5",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 6) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=860767&extension=ts&play_token=cC7aPOO9cu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 7) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=374967&extension=ts&play_token=nRtYTGfnn5",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor 4K (Yayın 8) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=860767&extension=ts&play_token=cC7aPOO9cu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor FHD (Yayın 9) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=860766&extension=ts&play_token=dfRSS6qrTN",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor FHD (Yayın 10) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=860766&extension=ts&play_token=dfRSS6qrTN",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor FHD (Yayın 11) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=860766&extension=ts&play_token=dfRSS6qrTN",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor FHD (Yayın 12) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=860766&extension=ts&play_token=dfRSS6qrTN",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 13)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868630&extension=ts&play_token=GGelYlkS3n",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 14)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868613&extension=ts&play_token=aHM4mNxACi",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 15)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868630&extension=ts&play_token=GGelYlkS3n",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 16)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868613&extension=ts&play_token=aHM4mNxACi",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 17)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868630&extension=ts&play_token=GGelYlkS3n",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 18)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868613&extension=ts&play_token=aHM4mNxACi",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 19)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868630&extension=ts&play_token=GGelYlkS3n",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor SD (Yayın 20)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868613&extension=ts&play_token=aHM4mNxACi",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] TRT Spor SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10783&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] TRT Spor SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=170679&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] TRT Spor SD (Yayın 3)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=196810&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 1)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 2)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 3) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 4)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 5)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 6) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 7)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 8)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 9) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 10)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 11)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 12) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 13)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 14)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 15) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 16)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 17)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 18) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 19)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 20)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 21) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 22)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 23)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 24) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 25)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 26)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 27) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 28)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868621&extension=ts&play_token=xiY2WPuzyX",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 29)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868612&extension=ts&play_token=uxHX59SV5y",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız HD (Yayın 30) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=401269&extension=ts&play_token=fQjrQP53MD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 31)",
+      "url": "http://a47.streamtrx.xyz:80/play/live.php?mac=00:1A:79:D4:C6:B3&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 32)",
+      "url": "http://iptvnow.nl:80/play/live.php?mac=00:1A:79:C9:B2:3F&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 33)",
+      "url": "http://line.wishiptv.vip:80/play/live.php?mac=00:1A:79:79:AB:89&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 34)",
+      "url": "http://technologycloud.eu:80/play/live.php?mac=00:1A:79:BF:94:44&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 35)",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:75:BE:1C&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 36)",
+      "url": "http://nk.team-tx.st:80/play/live.php?mac=00:1A:79:FB:50:64&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 37)",
+      "url": "http://innovationtv.eu:80/play/live.php?mac=00:1A:79:7B:AD:78&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 38)",
+      "url": "http://7tv.pro:80/play/live.php?mac=00:1A:79:B6:47:90&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 39)",
+      "url": "http://weaseltv.live:80/play/live.php?mac=00:1A:79:22:16:63&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] TRT Spor Yıldız SD (Yayın 40)",
+      "url": "http://vod.supremetv.live:80/play/live.php?mac=00:1A:79:B6:C8:39&stream=913405&extension=ts&play_token=RB9bsoWtdO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız 4K (Yayın 1) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=557154&extension=ts&play_token=g9h8nHg27a",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız 4K (Yayın 2) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=557154&extension=ts&play_token=g9h8nHg27a",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız 4K (Yayın 3) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=557154&extension=ts&play_token=g9h8nHg27a",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız 4K (Yayın 4) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=557154&extension=ts&play_token=g9h8nHg27a",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 5)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868621&extension=ts&play_token=cdw78EJvpV",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 6)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868612&extension=ts&play_token=xii6mAGDTD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız HD (Yayın 7) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401269&extension=ts&play_token=O37CMozFBs",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 8)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868621&extension=ts&play_token=cdw78EJvpV",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 9)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868612&extension=ts&play_token=xii6mAGDTD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız HD (Yayın 10) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401269&extension=ts&play_token=O37CMozFBs",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 11)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868621&extension=ts&play_token=cdw78EJvpV",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 12)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868612&extension=ts&play_token=xii6mAGDTD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız HD (Yayın 13) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401269&extension=ts&play_token=O37CMozFBs",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 14)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868621&extension=ts&play_token=cdw78EJvpV",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız SD (Yayın 15)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868612&extension=ts&play_token=xii6mAGDTD",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] TRT Spor Yıldız HD (Yayın 16) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401269&extension=ts&play_token=O37CMozFBs",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] TRT Spor Yıldız SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=170680&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] TRT Spor Yıldız SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=196815&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_sportstv",
+    "type": "tv",
+    "name": "📺 Sports TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_sportstv.png",
+    "posterShape": "landscape",
+    "description": "Sports TV"
+  }
+}
