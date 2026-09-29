@@ -5,6 +5,8 @@ import { ASLAN_SOURCES, BASE_SOURCES, WIOSPOR_SOURCE_COUNT } from '../src/addons
 const root = new URL('../', import.meta.url);
 const channelsKt = await fs.readFile(new URL('.upstream-cache/wiospor-public/WioChannels.kt', root), 'utf8');
 const bootstrapSpecs = JSON.parse(await fs.readFile(new URL('config/wiospor-source-specs.bootstrap.json', root), 'utf8'));
+let committedSpecs = [];
+try { committedSpecs = JSON.parse(await fs.readFile(new URL('generated/wiospor/source-specs.json', root), 'utf8')); } catch {}
 let specsKt = '';
 let sportsProviderKt = '';
 let wioAggregatorKt = '';
@@ -43,7 +45,8 @@ const sourceSpecs = [];
 for (const m of specsKt.matchAll(specRe)) sourceSpecs.push({ key: m[1], name: m[2], roots: unquoteList(m[3]), hostRegex: m[4], markers: unquoteList(m[5]), mode: m[6], catalogPath: m[7] || '' });
 const aggregatorForCoverage = publicAggregatorKt || wioAggregatorKt;
 const activeSharedIds = new Set([...aggregatorForCoverage.matchAll(/createSharedWorker\("([^"]+)",\s*"[^"]+"\)/g)].map(match => match[1]));
-const effectiveSpecs = (sourceSpecs.length ? sourceSpecs : bootstrapSpecs).filter(spec => activeSharedIds.has(spec.key));
+const effectiveSpecs = (sourceSpecs.length ? sourceSpecs : committedSpecs.length ? committedSpecs : bootstrapSpecs)
+  .filter(spec => activeSharedIds.has(spec.key));
 
 if (sportsProviderKt) requireMarkers('SportsProvider', sportsProviderKt, ['SourceMode.WORDPRESS', 'SourceMode.ROYAL', 'SourceMode.BEYAZ', 'SourceMode.INTER', 'loadLinks']);
 
@@ -114,7 +117,7 @@ await fs.writeFile(new URL('generated/wiospor/source-state.json', root), JSON.st
   sourceCoverage: `${WIOSPOR_SOURCE_COUNT}/${WIOSPOR_SOURCE_COUNT}`,
   baseCoverageVerified,
   aslanCoverageVerified,
-  sourceSpecOrigin: sourceSpecs.length ? 'upstream-private' : 'bootstrap-contract',
+  sourceSpecOrigin: sourceSpecs.length ? 'upstream-private' : committedSpecs.length ? 'committed-upstream-snapshot' : 'bootstrap-contract',
   upstreamCoverageVerified,
   streamResolverStatus: 'full-resolver-ready'
 }, null, 2) + '\n');
