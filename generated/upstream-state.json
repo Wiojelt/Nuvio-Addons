@@ -1,24 +1,20 @@
 {
-  "updatedAt": "2026-09-28T13:56:58.224Z",
+  "updatedAt": "2026-09-29T00:21:46.259Z",
   "repositories": {
     "wiospor-public": {
       "repo": "Wiojelt/WioSpor",
       "ref": "main",
-      "sha": "b29af8a3adfe3ec22880b6ef0f683e21910fbb29"
+      "sha": "c7c30c59c95dc9dc4258c9ccce55a82b558e631f"
     },
     "turksinema-source": {
       "repo": "Wiojelt/TurkSinema-Source",
       "ref": "main",
-      "skipped": true,
-      "reason": "missing-token",
-      "sha": null
+      "sha": "7dd824a496e5f9d0c9f78ac18ae2b62ddc71a099"
     },
     "turkspor-source": {
       "repo": "Wiojelt/TurkSpor-Source",
       "ref": "main",
-      "skipped": true,
-      "reason": "missing-token",
-      "sha": null
+      "sha": "f620cb9d93107cb5896d072e607f1b1a9b8b35f3"
     }
   }
 }

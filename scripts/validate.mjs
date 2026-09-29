@@ -25,9 +25,9 @@ async function assertNoCommittedGoogleKeys(dir) {
 
 await assertNoCommittedGoogleKeys(repoRoot);
 
-if (BASE_SOURCES.length !== 19) throw new Error(`Expected 19 base WioSpor sources, got ${BASE_SOURCES.length}`);
+if (BASE_SOURCES.length !== 14) throw new Error(`Expected 14 base WioSpor sources, got ${BASE_SOURCES.length}`);
 if (ASLAN_SOURCES.length !== 27) throw new Error(`Expected 27 Aslan WioSpor sources, got ${ASLAN_SOURCES.length}`);
-if (WIOSPOR_SOURCE_COUNT !== 46 || WIOSPOR_SOURCES.length !== 46) throw new Error(`Expected 46 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
+if (WIOSPOR_SOURCE_COUNT !== 41 || WIOSPOR_SOURCES.length !== 41) throw new Error(`Expected 41 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
 if (new Set(WIOSPOR_SOURCES.map(source => source.id)).size !== WIOSPOR_SOURCE_COUNT) throw new Error('Duplicate WioSpor source id');
 
 const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import.meta.url), 'utf8'));
@@ -76,7 +76,7 @@ try {
   channelCount = channels.length;
   if (channelCount < 20) throw new Error(`Expected at least 20 WioSpor channels, got ${channelCount}`);
   const specs = JSON.parse(await fs.readFile(new URL('../generated/wiospor/source-specs.json', import.meta.url), 'utf8'));
-  if (!Array.isArray(specs) || specs.length < 5) throw new Error(`Expected at least 5 WioSpor source contracts, got ${specs?.length || 0}`);
+  if (!Array.isArray(specs) || specs.length < 4) throw new Error(`Expected at least 4 WioSpor source contracts, got ${specs?.length || 0}`);
 } catch (error) {
   if (error.code !== 'ENOENT') throw error;
   console.warn('WioSpor generated catalog is not present yet; run npm run sync && npm run generate.');

@@ -1,13 +1,8 @@
 {
-  "generatedAt": "2026-09-28T13:56:58.744Z",
+  "generatedAt": "2026-09-29T00:28:35.848Z",
   "manifestName": "WioCinema",
   "version": "1.0.0",
   "providers": [
-    {
-      "id": "wiocinema-clipbox",
-      "name": "WioCinema • ClipBox",
-      "filename": "providers/wiocinema-clipbox.js"
-    },
     {
       "id": "wiocinema-cinestream",
       "name": "WioCinema • CineStream",

@@ -25,7 +25,7 @@ Public GitHub API çağrıları Actions'ın `${{ github.token }}` değeriyle yap
 
 `sync-upstreams.mjs` commit SHA'larını `generated/upstream-state.json` ile karşılaştırır. SHA değişmişse ilgili kaynak dosyalarını GitHub Contents API üzerinden `.upstream-cache` içine alır.
 
-`generate-wiospor.mjs`, `WioChannel(...)` kayıtlarını Nuvio/Stremio katalog JSON'una çevirir. Private `SourceSpec.kt` erişilemiyorsa `config/wiospor-source-specs.bootstrap.json` içindeki beş kararlı kaynak sözleşmesi kullanılır. Runtime domainler hardcode edilmez; public TurkSpor `domains.json` manifestinden alınır. WORDPRESS, ROYAL, INTER ve BEYAZ resolver aileleri `src/addons/wiospor/resolver.mjs` içinde çalışır.
+`generate-wiospor.mjs`, `WioChannel(...)` kayıtlarını Nuvio/Stremio katalog JSON'una çevirir. Kaynak sözleşmeleri güncel public WioSpor `SourceAggregator.kt` içindeki etkin shared worker listesine göre süzülür. Private `SourceSpec.kt` erişilemiyorsa `config/wiospor-source-specs.bootstrap.json` içindeki dört etkin sözleşme kullanılır. Runtime domainler hardcode edilmez; public TurkSpor `domains.json` manifestinden alınır. WORDPRESS, ROYAL ve INTER resolver aileleri `src/addons/wiospor/resolver.mjs` içinde çalışır.
 
 `generate-wiosinema.mjs` ClipBox provider'ını private kaynak mevcutsa yeniden üretir ve kritik marker'ları fail-closed doğrular. Vidup adapter'ı davranış portudur; private kaynak mevcutsa `vidupAPI` ve `multiDecryptAPI` adresleri upstream `ApiConstants.kt` içinden yenilenir ve `invokeVidup` sözleşmesinin temel marker'ları kontrol edilir.
 

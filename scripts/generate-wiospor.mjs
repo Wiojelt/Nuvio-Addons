@@ -41,23 +41,21 @@ for (const channel of channels) channel.group = groupDefs[channel.groupKey] || c
 const specRe = /SourceSpec\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*listOf\((.*?)\)\s*,\s*Regex\("([^"]*)"\)\s*,\s*listOf\((.*?)\)\s*,\s*SourceMode\.([A-Z]+)(?:\s*,\s*"([^"]*)")?\s*\)/gs;
 const sourceSpecs = [];
 for (const m of specsKt.matchAll(specRe)) sourceSpecs.push({ key: m[1], name: m[2], roots: unquoteList(m[3]), hostRegex: m[4], markers: unquoteList(m[5]), mode: m[6], catalogPath: m[7] || '' });
-const effectiveSpecs = sourceSpecs.length ? sourceSpecs : bootstrapSpecs;
+const aggregatorForCoverage = publicAggregatorKt || wioAggregatorKt;
+const activeSharedIds = new Set([...aggregatorForCoverage.matchAll(/createSharedWorker\("([^"]+)",\s*"[^"]+"\)/g)].map(match => match[1]));
+const effectiveSpecs = (sourceSpecs.length ? sourceSpecs : bootstrapSpecs).filter(spec => activeSharedIds.has(spec.key));
 
 if (sportsProviderKt) requireMarkers('SportsProvider', sportsProviderKt, ['SourceMode.WORDPRESS', 'SourceMode.ROYAL', 'SourceMode.BEYAZ', 'SourceMode.INTER', 'loadLinks']);
 
 let baseCoverageVerified = false;
 let aslanCoverageVerified = false;
-const aggregatorForCoverage = publicAggregatorKt || wioAggregatorKt;
-
 if (aggregatorForCoverage) {
   requireMarkers('WioSpor SourceAggregator', aggregatorForCoverage, [
     'AslanSources.items',
     'aslan_$sourceId',
-    'createSharedWorker("beyazelma"',
     'createSharedWorker("betmatiktv"',
     'override val id: String = "patron"',
     'override val id: String = "viontv"',
-    'override val id: String = "papazsports"',
     'override val id: String = "jestyayin"'
   ]);
   const rows = [];
@@ -89,8 +87,8 @@ if (aslanSourcesKt && aslanBootstrapKt && aslanDataKt) {
   aslanCoverageVerified = true;
 }
 
-if (BASE_SOURCES.length !== 19 || ASLAN_SOURCES.length !== 27 || WIOSPOR_SOURCE_COUNT !== 46) {
-  throw new Error('WioSpor source registry coverage is not 46/46');
+if (BASE_SOURCES.length !== 14 || ASLAN_SOURCES.length !== 27 || WIOSPOR_SOURCE_COUNT !== 41) {
+  throw new Error('WioSpor source registry coverage is not 41/41');
 }
 const upstreamCoverageVerified = baseCoverageVerified && aslanCoverageVerified;
 

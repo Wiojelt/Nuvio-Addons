@@ -4,9 +4,7 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const DOMAIN_MANIFEST = 'https://raw.githubusercontent.com/Wiojelt/TurkSpor/main/domains.json';
 
 const SOURCES = [
-  { key: 'selcuksports', name: 'SelçukSports' },
   { key: 'taraftarium24', name: 'Taraftarium24' },
-  { key: 'inattv', name: 'İnat TV' },
   { key: 'ardaspor', name: 'ArdaSpor' },
   { key: 'mahsunsports', name: 'MahsunSports' },
   { key: 'crex', name: 'Crex' },
@@ -465,7 +463,7 @@ async function jest(wioChannel) {
 }
 
 export async function getLegacyStreams(wioChannel) {
-  const settled = await Promise.allSettled([domino(wioChannel), domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), papaz(wioChannel), jest(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
+  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
   const out = []; for (const item of settled) if (item.status === 'fulfilled') out.push(...item.value);
   const seen = new Set(); return out.filter(x => x.url && !seen.has(x.url) && seen.add(x.url));
 }

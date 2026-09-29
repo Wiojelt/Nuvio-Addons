@@ -55,15 +55,20 @@ const directWorking = [
 ];
 
 if (!aggregator || !clipboxSource) {
-  await fs.writeFile(new URL('generated/wiosinema/provider-registry.json', root), JSON.stringify({
-    generatedAt: new Date().toISOString(),
-    conversion: {
-      working: directWorking.map(x => `${x} (bootstrap)`),
-      pending: ['Private TurkSinema-Source sync not configured; endpoint/contract guards skipped']
-    },
-    sourceSha256: null
-  }, null, 2) + '\n');
-  console.warn('TurkSinema private source cache missing; keeping bootstrap direct providers.');
+  const registryUrl = new URL('generated/wiosinema/provider-registry.json', root);
+  let previous = null;
+  try { previous = JSON.parse(await fs.readFile(registryUrl, 'utf8')); } catch {}
+  if (!previous?.sourceSha256?.streamAggregator) {
+    await fs.writeFile(registryUrl, JSON.stringify({
+      generatedAt: new Date().toISOString(),
+      conversion: {
+        working: directWorking.map(x => `${x} (bootstrap)`),
+        pending: ['Private TurkSinema-Source sync not configured; endpoint/contract guards skipped']
+      },
+      sourceSha256: null
+    }, null, 2) + '\n');
+  }
+  console.warn('TurkSinema private source cache missing; keeping the last generated direct providers.');
   process.exit(0);
 }
 

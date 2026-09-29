@@ -3,30 +3,6 @@
   "version": "1.0.0",
   "scrapers": [
     {
-      "id": "wiocinema-clipbox",
-      "name": "WioCinema • ClipBox",
-      "description": "Global ClipBox movie and series provider (VixSrc direct TMDB route).",
-      "version": "1.0.0",
-      "author": "Wiojelt",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/wiocinema-clipbox.js",
-      "enabled": true,
-      "hasSettings": false,
-      "logo": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/main/assets/providers/ClipBox.png",
-      "contentLanguage": [
-        "en"
-      ],
-      "formats": [
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
-    },
-    {
       "id": "wiocinema-cinestream",
       "name": "WioCinema • CineStream",
       "description": "Global multi-source movie and series provider (Vidup, Hexa, VidFast, Vidcore, Xpass).",

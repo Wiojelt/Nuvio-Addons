@@ -35,14 +35,13 @@ function response({ json, text = '', ok = true }) {
   };
 }
 
-test('WioCinema uses the Nuvio scraper repository manifest schema with 7 native providers', async () => {
+test('WioCinema uses the Nuvio scraper repository manifest schema with 6 native providers', async () => {
   const manifest = JSON.parse(await fs.readFile(new URL('../wiocinema/manifest.json', import.meta.url), 'utf8'));
   assert.equal(manifest.name, 'WioCinema');
   assert.ok(Array.isArray(manifest.scrapers));
-  assert.equal(manifest.scrapers.length, 7);
+  assert.equal(manifest.scrapers.length, 6);
 
   const expectedProviders = [
-    'wiocinema-clipbox',
     'wiocinema-cinestream',
     'wiocinema-mapple',
     'wiocinema-bingebang',

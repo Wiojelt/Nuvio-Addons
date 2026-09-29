@@ -15,7 +15,7 @@ const changes = [];
 for (const source of config.repositories) {
   if (source.private && !privateToken) {
     console.warn(`Skipping private upstream ${source.repo}; UPSTREAM_GH_TOKEN is not configured.`);
-    next.repositories[source.id] = { repo: source.repo, ref: source.ref, skipped: true, reason: 'missing-token', sha: previous.repositories?.[source.id]?.sha || null };
+    next.repositories[source.id] = previous.repositories?.[source.id] || { repo: source.repo, ref: source.ref, skipped: true, reason: 'missing-token', sha: null };
     continue;
   }
 
