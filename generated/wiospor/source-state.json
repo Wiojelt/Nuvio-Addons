@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-29T00:28:35.905Z",
+  "generatedAt": "2026-09-29T00:30:03.927Z",
   "sourceSha256": {
     "channels": "c6efb097f9c309c3da3db1c277aef8c3947e9b60cb70df51b72634772de720f9",
-    "sourceSpecs": "912260ee3b66384e2ae7b741eac2d64a1f316dbb2852136b329a7871845fd599",
-    "sportsProvider": "c73928fb3903914d10654a441044672d2afcccf80e8f0ad19cf04d5b0e8cba7a",
+    "sourceSpecs": null,
+    "sportsProvider": null,
     "wioSourceAggregator": "67f3410a1080e4c5180f603f3fb3383a7c9ab9b8da30bd03a77329c5f1119220",
-    "aslanSources": "8b0f8eacc9aad7543530a661b6ab51b5cf5012fcb060c463431702e604466081",
-    "aslanBootstrap": "ac99847c09ba3d0058fb47583c47f837697a7d1bdca351604a3a6980070e759a",
-    "aslanData": "46c4e2d810ef282c198335190501c464b17e2a7a5636feb08b26f3b23047415a"
+    "aslanSources": null,
+    "aslanBootstrap": null,
+    "aslanData": null
   },
   "channelCount": 86,
   "sharedSourceCount": 4,
@@ -16,8 +16,8 @@
   "totalSourceCount": 41,
   "sourceCoverage": "41/41",
   "baseCoverageVerified": true,
-  "aslanCoverageVerified": true,
-  "sourceSpecOrigin": "upstream-private",
-  "upstreamCoverageVerified": true,
+  "aslanCoverageVerified": false,
+  "sourceSpecOrigin": "bootstrap-contract",
+  "upstreamCoverageVerified": false,
   "streamResolverStatus": "full-resolver-ready"
 }

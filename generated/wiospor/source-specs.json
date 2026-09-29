@@ -6,7 +6,7 @@
       "https://www.mackeyfi559.sbs/",
       "https://www.canlimaclar559.sbs/"
     ],
-    "hostRegex": "(www\\\\.)?(mackeyfi|canlimaclar)[0-9]+\\\\.sbs",
+    "hostRegex": "(www\\.)?(mackeyfi|canlimaclar)[0-9]+\\.sbs",
     "markers": [
       "Maçkeyfi",
       "Canlımaclar"
@@ -18,10 +18,10 @@
     "key": "zbahistv",
     "name": "Zbahis / Baywin TV",
     "roots": [
-      "https://99baywintv.live/",
-      "https://zbahistv65.com/"
+      "https://zbahistv65.com/",
+      "https://99baywintv.live/"
     ],
-    "hostRegex": "(www\\\\.)?(zbahistv[0-9]+\\\\.com|[0-9]+baywintv\\\\.live)",
+    "hostRegex": "(www\\.)?(zbahistv[0-9]+\\.com|[0-9]+baywintv\\.live)",
     "markers": [
       "Zbahis",
       "Baywin"
@@ -35,7 +35,7 @@
     "roots": [
       "https://betmatiktv155.com/"
     ],
-    "hostRegex": "(www\\\\.)?betmatiktv[0-9]+\\\\.com",
+    "hostRegex": "(www\\.)?betmatiktv[0-9]+\\.com",
     "markers": [
       "Betmatik TV"
     ],
@@ -48,7 +48,7 @@
     "roots": [
       "https://intersportv1.live/"
     ],
-    "hostRegex": "(www\\\\.)?intersportv[0-9]+\\\\.live",
+    "hostRegex": "(www\\.)?intersportv[0-9]+\\.live",
     "markers": [
       "İntersportv",
       "Intersportv"
