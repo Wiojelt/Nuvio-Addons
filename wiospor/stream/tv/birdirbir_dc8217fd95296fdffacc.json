@@ -1,0 +1,68 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 1)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 2)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 3)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 4)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 5)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 6)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 7)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868628&extension=ts&play_token=pem4vqJauq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sports TV SD (Yayın 8)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401273&extension=ts&play_token=ilqB8Y9LiA",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

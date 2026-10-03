@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_world_sky_calcio",
+    "type": "tv",
+    "name": "🌐 World Sky Sport Calcio",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_calcio.png",
+    "posterShape": "landscape",
+    "description": "Sky Sport Calcio"
+  }
+}

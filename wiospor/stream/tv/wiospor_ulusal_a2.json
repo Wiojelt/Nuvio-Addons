@@ -1,0 +1,176 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "A2 TV ᵏᵃᵑᵏᵃ • Auto",
+      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "A2 HD • 720p",
+      "url": "https://uzunmuhalefet.unaux.com/trkvz.php?kanal=a2tv&.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "A2 HD • 720p",
+      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "A2 TV HD TR • 720p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/2260/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Canlı TV Türk",
+      "title": "A2 UHD • 2160p",
+      "url": "http://89.187.191.41/A2-HD-TR/video.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • World Has IPTV",
+      "title": "A2 • Auto",
+      "url": "https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/chunklist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "A2 HD • 720p",
+      "url": "https://c.fulltvizle.com/a2/tracks-v1a1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "A2 HD • 720p",
+      "url": "https://c.fulltvizle.com/a2/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "A2 • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196687&extension=ts&play_token=DGJnc2zcvx",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "A2 • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196671&extension=ts&play_token=9oLEqeVHKo",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "A2 • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196703&extension=ts&play_token=UppNkUMero",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Biraz Sports",
+      "title": "A2 • Auto",
+      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivea2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Karma Sports",
+      "title": "A2 • Auto",
+      "url": "https://andro.3749206.xyz/checklist/androstreamlivea2.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Referer": "https://taraftariumizle.org/",
+            "Origin": "https://taraftariumizle.org/"
+          }
+        }
+      }
+    }
+  ]
+}

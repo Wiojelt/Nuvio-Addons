@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_yildiz_euro_1",
+    "type": "tv",
+    "name": "⭐ Yıldız Spor 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yildiz_euro_1.png",
+    "posterShape": "landscape",
+    "description": "Eurosport 1"
+  }
+}

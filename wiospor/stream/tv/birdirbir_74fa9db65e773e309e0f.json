@@ -1,0 +1,724 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 1) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 2) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 3) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 4) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 5) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 6) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 7) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 8) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 9) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 4K (Yayın 10) • 2160p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868658&extension=ts&play_token=DBlMYqUUrq",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 11) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 12) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 13) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 14) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 15) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 16) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 17) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 18) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 19) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 FHD (Yayın 20) • 1080p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868667&extension=ts&play_token=fcEfaVfW41",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 21)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 22) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 23) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:A9:B8&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 24)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 25) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 26) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:15&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 27)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 28) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 29) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0B&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 30)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 31) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 32) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:0C&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 33)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 34) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 35) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:7E:43:B9&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 36)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 37) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 38) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:AE:5C&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 39)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 40) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 41) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 42)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 43) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 44) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:46:74&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 45)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 46) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 47) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:B6:EB:08&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 SD (Yayın 48)",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=868684&extension=ts&play_token=52m2vlmfu8",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 49) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=401288&extension=ts&play_token=K7n9dVZzFC",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Spor20x",
+      "title": "[Spor20x] beIN Sports 1 HD (Yayın 50) • 720p",
+      "url": "http://204.52.191.82:80/play/live.php?mac=00:1A:79:74:A7:D8&stream=401285&extension=ts&play_token=9OQ48HOC32",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 4K (Yayın 1) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868658&extension=ts&play_token=h2TNwgXUbG",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 4K (Yayın 2) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868658&extension=ts&play_token=h2TNwgXUbG",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 4K (Yayın 3) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868658&extension=ts&play_token=h2TNwgXUbG",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 4K (Yayın 4) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868658&extension=ts&play_token=h2TNwgXUbG",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 5) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868674&extension=ts&play_token=MF2foznDJm",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 6) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868667&extension=ts&play_token=Rm6mTZ7DLB",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 7) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868662&extension=ts&play_token=bsMefovJhZ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 8) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868674&extension=ts&play_token=MF2foznDJm",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 9) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868667&extension=ts&play_token=Rm6mTZ7DLB",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 10) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868662&extension=ts&play_token=bsMefovJhZ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 11) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868674&extension=ts&play_token=MF2foznDJm",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 12) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868667&extension=ts&play_token=Rm6mTZ7DLB",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 13) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868662&extension=ts&play_token=bsMefovJhZ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 14) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868674&extension=ts&play_token=MF2foznDJm",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 15) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868667&extension=ts&play_token=Rm6mTZ7DLB",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 FHD (Yayın 16) • 1080p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868662&extension=ts&play_token=bsMefovJhZ",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 17)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868691&extension=ts&play_token=3xyLjrACT7",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 18)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868684&extension=ts&play_token=HLjanTIDOP",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 19)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=868676&extension=ts&play_token=k0Y5SaiDwE",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 20) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401288&extension=ts&play_token=gnS8T8sMAp",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 21) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401285&extension=ts&play_token=cGPTagUZgx",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 22)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868691&extension=ts&play_token=3xyLjrACT7",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 23)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868684&extension=ts&play_token=HLjanTIDOP",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 24)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868676&extension=ts&play_token=k0Y5SaiDwE",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 25) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401288&extension=ts&play_token=gnS8T8sMAp",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 26) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401285&extension=ts&play_token=cGPTagUZgx",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 27)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868691&extension=ts&play_token=3xyLjrACT7",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 28)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868684&extension=ts&play_token=HLjanTIDOP",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 29)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=868676&extension=ts&play_token=k0Y5SaiDwE",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 30) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401288&extension=ts&play_token=gnS8T8sMAp",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 31) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401285&extension=ts&play_token=cGPTagUZgx",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 32)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868691&extension=ts&play_token=3xyLjrACT7",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 33)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868684&extension=ts&play_token=HLjanTIDOP",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 SD (Yayın 34)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=868676&extension=ts&play_token=k0Y5SaiDwE",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 35) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401288&extension=ts&play_token=gnS8T8sMAp",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] beIN Sports 1 HD (Yayın 36) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401285&extension=ts&play_token=cGPTagUZgx",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] beIN Sports 1 FHD (Yayın 1) • 1080p",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=1162637&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] beIN Sports 1 SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10698&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] beIN Sports 1 HD (Yayın 3) • 720p",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=1162644&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] beIN Sports 1 SD (Yayın 4)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10701&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "metas": [
+    {
+      "id": "birdirbir_74fa9db65e773e309e0f",
+      "type": "tv",
+      "name": "beIN Sports 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BeIN_Sports_1_logo.svg/512px-BeIN_Sports_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Süper Lig, UEFA Şampiyonlar Ligi ve Avrupa ligleri canlı yayınları."
+    },
+    {
+      "id": "birdirbir_f7645ce7675c58bf3aae",
+      "type": "tv",
+      "name": "beIN Sports 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/BeIN_Sports_2_logo.svg/512px-BeIN_Sports_2_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Süper Lig ve Ligue 1 maçları canlı yayın kanalı."
+    },
+    {
+      "id": "birdirbir_6bc62360ffe6d16ba342",
+      "type": "tv",
+      "name": "beIN Sports 3",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/BeIN_Sports_3_logo.svg/512px-BeIN_Sports_3_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "EuroLeague basketbol ve uluslararası spor yayınları."
+    },
+    {
+      "id": "birdirbir_c4085429be34c5f00198",
+      "type": "tv",
+      "name": "beIN Sports 4",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/BeIN_Sports_4_logo.svg/512px-BeIN_Sports_4_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "WTA tenis, motor sporları ve canlı maç yayınları."
+    },
+    {
+      "id": "birdirbir_d5c09ff2589f94f5cb98",
+      "type": "tv",
+      "name": "beIN Sports 5",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/BeIN_Sports_5_logo.svg/512px-BeIN_Sports_5_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Çoklu maç yayınları ve uluslararası ligler."
+    },
+    {
+      "id": "birdirbir_04cdb824df7f6bd1c20c",
+      "type": "tv",
+      "name": "beIN Sports MAX 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BeIN_Sports_1_logo.svg/512px-BeIN_Sports_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "TFF 1. Lig ve Avrupa kupaları canlı yayınları."
+    },
+    {
+      "id": "birdirbir_6a3ba0ea783357511eee",
+      "type": "tv",
+      "name": "beIN Sports MAX 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/BeIN_Sports_2_logo.svg/512px-BeIN_Sports_2_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "TFF 1. Lig ve çakışan müsabakalar canlı yayını."
+    },
+    {
+      "id": "birdirbir_08551849f9bc1881ceff",
+      "type": "tv",
+      "name": "beIN Sports Haber",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/BeIN_Sports_1_logo.svg/512px-BeIN_Sports_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Spor haberleri, özetler ve şifresiz canlı maçlar."
+    },
+    {
+      "id": "birdirbir_aa48d93fd6508cb05ace",
+      "type": "tv",
+      "name": "S Sport 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/7/77/S_Sport_logo.png/512px-S_Sport_logo.png",
+      "posterShape": "landscape",
+      "description": "Premier League, LaLiga, Serie A ve NBA canlı yayınları."
+    },
+    {
+      "id": "birdirbir_79d8212f7602e6a0841f",
+      "type": "tv",
+      "name": "S Sport 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/5/51/S_Sport_2_logo.png/512px-S_Sport_2_logo.png",
+      "posterShape": "landscape",
+      "description": "LaLiga, Serie A, NFL ve motor sporları canlı yayınları."
+    },
+    {
+      "id": "birdirbir_742de991b3a97e1e2333",
+      "type": "tv",
+      "name": "Tivibu Spor 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/3/3a/Tivibu_Spor_logo.png/512px-Tivibu_Spor_logo.png",
+      "posterShape": "landscape",
+      "description": "FA Cup, Bundesliga ve İspanya Kral Kupası canlı yayınları."
+    },
+    {
+      "id": "birdirbir_97305a6ac2cfc24f26e8",
+      "type": "tv",
+      "name": "Tivibu Spor 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/3/3a/Tivibu_Spor_logo.png/512px-Tivibu_Spor_logo.png",
+      "posterShape": "landscape",
+      "description": "Bundesliga 2, İtalya Kupası ve basketbol maçları."
+    },
+    {
+      "id": "birdirbir_8f08f9e442f2d275155c",
+      "type": "tv",
+      "name": "Tivibu Spor 3",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/3/3a/Tivibu_Spor_logo.png/512px-Tivibu_Spor_logo.png",
+      "posterShape": "landscape",
+      "description": "Avrupa futbol ligleri ve çakışan canlı maç yayınları."
+    },
+    {
+      "id": "birdirbir_fe2a302be38ee44434d3",
+      "type": "tv",
+      "name": "Tivibu Spor 4",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/3/3a/Tivibu_Spor_logo.png/512px-Tivibu_Spor_logo.png",
+      "posterShape": "landscape",
+      "description": "Alternatif spor müsabakaları ve canlı yayınlar."
+    },
+    {
+      "id": "birdirbir_eb9f31a4ab6b76d99ecb",
+      "type": "tv",
+      "name": "Smart Spor 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/6e/D-Smart_Spor_logo.png/512px-D-Smart_Spor_logo.png",
+      "posterShape": "landscape",
+      "description": "Voleybol Şampiyonlar Ligi, judo ve motor sporları."
+    },
+    {
+      "id": "birdirbir_f6ee03947e62529d01c4",
+      "type": "tv",
+      "name": "Smart Spor 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/6e/D-Smart_Spor_logo.png/512px-D-Smart_Spor_logo.png",
+      "posterShape": "landscape",
+      "description": "Canlı spor etkinlikleri ve voleybol müsabakaları."
+    },
+    {
+      "id": "birdirbir_e249bf1393dcfe245288",
+      "type": "tv",
+      "name": "TRT Spor",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TRT_Spor_logo.svg/512px-TRT_Spor_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Milli maçlar, Trendyol 1. Lig ve şifresiz spor yayınları."
+    },
+    {
+      "id": "birdirbir_17c3f25efd7cf6505546",
+      "type": "tv",
+      "name": "TRT Spor Yıldız",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/TRT_Spor_Y%C4%B1ld%C4%B1z_logo.svg/512px-TRT_Spor_Y%C4%B1ld%C4%B1z_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Amatör branşlar, olimpiyat sporları ve voleybol ligleri."
+    },
+    {
+      "id": "birdirbir_407f151f65828b7808c3",
+      "type": "tv",
+      "name": "A Spor",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/A_Spor_logo.svg/512px-A_Spor_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Ziraat Türkiye Kupası canlı yayınları ve spor haberleri."
+    },
+    {
+      "id": "birdirbir_a44f6cec16ec3f42cbca",
+      "type": "tv",
+      "name": "HT Spor",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/A_Spor_logo.svg/512px-A_Spor_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Ciner Medya spor kanalı canlı yayını."
+    },
+    {
+      "id": "birdirbir_dc8217fd95296fdffacc",
+      "type": "tv",
+      "name": "Sports TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/A_Spor_logo.svg/512px-A_Spor_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Olimpiyat sporları, tenis ve basketbol canlı yayınları."
+    },
+    {
+      "id": "birdirbir_49a9f301213033a3f695",
+      "type": "tv",
+      "name": "Eurosport 1 TR",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Eurosport_1_logo.svg/512px-Eurosport_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Grand Slam tenis, bisiklet turları ve kış sporları Türkçe spikerle."
+    },
+    {
+      "id": "birdirbir_21db5b1e0bccd18a3a71",
+      "type": "tv",
+      "name": "Eurosport 2 TR",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Eurosport_2_logo.svg/512px-Eurosport_2_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Alternatif spor branşları ve canlı kış sporları."
+    },
+    {
+      "id": "birdirbir_0285b7e902e8e9a31456",
+      "type": "tv",
+      "name": "FB TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/8/86/Fenerbah%C3%A7e_SK.png/512px-Fenerbah%C3%A7e_SK.png",
+      "posterShape": "landscape",
+      "description": "Fenerbahçe Spor Kulübü resmi televizyon kanalı."
+    },
+    {
+      "id": "birdirbir_075b49c2c85eb59af86a",
+      "type": "tv",
+      "name": "GS TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Galatasaray_Sports_Club_Logo.png/512px-Galatasaray_Sports_Club_Logo.png",
+      "posterShape": "landscape",
+      "description": "Galatasaray Spor Kulübü resmi televizyon kanalı."
+    },
+    {
+      "id": "birdirbir_8521dc34e002d02455b8",
+      "type": "tv",
+      "name": "TRT 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/TRT_1_logo.svg/512px-TRT_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Türkiye Radyo Televizyon Kurumu 1. kanalı; diziler, milli maçlar ve ana haber."
+    },
+    {
+      "id": "birdirbir_6f5c0112d3be99756bfd",
+      "type": "tv",
+      "name": "ATV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Atv_logo.svg/512px-Atv_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Turkuvaz Medya ulusal kanalı; popüler diziler ve canlı yayın programları."
+    },
+    {
+      "id": "birdirbir_c453898bb5aa7069dd95",
+      "type": "tv",
+      "name": "Kanal D",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kanal_D_logo.svg/512px-Kanal_D_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Demirören Medya ulusal televizyon kanalı; diziler ve magazin."
+    },
+    {
+      "id": "birdirbir_91e2055ce828c4df3505",
+      "type": "tv",
+      "name": "Show TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Show_TV_logo.svg/512px-Show_TV_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Ciner Yayın Holding ulusal kanalı; diziler, şovlar ve ana haber bülteni."
+    },
+    {
+      "id": "birdirbir_c96d1e83c69ae1de5ce2",
+      "type": "tv",
+      "name": "Star TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Star_TV_logo.svg/512px-Star_TV_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Doğuş Yayın Grubu ulusal kanalı; yerli diziler ve eğlence programları."
+    },
+    {
+      "id": "birdirbir_9b8c0230adc0c953afcf",
+      "type": "tv",
+      "name": "NOW (FOX)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NOW_T%C3%BCrkiye_logo.svg/512px-NOW_T%C3%BCrkiye_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "The Walt Disney Company Türkiye ulusal kanalı."
+    },
+    {
+      "id": "birdirbir_a7027d8f26ce79022a32",
+      "type": "tv",
+      "name": "TV8",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/TV8_logo.svg/512px-TV8_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Acun Medya eğlence kanalı; Survivor, MasterChef, O Ses Türkiye."
+    },
+    {
+      "id": "birdirbir_80a225c9a125f3e55182",
+      "type": "tv",
+      "name": "TV8.5",
+      "poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/b/b5/Tv8.5_logo.png/512px-Tv8.5_logo.png",
+      "posterShape": "landscape",
+      "description": "Acun Medya spor ve eğlence kanalı; UEFA maçları şifresiz canlı yayını."
+    },
+    {
+      "id": "birdirbir_215f05f3cd8d29e629fc",
+      "type": "tv",
+      "name": "Kanal 7",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kanal_7_logo.svg/512px-Kanal_7_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Kanal 7 Medya Grubu ulusal kanalı; günlük diziler ve haber bülteni."
+    },
+    {
+      "id": "birdirbir_86146660652cf48717fd",
+      "type": "tv",
+      "name": "Beyaz TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Beyaz_TV_logo.svg/512px-Beyaz_TV_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Ulusal yayın kanalı; Derin Futbol, Beyaz Futbol ve tartışma programları."
+    },
+    {
+      "id": "birdirbir_b401342ed101306643b7",
+      "type": "tv",
+      "name": "TLC",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/TLC_Logo_2016.svg/512px-TLC_Logo_2016.svg.png",
+      "posterShape": "landscape",
+      "description": "Warner Bros. Discovery yaşam tarzı ve reality şov kanalı."
+    },
+    {
+      "id": "birdirbir_75cda7e9646ebcdf1b9b",
+      "type": "tv",
+      "name": "DMAX",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/DMAX_logo_2016.svg/512px-DMAX_logo_2016.svg.png",
+      "posterShape": "landscape",
+      "description": "Discovery macera, otomotiv ve belgesel eğlence kanalı."
+    },
+    {
+      "id": "birdirbir_74e68d42f12d2881978b",
+      "type": "tv",
+      "name": "Teve2",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Teve2_logo.svg/512px-Teve2_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Kelime Oyunu, dizi tekrarları ve nostalji kanalı."
+    },
+    {
+      "id": "birdirbir_2bdc976969433b722616",
+      "type": "tv",
+      "name": "360 TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/360_logo.png/512px-360_logo.png",
+      "posterShape": "landscape",
+      "description": "TürkMedya yaşam ve eğlence kanalı; Ben Bilirim ve gündem yayınları."
+    },
+    {
+      "id": "birdirbir_2526d2c9e5b3417aef60",
+      "type": "tv",
+      "name": "Habertürk TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Habert%C3%BCrk_TV_logo.svg/512px-Habert%C3%BCrk_TV_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "24 saat canlı haber, son dakika ve siyaset tartışma programları."
+    },
+    {
+      "id": "birdirbir_4d48d1ff2df8d366726e",
+      "type": "tv",
+      "name": "NTV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/NTV_logo.svg/512px-NTV_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Doğuş Medya Grubu haber kanalı; ekonomi, kültür ve dünya haberleri."
+    },
+    {
+      "id": "birdirbir_6c839246f650a9a569dc",
+      "type": "tv",
+      "name": "CNN Türk",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/CNN_T%C3%BCrk_logo.svg/512px-CNN_T%C3%BCrk_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Demirören Medya haber kanalı; canlı yayınlar ve uzman analizleri."
+    },
+    {
+      "id": "birdirbir_3a3829031b00f86a07f3",
+      "type": "tv",
+      "name": "TRT Haber",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/TRT_Haber_logo.svg/512px-TRT_Haber_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Kamu yayıncısı TRT 24 saat kesintisiz haber kanalı."
+    },
+    {
+      "id": "birdirbir_c992bf77fb355085bf28",
+      "type": "tv",
+      "name": "A Haber",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/A_Haber_logo.svg/512px-A_Haber_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Turkuvaz Medya haber ve gündem kanalı."
+    },
+    {
+      "id": "birdirbir_0e4c22c671e61cd073e0",
+      "type": "tv",
+      "name": "Sözcü TV (SZC)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/S%C3%B6zc%C3%BC_TV_logo.png/512px-S%C3%B6zc%C3%BC_TV_logo.png",
+      "posterShape": "landscape",
+      "description": "Sözcü Medya Grubu bağımsız haber kanalı canlı yayını."
+    },
+    {
+      "id": "birdirbir_3cccac7c91023acb6bc5",
+      "type": "tv",
+      "name": "Halk TV",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Halk_TV_logo.svg/512px-Halk_TV_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Halk TV canlı yayın ve haber bültenleri."
+    },
+    {
+      "id": "birdirbir_9a479d3b9b467471f051",
+      "type": "tv",
+      "name": "Tele1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tele1_logo.png/512px-Tele1_logo.png",
+      "posterShape": "landscape",
+      "description": "Tele1 TV canlı yayın ve güncel tartışma programları."
+    },
+    {
+      "id": "birdirbir_b30d9a6a44aaca7bd6f6",
+      "type": "tv",
+      "name": "TV100",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/TV100_logo.png/512px-TV100_logo.png",
+      "posterShape": "landscape",
+      "description": "TV100 canlı yayın, gündem ve siyaset programları."
+    },
+    {
+      "id": "birdirbir_e79ca43391b6a6c622eb",
+      "type": "tv",
+      "name": "TRT Belgesel",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/TRT_Belgesel_logo.svg/512px-TRT_Belgesel_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Doğa, tarih, kültür ve insan hikayeleri belgeselleri."
+    },
+    {
+      "id": "birdirbir_1ae0198cdfb1a819c392",
+      "type": "tv",
+      "name": "TRT Çocuk",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/TRT_%C3%87ocuk_logo.svg/512px-TRT_%C3%87ocuk_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Eğitici çizgi diziler ve çocuk programları."
+    },
+    {
+      "id": "birdirbir_e458e723bf7f91ccaf6f",
+      "type": "tv",
+      "name": "Sky Sports Main Event",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Premier League, F1 and biggest sporting events live from UK."
+    },
+    {
+      "id": "birdirbir_91844deb1b5d3317cb4d",
+      "type": "tv",
+      "name": "Sky Sports Premier League",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Sky_Sports_Premier_League_2020.svg/512px-Sky_Sports_Premier_League_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Live English Premier League football match coverage."
+    },
+    {
+      "id": "birdirbir_15419caa9b5b1cc56e7d",
+      "type": "tv",
+      "name": "Sky Sports Football",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sky_Sports_Football_2020.svg/512px-Sky_Sports_Football_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "EFL Championship, Carabao Cup and international football."
+    },
+    {
+      "id": "birdirbir_0bee7a3b32e3feff99c4",
+      "type": "tv",
+      "name": "Sky Sports F1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sky_Sports_F1_2020.svg/512px-Sky_Sports_F1_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Formula 1 live practice, qualifying and races in 4K/HD."
+    },
+    {
+      "id": "birdirbir_cccadc5932c781f4c0e6",
+      "type": "tv",
+      "name": "Sky Sports Action",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sky_Sports_Action_2020.svg/512px-Sky_Sports_Action_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Rugby, NFL, boxing and extreme action sports."
+    },
+    {
+      "id": "birdirbir_bdea3a790f03bbf46bee",
+      "type": "tv",
+      "name": "Sky Sports Golf",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sky_Sports_Golf_2020.svg/512px-Sky_Sports_Golf_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "PGA Tour, European Tour and Major golf championships."
+    },
+    {
+      "id": "birdirbir_62206652f23cef3d91c3",
+      "type": "tv",
+      "name": "Sky Sports Cricket",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sky_Sports_Cricket_2020.svg/512px-Sky_Sports_Cricket_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Test cricket, IPL, The Hundred and World Cup matches."
+    },
+    {
+      "id": "birdirbir_9b2ea132c925f0c8f3e4",
+      "type": "tv",
+      "name": "Sky Sports News",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sky_Sports_News_2020.svg/512px-Sky_Sports_News_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "24/7 sports breaking news, transfer center and analysis."
+    },
+    {
+      "id": "birdirbir_2bed9fd45ca461699e8b",
+      "type": "tv",
+      "name": "TNT Sports 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TNT_Sports_1_logo.svg/512px-TNT_Sports_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "UEFA Champions League, Premier League and UFC live from UK."
+    },
+    {
+      "id": "birdirbir_a1dbec559a6800359b4d",
+      "type": "tv",
+      "name": "TNT Sports 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/TNT_Sports_2_logo.svg/512px-TNT_Sports_2_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Serie A, Ligue 1, boxing and MotoGP live."
+    },
+    {
+      "id": "birdirbir_aee39fd5c133e78ea761",
+      "type": "tv",
+      "name": "TNT Sports 3",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/TNT_Sports_3_logo.svg/512px-TNT_Sports_3_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "WWE, live rugby and European football."
+    },
+    {
+      "id": "birdirbir_9092747c5783c1dbd3c6",
+      "type": "tv",
+      "name": "TNT Sports 4",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TNT_Sports_4_logo.svg/512px-TNT_Sports_4_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Overspill live events and international sports."
+    },
+    {
+      "id": "birdirbir_ea74839f9d13f0c0176d",
+      "type": "tv",
+      "name": "ESPN 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/512px-ESPN_wordmark.svg.png",
+      "posterShape": "landscape",
+      "description": "NBA, NFL, MLB, NHL and College Football live."
+    },
+    {
+      "id": "birdirbir_aecf35814eccb6e1284f",
+      "type": "tv",
+      "name": "ESPN 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/ESPN2_wordmark.svg/512px-ESPN2_wordmark.svg.png",
+      "posterShape": "landscape",
+      "description": "Alternative sports, tennis, NCAA and international soccer."
+    },
+    {
+      "id": "birdirbir_d870eead818930201359",
+      "type": "tv",
+      "name": "Canal+ Sport (FR)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Canal%2B_Sport_2023.svg/512px-Canal%2B_Sport_2023.svg.png",
+      "posterShape": "landscape",
+      "description": "Ligue 1, Top 14 rugby and Formula 1 live from France."
+    },
+    {
+      "id": "birdirbir_c206146be13092006762",
+      "type": "tv",
+      "name": "Canal+ Foot (FR)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Canal%2B_Foot_logo.svg/512px-Canal%2B_Foot_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "100% football channel; UEFA Champions League & Premier League."
+    },
+    {
+      "id": "birdirbir_2baf23eedf66b2ac65fe",
+      "type": "tv",
+      "name": "Canal+ Sport 360",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Canal%2B_Sport_360_logo.svg/512px-Canal%2B_Sport_360_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "MotoGP, WRC and multi-sport live events."
+    },
+    {
+      "id": "birdirbir_04a0023ff75a16d2a363",
+      "type": "tv",
+      "name": "DAZN 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/DAZN_1_logo.svg/512px-DAZN_1_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Bundesliga, Serie A, boxing and UWCL live."
+    },
+    {
+      "id": "birdirbir_438108130d9e4b17d109",
+      "type": "tv",
+      "name": "DAZN 2",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/DAZN_2_logo.svg/512px-DAZN_2_logo.svg.png",
+      "posterShape": "landscape",
+      "description": "Live football, darts and combat sports."
+    },
+    {
+      "id": "birdirbir_4ac9a90bf45a5ae34af6",
+      "type": "tv",
+      "name": "Sky Sport Calcio (IT)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Serie A, Serie B and international football live from Italy."
+    },
+    {
+      "id": "birdirbir_ca1f03585c5f5701de3d",
+      "type": "tv",
+      "name": "Sky Sport Uno (IT)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Champions League, tennis and flagship sports from Italy."
+    },
+    {
+      "id": "birdirbir_5c165d9d793fe119f67a",
+      "type": "tv",
+      "name": "Sky Sport Bundesliga (DE)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Bundesliga and 2. Bundesliga live matches from Germany."
+    },
+    {
+      "id": "birdirbir_81f4436221bc1e7fdca6",
+      "type": "tv",
+      "name": "Polsat Sport 1 (PL)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Polish live sports, volleyball, football and combat sports."
+    },
+    {
+      "id": "birdirbir_07700d863d44c7684632",
+      "type": "tv",
+      "name": "Polsat Sport 2 (PL)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Live European sports events and tennis."
+    },
+    {
+      "id": "birdirbir_31d3f27daba311a125ac",
+      "type": "tv",
+      "name": "Sport TV 1 (PT)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Liga Portugal, Europa League and motorsport live from Portugal."
+    },
+    {
+      "id": "birdirbir_42c855604cb6e8de0066",
+      "type": "tv",
+      "name": "Ziggo Sport (NL)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "UEFA Champions League, LaLiga and MotoGP live from Netherlands."
+    },
+    {
+      "id": "birdirbir_df7b8e8c5f84ac434600",
+      "type": "tv",
+      "name": "Ziggo Sport Select (NL)",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sky_Sports_Main_Event_2020.svg/512px-Sky_Sports_Main_Event_2020.svg.png",
+      "posterShape": "landscape",
+      "description": "Premium live sporting events and Champions League nights."
+    }
+  ]
+}

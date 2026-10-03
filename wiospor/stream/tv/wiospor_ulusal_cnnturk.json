@@ -1,0 +1,312 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "CNN TÜRK ᵏᵃᵑᵏᵃ • Auto",
+      "url": "http://176.65.153.35:6005/play/a020/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Kanka TV",
+      "title": "CNN TÜRK ᵏᵃᵑᵏᵃ • Auto",
+      "url": "http://flussonic.izone.az/cnnturk/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "CNN TÜRK HD • 720p",
+      "url": "https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn_Turk.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yeni TV",
+      "title": "CNNTURKYEDEK • Auto",
+      "url": "https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • İzle TV",
+      "title": "Cnn Türk • Auto",
+      "url": "https://dmxtl.testworkery0.workers.dev/izle/cnnturkhd.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ilook TV",
+      "title": "CNN Turk HD TR • 720p",
+      "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/2305/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Türkiye İzle",
+      "title": "CNN TÜRK • Auto",
+      "url": "http://46.32.176.50/cnnturk/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Canlı TV Türk",
+      "title": "CNN Türk • Auto",
+      "url": "http://116.202.238.88/CNNTURK_TR/tracks-v1a1/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • 46 TV",
+      "title": "CNN TURK • Auto",
+      "url": "https://live.duhnet.tv/S2/HLS_LIVE/cnnturknp/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "CNN TÜRK • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=197260&extension=ts&play_token=UJ6cx8th1N",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "CNN TÜRK • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=197253&extension=ts&play_token=2Ocs1xojEE",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "CNN TÜRK • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=197287&extension=ts&play_token=mqO3Ga5TwL",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 1) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=3365&extension=ts&play_token=HT0eR8rg3O",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 2) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=8699&extension=ts&play_token=omy77HZ0Lu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 3) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=557144&extension=ts&play_token=5NEWoykh0p",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 4) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=3365&extension=ts&play_token=HT0eR8rg3O",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 5) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=8699&extension=ts&play_token=omy77HZ0Lu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 6) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=557144&extension=ts&play_token=5NEWoykh0p",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 7) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=3365&extension=ts&play_token=HT0eR8rg3O",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 8) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=8699&extension=ts&play_token=omy77HZ0Lu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 9) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=557144&extension=ts&play_token=5NEWoykh0p",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 10) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=3365&extension=ts&play_token=HT0eR8rg3O",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 11) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=8699&extension=ts&play_token=omy77HZ0Lu",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk 4K (Yayın 12) • 2160p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=557144&extension=ts&play_token=5NEWoykh0p",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk HD (Yayın 13) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=282380&extension=ts&play_token=V7wkWi6wr0",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk HD (Yayın 14) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=282380&extension=ts&play_token=V7wkWi6wr0",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk HD (Yayın 15) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=282380&extension=ts&play_token=V7wkWi6wr0",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] CNN Türk HD (Yayın 16) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=282380&extension=ts&play_token=V7wkWi6wr0",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] CNN Türk SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=170672&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] CNN Türk SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=196798&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] CNN Türk SD (Yayın 3)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10777&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

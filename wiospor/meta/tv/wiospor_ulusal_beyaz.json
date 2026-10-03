@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_beyaz",
+    "type": "tv",
+    "name": "📺 Beyaz TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_beyaz.png",
+    "posterShape": "landscape",
+    "description": "Beyaz TV"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_sari_1",
+    "type": "tv",
+    "name": "🟡 Sarı Spor 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/sari_1.png",
+    "posterShape": "landscape",
+    "description": "Exxen Spor 1"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "SÖZCÜ TV • Auto",
+      "url": "https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Sozcu_Tv.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "SÖZCÜ TV • Auto",
+      "url": "https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "SÖZCÜ TV • Auto",
+      "url": "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Sozcu_Tv.m3u8?t=1772961348",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • World Has IPTV",
+      "title": "SÖZCÜ CANLI • Auto",
+      "url": "https://helga.iptv2022.com/szc_tv/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "SÖZCÜ TV • Auto",
+      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=540949&extension=ts&play_token=JOFxL2wUlR",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "SÖZCÜ TV • Auto",
+      "url": "http://me.mdmfista.com/play/live.php?mac=00:1A:79:F5:CE:D7&stream=540949&extension=ts&play_token=JOFxL2wUlR",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • IPTV Sevgisi",
+      "title": "Sozcu Haber • Auto",
+      "url": "https://rr3---sn-2oi5h5-5j.googlevideo.com/videoplayback/id/ztmY_cCtUl0.4/itag/270/source/yt_live_broadcast/expire/1790815623/ei/J1m9avCiB5aE6LUPhrmDsAI/ip/2a02:8109:380a:7200:740a:1cda:1248:ab7c/requiressl/yes/ratebypass/yes/live/1/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr3---sn-2oi5h5-5j.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AWzQHwr2_WytlTVGrHp7GANK_XGxQiRu5eVo7rEjJUOhyvVrYsiQN3GsZ11asyVpV_nnljtdUYMGVfrG/spc/I-rgIS56cmajPbNXNPYRurJCXkrm1TOUFbKeCbZNuZkxuOEi-IqXcBIuXw/vprv/1/reg/0/playlist_type/DVR/initcwndbps/2319500/met/1790794024,/mh/2L/mm/44/mn/sn-2oi5h5-5j/ms/lva/mv/m/mvi/3/pl/37/rms/lva,lva/keepalive/yes/fexp/51565115,52112904,52184227/mt/1790793644/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRQIgFQhyorOvyT4uzGP8K-7R0oK6jDBzDn_OYtNyXItT7MACIQD8O5e2-T87czRCU_o81kRVc5BUl-sebZomTxhy8ZgxgQ%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgUkiB5hv8n6Yio7Y1TO01diNcfLpJECQ_iNW4r1RrKBECIQDxvqrDn6v25xQmAk8VywCUqBncvpKGHbIzAOk7ruznYQ%3D%3D/playlist/index.m3u8/sq/3524710/govp/lmt%3D946/dur/5.000/file/seg.ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sözcü TV (SZC) SD (Yayın 1)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=475740&extension=ts&play_token=B5YhbAYy6D",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sözcü TV (SZC) SD (Yayın 2)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=475740&extension=ts&play_token=B5YhbAYy6D",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sözcü TV (SZC) SD (Yayın 3)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=475740&extension=ts&play_token=B5YhbAYy6D",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] Sözcü TV (SZC) SD (Yayın 4)",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=475740&extension=ts&play_token=B5YhbAYy6D",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Sözcü TV (SZC) SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=314430&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Habertürk TV FHD (Yayın 1) • 1080p",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=1165406&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Habertürk TV SD (Yayın 2)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=196799&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Habertürk TV SD (Yayın 3)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10780&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Habertürk TV HD (Yayın 4) • 720p",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=1165407&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

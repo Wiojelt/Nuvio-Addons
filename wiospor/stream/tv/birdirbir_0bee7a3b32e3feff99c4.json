@@ -1,0 +1,36 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sky Sports F1 SD (Yayın 1)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:4A:44:DD&stream=1562533&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sky Sports F1 SD (Yayın 2)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:E7:23:C5&stream=1562533&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sky Sports F1 SD (Yayın 3)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:00:1C:FC&stream=1562533&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • WorldSport",
+      "title": "[WorldSport] Sky Sports F1 SD (Yayın 4)",
+      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562533&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

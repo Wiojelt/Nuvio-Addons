@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_kanal7",
+    "type": "tv",
+    "name": "📺 Kanal 7",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_kanal7.png",
+    "posterShape": "landscape",
+    "description": "Kanal 7"
+  }
+}

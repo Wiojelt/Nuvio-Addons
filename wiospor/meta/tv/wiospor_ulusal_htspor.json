@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_htspor",
+    "type": "tv",
+    "name": "📺 HT Spor",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_htspor.png",
+    "posterShape": "landscape",
+    "description": "HT Spor"
+  }
+}

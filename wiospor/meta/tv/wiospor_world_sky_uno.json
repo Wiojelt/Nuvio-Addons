@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_world_sky_uno",
+    "type": "tv",
+    "name": "🌐 World Sky Sport Uno",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sky_uno.png",
+    "posterShape": "landscape",
+    "description": "Sky Sport Uno"
+  }
+}

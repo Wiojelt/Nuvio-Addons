@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_show",
+    "type": "tv",
+    "name": "📺 Show TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_show.png",
+    "posterShape": "landscape",
+    "description": "Show TV"
+  }
+}

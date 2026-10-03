@@ -1,0 +1,44 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] GS TV HD (Yayın 1) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:EF&stream=401281&extension=ts&play_token=XTYL68rUHO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] GS TV HD (Yayın 2) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401281&extension=ts&play_token=XTYL68rUHO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] GS TV HD (Yayın 3) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:B7:06:A3&stream=401281&extension=ts&play_token=XTYL68rUHO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • 8kGold",
+      "title": "[8kGold] GS TV HD (Yayın 4) • 720p",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:85:D3:A6&stream=401281&extension=ts&play_token=XTYL68rUHO",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    },
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] GS TV SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=314797&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

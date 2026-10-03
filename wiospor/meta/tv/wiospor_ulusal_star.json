@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_star",
+    "type": "tv",
+    "name": "📺 Star TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_star.png",
+    "posterShape": "landscape",
+    "description": "Star TV"
+  }
+}
