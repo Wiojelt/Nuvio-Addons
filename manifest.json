@@ -104,6 +104,57 @@
       "limited": false,
       "disabledPlatforms": [],
       "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-filmmodu",
+      "name": "WioSinema • FilmModu",
+      "description": "FilmModu yerel HTML/JS film kazıyıcısı.",
+      "version": "0.1.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie"],
+      "filename": "providers/wiosinema-filmmodu.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo-20261004.png?rev=2",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["m3u8"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-dizimom",
+      "name": "WioSinema • DiziMom",
+      "description": "DiziMom yerel HTML/JS dizi kazıyıcısı.",
+      "version": "0.1.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["tv"],
+      "filename": "providers/wiosinema-dizimom.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo-20261004.png?rev=2",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["m3u8"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-setfilmizle",
+      "name": "WioSinema • SetFilmIzle",
+      "description": "SetFilmIzle yerel HTML/JS film ve dizi kazıyıcısı.",
+      "version": "0.1.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/wiosinema-setfilmizle.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo-20261004.png?rev=2",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["m3u8", "mp4"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }

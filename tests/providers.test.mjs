@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import vm from 'node:vm';
+import crypto from 'node:crypto';
 
 async function loadProvider(relativePath, fetchImpl) {
   const code = await fs.readFile(new URL(`../${relativePath}`, import.meta.url), 'utf8');
@@ -21,7 +22,14 @@ async function loadProvider(relativePath, fetchImpl) {
     encodeURIComponent,
     decodeURIComponent,
     setTimeout,
-    clearTimeout
+    clearTimeout,
+    Buffer,
+    atob: (s) => Buffer.from(s, 'base64').toString('utf8'),
+    btoa: (s) => Buffer.from(s, 'utf8').toString('base64'),
+    require: (name) => {
+      if (name === 'crypto') return crypto;
+      throw new Error(`Cannot require ${name}`);
+    }
   });
   new vm.Script(code, { filename: relativePath }).runInContext(context);
   return module.exports;
@@ -166,3 +174,106 @@ test('Vidcore provider follows upstream HTTP decrypt flow', async () => {
   assert.equal(streams.length, 1);
   assert.equal(streams[0].url, 'https://cdn.example/vidcore.m3u8');
 });
+
+test('FilmModu provider searches and decrypts Vidmixi player to extract HLS stream', async () => {
+  // Helper to make AES OpenSSL encrypted JSON payload
+  function makeVidmixiPayload(videoLocation, title, password) {
+    const salt = crypto.randomBytes(8);
+    const pass = Buffer.from(password, 'utf8');
+    let d = Buffer.alloc(0);
+    let dI = Buffer.alloc(0);
+    while (d.length < 48) {
+      const h = crypto.createHash('md5');
+      h.update(dI);
+      h.update(pass);
+      h.update(salt);
+      dI = h.digest();
+      d = Buffer.concat([d, dI]);
+    }
+    const key = d.subarray(0, 32);
+    const iv = d.subarray(32, 48);
+    const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);
+    const ct = Buffer.concat([cipher.update(JSON.stringify({ video_location: videoLocation, title })), cipher.final()]);
+    return JSON.stringify({ ct: ct.toString('base64'), s: salt.toString('hex') });
+  }
+
+  const pass = 'mock-password-123';
+  const vidmixiJson = makeVidmixiPayload('https://cdn.example/filmmodu.m3u8', 'Fight Club', pass);
+  const ilkpartIframe = `<iframe src="https://vidmixi.com/embed/mock-vidmixi"></iframe>`;
+  const ilkpartBase64 = Buffer.from(ilkpartIframe).toString('base64');
+
+  const provider = await loadProvider('providers/wiosinema-filmmodu.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/movie/550')) {
+      return response({ json: { imdb_id: 'tt0137523', title: 'Fight Club' } });
+    }
+    if (u === 'https://filmmodu.cc/arama/') {
+      return response({ text: '<a class="search_s" href="https://filmmodu.cc/film/fight-club-izle/">Fight Club</a>' });
+    }
+    if (u === 'https://filmmodu.cc/film/fight-club-izle/') {
+      return response({ text: `var ilkpartkod = '${ilkpartBase64}';` });
+    }
+    if (u === 'https://vidmixi.com/embed/mock-vidmixi') {
+      return response({ text: `bePlayer('${pass}', '${vidmixiJson}')` });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams(550, 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].provider, 'wiosinema-filmmodu');
+  assert.equal(streams[0].format, 'm3u8');
+  assert.equal(streams[0].url, 'https://cdn.example/filmmodu.m3u8');
+  assert.equal(streams[0].quality, 1080);
+});
+
+test('DiziMom provider searches and extracts HLS stream for TV series', async () => {
+  const provider = await loadProvider('providers/wiosinema-dizimom.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/tv/1399')) {
+      return response({ json: { name: 'Game of Thrones' } });
+    }
+    if (u.startsWith('https://ddizimom.net/ara?q=')) {
+      return response({ text: '<a href="https://ddizimom.net/dizi/game-of-thrones">Game of Thrones</a>' });
+    }
+    if (u === 'https://ddizimom.net/dizi/game-of-thrones/sezon-1/bolum-1') {
+      return response({ text: '<div data-pv="slug-got-s1e1"></div>' });
+    }
+    if (u.startsWith('https://play2.pilavyerplay.top/assets/js/s.php?s=slug-got-s1e1')) {
+      return response({ text: 'window.__PLAYER__ = {"stream":"https://cdn.example/got-s1e1.m3u8"};' });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams(1399, 'tv', 1, 1);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].provider, 'wiosinema-dizimom');
+  assert.equal(streams[0].format, 'm3u8');
+  assert.equal(streams[0].url, 'https://cdn.example/got-s1e1.m3u8');
+});
+
+test('SetFilmIzle provider queries admin-ajax to extract playable stream', async () => {
+  const provider = await loadProvider('providers/wiosinema-setfilmizle.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/movie/550')) {
+      return response({ json: { title: 'Fight Club' } });
+    }
+    if (u.startsWith('https://www.setfilmizle.ltd/?s=')) {
+      return response({ text: '<a href="https://www.setfilmizle.ltd/film/fight-club/"><article class="card"></article></a>' });
+    }
+    if (u === 'https://www.setfilmizle.ltd/film/fight-club/') {
+      return response({ text: 'nonces: { video: "video-nonce-123" }; class="post-12307"; data-player-name="SetPlay"' });
+    }
+    if (u === 'https://www.setfilmizle.ltd/wp-admin/admin-ajax.php') {
+      return response({ text: JSON.stringify({ success: true, data: { stream: { url: 'https://setplay.shop/player/stfplay.php?v=1', provider: 'setplay' } } }) });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams(550, 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].provider, 'wiosinema-setfilmizle');
+  assert.equal(streams[0].url, 'https://setplay.shop/player/stfplay.php?v=1');
+  assert.equal(streams[0].format, 'video');
+});
+
