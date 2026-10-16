@@ -35,11 +35,11 @@ function response({ json, text = '', ok = true }) {
   };
 }
 
-test('WioCinema uses the Nuvio scraper repository manifest schema with 7 native providers', async () => {
+test('WioCinema uses the Nuvio scraper repository manifest schema with 8 native providers', async () => {
   const manifest = JSON.parse(await fs.readFile(new URL('../wiocinema/manifest.json', import.meta.url), 'utf8'));
   assert.equal(manifest.name, 'WioCinema');
   assert.ok(Array.isArray(manifest.scrapers));
-  assert.equal(manifest.scrapers.length, 7);
+  assert.equal(manifest.scrapers.length, 8);
 
   const expectedProviders = [
     'wiocinema-clipbox',
@@ -48,7 +48,8 @@ test('WioCinema uses the Nuvio scraper repository manifest schema with 7 native 
     'wiocinema-bingebang',
     'wiocinema-cinecat',
     'wiocinema-flixnetwork',
-    'wiocinema-watch2movies'
+    'wiocinema-watch2movies',
+    'wiocinema-7reels'
   ];
 
   const actualIds = manifest.scrapers.map(s => s.id);
@@ -164,3 +165,25 @@ test('WioCinema Watch2Movies provider extracts stream', async () => {
   assert.equal(streams[0].provider, 'wiocinema-watch2movies');
   assert.equal(streams[0].url, 'https://cdn.example/watch2.m3u8');
 });
+
+test('WioCinema 7Reels provider extracts multi-server 4K streams with subtitles', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-7reels.js', async (url) => {
+    return response({ text: '<html><head><title>7REELS</title></head></html>' });
+  });
+  const streams = await provider.getStreams('157336', 'movie', null, null);
+  assert.ok(streams.length >= 6);
+  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('VidFast') && s.quality === 2160));
+  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('Strigil') && s.quality === 2160));
+  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('VidEasy') && s.quality === 2160));
+  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('VidLink') && s.quality === 1080));
+  assert.equal(streams[0].provider, 'wiocinema-7reels');
+  assert.ok(Array.isArray(streams[0].subtitles) && streams[0].subtitles.length > 0);
+  assert.ok(streams[0].subtitles.some(sub => sub.language === 'tr'));
+  assert.ok(streams[0].subtitles.some(sub => sub.language === 'en'));
+
+  // Test TV routes
+  const tvStreams = await provider.getStreams('1399', 'tv', 1, 1);
+  assert.ok(tvStreams.length >= 6);
+  assert.ok(tvStreams[0].url.includes('/tv/1399/1/1'));
+});
+

@@ -176,6 +176,31 @@
       "limited": false,
       "disabledPlatforms": [],
       "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-7reels",
+      "name": "WioCinema • 7Reels",
+      "description": "Global 7Reels multi-server provider (VidFast 4K, Strigil 4K, VidEasy 4K, VidLink, VidCore, Multi-Sub).",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-7reels.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://7reels.cc/7R.ico",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }

@@ -1,8 +1,13 @@
 {
-  "generatedAt": "2026-10-16T15:09:53.787Z",
+  "generatedAt": "2026-10-16T16:12:54.879Z",
   "manifestName": "WioCinema",
   "version": "1.0.0",
   "providers": [
+    {
+      "id": "wiocinema-clipbox",
+      "name": "WioCinema • ClipBox",
+      "filename": "providers/wiocinema-clipbox.js"
+    },
     {
       "id": "wiocinema-cinestream",
       "name": "WioCinema • CineStream",
@@ -32,6 +37,11 @@
       "id": "wiocinema-watch2movies",
       "name": "WioCinema • Watch2Movies",
       "filename": "providers/wiocinema-watch2movies.js"
+    },
+    {
+      "id": "wiocinema-7reels",
+      "name": "WioCinema • 7Reels",
+      "filename": "providers/wiocinema-7reels.js"
     }
   ]
 }
