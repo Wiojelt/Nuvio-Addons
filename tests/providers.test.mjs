@@ -277,3 +277,25 @@ test('SetFilmIzle provider queries admin-ajax to extract playable stream', async
   assert.equal(streams[0].format, 'video');
 });
 
+test('FilmMakinesi provider searches and extracts iframe stream', async () => {
+  const provider = await loadProvider('providers/wiosinema-filmmakinesi.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/movie/550')) {
+      return response({ json: { title: 'Fight Club' } });
+    }
+    if (u.startsWith('https://filmmakinesi.co/?s=')) {
+      return response({ text: '<a class="mini-poster" href="https://filmmakinesi.co/fight-club/">Fight Club</a>' });
+    }
+    if (u === 'https://filmmakinesi.co/fight-club/') {
+      return response({ text: '<iframe src="https://oynatloload.top/embed/12345"></iframe>' });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams(550, 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].provider, 'wiosinema-filmmakinesi');
+  assert.equal(streams[0].url, 'https://oynatloload.top/embed/12345');
+  assert.equal(streams[0].format, 'video');
+});
+

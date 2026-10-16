@@ -155,6 +155,23 @@
       "limited": false,
       "disabledPlatforms": [],
       "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiosinema-filmmakinesi",
+      "name": "WioSinema • FilmMakinesi",
+      "description": "FilmMakinesi yerel HTML/JS film ve dizi kazıyıcısı.",
+      "version": "0.1.0",
+      "author": "Wiojelt",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/wiosinema-filmmakinesi.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo-20261004.png?rev=2",
+      "contentLanguage": ["tr", "en"],
+      "formats": ["video"],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }
