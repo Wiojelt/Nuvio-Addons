@@ -2,6 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import vm from 'node:vm';
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
 
 async function loadProvider(relativePath, fetchImpl) {
   const code = await fs.readFile(new URL(`../${relativePath}`, import.meta.url), 'utf8');
@@ -10,9 +13,11 @@ async function loadProvider(relativePath, fetchImpl) {
     module,
     exports: module.exports,
     fetch: fetchImpl,
+    require,
     console,
     Promise,
     String,
+    Number,
     Array,
     Object,
     RegExp,
@@ -35,11 +40,11 @@ function response({ json, text = '', ok = true }) {
   };
 }
 
-test('WioCinema uses the Nuvio scraper repository manifest schema with 8 native providers', async () => {
+test('WioCinema uses the Nuvio scraper repository manifest schema with 9 native providers', async () => {
   const manifest = JSON.parse(await fs.readFile(new URL('../wiocinema/manifest.json', import.meta.url), 'utf8'));
   assert.equal(manifest.name, 'WioCinema');
   assert.ok(Array.isArray(manifest.scrapers));
-  assert.equal(manifest.scrapers.length, 8);
+  assert.equal(manifest.scrapers.length, 9);
 
   const expectedProviders = [
     'wiocinema-clipbox',
@@ -49,7 +54,8 @@ test('WioCinema uses the Nuvio scraper repository manifest schema with 8 native 
     'wiocinema-cinecat',
     'wiocinema-flixnetwork',
     'wiocinema-watch2movies',
-    'wiocinema-7reels'
+    'wiocinema-7reels',
+    'wiocinema-velarium'
   ];
 
   const actualIds = manifest.scrapers.map(s => s.id);
@@ -201,5 +207,71 @@ test('WioCinema 7Reels provider extracts direct 4K master m3u8 streams with subt
   assert.equal(fallbackStreams[0].format, 'm3u8');
   assert.ok(fallbackStreams[0].url.includes('/tv/1399/1/1'));
 });
+
+test('WioCinema Velarium provider extracts direct 4K master m3u8 streams with subtitles and fallback', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-velarium.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u === 'https://velarium.cc/en/watch/movie/550') {
+      return response({ text: '<script>window.__REQUEST_TOKEN__ = "TEST_REQ_TOKEN";</script>' });
+    }
+    if (u === 'https://velarium.cc/api/playback-init') {
+      const payload = JSON.parse(options.body || '{}');
+      if (payload.pow) {
+        return response({ text: JSON.stringify({ success: true, token: 'STREAM_TOKEN_123' }) });
+      }
+      return response({
+        text: JSON.stringify({
+          success: true,
+          requiresPow: true,
+          pow: {
+            challengeId: 'pow-test-id',
+            challenge: 'test-challenge',
+            difficulty: 4
+          }
+        })
+      });
+    }
+    if (u === 'https://velarium.cc/api/encrypt') {
+      const payload = JSON.parse(options.body || '{}');
+      const src = payload.data && payload.data.source;
+      return response({ text: JSON.stringify({ url: `/api/stream-encrypted?src=${src}` }) });
+    }
+    if (u.includes('/api/stream-encrypted?src=')) {
+      const match = /src=([^&]+)/.exec(u);
+      const src = match ? match[1] : 's0';
+      return response({
+        text: JSON.stringify({
+          success: true,
+          data: {
+            stream_url: `https://source.example.com/playlist/${src}.m3u8`,
+            source: src
+          }
+        })
+      });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams('550', 'movie', null, null);
+  assert.ok(streams.length >= 2);
+  assert.ok(streams.every(s => s.name === 'WioCinema • Velarium'));
+  assert.ok(streams.every(s => s.provider === 'wiocinema-velarium'));
+  assert.ok(streams.every(s => s.format === 'm3u8'));
+  assert.ok(streams.some(s => s.quality === 2160));
+  assert.ok(streams.some(s => s.title.includes('Lux (4K)')));
+  assert.ok(streams.some(s => s.title.includes('Prism (4K)')));
+  assert.ok(streams[0].subtitles.some(sub => sub.language === 'tr'));
+  assert.ok(streams[0].subtitles.some(sub => sub.language === 'en'));
+
+  // Test TV fallback
+  const fallbackProvider = await loadProvider('wiocinema/providers/wiocinema-velarium.js', async () => response({ ok: false }));
+  const fallbackStreams = await fallbackProvider.getStreams('1399', 'tv', 1, 1);
+  assert.equal(fallbackStreams.length, 2);
+  assert.equal(fallbackStreams[0].format, 'm3u8');
+  assert.ok(fallbackStreams[0].url.includes('/tv/1399-1-1'));
+  assert.equal(fallbackStreams[1].name, 'WioCinema • Lightflix');
+  assert.ok(fallbackStreams[1].url.includes('/tv/1399-1-1'));
+});
+
 
 

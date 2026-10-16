@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:31:31.636Z",
+  "generatedAt": "2026-10-16T20:39:47.986Z",
   "manifestName": "WioCinema",
   "version": "1.0.0",
   "providers": [
@@ -42,6 +42,11 @@
       "id": "wiocinema-7reels",
       "name": "WioCinema • 7Reels",
       "filename": "providers/wiocinema-7reels.js"
+    },
+    {
+      "id": "wiocinema-velarium",
+      "name": "WioCinema • Velarium",
+      "filename": "providers/wiocinema-velarium.js"
     }
   ]
 }

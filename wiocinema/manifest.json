@@ -201,6 +201,30 @@
       "limited": false,
       "disabledPlatforms": [],
       "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-velarium",
+      "name": "WioCinema • Velarium",
+      "description": "Global Velarium / Lightflix multi-source 4K provider with multi-language subtitles.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-velarium.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://www.google.com/s2/favicons?domain=velarium.cc&sz=128",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }
