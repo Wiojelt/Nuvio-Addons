@@ -4,6 +4,30 @@
   "version": "1.0.0",
   "scrapers": [
     {
+      "id": "wiocinema-clipbox",
+      "name": "WioCinema • ClipBox",
+      "description": "Global ClipBox VixSrc direct TMDB provider.",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wiocinema-clipbox.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo-20261004.png?rev=2",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
+    },
+    {
       "id": "wiocinema-cinestream",
       "name": "WioCinema • CineStream",
       "description": "Global multi-source movie and series provider (Vidup, Hexa, VidFast, Vidcore, Xpass).",

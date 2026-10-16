@@ -35,7 +35,7 @@ async function loadProvider(relativePath, fetchImpl) {
   return module.exports;
 }
 
-function response({ json, text = '', ok = true }) {
+function response({ json, text = json != null ? JSON.stringify(json) : '', ok = true }) {
   return {
     ok,
     json: async () => json,
@@ -298,4 +298,52 @@ test('FilmMakinesi provider searches and extracts iframe stream', async () => {
   assert.equal(streams[0].url, 'https://oynatloload.top/embed/12345');
   assert.equal(streams[0].format, 'video');
 });
+
+test('DiziBox provider searches directory and extracts episode stream', async () => {
+  const provider = await loadProvider('providers/wiosinema-dizibox.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/tv/1399')) {
+      return response({ json: { name: 'Game of Thrones', original_name: 'Game of Thrones', first_air_date: '2011-04-17' } });
+    }
+    if (u === 'https://www.dizibox.live/') {
+      return response({ text: '<a href="https://www.dizibox.live/diziler/game-of-thrones/" title="Game of Thrones"><span class="tv-title">Game of Thrones</span></a>' });
+    }
+    if (u === 'https://www.dizibox.live/diziler/game-of-thrones/') {
+      return response({ text: '<a href="https://www.dizibox.live/game-of-thrones-1-sezon-1-bolum-izle/">1. Sezon 1. Bölüm</a>' });
+    }
+    if (u === 'https://www.dizibox.live/game-of-thrones-1-sezon-1-bolum-izle/') {
+      return response({ text: '<div class="player-container"><iframe src="https://player.example/embed/got1"></iframe></div>' });
+    }
+    if (u === 'https://player.example/embed/got1') {
+      return response({ text: '<script>var file = "https://cdn.example/got.m3u8";</script>' });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams(1399, 'tv', 1, 1);
+  assert.ok(Array.isArray(streams));
+});
+
+test('HDFilmCehennemi provider searches and extracts embed stream', async () => {
+  const provider = await loadProvider('providers/wiosinema-hdfilmcehennemi.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('/movie/550')) {
+      return response({ json: { imdb_id: 'tt0137523', title: 'Fight Club' } });
+    }
+    if (u.startsWith('https://www.hdfilmcehennemi.nl/search/')) {
+      return response({ text: JSON.stringify({ results: ['<a href="https://www.hdfilmcehennemi.nl/fight-club-izle/"><h4 class="title">Fight Club</h4></a>'] }) });
+    }
+    if (u === 'https://www.hdfilmcehennemi.nl/fight-club-izle/') {
+      return response({ text: '<iframe src="https://hdfilmcehennemi.mobi/embed/12345"></iframe>' });
+    }
+    return response({ ok: false });
+  });
+
+  const streams = await provider.getStreams(550, 'movie', null, null);
+  assert.equal(streams.length, 1);
+  assert.equal(streams[0].provider, 'wiosinema-hdfilmcehennemi');
+  assert.equal(streams[0].url, 'https://hdfilmcehennemi.mobi/embed/12345');
+  assert.equal(streams[0].format, 'video');
+});
+
 
