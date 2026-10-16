@@ -166,24 +166,40 @@ test('WioCinema Watch2Movies provider extracts stream', async () => {
   assert.equal(streams[0].url, 'https://cdn.example/watch2.m3u8');
 });
 
-test('WioCinema 7Reels provider extracts multi-server 4K streams with subtitles', async () => {
-  const provider = await loadProvider('wiocinema/providers/wiocinema-7reels.js', async (url) => {
-    return response({ text: '<html><head><title>7REELS</title></head></html>' });
+test('WioCinema 7Reels provider extracts direct 4K master m3u8 streams with subtitles', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-7reels.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u === 'https://vidfast.vc/movie/157336/') return response({ text: '{"token":"TOK_VF"}' });
+    if (u.startsWith('https://enc-dec.app/api/enc-vidfast?text=')) {
+      return response({ text: JSON.stringify({ status: 200, result: { servers: 'https://vidfast.vc/api/servers', stream: 'https://vidfast.vc/api/stream', token: 'csrf-vf' } }) });
+    }
+    if (u === 'https://vidfast.vc/api/servers') return response({ text: 'RAW_SERVERS' });
+    if (u === 'https://vidfast.vc/api/stream/srv1') return response({ text: 'RAW_STREAM' });
+    if (u === 'https://enc-dec.app/api/dec-vidfast') {
+      const payload = JSON.parse(options.body || '{}');
+      if (payload.text === 'RAW_SERVERS') return response({ text: JSON.stringify({ status: 200, result: [{ name: 'vRapid', data: 'srv1' }] }) });
+      if (payload.text === 'RAW_STREAM') return response({ text: JSON.stringify({ status: 200, result: { url: 'https://cdn.example/7reels-4k.m3u8', is4kAvailable: true, tracks: [{ file: 'https://cdn.example/sub.vtt', label: 'English' }] } }) });
+    }
+    if (u.includes('/api/movie/157336')) return response({ text: JSON.stringify({ src: '/embed/vix123' }) });
+    if (u.endsWith('/embed/vix123')) return response({ text: `player({file:'https://cdn.example/vix.m3u8',token:'tok',expires:'exp'})` });
+    return response({ ok: false });
   });
+
   const streams = await provider.getStreams('157336', 'movie', null, null);
-  assert.ok(streams.length >= 6);
-  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('VidFast') && s.quality === 2160));
-  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('Strigil') && s.quality === 2160));
-  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('VidEasy') && s.quality === 2160));
-  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('VidLink') && s.quality === 1080));
+  assert.ok(streams.length >= 2);
+  assert.ok(streams.some(s => s.name === 'WioCinema • 7Reels' && s.title.includes('vRapid') && s.quality === 2160));
+  assert.ok(streams.every(s => s.format === 'm3u8'));
   assert.equal(streams[0].provider, 'wiocinema-7reels');
   assert.ok(Array.isArray(streams[0].subtitles) && streams[0].subtitles.length > 0);
   assert.ok(streams[0].subtitles.some(sub => sub.language === 'tr'));
   assert.ok(streams[0].subtitles.some(sub => sub.language === 'en'));
 
-  // Test TV routes
-  const tvStreams = await provider.getStreams('1399', 'tv', 1, 1);
-  assert.ok(tvStreams.length >= 6);
-  assert.ok(tvStreams[0].url.includes('/tv/1399/1/1'));
+  // Fallback check
+  const fallbackProvider = await loadProvider('wiocinema/providers/wiocinema-7reels.js', async () => response({ ok: false }));
+  const fallbackStreams = await fallbackProvider.getStreams('1399', 'tv', 1, 1);
+  assert.ok(fallbackStreams.length >= 2);
+  assert.equal(fallbackStreams[0].format, 'm3u8');
+  assert.ok(fallbackStreams[0].url.includes('/tv/1399/1/1'));
 });
+
 
