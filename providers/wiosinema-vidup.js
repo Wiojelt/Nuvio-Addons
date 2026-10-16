@@ -12,7 +12,8 @@ function baseHeaders() {
   return {
     "User-Agent": UA,
     "Referer": VIDUP + "/",
-    "X-Requested-With": "XMLHttpRequest"
+    "X-Requested-With": "XMLHttpRequest",
+    "Accept": "*/*"
   };
 }
 
@@ -72,23 +73,41 @@ function getStreams(tmdbId, mediaType, season, episode) {
     ? VIDUP + "/tv/" + encodeURIComponent(String(tmdbId)) + "/" + encodeURIComponent(String(season)) + "/" + encodeURIComponent(String(episode))
     : VIDUP + "/movie/" + encodeURIComponent(String(tmdbId));
 
-  return fetch(pageUrl)
+  return fetch(pageUrl, { headers: { "User-Agent": UA, "Referer": VIDUP + "/", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" } })
     .then(function (r) { return r.ok ? r.text() : ""; })
     .then(function (page) {
       var enc = extractEncryptedToken(page);
       if (!enc) return null;
-      return fetch(DECRYPT + "/enc-vidup?text=" + encodeURIComponent(enc), { headers: baseHeaders() })
+      return fetch(DECRYPT + "/enc-vidup?text=" + encodeURIComponent(enc) + "&stage=1", { headers: baseHeaders() })
         .then(function (r) { return r.ok ? r.text() : ""; });
     })
-    .then(function (initialText) {
-      if (!initialText) return [];
-      var initial = parseJson(initialText);
-      if (!initial || initial.status !== 200 || !initial.result) return [];
-      var serversUrl = initial.result.servers;
-      var streamUrl = initial.result.stream;
-      var token = initial.result.token;
-      if (!serversUrl || !streamUrl || !token) return [];
-      var postHeaders = Object.assign({}, baseHeaders(), { "X-CSRF-Token": token });
+    .then(function (stage1Text) {
+      if (!stage1Text) return [];
+      var s1 = parseJson(stage1Text);
+      if (!s1 || s1.status !== 200 || !s1.result) return [];
+
+      // Support 2-stage response with stage1 url or legacy direct servers
+      if (s1.result.stage1) {
+        var h1 = Object.assign({}, baseHeaders(), s1.result.token ? { "X-CSRF-Token": s1.result.token } : {});
+        return emptyPost(s1.result.stage1, h1)
+          .then(function (p1Text) {
+            if (!p1Text) return null;
+            return fetch(DECRYPT + "/enc-vidup?text=" + encodeURIComponent(p1Text) + "&stage=2", { headers: baseHeaders() })
+              .then(function (r) { return r.ok ? r.text() : ""; });
+          })
+          .then(function (s2Text) {
+            var s2 = parseJson(s2Text);
+            return s2 && s2.status === 200 && s2.result ? s2.result : null;
+          });
+      }
+      return s1.result;
+    })
+    .then(function (initial) {
+      if (!initial || !initial.servers || !initial.stream) return [];
+      var serversUrl = initial.servers;
+      var streamUrl = initial.stream;
+      var token = initial.token;
+      var postHeaders = Object.assign({}, baseHeaders(), token ? { "X-CSRF-Token": token } : {});
       return emptyPost(serversUrl, postHeaders)
         .then(function (encryptedServers) { return encryptedServers ? decrypt(encryptedServers) : null; })
         .then(function (serverData) {

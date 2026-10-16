@@ -23,7 +23,20 @@ function getStreams(tmdbId, mediaType, season, episode) {
   return fetch(embed, { headers: { "User-Agent": UA, "Referer": XPASS + "/" } })
     .then(function (r) { return r.ok ? r.text() : ""; })
     .then(function (html) {
+      if (!html) return [];
       var list = backups(html);
+      if (!list || !list.length) {
+        var tm = /<title>([^<]+)<\/title>/i.exec(html);
+        return [{
+          name: "WioSinema • Xpass",
+          title: "Xpass • " + (tm && tm[1] ? tm[1].trim() : "Player") + " • 1080p",
+          url: embed,
+          quality: 1080,
+          provider: "wiosinema-xpass",
+          format: "video",
+          headers: { "User-Agent": UA, "Referer": XPASS + "/" }
+        }];
+      }
       return Promise.all(list.map(function (server) {
         return fetch(full(server.url), { headers: { "User-Agent": UA, "Referer": embed } })
           .then(function (r) { return r.ok ? r.text() : ""; })

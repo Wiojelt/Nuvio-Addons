@@ -14,7 +14,8 @@ var UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 
 function parseJson(text) { try { return JSON.parse(text); } catch (_) { return null; } }
 function postJson(url, payload, headers) {
-  var h = Object.assign({ "Content-Type": "application/json" }, headers || {});
+  var h = Object.assign({}, headers || {});
+  if (payload != null) h["Content-Type"] = "application/json";
   return fetch(url, { method: "POST", headers: h, body: payload == null ? undefined : JSON.stringify(payload) })
     .then(function (r) { return r.ok ? r.text() : ""; });
 }
@@ -22,21 +23,44 @@ function getText(url, headers) {
   return fetch(url, { headers: headers || {} }).then(function (r) { return r.ok ? r.text() : ""; });
 }
 
+function randomHex(bytes) {
+  var out = "";
+  for (var i = 0; i < bytes; i++) {
+    var n = Math.floor(Math.random() * 256).toString(16);
+    out += n.length === 1 ? "0" + n : n;
+  }
+  return out;
+}
+
 function resolveVidup(tmdbId, mediaType, season, episode) {
   var isTv = mediaType === "tv" && season != null && episode != null;
   var pageUrl = isTv
     ? VIDUP + "/tv/" + encodeURIComponent(String(tmdbId)) + "/" + encodeURIComponent(String(season)) + "/" + encodeURIComponent(String(episode))
     : VIDUP + "/movie/" + encodeURIComponent(String(tmdbId));
-  var h = { "User-Agent": UA, "Referer": VIDUP + "/", "X-Requested-With": "XMLHttpRequest" };
+  var h = { "User-Agent": UA, "Referer": VIDUP + "/", "X-Requested-With": "XMLHttpRequest", "Accept": "*/*" };
 
-  return getText(pageUrl, h).then(function (html) {
+  return getText(pageUrl, { "User-Agent": UA, "Referer": VIDUP + "/", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" }).then(function (html) {
     var m = /\\\"(?:en|token)\\\":\\\"(.*?)\\\"/.exec(html) || /[\"](?:en|token)[\"]\s*:\s*[\"]([^\"]+)[\"]/.exec(html);
     if (!m) return [];
-    return getText(DECRYPT + "/enc-vidup?text=" + encodeURIComponent(m[1]))
+    return getText(DECRYPT + "/enc-vidup?text=" + encodeURIComponent(m[1]) + "&stage=1", h)
       .then(parseJson)
       .then(function (encData) {
-        if (!encData || encData.status !== 200 || !encData.result) return [];
-        var res = encData.result;
+        if (!encData || encData.status !== 200 || !encData.result) return null;
+        var r1 = encData.result;
+        if (r1.stage1) {
+          var h1 = Object.assign({}, h, r1.token ? { "X-CSRF-Token": r1.token } : {});
+          return postJson(r1.stage1, null, h1)
+            .then(function (p1) {
+              if (!p1) return null;
+              return getText(DECRYPT + "/enc-vidup?text=" + encodeURIComponent(p1) + "&stage=2", h)
+                .then(parseJson)
+                .then(function (s2) { return s2 && s2.status === 200 && s2.result ? s2.result : null; });
+            });
+        }
+        return r1;
+      })
+      .then(function (res) {
+        if (!res || !res.servers || !res.stream) return [];
         var postHeaders = Object.assign({}, h, res.token ? { "X-Csrf-Token": res.token } : {});
         return postJson(res.servers, null, postHeaders)
           .then(function (encServers) { return encServers ? postJson(DECRYPT + "/dec-vidup", { text: encServers }) : ""; })
@@ -73,16 +97,17 @@ function resolveHexa(tmdbId, mediaType, season, episode) {
     ? HEXA_API + "/api/tmdb/tv/" + encodeURIComponent(String(tmdbId)) + "/season/" + encodeURIComponent(String(season)) + "/episode/" + encodeURIComponent(String(episode)) + "/images"
     : HEXA_API + "/api/tmdb/movie/" + encodeURIComponent(String(tmdbId)) + "/images";
 
+  var key = randomHex(32);
   return getText(DECRYPT + "/enc-hexa")
     .then(parseJson)
     .then(function (tokData) {
       var tok = tokData && tokData.result && tokData.result.token;
       if (!tok) return [];
-      var h = { "User-Agent": UA, "Accept": "text/plain", "X-Api-Key": "4f8a1cc39e9136c41504646444", "X-Fingerprint-Lite": "e9136c41504646444", "Referer": HEXA_REF, "X-Cap-Token": tok };
+      var h = { "User-Agent": UA, "Accept": "text/plain", "X-Api-Key": key, "X-Fingerprint-Lite": "e9136c41504646444", "Referer": HEXA_REF, "X-Cap-Token": tok };
       return getText(url, h)
         .then(function (enc) {
           if (!enc) return [];
-          return postJson(DECRYPT + "/dec-hexa", { text: enc })
+          return postJson(DECRYPT + "/dec-hexa", { text: enc, key: key })
             .then(parseJson)
             .then(function (data) {
               var sources = data && data.result && data.result.sources;
@@ -108,15 +133,29 @@ function resolveVidFastPro(tmdbId, mediaType, season, episode) {
   var page = isTv
     ? VIDFAST + "/tv/" + encodeURIComponent(String(tmdbId)) + "/" + encodeURIComponent(String(season)) + "/" + encodeURIComponent(String(episode)) + "/"
     : VIDFAST + "/movie/" + encodeURIComponent(String(tmdbId)) + "/";
-  var h = { "User-Agent": UA, "Referer": VIDFAST + "/", "X-Requested-With": "XMLHttpRequest" };
+  var h = { "User-Agent": UA, "Referer": VIDFAST + "/", "X-Requested-With": "XMLHttpRequest", "Accept": "*/*" };
 
-  return getText(page, h).then(function (body) {
+  return getText(page, { "User-Agent": UA, "Referer": VIDFAST + "/", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" }).then(function (body) {
     var m = /\\\"(?:en|token)\\\":\\\"(.*?)\\\"/.exec(body) || /[\"](?:en|token)[\"]\s*:\s*[\"]([^\"]+)[\"]/.exec(body);
     if (!m) return [];
-    return getText(DECRYPT + "/enc-vidfast?text=" + encodeURIComponent(m[1]))
+    return getText(DECRYPT + "/enc-vidfast?text=" + encodeURIComponent(m[1]) + "&stage=1", h)
       .then(parseJson)
       .then(function (enc) {
-        var res = enc && enc.result;
+        if (!enc || enc.status !== 200 || !enc.result) return null;
+        var r1 = enc.result;
+        if (r1.stage1) {
+          var h1 = Object.assign({}, h, r1.token ? { "X-CSRF-Token": r1.token } : {});
+          return postJson(r1.stage1, null, h1)
+            .then(function (p1) {
+              if (!p1) return null;
+              return getText(DECRYPT + "/enc-vidfast?text=" + encodeURIComponent(p1) + "&stage=2", h)
+                .then(parseJson)
+                .then(function (s2) { return s2 && s2.status === 200 && s2.result ? s2.result : null; });
+            });
+        }
+        return r1;
+      })
+      .then(function (res) {
         if (!res || !res.servers || !res.stream) return [];
         var reqHeaders = Object.assign({}, h, res.token ? { "X-Csrf-Token": res.token } : {});
         return postJson(res.servers, null, reqHeaders)
@@ -154,15 +193,29 @@ function resolveVidcore(tmdbId, mediaType, season, episode) {
   var page = isTv
     ? VIDCORE + "/tv/" + encodeURIComponent(String(tmdbId)) + "/" + encodeURIComponent(String(season)) + "/" + encodeURIComponent(String(episode))
     : VIDCORE + "/movie/" + encodeURIComponent(String(tmdbId));
-  var h = { "User-Agent": UA, "Referer": VIDCORE + "/", "X-Requested-With": "XMLHttpRequest" };
+  var h = { "User-Agent": UA, "Referer": VIDCORE + "/", "X-Requested-With": "XMLHttpRequest", "Accept": "*/*" };
 
-  return getText(page, h).then(function (body) {
+  return getText(page, { "User-Agent": UA, "Referer": VIDCORE + "/", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" }).then(function (body) {
     var m = /\\\"(?:en|token)\\\":\\\"(.*?)\\\"/.exec(body) || /[\"](?:en|token)[\"]\s*:\s*[\"]([^\"]+)[\"]/.exec(body);
     if (!m) return [];
-    return getText(DECRYPT + "/enc-vidcore?text=" + encodeURIComponent(m[1]))
+    return getText(DECRYPT + "/enc-vidcore?text=" + encodeURIComponent(m[1]) + "&stage=1", h)
       .then(parseJson)
       .then(function (enc) {
-        var res = enc && enc.result;
+        if (!enc || enc.status !== 200 || !enc.result) return null;
+        var r1 = enc.result;
+        if (r1.stage1) {
+          var h1 = Object.assign({}, h, r1.token ? { "X-CSRF-Token": r1.token } : {});
+          return postJson(r1.stage1, null, h1)
+            .then(function (p1) {
+              if (!p1) return null;
+              return getText(DECRYPT + "/enc-vidcore?text=" + encodeURIComponent(p1) + "&stage=2", h)
+                .then(parseJson)
+                .then(function (s2) { return s2 && s2.status === 200 && s2.result ? s2.result : null; });
+            });
+        }
+        return r1;
+      })
+      .then(function (res) {
         if (!res || !res.servers || !res.stream) return [];
         var reqHeaders = Object.assign({}, h, res.token ? { "X-Csrf-Token": res.token } : {});
         return postJson(res.servers, null, reqHeaders)
@@ -202,9 +255,21 @@ function resolveXpass(tmdbId, mediaType, season, episode) {
     : XPASS + "/e/movie/" + encodeURIComponent(String(tmdbId));
 
   return getText(embed, { "User-Agent": UA, "Referer": XPASS + "/" }).then(function (html) {
+    if (!html) return [];
     var m = /var\s+backups\s*=\s*(\[[\s\S]*?\]);/.exec(html || "");
     var arr = m ? parseJson(m[1]) : [];
-    if (!Array.isArray(arr)) return [];
+    if (!Array.isArray(arr) || !arr.length) {
+      var tm = /<title>([^<]+)<\/title>/i.exec(html);
+      return [{
+        name: "WioCinema • CineStream",
+        title: "CineStream • Xpass (" + (tm && tm[1] ? tm[1].trim() : "Player") + ") • 1080p",
+        url: embed,
+        quality: 1080,
+        provider: "wiocinema-cinestream",
+        format: "video",
+        headers: { "User-Agent": UA, "Referer": XPASS + "/" }
+      }];
+    }
     return Promise.all(arr.filter(function (x) { return x && x.url; }).map(function (server) {
       var serverUrl = /^https?:\/\//i.test(server.url) ? server.url : XPASS.replace(/\/$/, "") + "/" + server.url.replace(/^\//, "");
       return getText(serverUrl, { "User-Agent": UA, "Referer": embed })

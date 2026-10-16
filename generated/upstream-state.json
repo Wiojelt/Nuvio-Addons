@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-03T11:40:44.859Z",
+  "updatedAt": "2026-10-16T13:17:37.228Z",
   "repositories": {
     "wiospor-public": {
       "repo": "Wiojelt/WioSpor",
-      "ref": "main",
-      "sha": "0f8d15343651942e43eccc0b3f26c0fcc6e49ad1"
+      "ref": "master",
+      "sha": "89c97cda313efd0dcd416b30a1d7033b8d60473b"
     },
     "turksinema-source": {
       "repo": "Wiojelt/TurkSinema-Source",
