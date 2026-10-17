@@ -225,6 +225,32 @@
       "limited": false,
       "disabledPlatforms": [],
       "supportsExternalPlayer": true
+    },
+    {
+      "id": "wiocinema-newtane",
+      "name": "WioCinema • Newtane",
+      "description": "Global Newtane multi-server provider (Movie, Series & Anime: VidFast 4K, Videasy 4K, VidCore, VidPro, VidLink, TryEmbed, MegaPlay, AnimePahe).",
+      "version": "1.0.0",
+      "author": "Wiojelt",
+      "supportedTypes": [
+        "movie",
+        "tv",
+        "anime"
+      ],
+      "filename": "providers/wiocinema-newtane.js",
+      "enabled": true,
+      "hasSettings": false,
+      "logo": "https://tv.newtane.com/newtv-logo.png",
+      "contentLanguage": [
+        "en"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }

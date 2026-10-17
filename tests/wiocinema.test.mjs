@@ -40,11 +40,11 @@ function response({ json, text = '', ok = true }) {
   };
 }
 
-test('WioCinema uses the Nuvio scraper repository manifest schema with 9 native providers', async () => {
+test('WioCinema uses the Nuvio scraper repository manifest schema with 10 native providers', async () => {
   const manifest = JSON.parse(await fs.readFile(new URL('../wiocinema/manifest.json', import.meta.url), 'utf8'));
   assert.equal(manifest.name, 'WioCinema');
   assert.ok(Array.isArray(manifest.scrapers));
-  assert.equal(manifest.scrapers.length, 9);
+  assert.equal(manifest.scrapers.length, 10);
 
   const expectedProviders = [
     'wiocinema-clipbox',
@@ -55,7 +55,8 @@ test('WioCinema uses the Nuvio scraper repository manifest schema with 9 native 
     'wiocinema-flixnetwork',
     'wiocinema-watch2movies',
     'wiocinema-7reels',
-    'wiocinema-velarium'
+    'wiocinema-velarium',
+    'wiocinema-newtane'
   ];
 
   const actualIds = manifest.scrapers.map(s => s.id);
@@ -272,6 +273,61 @@ test('WioCinema Velarium provider extracts direct 4K master m3u8 streams with su
   assert.equal(fallbackStreams[1].name, 'WioCinema • Lightflix');
   assert.ok(fallbackStreams[1].url.includes('/tv/1399-1-1'));
 });
+
+test('WioCinema Newtane provider extracts direct 4K streams and movie, series, and anime servers', async () => {
+  const provider = await loadProvider('wiocinema/providers/wiocinema-newtane.js', async (url, options = {}) => {
+    const u = String(url);
+    if (u.includes('newtvproxy.newtane.com/api/tmdb/movie/550')) {
+      return response({ json: { id: 550, imdb_id: 'tt0137523' } });
+    }
+    if (u.includes('newtvproxy.newtane.com/api/tmdb/tv/1399')) {
+      return response({ json: { id: 1399, external_ids: { imdb_id: 'tt0944947' } } });
+    }
+    if (u === 'https://vidfast.vc/movie/550/') {
+      return response({ text: '{"token":"TOK_VF"}' });
+    }
+    if (u.startsWith('https://enc-dec.app/api/enc-vidfast?text=')) {
+      return response({ text: JSON.stringify({ status: 200, result: { servers: 'https://vidfast.vc/api/servers', stream: 'https://vidfast.vc/api/stream', token: 'csrf-vf' } }) });
+    }
+    if (u === 'https://vidfast.vc/api/servers') return response({ text: 'RAW_SERVERS' });
+    if (u === 'https://vidfast.vc/api/stream/srv1') return response({ text: 'RAW_STREAM' });
+    if (u === 'https://enc-dec.app/api/dec-vidfast') {
+      return response({ text: JSON.stringify({ status: 200, result: { url: 'https://cdn.example/newtane-4k.m3u8', is4kAvailable: true, tracks: [{ file: 'https://cdn.example/sub.vtt', label: 'English' }] } }) });
+    }
+    return response({ ok: false });
+  });
+
+  // 1. Movie Test
+  const movieStreams = await provider.getStreams('550', 'movie', null, null);
+  assert.ok(movieStreams.length >= 8);
+  assert.ok(movieStreams.every(s => s.name === 'WioCinema • Newtane'));
+  assert.ok(movieStreams.every(s => s.provider === 'wiocinema-newtane'));
+  assert.ok(movieStreams.every(s => s.format === 'm3u8'));
+  assert.ok(movieStreams.some(s => s.quality === 2160));
+  assert.ok(movieStreams.some(s => s.title.includes('VidFast')));
+  assert.ok(movieStreams.some(s => s.title.includes('Videasy (4K • Multi-Audio)')));
+  assert.ok(movieStreams.some(s => s.title.includes('Vidcore (4K • Elite)')));
+  assert.ok(movieStreams.some(s => s.title.includes('VidPro (CinemaOS • FHD)')));
+  assert.ok(movieStreams.some(s => s.title.includes('VidLink (FHD • Fast)')));
+  assert.ok(movieStreams.some(s => s.title.includes('VidNest (FHD • Multi-Audio)')));
+  assert.ok(movieStreams.some(s => s.title.includes('TryEmbed [SUB]')));
+  assert.ok(movieStreams[0].subtitles.some(sub => sub.language === 'tr'));
+  assert.ok(movieStreams[0].subtitles.some(sub => sub.language === 'en'));
+
+  // 2. TV Series Test
+  const tvStreams = await provider.getStreams('1399', 'tv', 1, 2);
+  assert.ok(tvStreams.length >= 8);
+  assert.ok(tvStreams.some(s => s.url.includes('/1/2')));
+
+  // 3. Anime Test
+  const animeStreams = await provider.getStreams('20', 'anime', null, 5);
+  assert.ok(animeStreams.length >= 6);
+  assert.ok(animeStreams.some(s => s.title.includes('TryEmbed [SUB]') && s.url.includes('/20/5/sub')));
+  assert.ok(animeStreams.some(s => s.title.includes('TryEmbed [DUB]') && s.url.includes('/20/5/dub')));
+  assert.ok(animeStreams.some(s => s.title.includes('MegaPlay [SUB]') && s.url.includes('/20/5/sub')));
+  assert.ok(animeStreams.some(s => s.title.includes('AnimePahe [SUB]') && s.url.includes('/20/5/sub')));
+});
+
 
 
 
