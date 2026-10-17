@@ -3,7 +3,7 @@
  */
 "use strict";
 
-var HOST = "https://bingebang.tv";
+var HOST = "https://bingebang.cc";
 var UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36";
 
 function getStreams(tmdbId, mediaType, season, episode) {
