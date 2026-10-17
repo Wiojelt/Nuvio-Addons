@@ -268,10 +268,11 @@ test('WioCinema Velarium provider extracts direct 4K master m3u8 streams with su
   const fallbackProvider = await loadProvider('wiocinema/providers/wiocinema-velarium.js', async () => response({ ok: false }));
   const fallbackStreams = await fallbackProvider.getStreams('1399', 'tv', 1, 1);
   assert.equal(fallbackStreams.length, 2);
-  assert.equal(fallbackStreams[0].format, 'm3u8');
+  assert.equal(fallbackStreams[0].format, 'video');
   assert.ok(fallbackStreams[0].url.includes('/tv/1399-1-1'));
   assert.equal(fallbackStreams[1].name, 'WioCinema • Lightflix');
   assert.ok(fallbackStreams[1].url.includes('/tv/1399-1-1'));
+  assert.equal(fallbackStreams[1].format, 'video');
 });
 
 test('WioCinema Newtane provider extracts direct 4K streams and movie, series, and anime servers', async () => {
@@ -292,7 +293,9 @@ test('WioCinema Newtane provider extracts direct 4K streams and movie, series, a
     if (u === 'https://vidfast.vc/api/servers') return response({ text: 'RAW_SERVERS' });
     if (u === 'https://vidfast.vc/api/stream/srv1') return response({ text: 'RAW_STREAM' });
     if (u === 'https://enc-dec.app/api/dec-vidfast') {
-      return response({ text: JSON.stringify({ status: 200, result: { url: 'https://cdn.example/newtane-4k.m3u8', is4kAvailable: true, tracks: [{ file: 'https://cdn.example/sub.vtt', label: 'English' }] } }) });
+      const payload = JSON.parse(options.body || '{}');
+      if (payload.text === 'RAW_SERVERS') return response({ text: JSON.stringify({ status: 200, result: [{ name: 'vRapid', data: 'srv1' }] }) });
+      if (payload.text === 'RAW_STREAM') return response({ text: JSON.stringify({ status: 200, result: { url: 'https://cdn.example/newtane-4k.m3u8', is4kAvailable: true, tracks: [{ file: 'https://cdn.example/sub.vtt', label: 'English' }] } }) });
     }
     return response({ ok: false });
   });
@@ -302,7 +305,8 @@ test('WioCinema Newtane provider extracts direct 4K streams and movie, series, a
   assert.ok(movieStreams.length >= 8);
   assert.ok(movieStreams.every(s => s.name === 'WioCinema • Newtane'));
   assert.ok(movieStreams.every(s => s.provider === 'wiocinema-newtane'));
-  assert.ok(movieStreams.every(s => s.format === 'm3u8'));
+  assert.ok(movieStreams.some(s => s.format === 'm3u8'));
+  assert.ok(movieStreams.some(s => s.format === 'video'));
   assert.ok(movieStreams.some(s => s.quality === 2160));
   assert.ok(movieStreams.some(s => s.title.includes('VidFast')));
   assert.ok(movieStreams.some(s => s.title.includes('Videasy (4K • Multi-Audio)')));

@@ -199,6 +199,41 @@ function resolveVidCore(tmdbId, mediaType, season, episode) {
   }).catch(function () { return []; });
 }
 
+function resolveVixDirect(tmdbId, mediaType, season, episode) {
+  var isTv = mediaType === "tv" && season != null && episode != null;
+  var path = isTv
+    ? "https://vixsrc.to/api/tv/" + encodeURIComponent(String(tmdbId)) + "/" + encodeURIComponent(String(season)) + "/" + encodeURIComponent(String(episode))
+    : "https://vixsrc.to/api/movie/" + encodeURIComponent(String(tmdbId));
+  var h = { "User-Agent": UA, "Referer": "https://vixsrc.to/", "Accept": "application/json" };
+
+  return getText(path, h)
+    .then(parseJson)
+    .then(function (payload) {
+      if (!payload || !payload.src) return [];
+      var pageUrl = /^https?:/i.test(payload.src) ? payload.src : "https://vixsrc.to" + payload.src;
+      return getText(pageUrl, h);
+    })
+    .then(function (html) {
+      if (!html) return [];
+      var s = /(?:url|file)\s*:\s*['"]([^'"]+)['"]/.exec(html);
+      var t = /['"]?token['"]?\s*:\s*['"]([^'"]+)['"]/.exec(html);
+      var e = /['"]?expires['"]?\s*:\s*['"]([^'"]+)['"]/.exec(html);
+      if (!s || !t || !e) return [];
+      var url = s[1] + (s[1].indexOf("?") >= 0 ? "&" : "?") + "token=" + encodeURIComponent(t[1]) + "&expires=" + encodeURIComponent(e[1]) + "&h=1";
+      var subs = buildSubtitles(tmdbId, isTv, season, episode, []);
+      return [{
+        name: "WioCinema • Newtane",
+        title: "Newtane • VixSrc • 1080p [Multi-Sub]",
+        url: url,
+        quality: 1080,
+        provider: "wiocinema-newtane",
+        format: "m3u8",
+        headers: { "User-Agent": UA, "Referer": "https://vixsrc.to/" },
+        subtitles: subs
+      }];
+    }).catch(function () { return []; });
+}
+
 var MOVIE_SERVERS = [
   {
     name: "VidFast (4K • Multi-Server)",
@@ -296,7 +331,8 @@ function getStreams(tmdbId, mediaType, season, episode) {
 
   var directTasks = isAnime ? Promise.resolve([]) : Promise.all([
     resolveVidFast(tmdbId, mediaType, season, episode),
-    resolveVidCore(tmdbId, mediaType, season, episode)
+    resolveVidCore(tmdbId, mediaType, season, episode),
+    resolveVixDirect(tmdbId, mediaType, season, episode)
   ]).then(function (results) {
     var out = [], seen = {};
     results.forEach(function (list) {
@@ -328,13 +364,14 @@ function getStreams(tmdbId, mediaType, season, episode) {
         var srvUrl = isTv ? srv.tvUrl(activeId, sStr, eStr) : srv.movieUrl(activeId);
         if (srvUrl && !seenUrls[srvUrl]) {
           seenUrls[srvUrl] = true;
+          var isM3u8 = /\.m3u8(\?|$)/i.test(srvUrl);
           streams.push({
             name: "WioCinema • Newtane",
             title: "Newtane • " + srv.name + " [Multi-Sub]",
             url: srvUrl,
             quality: srv.quality,
             provider: "wiocinema-newtane",
-            format: "m3u8",
+            format: isM3u8 ? "m3u8" : "video",
             headers: { "User-Agent": UA, "Referer": HOST + "/" },
             subtitles: subs
           });
@@ -346,13 +383,14 @@ function getStreams(tmdbId, mediaType, season, episode) {
       var animeUrl = asrv.url(idStr, eStr);
       if (animeUrl && !seenUrls[animeUrl]) {
         seenUrls[animeUrl] = true;
+        var isM3u8 = /\.m3u8(\?|$)/i.test(animeUrl);
         streams.push({
           name: "WioCinema • Newtane",
           title: "Newtane • " + asrv.name + " [Multi-Sub]",
           url: animeUrl,
           quality: asrv.quality,
           provider: "wiocinema-newtane",
-          format: "m3u8",
+          format: isM3u8 ? "m3u8" : "video",
           headers: { "User-Agent": UA, "Referer": HOST + "/" },
           subtitles: subs
         });
@@ -366,4 +404,6 @@ function getStreams(tmdbId, mediaType, season, episode) {
   });
 }
 
-module.exports = { getStreams: getStreams };
+if (typeof module !== "undefined" && module.exports) module.exports = { getStreams: getStreams };
+if (typeof exports !== "undefined") exports.getStreams = getStreams;
+if (typeof globalThis !== "undefined") globalThis.getStreams = getStreams;

@@ -1038,12 +1038,63 @@ var HOST = "https://velarium.cc";
 var LIGHTFLIX_HOST = "https://lightflix.app";
 var UA = "${UA}";
 
-var nodeCrypto = null;
-try {
-  if (typeof require === "function") {
-    nodeCrypto = require("crypto");
+var K_SHA = new Uint32Array([
+  0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1,
+  0x923f82a4, 0xab1c5ed5, 0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3,
+  0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174, 0xe49b69c1, 0xefbe4786,
+  0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+  0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147,
+  0x06ca6351, 0x14292967, 0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13,
+  0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85, 0xa2bfe8a1, 0xa81a664b,
+  0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+  0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a,
+  0x5b9cca4f, 0x682e6ff3, 0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208,
+  0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2
+]);
+var W_SHA = new Uint32Array(64);
+function sha256Into(msg, out) {
+  var h0 = 0x6a09e667, h1 = 0xbb67ae85, h2 = 0x3c6ef372, h3 = 0xa54ff53a;
+  var h4 = 0x510e527f, h5 = 0x9b05688c, h6 = 0x1f83d9ab, h7 = 0x5be0cd19;
+  var l = msg.length;
+  var bitLen = l * 8;
+  var total = (l + 1 + 8 + 63) & ~63;
+  var buf = new Uint8Array(total);
+  buf.set(msg);
+  buf[l] = 0x80;
+  var dv = new DataView(buf.buffer);
+  dv.setUint32(total - 4, bitLen >>> 0, false);
+  dv.setUint32(total - 8, Math.floor(bitLen / 0x100000000), false);
+  for (var off = 0; off < total; off += 64) {
+    for (var i = 0; i < 16; i++) W_SHA[i] = dv.getUint32(off + i * 4, false);
+    for (var i = 16; i < 64; i++) {
+      var a = W_SHA[i - 15], b = W_SHA[i - 2];
+      var s0 = ((a >>> 7) | (a << 25)) ^ ((a >>> 18) | (a << 14)) ^ (a >>> 3);
+      var s1 = ((b >>> 17) | (b << 15)) ^ ((b >>> 19) | (b << 13)) ^ (b >>> 10);
+      W_SHA[i] = (W_SHA[i - 16] + s0 + W_SHA[i - 7] + s1) | 0;
+    }
+    var a = h0, b = h1, c = h2, d = h3, e = h4, f = h5, g = h6, h = h7;
+    for (var i = 0; i < 64; i++) {
+      var S1 = ((e >>> 6) | (e << 26)) ^ ((e >>> 11) | (e << 21)) ^ ((e >>> 25) | (e << 7));
+      var ch = (e & f) ^ (~e & g);
+      var t1 = (h + S1 + ch + K_SHA[i] + W_SHA[i]) | 0;
+      var S0 = ((a >>> 2) | (a << 30)) ^ ((a >>> 13) | (a << 19)) ^ ((a >>> 22) | (a << 10));
+      var maj = (a & b) ^ (a & c) ^ (b & c);
+      var t2 = (S0 + maj) | 0;
+      h = g; g = f; f = e; e = (d + t1) | 0; d = c; c = b; b = a; a = (t1 + t2) | 0;
+    }
+    h0 = (h0 + a) | 0; h1 = (h1 + b) | 0; h2 = (h2 + c) | 0; h3 = (h3 + d) | 0;
+    h4 = (h4 + e) | 0; h5 = (h5 + f) | 0; h6 = (h6 + g) | 0; h7 = (h7 + h) | 0;
   }
-} catch (_) {}
+  var odv = new DataView(out.buffer, out.byteOffset, 32);
+  odv.setUint32(0, h0 >>> 0, false);
+  odv.setUint32(4, h1 >>> 0, false);
+  odv.setUint32(8, h2 >>> 0, false);
+  odv.setUint32(12, h3 >>> 0, false);
+  odv.setUint32(16, h4 >>> 0, false);
+  odv.setUint32(20, h5 >>> 0, false);
+  odv.setUint32(24, h6 >>> 0, false);
+  odv.setUint32(28, h7 >>> 0, false);
+}
 
 function parseJson(text) { try { return JSON.parse(text); } catch (_) { return null; } }
 function postJson(url, payload, headers) {
@@ -1060,25 +1111,21 @@ function solvePow(challenge, difficulty) {
   var fullBytes = Math.floor(difficulty / 8);
   var remainingBits = difficulty % 8;
   var mask = remainingBits > 0 ? (0xff << (8 - remainingBits)) & 0xff : 0;
-
+  var hash = new Uint8Array(32);
   var nonce = 0;
   while (nonce < 2000000) {
-    var hash = null;
-    if (nodeCrypto && nodeCrypto.createHash) {
-      hash = nodeCrypto.createHash("sha256").update(challenge + nonce).digest();
+    var str = challenge + nonce;
+    var bytes = new Uint8Array(str.length);
+    for (var i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
+    sha256Into(bytes, hash);
+    var match = true;
+    for (var i = 0; i < fullBytes; i++) {
+      if (hash[i] !== 0) { match = false; break; }
     }
-    if (hash) {
-      var match = true;
-      for (var i = 0; i < fullBytes; i++) {
-        if (hash[i] !== 0) { match = false; break; }
-      }
-      if (match && remainingBits > 0) {
-        if ((hash[fullBytes] & mask) !== 0) match = false;
-      }
-      if (match) return String(nonce);
-    } else {
-      return String(nonce);
+    if (match && remainingBits > 0) {
+      if ((hash[fullBytes] & mask) !== 0) match = false;
     }
+    if (match) return String(nonce);
     nonce++;
   }
   return null;
@@ -1229,7 +1276,21 @@ function getStreams(tmdbId, mediaType, season, episode) {
 
   return resolveVelariumDirect(tmdbId, mediaType, season, episode).then(function (streams) {
     if (Array.isArray(streams) && streams.length > 0) {
-      return streams;
+      var fullList = [];
+      streams.forEach(function (s) {
+        fullList.push(s);
+        fullList.push({
+          name: "WioCinema • Velarium",
+          title: s.title.replace("Velarium •", "Lightflix •"),
+          url: s.url,
+          quality: s.quality,
+          provider: "wiocinema-velarium",
+          format: "m3u8",
+          headers: { "User-Agent": UA, "Referer": LIGHTFLIX_HOST + "/" },
+          subtitles: s.subtitles
+        });
+      });
+      return fullList;
     }
 
     var subs = buildSubtitles(tmdbId, isTv, season, episode, []);
@@ -1242,7 +1303,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
           : HOST + "/en/watch/movie/" + idStr + "?autoPlay=true",
         quality: 2160,
         provider: "wiocinema-velarium",
-        format: "m3u8",
+        format: "video",
         headers: { "User-Agent": UA, "Referer": HOST + "/" },
         subtitles: subs
       },
@@ -1254,7 +1315,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
           : LIGHTFLIX_HOST + "/en/watch/movie/" + idStr + "?autoPlay=true",
         quality: 2160,
         provider: "wiocinema-velarium",
-        format: "m3u8",
+        format: "video",
         headers: { "User-Agent": UA, "Referer": LIGHTFLIX_HOST + "/" },
         subtitles: subs
       }
@@ -1265,7 +1326,9 @@ function getStreams(tmdbId, mediaType, season, episode) {
   });
 }
 
-module.exports = { getStreams: getStreams };
+if (typeof module !== "undefined" && module.exports) module.exports = { getStreams: getStreams };
+if (typeof exports !== "undefined") exports.getStreams = getStreams;
+if (typeof globalThis !== "undefined") globalThis.getStreams = getStreams;
 `;
 
 // 10. Newtane Provider
@@ -1470,6 +1533,41 @@ function resolveVidCore(tmdbId, mediaType, season, episode) {
   }).catch(function () { return []; });
 }
 
+function resolveVixDirect(tmdbId, mediaType, season, episode) {
+  var isTv = mediaType === "tv" && season != null && episode != null;
+  var path = isTv
+    ? "https://vixsrc.to/api/tv/" + encodeURIComponent(String(tmdbId)) + "/" + encodeURIComponent(String(season)) + "/" + encodeURIComponent(String(episode))
+    : "https://vixsrc.to/api/movie/" + encodeURIComponent(String(tmdbId));
+  var h = { "User-Agent": UA, "Referer": "https://vixsrc.to/", "Accept": "application/json" };
+
+  return getText(path, h)
+    .then(parseJson)
+    .then(function (payload) {
+      if (!payload || !payload.src) return [];
+      var pageUrl = /^https?:/i.test(payload.src) ? payload.src : "https://vixsrc.to" + payload.src;
+      return getText(pageUrl, h);
+    })
+    .then(function (html) {
+      if (!html) return [];
+      var s = /(?:url|file)\\s*:\\s*['"]([^'"]+)['"]/.exec(html);
+      var t = /['"]?token['"]?\\s*:\\s*['"]([^'"]+)['"]/.exec(html);
+      var e = /['"]?expires['"]?\\s*:\\s*['"]([^'"]+)['"]/.exec(html);
+      if (!s || !t || !e) return [];
+      var url = s[1] + (s[1].indexOf("?") >= 0 ? "&" : "?") + "token=" + encodeURIComponent(t[1]) + "&expires=" + encodeURIComponent(e[1]) + "&h=1";
+      var subs = buildSubtitles(tmdbId, isTv, season, episode, []);
+      return [{
+        name: "WioCinema • Newtane",
+        title: "Newtane • VixSrc • 1080p [Multi-Sub]",
+        url: url,
+        quality: 1080,
+        provider: "wiocinema-newtane",
+        format: "m3u8",
+        headers: { "User-Agent": UA, "Referer": "https://vixsrc.to/" },
+        subtitles: subs
+      }];
+    }).catch(function () { return []; });
+}
+
 var MOVIE_SERVERS = [
   {
     name: "VidFast (4K • Multi-Server)",
@@ -1567,7 +1665,8 @@ function getStreams(tmdbId, mediaType, season, episode) {
 
   var directTasks = isAnime ? Promise.resolve([]) : Promise.all([
     resolveVidFast(tmdbId, mediaType, season, episode),
-    resolveVidCore(tmdbId, mediaType, season, episode)
+    resolveVidCore(tmdbId, mediaType, season, episode),
+    resolveVixDirect(tmdbId, mediaType, season, episode)
   ]).then(function (results) {
     var out = [], seen = {};
     results.forEach(function (list) {
@@ -1599,13 +1698,14 @@ function getStreams(tmdbId, mediaType, season, episode) {
         var srvUrl = isTv ? srv.tvUrl(activeId, sStr, eStr) : srv.movieUrl(activeId);
         if (srvUrl && !seenUrls[srvUrl]) {
           seenUrls[srvUrl] = true;
+          var isM3u8 = /\\.m3u8(\\?|$)/i.test(srvUrl);
           streams.push({
             name: "WioCinema • Newtane",
             title: "Newtane • " + srv.name + " [Multi-Sub]",
             url: srvUrl,
             quality: srv.quality,
             provider: "wiocinema-newtane",
-            format: "m3u8",
+            format: isM3u8 ? "m3u8" : "video",
             headers: { "User-Agent": UA, "Referer": HOST + "/" },
             subtitles: subs
           });
@@ -1617,13 +1717,14 @@ function getStreams(tmdbId, mediaType, season, episode) {
       var animeUrl = asrv.url(idStr, eStr);
       if (animeUrl && !seenUrls[animeUrl]) {
         seenUrls[animeUrl] = true;
+        var isM3u8 = /\\.m3u8(\\?|$)/i.test(animeUrl);
         streams.push({
           name: "WioCinema • Newtane",
           title: "Newtane • " + asrv.name + " [Multi-Sub]",
           url: animeUrl,
           quality: asrv.quality,
           provider: "wiocinema-newtane",
-          format: "m3u8",
+          format: isM3u8 ? "m3u8" : "video",
           headers: { "User-Agent": UA, "Referer": HOST + "/" },
           subtitles: subs
         });
@@ -1637,7 +1738,9 @@ function getStreams(tmdbId, mediaType, season, episode) {
   });
 }
 
-module.exports = { getStreams: getStreams };
+if (typeof module !== "undefined" && module.exports) module.exports = { getStreams: getStreams };
+if (typeof exports !== "undefined") exports.getStreams = getStreams;
+if (typeof globalThis !== "undefined") globalThis.getStreams = getStreams;
 `;
 
 const providers = [
