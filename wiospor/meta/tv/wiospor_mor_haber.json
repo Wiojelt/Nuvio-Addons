@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_mor_haber",
+    "type": "tv",
+    "name": "🟣 Mor Spor Haber",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mor_haber.png",
+    "posterShape": "landscape",
+    "description": "beIN Sports Haber"
+  }
+}

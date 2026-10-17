@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_cnnturk",
+    "type": "tv",
+    "name": "📺 CNN Türk",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_cnnturk.png",
+    "posterShape": "landscape",
+    "description": "CNN Türk"
+  }
+}

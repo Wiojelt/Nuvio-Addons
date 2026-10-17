@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_mavi_1",
+    "type": "tv",
+    "name": "🔵 Mavi Spor 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/mavi_1.png",
+    "posterShape": "landscape",
+    "description": "S Sport"
+  }
+}

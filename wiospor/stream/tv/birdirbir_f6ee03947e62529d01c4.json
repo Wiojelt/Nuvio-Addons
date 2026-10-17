@@ -1,0 +1,12 @@
+{
+  "streams": [
+    {
+      "name": "Birdirbir • Eagle",
+      "title": "[Eagle] Smart Spor 2 SD (Yayın 1)",
+      "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=314801&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true
+      }
+    }
+  ]
+}

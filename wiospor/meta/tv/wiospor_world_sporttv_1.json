@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_world_sporttv_1",
+    "type": "tv",
+    "name": "🌐 World Sport TV 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_sporttv_1.png",
+    "posterShape": "landscape",
+    "description": "Sport TV 1"
+  }
+}

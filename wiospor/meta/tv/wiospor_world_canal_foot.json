@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_world_canal_foot",
+    "type": "tv",
+    "name": "🌐 World Canal+ Foot",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/world_canal_foot.png",
+    "posterShape": "landscape",
+    "description": "Canal+ Foot"
+  }
+}
