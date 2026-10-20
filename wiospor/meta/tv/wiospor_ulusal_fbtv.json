@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_fbtv",
+    "type": "tv",
+    "name": "📺 FB TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_fbtv.png",
+    "posterShape": "landscape",
+    "description": "FB TV"
+  }
+}

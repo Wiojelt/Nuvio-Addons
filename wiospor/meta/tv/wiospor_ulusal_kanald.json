@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_kanald",
+    "type": "tv",
+    "name": "📺 Kanal D",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_kanald.png",
+    "posterShape": "landscape",
+    "description": "Kanal D"
+  }
+}

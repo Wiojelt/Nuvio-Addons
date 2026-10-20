@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_yesil",
+    "type": "tv",
+    "name": "🟢 Yeşil Spor",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/yesil.png",
+    "posterShape": "landscape",
+    "description": "tabii Spor"
+  }
+}

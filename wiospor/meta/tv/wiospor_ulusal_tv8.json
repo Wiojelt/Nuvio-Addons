@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "wiospor_ulusal_tv8",
+    "type": "tv",
+    "name": "📺 TV8",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/WioSpor/main/assets/banners/ulusal_tv8.png",
+    "posterShape": "landscape",
+    "description": "TV8"
+  }
+}
