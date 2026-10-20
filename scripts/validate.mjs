@@ -46,9 +46,11 @@ const syntaxFiles = new Set([
   'src/addons/wiospor/legacy-sources.mjs',
   'src/addons/wiospor/source-registry.mjs',
   'src/addons/wiospor/birdirbir.mjs',
+  'src/addons/wiospor/stbtv.mjs',
   'src/addons/wiospor/aslan-sources.mjs',
   'scripts/build-wiospor-live.mjs',
   'scripts/generate-birdirbir.mjs',
+  'scripts/generate-stbtv.mjs',
   'scripts/generate-wiocinema.mjs'
 ]);
 for (const entry of scrapers) {

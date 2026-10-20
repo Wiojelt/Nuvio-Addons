@@ -66,11 +66,25 @@ function anchorRows(html, base) {
 
 function extractPlayerUrls(html, playerUrl) {
   const out = [];
-  function add(v) { const url = http(decodeHtml(String(v || '').replace(/\\\//g, '/'))); if (url && !out.includes(url)) out.push(url); }
+  function isPlayable(u) {
+    if (!u) return false;
+    const lower = u.toLowerCase();
+    if (/\.(png|jpe?g|gif|webp|svg|css|js|ico)(\?.*)?$/i.test(lower)) return false;
+    if (lower.includes('yandex.ru') || lower.includes('google-analytics') || lower.includes('googletagmanager')) return false;
+    return lower.includes('.m3u8') || lower.includes('.mpd') || lower.includes('/playlist') || lower.includes('mono.m3u8') || lower.includes('/live/') || lower.includes('/hls/');
+  }
+  function add(v) {
+    const url = http(decodeHtml(String(v || '').replace(/\\\//g, '/')));
+    if (url && isPlayable(url) && !out.includes(url)) out.push(url);
+  }
   for (const m of String(html || '').matchAll(/https?:\\?\/\\?\/[^'"\s<>]+?\.m3u8(?:\?[^'"\s<>]*)?/gi)) add(m[0]);
   for (const m of String(html || '').matchAll(/(?:file|source|src|streamUrl|hls)\s*[:=]\s*['"]([^'"]+)['"]/gi)) add(abs(m[1], playerUrl));
   const base = /this\.baseStreamUrl\s*=\s*['"](https?:\/\/[^'"]+)['"]/i.exec(html)?.[1];
-  if (base) { const id = q(playerUrl, 'id'); if (/privateStream\s*=\s*1\b/i.test(html)) add(base); else if (id && /\/playlist\.m3u8/i.test(html)) add(`${base.replace(/\/$/, '')}/${encodeURIComponent(id)}/playlist.m3u8`); }
+  if (base) {
+    const id = q(playerUrl, 'id');
+    if (/privateStream\s*=\s*1\b/i.test(html)) add(base);
+    else if (id && /\/playlist\.m3u8/i.test(html)) add(`${base.replace(/\/$/, '')}/${encodeURIComponent(id)}/playlist.m3u8`);
+  }
   return out;
 }
 
@@ -106,21 +120,45 @@ async function genericSource(source, wioChannel) {
   return [];
 }
 
+let dominoCatalog = null;
+let dominoCatalogAt = 0;
+async function getDominoCatalog() {
+  if (dominoCatalog && Date.now() - dominoCatalogAt < 10 * 60_000) return dominoCatalog;
+  const urls = [
+    'https://raw.githubusercontent.com/Wiojelt/WioSpor/builds/domino_live.json',
+    'https://raw.githubusercontent.com/Wiojelt/WioSpor/main/domino_live.json'
+  ];
+  for (const u of urls) {
+    try {
+      const r = await fetch(u, { signal: AbortSignal.timeout(8000) });
+      if (r.ok) {
+        const json = await r.json();
+        dominoCatalog = Array.isArray(json?.live_channels) ? json.live_channels : [];
+        dominoCatalogAt = Date.now();
+        return dominoCatalog;
+      }
+    } catch {}
+  }
+  return [];
+}
+
 async function domino(wioChannel) {
-  const api = 'http://dominotv58.site/admin_panel/api/';
-  for (const category of ['⚽ 🇹🇷 SPOR', '⚽ Sports']) try {
-    const url = `${api}tv/channels?channel_category=${encodeURIComponent(category)}&page=1&limit=100`;
-    const r = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(10000) }); if (!r.ok) continue;
-    const rows = await r.json();
-    const candidates = (Array.isArray(rows) ? rows : []).filter(x => x?.active !== false && x?.title && x?.stream_url && matches(wioChannel, { id: String(x.id || ''), title: x.title }));
+  try {
+    const channels = await getDominoCatalog();
+    const candidates = channels.filter(x => x?.active !== false && (x?.title || x?.name) && (x?.stream_url || (Array.isArray(x?.sources) && x.sources.length)) && matches(wioChannel, { id: String(x.id || ''), title: x.title || x.name }));
     const out = [];
     for (const ch of candidates.slice(0, 5)) {
       const headers = { 'User-Agent': ch.user_agent || UA, Referer: ch.referer || '', Origin: ch.origin || '' };
-      for (const u of [ch.stream_url, ...(Array.isArray(ch.alternative_stream_urls) ? ch.alternative_stream_urls : [])]) if (http(u)) out.push(stream('Domino TV', ch.title, u, ch.referer || '', headers));
+      const candidateUrls = [ch.stream_url, ...(Array.isArray(ch.alternative_stream_urls) ? ch.alternative_stream_urls : [])];
+      if (Array.isArray(ch.sources)) {
+        for (const s of ch.sources) if (s?.url) candidateUrls.push(s.url);
+      }
+      for (const u of candidateUrls) {
+        if (http(u) && !u.includes('youtube.com')) out.push(stream('Domino TV', ch.title || ch.name, u, ch.referer || '', headers));
+      }
     }
-    if (out.length) return out;
-  } catch {}
-  return [];
+    return out;
+  } catch { return []; }
 }
 
 const DOMATES_IDENTITY = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=';
@@ -345,6 +383,7 @@ async function papaz(wioChannel) {
   const manifest = await domainManifest();
   const entry = manifest?.sources?.papazsports || {};
   const roots = [
+    'https://www.papazsports1031.pro/',
     ...(entry.candidates || []),
     ...(entry.gateways || []),
     'https://www.papazsports1024.pro/',
@@ -462,8 +501,78 @@ async function jest(wioChannel) {
   } catch { return []; }
 }
 
+let atomTeletvHost = 'teletv15.top';
+let atomTeletvAt = 0;
+async function getAtomTeletvHost() {
+  if (atomTeletvHost && Date.now() - atomTeletvAt < 30 * 60_000) return atomTeletvHost;
+  const seeds = ['https://atomsportv519.top/', 'https://atomsportv520.top/'];
+  for (const seed of seeds) {
+    try {
+      const r = await fetch(seed, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(6000) });
+      if (r.ok) {
+        const text = await r.text();
+        const m = text.match(/https?:\/\/(teletv\d*\.top)\/load\//);
+        if (m) {
+          atomTeletvHost = m[1];
+          atomTeletvAt = Date.now();
+          return atomTeletvHost;
+        }
+      }
+    } catch {}
+  }
+  return atomTeletvHost;
+}
+
+const ATOM_CHANNEL_MAP = {
+  mor_1: 'bein-sports-1',
+  mor_2: 'bein-sports-2',
+  mor_3: 'bein-sports-3',
+  mor_4: 'bein-sports-4',
+  mor_5: 'bein-sports-5',
+  mor_max_1: 'bein-sports-max-1',
+  mor_max_2: 'bein-sports-max-2',
+  yesil_1: 's-sport',
+  yesil_2: 's-sport-2',
+  mavi_1: 'tivibu-spor-1',
+  mavi_2: 'tivibu-spor-2',
+  mavi_3: 'tivibu-spor-3',
+  mavi_4: 'tivibu-spor-4',
+  sari_1: 'exxen-spor-1',
+  sari_2: 'exxen-spor-2',
+  sari_3: 'exxen-spor-3',
+  sari_4: 'exxen-spor-4',
+  turuncu_1: 'smart-spor',
+  turuncu_2: 'smart-spor-2',
+  ulusal_tv85: 'tv8-5',
+  ulusal_trt_spor: 'trt-spor',
+  ulusal_aspor: 'a-spor'
+};
+
+async function atomspor(wioChannel) {
+  try {
+    const atomId = ATOM_CHANNEL_MAP[wioChannel.id] ||
+      Object.entries(ATOM_CHANNEL_MAP).find(([k, v]) => matches(wioChannel, { id: v, title: v }))?.[1];
+    if (!atomId) return [];
+
+    const host = await getAtomTeletvHost();
+    const apiUrl = `https://${host}/load/yayinlink.php?id=${encodeURIComponent(atomId)}`;
+    const r = await fetch(apiUrl, {
+      headers: { 'User-Agent': UA, Referer: 'https://atomsportv519.top/' },
+      signal: AbortSignal.timeout(8000)
+    });
+    if (!r.ok) return [];
+    const json = await r.json();
+    const streamUrl = (json?.deismackanal || json?.URL || '').replace(/\\\//g, '/').trim();
+    if (!http(streamUrl)) return [];
+
+    return [stream('AtomSpor', wioChannel.name, streamUrl, 'https://atomsportv519.top/', { 'User-Agent': UA })];
+  } catch {
+    return [];
+  }
+}
+
 export async function getLegacyStreams(wioChannel) {
-  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
+  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), domino(wioChannel), atomspor(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
   const out = []; for (const item of settled) if (item.status === 'fulfilled') out.push(...item.value);
   const seen = new Set(); return out.filter(x => x.url && !seen.has(x.url) && seen.add(x.url));
 }

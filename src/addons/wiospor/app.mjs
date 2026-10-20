@@ -7,15 +7,19 @@ import { getStreamsForWioChannel } from './resolver.mjs';
 import { getLegacyStreams } from './legacy-sources.mjs';
 import { getAslanStreams } from './aslan-sources.mjs';
 import { getBirdirbirStreams, toBirdirbirStreams } from './birdirbir.mjs';
+import { getStbStreams, toStbStreams } from './stbtv.mjs';
 import { WIOSPOR_SOURCE_COUNT } from './source-registry.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(here, '../../..');
 const channelsPath = path.join(repoRoot, 'generated/wiospor/channels.json');
 const birdirbirPath = path.join(repoRoot, 'generated/birdirbir/channels.json');
+const stbPath = path.join(repoRoot, 'generated/stbtv/channels.json');
 
 let channelCache = null;
 let birdirbirCache = null;
+let stbCache = null;
+
 function channels() {
   if (channelCache) return channelCache;
   try { channelCache = JSON.parse(fs.readFileSync(channelsPath, 'utf8')); }
@@ -28,19 +32,26 @@ function birdirbirChannels() {
   catch { birdirbirCache = []; }
   return birdirbirCache;
 }
+function stbChannels() {
+  if (stbCache) return stbCache;
+  try { stbCache = JSON.parse(fs.readFileSync(stbPath, 'utf8')); }
+  catch { stbCache = []; }
+  return stbCache;
+}
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.6.0',
+  version: '0.7.0',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğu.',
   resources: ['catalog', 'meta', 'stream'],
   types: ['tv'],
   catalogs: [
     { type: 'tv', id: 'wiospor-live', name: 'WioSpor Canlı' },
-    { type: 'tv', id: 'birdirbir-live', name: 'Birdirbir IPTV' }
+    { type: 'tv', id: 'birdirbir-live', name: 'Birdirbir IPTV' },
+    { type: 'tv', id: 'stbtv-live', name: 'StbTV Canlı' }
   ],
-  idPrefixes: ['wiospor:', 'birdirbir:']
+  idPrefixes: ['wiospor:', 'birdirbir:', 'stbtv:']
 };
 
 function json(body, status = 200) {
@@ -58,12 +69,21 @@ function findBirdirbir(id) {
   const raw = id.startsWith('birdirbir:') ? id.slice('birdirbir:'.length) : id;
   return birdirbirChannels().find(c => birdirbirKey(c) === raw) || null;
 }
+function findStb(id) {
+  const raw = id.startsWith('stbtv:') ? id.slice('stbtv:'.length) : id;
+  return stbChannels().find(c => c.id === raw) || null;
+}
+
 function metaFor(c) {
   return { id: `wiospor:${c.id}`, type: 'tv', name: c.name, poster: c.logo, posterShape: 'landscape', description: c.standardTitle || c.group };
 }
 function birdirbirMeta(c) {
   return { id: `birdirbir:${birdirbirKey(c)}`, type: 'tv', name: c.name, poster: c.logo || undefined, posterShape: 'landscape', description: c.description || c.category || 'Birdirbir IPTV' };
 }
+function stbMeta(c) {
+  return { id: `stbtv:${c.id}`, type: 'tv', name: c.name, poster: c.logo || undefined, posterShape: 'landscape', description: c.category || 'StbTV IPTV' };
+}
+
 function dedupe(streams) {
   const seen = new Set();
   return streams.filter(stream => {
@@ -85,11 +105,13 @@ export async function handleRequest(urlString) {
     ok: true,
     channelCount: channels().length,
     birdirbirChannelCount: birdirbirChannels().length,
+    stbChannelCount: stbChannels().length,
     sourceCount: WIOSPOR_SOURCE_COUNT,
     resolver: 'full-resolver-ready'
   });
   if (p === '/catalog/tv/wiospor-live.json') return json({ metas: channels().map(metaFor) });
   if (p === '/catalog/tv/birdirbir-live.json') return json({ metas: birdirbirChannels().map(birdirbirMeta) });
+  if (p === '/catalog/tv/stbtv-live.json') return json({ metas: stbChannels().map(stbMeta) });
 
   const metaMatch = p.match(/^\/meta\/tv\/(wiospor:[^/]+)\.json$/);
   if (metaMatch) {
@@ -101,6 +123,11 @@ export async function handleRequest(urlString) {
     const c = findBirdirbir(birdMetaMatch[1]);
     return c ? json({ meta: birdirbirMeta(c) }) : json({ meta: null }, 404);
   }
+  const stbMetaMatch = p.match(/^\/meta\/tv\/(stbtv:[^/]+)\.json$/);
+  if (stbMetaMatch) {
+    const c = findStb(stbMetaMatch[1]);
+    return c ? json({ meta: stbMeta(c) }) : json({ meta: null }, 404);
+  }
 
   const streamMatch = p.match(/^\/stream\/tv\/(wiospor:[^/]+)\.json$/);
   if (streamMatch) {
@@ -111,7 +138,8 @@ export async function handleRequest(urlString) {
         getStreamsForWioChannel(c),
         getLegacyStreams(c),
         getAslanStreams(c),
-        getBirdirbirStreams(c)
+        getBirdirbirStreams(c),
+        getStbStreams(c)
       ]);
       return json({ streams: dedupe(results.flatMap(result => result.status === 'fulfilled' && Array.isArray(result.value) ? result.value : [])) });
     } catch (error) {
@@ -123,6 +151,11 @@ export async function handleRequest(urlString) {
   if (birdStreamMatch) {
     const c = findBirdirbir(birdStreamMatch[1]);
     return c ? json({ streams: toBirdirbirStreams(c) }) : json({ streams: [] }, 404);
+  }
+  const stbStreamMatch = p.match(/^\/stream\/tv\/(stbtv:[^/]+)\.json$/);
+  if (stbStreamMatch) {
+    const c = findStb(stbStreamMatch[1]);
+    return c ? json({ streams: toStbStreams(c) }) : json({ streams: [] }, 404);
   }
 
   return json({ error: 'not_found' }, 404);

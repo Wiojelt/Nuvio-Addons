@@ -6,6 +6,7 @@ import { getLegacyStreams } from '../src/addons/wiospor/legacy-sources.mjs';
 import { getAslanStreams } from '../src/addons/wiospor/aslan-sources.mjs';
 import { ASLAN_SOURCES, WIOSPOR_SOURCE_COUNT } from '../src/addons/wiospor/source-registry.mjs';
 import { getBirdirbirStreams, loadBirdirbirChannels, toBirdirbirStreams, birdirbirPanelStats } from '../src/addons/wiospor/birdirbir.mjs';
+import { getStbStreams, loadStbChannels, toStbStreams, stbPanelStats } from '../src/addons/wiospor/stbtv.mjs';
 import { createHash } from 'node:crypto';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -20,6 +21,8 @@ const staleMaxMs = Math.max(15 * 60_000, Number(process.env.WIOSPOR_STALE_MAX_MS
 const channels = JSON.parse(await fs.readFile(path.join(root, 'generated/wiospor/channels.json'), 'utf8'));
 const birdirbirChannels = await loadBirdirbirChannels();
 const birdirbirPanels = birdirbirPanelStats(birdirbirChannels);
+const stbChannelsList = await loadStbChannels();
+const stbPanels = stbPanelStats(stbChannelsList);
 const generatedAt = new Date().toISOString();
 const now = Date.now();
 
@@ -42,6 +45,18 @@ function metaFor(c) {
     description: c.standardTitle || c.group
   };
 }
+function stbId(c) { return `stbtv_${c.id}`; }
+function stbMeta(c) {
+  return {
+    id: stbId(c),
+    type: 'tv',
+    name: c.name,
+    poster: c.logo || undefined,
+    posterShape: 'landscape',
+    description: c.category || 'StbTV IPTV'
+  };
+}
+
 function birdirbirMeta(c) {
   return {
     id: birdirbirId(c),
@@ -71,8 +86,8 @@ function validStreams(streams) {
   return streams.filter(stream => {
     const url = String(stream?.url || '');
     const key = `${stream?.name || ''}\0${stream?.title || ''}\0${url}`;
-    const birdirbir = String(stream?.name || '').startsWith('Birdirbir •');
-    if ((!birdirbir && !looksPlayable(url)) || !/^https?:\/\//i.test(url) || seen.has(key)) return false;
+    const bypass = String(stream?.name || '').startsWith('Birdirbir •') || String(stream?.name || '').includes('StbTV');
+    if ((!bypass && !looksPlayable(url)) || !/^https?:\/\//i.test(url) || seen.has(key)) return false;
     seen.add(key);
     return true;
   });
@@ -83,20 +98,22 @@ await fs.mkdir(outRoot, { recursive: true });
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.6.0',
+  version: '0.7.0',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğu.',
   resources: ['catalog', 'meta', 'stream'],
   types: ['tv'],
   catalogs: [
     { type: 'tv', id: 'wiospor-live', name: 'WioSpor Canlı' },
-    { type: 'tv', id: 'birdirbir-live', name: 'Birdirbir IPTV' }
+    { type: 'tv', id: 'birdirbir-live', name: 'Birdirbir IPTV' },
+    { type: 'tv', id: 'stbtv-live', name: 'StbTV Canlı' }
   ],
-  idPrefixes: ['wiospor_', 'birdirbir_']
+  idPrefixes: ['wiospor_', 'birdirbir_', 'stbtv_']
 };
 await writeJson(path.join(outRoot, 'manifest.json'), manifest);
 await writeJson(path.join(outRoot, 'catalog', 'tv', 'wiospor-live.json'), { metas: channels.map(metaFor) });
 await writeJson(path.join(outRoot, 'catalog', 'tv', 'birdirbir-live.json'), { metas: birdirbirChannels.map(birdirbirMeta) });
+await writeJson(path.join(outRoot, 'catalog', 'tv', 'stbtv-live.json'), { metas: stbChannelsList.map(stbMeta) });
 
 for (const channel of channels) {
   await writeJson(path.join(outRoot, 'meta', 'tv', `${liveId(channel)}.json`), { meta: metaFor(channel) });
@@ -105,6 +122,11 @@ for (const channel of birdirbirChannels) {
   const id = birdirbirId(channel);
   await writeJson(path.join(outRoot, 'meta', 'tv', `${id}.json`), { meta: birdirbirMeta(channel) });
   await writeJson(path.join(outRoot, 'stream', 'tv', `${id}.json`), { streams: toBirdirbirStreams(channel) });
+}
+for (const channel of stbChannelsList) {
+  const id = stbId(channel);
+  await writeJson(path.join(outRoot, 'meta', 'tv', `${id}.json`), { meta: stbMeta(channel) });
+  await writeJson(path.join(outRoot, 'stream', 'tv', `${id}.json`), { streams: toStbStreams(channel) });
 }
 
 const previousState = previousRoot ? await readJson(path.join(previousRoot, 'state.json'), { channels: {} }) : { channels: {} };
@@ -142,7 +164,8 @@ async function worker() {
         getStreamsForWioChannel(channel),
         getLegacyStreams(channel),
         getAslanStreams(channel),
-        getBirdirbirStreams(channel)
+        getBirdirbirStreams(channel),
+        getStbStreams(channel)
       ]);
       const merged = results.flatMap(result => result.status === 'fulfilled' && Array.isArray(result.value) ? result.value : []);
       streams = validStreams(merged);
