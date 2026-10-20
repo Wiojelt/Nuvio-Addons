@@ -17,6 +17,7 @@ on:
       - 'generated/stbtv/**'
       - 'config/birdirbir-channel-db.b64'
       - 'config/stbtv-channel-db.json'
+      - 'config/newtv-channel-db.json'
       - 'config/wiospor-source-specs.bootstrap.json'
       - 'package.json'
       - '.github/workflows/publish-live.yml'

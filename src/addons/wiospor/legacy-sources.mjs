@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { createHash, createHmac, createCipheriv, createDecipheriv, randomBytes } from 'node:crypto';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36';
@@ -361,7 +362,7 @@ async function vion(wioChannel) {
         ...(row.headers && typeof row.headers === 'object' ? row.headers : {}),
         'x-vion-sign': vionPlaybackSign()
       };
-      out.push(stream('VİONTV', row.name || wioChannel.name, row.url, headers.Referer, headers));
+      out.push(stream('Mien TV', row.name || wioChannel.name, row.url, headers.Referer, headers));
     }
     return out;
   } catch { return []; }
@@ -571,8 +572,131 @@ async function atomspor(wioChannel) {
   }
 }
 
+
+let newtvChannels = null;
+function loadNewTvChannels() {
+  if (newtvChannels) return newtvChannels;
+  try {
+    const raw = fs.readFileSync(new URL('../../../config/newtv-channel-db.json', import.meta.url), 'utf8');
+    newtvChannels = JSON.parse(raw);
+  } catch {
+    newtvChannels = [];
+  }
+  return newtvChannels;
+}
+
+async function resolveNewTv(chId) {
+  const r = await fetch(`https://dembed.st/premiumtv/daddy.php?id=${encodeURIComponent(chId)}`, {
+    headers: {
+      'User-Agent': UA,
+      Referer: 'https://dlive.sx/'
+    },
+    signal: AbortSignal.timeout(8000)
+  });
+  if (!r.ok) return null;
+  const t = await r.text();
+  const slug = t.match(/const\s+CHANNEL\s*=\s*['"]([^'"]+)['"]/)?.[1];
+  const edge = t.match(/const\s+EDGE\s*=\s*['"]([^'"]+)['"]/)?.[1];
+  const src = t.match(/const\s+SRC\s*=\s*['"]([^'"]+)['"]/)?.[1];
+  if (!src) return null;
+
+  if (slug && edge) {
+    try {
+      const tokenRes = await fetch(`${edge}/api/playlist-token?slug=${encodeURIComponent(slug)}`, {
+        headers: {
+          'User-Agent': UA,
+          Referer: 'https://dembed.st/',
+          Origin: 'https://dembed.st'
+        },
+        signal: AbortSignal.timeout(5000)
+      });
+      if (tokenRes.ok) {
+        const token = (await tokenRes.json())?.token;
+        if (token) return `${src}?t=${token}&_=${Date.now()}`;
+      }
+    } catch {}
+  }
+  return src;
+}
+
+async function newtv(wioChannel) {
+  try {
+    const list = loadNewTvChannels();
+    const matched = list.filter(c => matches(wioChannel, c));
+    if (!matched.length) return [];
+    const sorted = matched.sort((a,b) => (b.name.includes('Turkey') || b.cat === 'cat_tr') - (a.name.includes('Turkey') || a.cat === 'cat_tr'));
+    const ch = sorted[0];
+    const url = await resolveNewTv(ch.id);
+    if (!url || !http(url)) return [];
+    return [stream('NewTV Live', wioChannel.name, url, 'https://dembed.st/', {
+      'User-Agent': UA,
+      Referer: 'https://dembed.st/',
+      Origin: 'https://dembed.st'
+    })];
+  } catch {
+    return [];
+  }
+}
+
+let beyazCatalog = null;
+let beyazCatalogAt = 0;
+async function getBeyazCatalog() {
+  if (beyazCatalog && Date.now() - beyazCatalogAt < 15 * 60_000) return beyazCatalog;
+  try {
+    const r = await fetch('https://beyazelma78.com/api/channels', {
+      headers: { 'User-Agent': UA },
+      signal: AbortSignal.timeout(6000)
+    });
+    if (r.ok) {
+      beyazCatalog = await r.json();
+      beyazCatalogAt = Date.now();
+      return beyazCatalog;
+    }
+  } catch {}
+  return [];
+}
+
+async function beyazelma(wioChannel) {
+  try {
+    const list = await getBeyazCatalog();
+    if (!Array.isArray(list) || !list.length) return [];
+    const matched = list.filter(c => matches(wioChannel, { id: c.slug || c._id, title: c.name }));
+    if (!matched.length) return [];
+    const ch = matched[0];
+    const pageRes = await fetch(`https://beyazelma78.com/kanal/${encodeURIComponent(ch.slug)}`, {
+      headers: { 'User-Agent': UA },
+      signal: AbortSignal.timeout(8000)
+    });
+    if (!pageRes.ok) return [];
+    const html = await pageRes.text();
+    const embedMatch = html.match(/\/api\/embed\?u=([^\s"'\\]+)/);
+    if (!embedMatch) return [];
+    const embedUrl = `https://beyazelma78.com/api/embed?u=${embedMatch[1]}`;
+    const embedRes = await fetch(embedUrl, {
+      headers: { 'User-Agent': UA, Referer: `https://beyazelma78.com/kanal/${encodeURIComponent(ch.slug)}` },
+      signal: AbortSignal.timeout(8000)
+    });
+    if (!embedRes.ok) return [];
+    const embedHtml = await embedRes.text();
+    const slugMatch = embedHtml.match(/StreamPlayer\.mount\([^,]+,\s*\{[^}]*["']slug["']\s*:\s*["']([^"']+)["']/);
+    if (!slugMatch) return [];
+    const playSlug = slugMatch[1];
+    const playRes = await fetch(`https://embed.beyazelma78.com/api/play/${encodeURIComponent(playSlug)}`, {
+      headers: { 'User-Agent': UA, Referer: 'https://embed.beyazelma78.com/', Origin: 'https://embed.beyazelma78.com' },
+      signal: AbortSignal.timeout(6000)
+    });
+    if (!playRes.ok) return [];
+    const playJson = await playRes.json();
+    const streamUrl = (playJson?.primary || playJson?.fallbacks?.[0] || '').trim();
+    if (!http(streamUrl)) return [];
+    return [stream('BeyazElma', wioChannel.name, streamUrl, 'https://embed.beyazelma78.com/', { 'User-Agent': UA, Referer: 'https://embed.beyazelma78.com/', Origin: 'https://embed.beyazelma78.com' })];
+  } catch {
+    return [];
+  }
+}
+
 export async function getLegacyStreams(wioChannel) {
-  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), domino(wioChannel), atomspor(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
+  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), domino(wioChannel), atomspor(wioChannel), newtv(wioChannel), beyazelma(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
   const out = []; for (const item of settled) if (item.status === 'fulfilled') out.push(...item.value);
   const seen = new Set(); return out.filter(x => x.url && !seen.has(x.url) && seen.add(x.url));
 }

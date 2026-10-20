@@ -2,7 +2,7 @@ export const BASE_SOURCES = Object.freeze([
   { id: 'kralspor', name: 'KralSporHD' },
   { id: 'betmatiktv', name: 'BetmatikTV' },
   { id: 'patron', name: 'PatronHD' },
-  { id: 'viontv', name: 'VİONTV' },
+  { id: 'viontv', name: 'Mien TV' },
   { id: 'taraftarium', name: 'Taraftarium24' },
   { id: 'arda', name: 'ArdaSpor' },
   { id: 'mahsun', name: 'MahsunSports' },
