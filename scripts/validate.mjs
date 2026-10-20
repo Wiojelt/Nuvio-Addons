@@ -25,9 +25,9 @@ async function assertNoCommittedGoogleKeys(dir) {
 
 await assertNoCommittedGoogleKeys(repoRoot);
 
-if (BASE_SOURCES.length !== 14) throw new Error(`Expected 14 base WioSpor sources, got ${BASE_SOURCES.length}`);
+if (BASE_SOURCES.length !== 15) throw new Error(`Expected 14 base WioSpor sources, got ${BASE_SOURCES.length}`);
 if (ASLAN_SOURCES.length !== 27) throw new Error(`Expected 27 Aslan WioSpor sources, got ${ASLAN_SOURCES.length}`);
-if (WIOSPOR_SOURCE_COUNT !== 41 || WIOSPOR_SOURCES.length !== 41) throw new Error(`Expected 41 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
+if (WIOSPOR_SOURCE_COUNT !== 42 || WIOSPOR_SOURCES.length !== 42) throw new Error(`Expected 41 WioSpor sources, got ${WIOSPOR_SOURCE_COUNT}`);
 if (new Set(WIOSPOR_SOURCES.map(source => source.id)).size !== WIOSPOR_SOURCE_COUNT) throw new Error('Duplicate WioSpor source id');
 
 const manifest = JSON.parse(await fs.readFile(new URL('../manifest.json', import.meta.url), 'utf8'));

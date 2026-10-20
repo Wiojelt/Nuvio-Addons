@@ -1,4 +1,5 @@
 export const BASE_SOURCES = Object.freeze([
+  { id: 'cifd2m', name: 'çifd2m' },
   { id: 'kralspor', name: 'KralSporHD' },
   { id: 'betmatiktv', name: 'BetmatikTV' },
   { id: 'patron', name: 'PatronHD' },

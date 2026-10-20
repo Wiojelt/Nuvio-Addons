@@ -121,11 +121,24 @@ async function genericSource(source, wioChannel) {
   return [];
 }
 
-let dominoCatalog = null;
-let dominoCatalogAt = 0;
-async function getDominoCatalog() {
-  if (dominoCatalog && Date.now() - dominoCatalogAt < 10 * 60_000) return dominoCatalog;
+let cifd2mCatalog = null;
+let cifd2mCatalogAt = 0;
+async function getCifd2mCatalog() {
+  if (cifd2mCatalog && Date.now() - cifd2mCatalogAt < 10 * 60_000) return cifd2mCatalog;
+  try {
+    const fsMod = await import('node:fs/promises');
+    const localDbUrl = new URL('../../../config/cifd2m-channel-db.json', import.meta.url);
+    const raw = await fsMod.readFile(localDbUrl, 'utf-8');
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed?.live_channels) && parsed.live_channels.length) {
+      cifd2mCatalog = parsed.live_channels;
+      cifd2mCatalogAt = Date.now();
+      return cifd2mCatalog;
+    }
+  } catch {}
   const urls = [
+    'https://raw.githubusercontent.com/Wiojelt/WioSpor/builds/cifd2m_live.json',
+    'https://raw.githubusercontent.com/Wiojelt/WioSpor/main/cifd2m_live.json',
     'https://raw.githubusercontent.com/Wiojelt/WioSpor/builds/domino_live.json',
     'https://raw.githubusercontent.com/Wiojelt/WioSpor/main/domino_live.json'
   ];
@@ -134,19 +147,39 @@ async function getDominoCatalog() {
       const r = await fetch(u, { signal: AbortSignal.timeout(8000) });
       if (r.ok) {
         const json = await r.json();
-        dominoCatalog = Array.isArray(json?.live_channels) ? json.live_channels : [];
-        dominoCatalogAt = Date.now();
-        return dominoCatalog;
+        cifd2mCatalog = Array.isArray(json?.live_channels) ? json.live_channels : [];
+        cifd2mCatalogAt = Date.now();
+        return cifd2mCatalog;
       }
     } catch {}
   }
   return [];
 }
 
-async function domino(wioChannel) {
+function channelMatchScore(channelTitle, wioChannel) {
+  const name = String(channelTitle || '').toLowerCase().trim();
+  const st = String(wioChannel?.standardTitle || '').toLowerCase().trim();
+  let pts = 0;
+  if (st && (name === st || compact(name) === compact(st))) pts += 500;
+  else if (st && (name.includes(st) || st.includes(name))) pts += 300;
+  if (st.includes('bein') && name.includes('bein')) pts += 200;
+  if (st.includes('sport') && name.includes('sport')) pts += 100;
+  if (st.includes('tivibu') && name.includes('tivibu')) pts += 200;
+  for (const a of (wioChannel?.aliases || [])) {
+    const al = String(a).toLowerCase().trim();
+    if (!al) continue;
+    if (name === al || compact(name) === compact(al)) pts += 150;
+    else if (al.length >= 4 && name.includes(al)) pts += 50;
+  }
+  return pts;
+}
+
+async function cifd2m(wioChannel) {
   try {
-    const channels = await getDominoCatalog();
-    const candidates = channels.filter(x => x?.active !== false && (x?.title || x?.name) && (x?.stream_url || (Array.isArray(x?.sources) && x.sources.length)) && matches(wioChannel, { id: String(x.id || ''), title: x.title || x.name }));
+    const channels = await getCifd2mCatalog();
+    const candidates = channels
+      .filter(x => x?.active !== false && (x?.title || x?.name) && (x?.stream_url || (Array.isArray(x?.sources) && x.sources.length)) && matches(wioChannel, { id: String(x.id || ''), title: x.title || x.name }))
+      .sort((a, b) => channelMatchScore(b.title || b.name, wioChannel) - channelMatchScore(a.title || a.name, wioChannel));
     const out = [];
     for (const ch of candidates.slice(0, 5)) {
       const headers = { 'User-Agent': ch.user_agent || UA, Referer: ch.referer || '', Origin: ch.origin || '' };
@@ -155,12 +188,13 @@ async function domino(wioChannel) {
         for (const s of ch.sources) if (s?.url) candidateUrls.push(s.url);
       }
       for (const u of candidateUrls) {
-        if (http(u) && !u.includes('youtube.com')) out.push(stream('Domino TV', ch.title || ch.name, u, ch.referer || '', headers));
+        if (http(u) && !u.includes('youtube.com')) out.push(stream('çifd2m', ch.title || ch.name, u, ch.referer || '', headers));
       }
     }
     return out;
   } catch { return []; }
 }
+const domino = cifd2m;
 
 const DOMATES_IDENTITY = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=';
 const DOMATES_KEY = process.env.DOMATES_GOOGLE_API_KEY || '';
@@ -696,7 +730,7 @@ async function beyazelma(wioChannel) {
 }
 
 export async function getLegacyStreams(wioChannel) {
-  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), domino(wioChannel), atomspor(wioChannel), newtv(wioChannel), beyazelma(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
+  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), cifd2m(wioChannel), atomspor(wioChannel), newtv(wioChannel), beyazelma(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
   const out = []; for (const item of settled) if (item.status === 'fulfilled') out.push(...item.value);
   const seen = new Set(); return out.filter(x => x.url && !seen.has(x.url) && seen.add(x.url));
 }
