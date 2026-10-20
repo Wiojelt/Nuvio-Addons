@@ -41,7 +41,7 @@ function stbChannels() {
 
 const manifest = {
   id: 'community.wiojelt.wiospor',
-  version: '0.8.0',
+  version: '0.8.1',
   name: 'WioSpor',
   description: 'WioSpor canlı kanal kataloğu.',
   resources: ['catalog', 'meta', 'stream'],

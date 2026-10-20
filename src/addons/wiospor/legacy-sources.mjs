@@ -15,21 +15,61 @@ const SOURCES = [
 function norm(s) { return String(s || '').toLowerCase().replaceAll('ı','i').replaceAll('ğ','g').replaceAll('ü','u').replaceAll('ş','s').replaceAll('ö','o').replaceAll('ç','c').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\b(?:1080p|720p|480p|360p|fhd|uhd|hd|sd|4k|50fps|60fps|7\/24|24\/7)\b/g, ' ').replace(/\bsports\b/g, 'sport').replace(/[^a-z0-9]+/g, ' ').trim(); }
 function compact(s) { return norm(s).replace(/\s+/g, ''); }
 function nums(s) { return [...norm(s).matchAll(/\b([0-9]+)\b/g)].map(x => x[1]); }
+function channelBrand(value) {
+  const combined = ` ${compact(value)} `;
+  if (combined.includes('ssportplus') || combined.includes('ssport+')) return 'ssportplus';
+  if (combined.includes('ssport') || combined.includes('mavispor') || combined.includes(' ss ') || combined.includes(' ss2 ')) return 'ssport';
+  if (combined.includes('smartspor') || combined.includes('sporsmart')) return 'smartspor';
+  if (combined.includes('bein') || combined.includes('morspor') || combined.includes('patron') || combined.includes('ligtv') || combined.includes(' bs1 ') || combined.includes(' b1 ')) return 'bein';
+  if (combined.includes('tivibu') || combined.includes('turuncuspor') || combined.includes(' t1 ') || combined.includes(' t2 ')) return 'tivibu';
+  if (combined.includes('tabii') || combined.includes('yesilspor') || combined.includes(' ex1 ')) return 'tabii';
+  if (combined.includes('exxen') || combined.includes('sarispor')) return 'exxen';
+  if (combined.includes('eurosport') || combined.includes(' eu1 ') || combined.includes(' eu2 ')) return 'eurosport';
+  if (combined.includes('trtspor') || combined.includes('trt1') || combined.includes('trt')) return 'trt';
+  if (combined.includes('aspor')) return 'aspor';
+  return '';
+}
+
 function matches(channel, row) {
+  const rowText = `${row?.title || ''} ${row?.id || ''} ${row?.name || ''}`;
+  const targetBrand = channelBrand(`${channel?.standardTitle || ''} ${channel?.name || ''}`);
+  const rowBrand = channelBrand(rowText);
+
+  if (targetBrand && rowBrand && targetBrand !== rowBrand) return false;
+  if (targetBrand === 'bein' && /tivibu|ssport|s sport|euro|tabii|exxen|smart|trt|aspor|t1|t2|ss|eu1/i.test(rowText)) return false;
+  if (targetBrand === 'ssport' && /tivibu|bein|euro|tabii|exxen|smart|trt|aspor|t1|b1|ex1/i.test(rowText)) return false;
+  if (targetBrand === 'tivibu' && /bein|ssport|s sport|euro|tabii|exxen|smart|trt|aspor|b1|ss|ex1/i.test(rowText)) return false;
+  if (targetBrand === 'tabii' && /bein|ssport|s sport|euro|tivibu|exxen|smart|aspor|b1|ss|t1/i.test(rowText)) return false;
+  if (targetBrand === 'exxen' && /bein|ssport|s sport|euro|tivibu|tabii|smart|aspor|b1|ss|t1/i.test(rowText)) return false;
+
   const candidates = [row?.title, row?.id, `${row?.title || ''} ${row?.id || ''}`].filter(Boolean);
   const targets = [channel?.standardTitle, ...(channel?.aliases || [])].filter(Boolean);
+
   for (const c of candidates) {
     const cc = compact(c); if (!cc) continue;
     const cnum = nums(c).at(-1);
+    const isCandHaber = /haber/i.test(c);
+    const isCandMax = /max/i.test(c);
+
     for (const t of targets) {
+      const isTargetHaber = /haber/i.test(t);
+      const isTargetMax = /max/i.test(t);
+      if (isCandHaber !== isTargetHaber || isCandMax !== isTargetMax) continue;
+
       const tt = compact(t); if (!tt) continue;
       const tnum = nums(t).at(-1);
+
       if (tnum && cnum && tnum !== cnum) continue;
-      if (cc === tt || (tt.length >= 4 && (cc.includes(tt) || tt.includes(cc)))) return true;
+      if (tnum && !cnum && !/4k|uhd/i.test(c)) continue;
+      if (!tnum && cnum && !['1', '24', '7'].includes(cnum)) continue;
+
+      if (cc === tt) return true;
+      if (Math.min(cc.length, tt.length) >= 4 && (tt.includes(cc) || cc.includes(tt))) return true;
     }
   }
   return false;
 }
+
 function decodeHtml(s) { return String(s || '').replace(/&amp;/gi, '&').replace(/&quot;/gi, '"').replace(/&#39;|&apos;/gi, "'").replace(/&lt;/gi, '<').replace(/&gt;/gi, '>'); }
 function stripTags(s) { return decodeHtml(String(s || '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim(); }
 function attr(raw, key) { const m = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`, 'i').exec(raw || ''); return decodeHtml(m ? (m[1] ?? m[2] ?? m[3] ?? '') : ''); }
@@ -159,12 +199,14 @@ async function getCifd2mCatalog() {
 function channelMatchScore(channelTitle, wioChannel) {
   const name = String(channelTitle || '').toLowerCase().trim();
   const st = String(wioChannel?.standardTitle || '').toLowerCase().trim();
+  const tb = channelBrand(st);
+  const cb = channelBrand(name);
+  if (tb && cb && tb !== cb) return -1000;
+
   let pts = 0;
   if (st && (name === st || compact(name) === compact(st))) pts += 500;
   else if (st && (name.includes(st) || st.includes(name))) pts += 300;
-  if (st.includes('bein') && name.includes('bein')) pts += 200;
-  if (st.includes('sport') && name.includes('sport')) pts += 100;
-  if (st.includes('tivibu') && name.includes('tivibu')) pts += 200;
+  if (tb && cb && tb === cb) pts += 200;
   for (const a of (wioChannel?.aliases || [])) {
     const al = String(a).toLowerCase().trim();
     if (!al) continue;

@@ -189,15 +189,53 @@ export function parseAslanM3u(text) {
   return [...grouped.values()].map(row => ({ ...row, players: row.players.map(({ _key, ...player }) => player) }));
 }
 
+function aslanBrand(value) {
+  const combined = ` ${compact(value)} `;
+  if (combined.includes('ssportplus') || combined.includes('ssport+')) return 'ssportplus';
+  if (combined.includes('ssport') || combined.includes('mavispor') || combined.includes(' ss ') || combined.includes(' ss2 ')) return 'ssport';
+  if (combined.includes('smartspor') || combined.includes('sporsmart')) return 'smartspor';
+  if (combined.includes('bein') || combined.includes('morspor') || combined.includes('patron') || combined.includes('ligtv') || combined.includes(' bs1 ') || combined.includes(' b1 ')) return 'bein';
+  if (combined.includes('tivibu') || combined.includes('turuncuspor') || combined.includes(' t1 ') || combined.includes(' t2 ')) return 'tivibu';
+  if (combined.includes('tabii') || combined.includes('yesilspor') || combined.includes(' ex1 ')) return 'tabii';
+  if (combined.includes('exxen') || combined.includes('sarispor')) return 'exxen';
+  if (combined.includes('eurosport') || combined.includes(' eu1 ') || combined.includes(' eu2 ')) return 'eurosport';
+  if (combined.includes('trtspor') || combined.includes('trt1') || combined.includes('trt')) return 'trt';
+  if (combined.includes('aspor')) return 'aspor';
+  return '';
+}
+
 export function matchAslanChannel(wioChannel, row) {
+  const rowText = `${row?.title || ''} ${row?.id || ''} ${row?.group || ''}`;
+  const targetBrand = aslanBrand(`${wioChannel?.standardTitle || ''} ${wioChannel?.name || ''}`);
+  const rowBrand = aslanBrand(rowText);
+
+  if (targetBrand && rowBrand && targetBrand !== rowBrand) return false;
+  if (targetBrand === 'bein' && /tivibu|ssport|s sport|euro|tabii|exxen|smart|trt|aspor|t1|t2|ss|eu1/i.test(rowText)) return false;
+  if (targetBrand === 'ssport' && /tivibu|bein|euro|tabii|exxen|smart|trt|aspor|t1|b1|ex1/i.test(rowText)) return false;
+  if (targetBrand === 'tivibu' && /bein|ssport|s sport|euro|tabii|exxen|smart|trt|aspor|b1|ss|ex1/i.test(rowText)) return false;
+  if (targetBrand === 'tabii' && /bein|ssport|s sport|euro|tivibu|exxen|smart|aspor|b1|ss|t1/i.test(rowText)) return false;
+  if (targetBrand === 'exxen' && /bein|ssport|s sport|euro|tivibu|tabii|smart|aspor|b1|ss|t1/i.test(rowText)) return false;
+
   const targets = [wioChannel?.standardTitle, wioChannel?.name, ...(wioChannel?.aliases || [])].filter(Boolean);
   const candidates = [row?.title, row?.id, row?.group ? `${row.title || ''} ${row.group}` : ''].filter(Boolean);
+
   for (const candidate of candidates) {
     const cc = compact(candidate), cn = lastNumber(candidate); if (!cc) continue;
+    const isCandHaber = /haber/i.test(candidate);
+    const isCandMax = /max/i.test(candidate);
+
     for (const target of targets) {
+      const isTargetHaber = /haber/i.test(target);
+      const isTargetMax = /max/i.test(target);
+      if (isCandHaber !== isTargetHaber || isCandMax !== isTargetMax) continue;
+
       const tt = compact(target), tn = lastNumber(target); if (!tt) continue;
       if (tn && cn && tn !== cn) continue;
-      if (cc === tt || (Math.min(cc.length, tt.length) >= 4 && (cc.includes(tt) || tt.includes(cc)))) return true;
+      if (tn && !cn && !/4k|uhd/i.test(candidate)) continue;
+      if (!tn && cn && !['1', '24', '7'].includes(cn)) continue;
+
+      if (cc === tt) return true;
+      if (Math.min(cc.length, tt.length) >= 4 && (cc.includes(tt) || tt.includes(cc))) return true;
     }
   }
   return false;

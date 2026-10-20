@@ -180,25 +180,49 @@ function cleanCandidate(raw) {
 function numbers(value) { return [...String(value).matchAll(/\b([0-9]+)\b/g)].map(m => m[1]); }
 function matchesText(channel, rawCandidate) {
   const normTitle = compact(rawCandidate), normStd = compact(channel.standardTitle), cleaned = cleanCandidate(rawCandidate), normCleaned = compact(cleaned);
-  if (normTitle === normStd || normCleaned === normStd) return true;
-  for (const alias of channel.aliases || []) { const a = compact(alias); if (normTitle === a || normCleaned === a) return true; }
+  const full = `${normTitle} ${normCleaned}`;
+
+  // 1. Strict Brand conflict guard must run first before ANY match
+  const brands = [
+    ['bein',['tivibu','tabii','tabi','exxen','ssport','s sport','smart','trt','aspor','htspor','euro','dazn','sky','tnt']],
+    ['tabii',['tivibu','bein','exxen','ssport','s sport','smart','euro']],
+    ['tivibu',['tabii','tabi','bein','exxen','ssport','s sport','smart','euro']],
+    ['exxen',['tivibu','tabii','tabi','bein','ssport','s sport','smart','euro']],
+    ['ssport',['tivibu','tabii','tabi','exxen','bein','smart','euro']],
+    ['smart',['tivibu','tabii','tabi','exxen','bein','ssport','s sport','euro']]
+  ];
+  for (const [brand, conflicts] of brands) {
+    if (compact(channel.standardTitle).includes(brand) && conflicts.some(x => full.includes(x))) return false;
+  }
+
+  // 2. Token guards
   const stdLower = normalizeText(channel.standardTitle), candLower = normalizeText(rawCandidate);
   for (const [token, stdHas, candHas] of [
-    ['max', stdLower.includes('max'), candLower.includes('max')], ['haber',stdLower.includes('haber'),candLower.includes('haber')],
-    ['plus',stdLower.includes('plus')||stdLower.includes('+'),candLower.includes('plus')||candLower.includes('+')], ['yildiz',stdLower.includes('yildiz'),candLower.includes('yildiz')]
-  ]) if (stdHas !== candHas) return false;
+    ['max', stdLower.includes('max'), candLower.includes('max')],
+    ['haber', stdLower.includes('haber'), candLower.includes('haber')],
+    ['plus', stdLower.includes('plus') || stdLower.includes('+'), candLower.includes('plus') || candLower.includes('+')],
+    ['yildiz', stdLower.includes('yildiz'), candLower.includes('yildiz')]
+  ]) {
+    if (stdHas !== candHas) return false;
+  }
+
+  // 3. Number guards
   const stdNum = numbers(channel.standardTitle).at(-1), candNum = numbers(cleaned).at(-1);
   if (stdNum && candNum && stdNum !== candNum) return false;
   if (!stdNum && candNum && !['1','24','7'].includes(candNum)) return false;
-  const brands = [
-    ['bein',['tivibu','tabii','tabi','exxen','ssport','smart','trt','aspor','htspor','euro','dazn','sky','tnt']],
-    ['tabii',['tivibu','bein','exxen','ssport','smart','euro']], ['tivibu',['tabii','tabi','bein','exxen','ssport','smart','euro']],
-    ['exxen',['tivibu','tabii','tabi','bein','ssport','smart','euro']], ['ssport',['tivibu','tabii','tabi','exxen','bein','smart','euro']],
-    ['smart',['tivibu','tabii','tabi','exxen','bein','ssport','euro']]
-  ];
-  const full = `${normTitle} ${normCleaned}`;
-  for (const [brand, conflicts] of brands) if (compact(channel.standardTitle).includes(brand) && conflicts.some(x => full.includes(x))) return false;
-  for (const alias of channel.aliases || []) { const a = compact(alias); if (a.length >= 4 && (normTitle.includes(a) || normCleaned.includes(a))) return true; }
+
+  // 4. Exact matches
+  if (normTitle === normStd || normCleaned === normStd) return true;
+  for (const alias of channel.aliases || []) {
+    const a = compact(alias);
+    if (normTitle === a || normCleaned === a) return true;
+  }
+
+  // 5. Substring matches
+  for (const alias of channel.aliases || []) {
+    const a = compact(alias);
+    if (a.length >= 4 && (normTitle.includes(a) || normCleaned.includes(a))) return true;
+  }
   return normStd.length >= 4 && (normTitle.includes(normStd) || normCleaned.includes(normStd));
 }
 function matches(channel, candidate) { return matchesText(channel, candidate.id || '') || matchesText(channel, candidate.title || '') || matchesText(channel, `${candidate.title || ''} ${candidate.id || ''}`); }
