@@ -1,6 +1,58 @@
 {
   "streams": [
     {
+      "name": "WioSpor • çifd2m",
+      "title": "ESPN (1080p) • Auto",
+      "url": "http://181.78.197.59:8000/play/a07z/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "ESPN8 The Ocho (1080p) • Auto",
+      "url": "https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "ESPNU HD (720p) • Auto",
+      "url": "http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "ESPN8: The Ocho • Auto",
+      "url": "https://d3b6q2ou5kp8ke.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-vz67vw1bljinm/aab88f58-adb6-4466-aceb-3b71a6f23411/4.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
       "name": "WioSpor • Aslan • Yeni TV",
       "title": "ESPN • Auto",
       "url": "http://181.78.197.59:8000/play/a07z/index.m3u8",
@@ -216,6 +268,36 @@
       "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:77:0F:10&stream=1562710&extension=ts",
       "behaviorHints": {
         "notWebReady": true
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "US: ESPN DESPORTES • Hat 1 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=786494_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "US: ESPN DESPORTES • Hat 2 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=786494_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
       }
     }
   ]

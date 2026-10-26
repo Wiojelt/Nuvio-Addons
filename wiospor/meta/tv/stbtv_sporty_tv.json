@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sporty_tv",
+    "type": "tv",
+    "name": "SPORTY TV",
+    "poster": "https://www.logolarimiz.com/Toplu/Czech/sporty-tv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_tv_6",
+    "type": "tv",
+    "name": "SPORT TV 6",
+    "poster": "https://www.logolarimiz.com/Toplu/Portekiz/sportv6.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sports_tv",
+    "type": "tv",
+    "name": "SPORTS TV",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/TR.SPOR/SPORTS.TV.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt_turk",
+    "type": "tv",
+    "name": "TRT TURK",
+    "poster": "https://tvlogo.nl/files/ch/TR/trt_turk.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

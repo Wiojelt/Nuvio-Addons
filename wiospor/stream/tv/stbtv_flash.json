@@ -1,0 +1,19 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| FLASH 4K • Hat 3 [2160p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=913463&extension=ts&play_token=zc9FVqhUdA",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    }
+  ]
+}

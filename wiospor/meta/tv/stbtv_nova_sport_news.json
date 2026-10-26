@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_nova_sport_news",
+    "type": "tv",
+    "name": "NOVA SPORT NEWS",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

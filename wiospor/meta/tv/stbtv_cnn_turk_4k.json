@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_cnn_turk_4k",
+    "type": "tv",
+    "name": "CNN Turk 4K",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/HEVC/CNN.TURK.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

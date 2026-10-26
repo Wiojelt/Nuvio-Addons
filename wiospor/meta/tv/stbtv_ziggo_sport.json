@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_ziggo_sport",
+    "type": "tv",
+    "name": "ZIGGO SPORT",
+    "poster": "https://www.logolarimiz.com/logo/germany/Hollanda.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

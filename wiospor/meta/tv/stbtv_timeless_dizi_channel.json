@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_timeless_dizi_channel",
+    "type": "tv",
+    "name": "Timeless Dizi Channel",
+    "poster": "http://peaktv.su/img/logos/films/timeless-dizi.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

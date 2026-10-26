@@ -1,0 +1,49 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: SZC TV • Hat 4 [HD]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=475740&extension=ts&play_token=5a5Ow0O2hB",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: SZC TV • Hat 5 (XTV) [HD]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/57684",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: SZC TV • Hat 6 (BensTV) [HD]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/57684",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    }
+  ]
+}

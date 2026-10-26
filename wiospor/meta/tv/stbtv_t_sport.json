@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_t_sport",
+    "type": "tv",
+    "name": "ČT SPORT",
+    "poster": "https://www.logolarimiz.com/Toplu/Czech/ct-sport.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

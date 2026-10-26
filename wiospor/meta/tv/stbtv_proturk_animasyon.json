@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_proturk_animasyon",
+    "type": "tv",
+    "name": "PROTURK ANIMASYON",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

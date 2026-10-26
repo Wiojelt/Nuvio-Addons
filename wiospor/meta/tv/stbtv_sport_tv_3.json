@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_tv_3",
+    "type": "tv",
+    "name": "SPORT TV 3",
+    "poster": "https://www.logolarimiz.com/Toplu/Portekiz/sportv3.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

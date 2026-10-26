@@ -1,0 +1,34 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • StbTV",
+      "title": "SPORTEUROPE.TV OTHER 11 • Hat 1 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=932668_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "SPORTEUROPE.TV OTHER 11 • Hat 2 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=932668_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    }
+  ]
+}

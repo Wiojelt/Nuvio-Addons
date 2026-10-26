@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_bein_sports_haber",
+    "type": "tv",
+    "name": "BEIN SPORTS HABER",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.HABER.png",
+    "posterShape": "landscape",
+    "description": "bein_spor"
+  }
+}

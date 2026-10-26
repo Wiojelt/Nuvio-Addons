@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_az_aktv_sport_tv",
+    "type": "tv",
+    "name": "AZ: AKTV SPORT TV",
+    "poster": "https://cdn.countryflags.com/thumbs/azerbaijan/flag-round-250.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

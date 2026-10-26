@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_global",
+    "type": "tv",
+    "name": "Sport Global",
+    "poster": "https://prod-media.beinsports.com/image/d78bded526b07ede88675c6412d63f3d.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

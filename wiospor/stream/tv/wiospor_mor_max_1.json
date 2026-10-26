@@ -3,7 +3,7 @@
     {
       "name": "WioSpor • PatronHD",
       "title": "BEIN SPORTS MAX 1 • Auto",
-      "url": "https://2i4.d72577a9dd0ec71.cfd/bm1/mono.m3u8",
+      "url": "https://g1b.d72577a9dd0ec74.cfd/bm1/mono.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "name": "WioSpor • VİONTV",
+      "name": "WioSpor • Mien TV",
       "title": "BEIN SPORTS MAX 1 • Auto",
       "url": "https://mahmutabi.qzz.io/images/ch_30hky87ls/index.m3u8",
       "behaviorHints": {
@@ -32,21 +32,66 @@
             "Accept": "*/*",
             "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
             "accept-language": "en-US,en;q=0.8",
-            "x-vion-sign": "yD6rLNC4oyy36_3NqznhGlW7tLJIQRgt0hzPk9vAO7M",
+            "x-vion-sign": "hlhC5KfJbs_zht8OFWnSNNdpLw09AI8jvgwLsXO61uE",
             "Origin": "https://taraftarium1081.xyz"
           }
         }
       }
     },
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "BeIN Max 1(andro) • Auto",
-      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamlivebsm1.m3u8",
+      "name": "WioSpor • JestYayın",
+      "title": "BEIN SPORTS MAX 1 • Auto",
+      "url": "https://f2q.zirvedesin247.cfd/bm1/mono.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Origin": "https://www.jestyayin970.com",
+            "Referer": "https://www.jestyayin970.com/channel?id=bm1"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "BEIN SPORTS MAX 1 • Auto",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamlivebsm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "BEIN SPORTS MAX 1-C • Auto",
+      "url": "https://dga1op10s1u3lea.82250d06d39d38.click/live/selcukbeinsportsmax1/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://main.uxsyplayer6859599e6c.click/",
+            "Origin": "https://main.uxsyplayer6859599e6c.click"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • AtomSpor",
+      "title": "🟣 Mor Spor Max 1 • Auto",
+      "url": "https://css.d6e3cae2e245k5.help//beinmax1/tracks-v1a1/mono.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://atomsportv519.top/",
+            "Origin": "https://atomsportv519.top"
           }
         }
       }
@@ -91,54 +136,28 @@
       }
     },
     {
-      "name": "WioSpor • Aslan • Türkiye İzle",
-      "title": "SPOR⚽️⚽️ • Auto",
-      "url": "https://videos.pexels.com/video-files/31387378/13392869_1080_1920_60fps.mp4?=.mpg",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Canlı TV Türk",
-      "title": "BeIN Sports 4K • 2160p",
-      "url": "https://ladyboy.ardastream2.cfd//beintv/tracks-v1a1/mono.m3u8",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 13; Samsung F1833B Build/TP1A.280629.015)"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • World Has IPTV",
-      "title": "BEIN SPORTS • Auto",
-      "url": "http://mmn.mypsx.net:1935/live/mmnhdsport/chunklist.m3u8",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
       "name": "WioSpor • Aslan • Biraz Sports",
       "title": "BeIN Sports Max 1 • Auto",
-      "url": "https://andro.evrenesoglu155.click/checklist/androstreamlivebsm1.m3u8",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamlivebsm1.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yaşar Sports",
+      "title": "TR:beIN Sport Max 1 HD • 720p",
+      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamlivebsm1.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
           }
         }
       }
@@ -741,6 +760,66 @@
       "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=44442&extension=ts",
       "behaviorHints": {
         "notWebReady": true
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "BEIN SPORT MAX 1 • Hat 1 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=929028_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "BEIN SPORT MAX 1 • Hat 2 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=929028_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR VIP: BEIN SPORTS MAX 1 HD • Hat 4 [720p]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=401292&extension=ts&play_token=HY5DWOLjl1",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: BEIN SPORTS MAX 1 • Hat 5 (XTV) [HD]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/224177",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
       }
     }
   ]

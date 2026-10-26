@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_fm_ntv_spor_radyo",
+    "type": "tv",
+    "name": "FM: NTV SPOR RADYO",
+    "poster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/ntv-tr.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

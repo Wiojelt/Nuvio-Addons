@@ -1,0 +1,64 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| EURO D 4K • Hat 3 [2160p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912462&extension=ts&play_token=Ck2LqR5md8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: Euro D • Hat 4 [HD]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=3368&extension=ts&play_token=nEZQxnfcWk",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: EURO D • Hat 5 (XTV) [HD]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/161451",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: EURO D • Hat 6 (BensTV) [HD]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/161451",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    }
+  ]
+}

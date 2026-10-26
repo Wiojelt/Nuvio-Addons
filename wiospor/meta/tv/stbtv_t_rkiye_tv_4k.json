@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_t_rkiye_tv_4k",
+    "type": "tv",
+    "name": "TÜRKIYE TV 4K",
+    "poster": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • StbTV",
+      "title": "## TR| BEIN SPORTS GOLD SD ## • Hat 4 [HD]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=868677&extension=ts&play_token=JKPTOzbdDl",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    }
+  ]
+}

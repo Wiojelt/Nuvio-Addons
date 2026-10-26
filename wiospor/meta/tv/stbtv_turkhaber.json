@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_turkhaber",
+    "type": "tv",
+    "name": "TURKHABER",
+    "poster": "https://www.logolarimiz.com/logo/Turkiye/TURKHABER.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

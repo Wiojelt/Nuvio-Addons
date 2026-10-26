@@ -1,40 +1,29 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "AZTV ᵏᵃᵑᵏᵃ • Auto",
-      "url": "http://flussonic.izone.az/aztv/mono.m3u8",
+      "name": "WioSpor • çifd2m",
+      "title": "BEYAZ TV HD • Auto",
+      "url": "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
           }
         }
       }
     },
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "AZTV ᵏᵃᵑᵏᵃ • Auto",
-      "url": "http://str.yodacdn.net/azertv/index.m3u8",
+      "name": "WioSpor • LeoTV",
+      "title": "Az TV • Auto",
+      "url": "https://bc4livecdn1001.shop/aztv/index.m3u8?md5=s4KnceNOI8kZlq37lg8N4Q&expires=1793049419",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "AZTV ᵏᵃᵑᵏᵃ • Auto",
-      "url": "https://stream8.cinerama.uz/1455/tracks-v1a1/mono.m3u8",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "TiviMate"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://bc4liveiframe1001.shop/player/player2.php?id=aztv",
+            "Origin": "https://bc4liveiframe1001.shop"
           }
         }
       }
@@ -131,9 +120,9 @@
       }
     },
     {
-      "name": "WioSpor • Aslan • Realtop TV",
+      "name": "WioSpor • Aslan • 46 TV",
       "title": "BEYAZ TV • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196675&extension=ts&play_token=MB5iIE85Ro",
+      "url": "https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/playlist.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -146,7 +135,7 @@
     {
       "name": "WioSpor • Aslan • Realtop TV",
       "title": "BEYAZ TV • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196691&extension=ts&play_token=8QiYAaqw7G",
+      "url": "http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196675&extension=ts",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -159,7 +148,20 @@
     {
       "name": "WioSpor • Aslan • Realtop TV",
       "title": "BEYAZ TV • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196707&extension=ts&play_token=c1bLsSRIBi",
+      "url": "http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196691&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "BEYAZ TV • Auto",
+      "url": "http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196707&extension=ts",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -223,6 +225,66 @@
       "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=170663&extension=ts",
       "behaviorHints": {
         "notWebReady": true
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| BEYAZ TV 4K • Hat 3 [2160p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912469&extension=ts&play_token=D5T4IHpDsu",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| BEYAZ TV HD • Hat 3 [720p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912447&extension=ts&play_token=RuowT65sAy",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: BEYAZ TV FHD • Hat 5 (XTV) [1080p]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/139161",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: BEYAZ TV FHD • Hat 6 (BensTV) [1080p]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/139161",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
       }
     }
   ]

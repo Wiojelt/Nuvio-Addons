@@ -1,14 +1,55 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "FB TV ᵏᵃᵑᵏᵃ • Auto",
-      "url": "https://fbtv.fenerbahce.org/fenerbahcetv.stream/chunklist.m3u8",
+      "name": "WioSpor • çifd2m",
+      "title": "FB TV • Auto",
+      "url": "http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "FENERBAHÇE TV • Auto",
+      "url": "https://fbtv.fenerbahce.org/fenerbahcetv.stream_1080p/playlist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • çifd2m",
+      "title": "Bahçe • Auto",
+      "url": "http://iptv.prosto.tv:7000/ch347/video.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • LeoTV",
+      "title": "Fenerbahçe TV • Auto",
+      "url": "https://bc4livecdn1001.shop/fbtv/index.m3u8?md5=Hcitze6WoQhWg_xOPZ9P-A&expires=1793049380",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://bc4liveiframe1001.shop/player/player2.php?id=fbtv",
+            "Origin": "https://bc4liveiframe1001.shop"
           }
         }
       }
@@ -66,9 +107,22 @@
       }
     },
     {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "FB TV • Auto",
+      "url": "https://fbtv.fenerbahce.org/fenerbahcetv.stream/chunklist.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
       "name": "WioSpor • Aslan • Biraz Sports",
       "title": "Fb Tv • Auto",
-      "url": "https://andro.evrenesoglu155.click/checklist/androstreamlivefbtv.m3u8",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamlivefbtv.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -82,7 +136,7 @@
     {
       "name": "WioSpor • Aslan • Karma Sports",
       "title": "FB TV • Auto",
-      "url": "https://andro.mangeinde4.lat/checklist/androstreamlivefb.m3u8",
+      "url": "https://andro.3749206.xyz/checklist/androstreamlivefb.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -417,6 +471,51 @@
       "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=314796&extension=ts",
       "behaviorHints": {
         "notWebReady": true
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "GOLD: FB TV ʜᴅ • Hat 4 [HD]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=868625&extension=ts&play_token=z2jAXgIgCZ",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: FB TV  HD • Hat 5 (XTV) [720p]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/86393",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: FB TV  HD • Hat 6 (BensTV) [720p]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/86393",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
       }
     }
   ]

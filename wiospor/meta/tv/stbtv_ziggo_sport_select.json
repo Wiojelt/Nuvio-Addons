@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_ziggo_sport_select",
+    "type": "tv",
+    "name": "ZIGGO SPORT SELECT",
+    "poster": "http://www.logolarimiz.com/europa/netherlands/ziggo-sport-select-nl.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

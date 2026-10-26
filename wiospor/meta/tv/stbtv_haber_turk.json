@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_haber_turk",
+    "type": "tv",
+    "name": "HABER TURK",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/HEVC/HABER.TURK.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

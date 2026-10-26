@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_turkmen_dugunu",
+    "type": "tv",
+    "name": "TURKMEN DUGUNU",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

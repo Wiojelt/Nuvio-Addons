@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_smart_box_belgesel",
+    "type": "tv",
+    "name": "SMART BOX BELGESEL",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "belgesel_cocuk"
+  }
+}

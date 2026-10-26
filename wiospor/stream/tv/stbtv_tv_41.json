@@ -1,0 +1,49 @@
+{
+  "streams": [
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| TV 41 • Hat 3 [HD]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912824&extension=ts&play_token=EYD3bnly4X",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: TV 41 • Hat 5 (XTV) [HD]",
+      "url": "https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8?nimblesessionid=3431697374",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: TV 41 • Hat 6 (BensTV) [HD]",
+      "url": "https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8?nimblesessionid=3431697374",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    }
+  ]
+}

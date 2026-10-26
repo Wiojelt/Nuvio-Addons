@@ -1,14 +1,36 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "S SPORT ᵏᵃᵑᵏᵃ • Auto",
-      "url": "https://deathless.pantonum1.workers.dev/ss.m3u8",
+      "name": "WioSpor • Mien TV",
+      "title": "S SPORT PLUS 2 • Auto",
+      "url": "https://mahmutabi.qzz.io/images/ch_c80q46sij/index.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "Referer": "https://taraftarium1082.xyz/",
+            "User-Agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "Connection": "Keep-Alive",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "accept-language": "en-US,en;q=0.8",
+            "x-vion-sign": "s3kgZfI6fZV4sBH0ZMw9Jl-OkKUhueFH8N_fdepueTk",
+            "Origin": "https://taraftarium1082.xyz"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • LeoTV",
+      "title": "S-Sport+ HD • Auto",
+      "url": "https://bc4livecdn1001.shop/plus/index.m3u8?md5=6Ln6Xycf6uM7stRP6trqew&expires=1793049318",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://bc4liveiframe1001.shop/player/player2.php?id=plus",
+            "Origin": "https://bc4liveiframe1001.shop"
           }
         }
       }
@@ -42,8 +64,8 @@
     },
     {
       "name": "WioSpor • Aslan • Biraz Sports",
-      "title": "S Sport • Auto",
-      "url": "https://andro.evrenesoglu155.click/checklist/androstreamlivess1.m3u8",
+      "title": "S Sport Plus • Auto",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamliveplus.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -84,8 +106,8 @@
     },
     {
       "name": "WioSpor • Aslan • Uğur Sports",
-      "title": "S Sport • Auto",
-      "url": "https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8",
+      "title": "S Sport Plus • Auto",
+      "url": "https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -96,28 +118,121 @@
       }
     },
     {
-      "name": "WioSpor • Aslan • Atom Spor",
-      "title": "S SPORT • Auto",
-      "url": "https://ladyboy.ardatvgs.cfd//s-sport/tracks-v1a1/mono.m3u8",
+      "name": "WioSpor • StbTV",
+      "title": "S SPORT PLUS 2 • Hat 1 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=684461_&extension=ts",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
-            "Referer": "https://www.atomsportv519.top"
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
           }
         }
       }
     },
     {
-      "name": "WioSpor • Aslan • IPTV Sevgisi",
-      "title": "Mavi Spor • Auto",
-      "url": "https://andro.evrenesoglu121.click/checklist/androstreamlivets1.m3u8",
+      "name": "WioSpor • StbTV",
+      "title": "S SPORT PLUS 2 • Hat 2 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=684461_&extension=ts",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: S Sport Plus 2 HD • Hat 5 (XTV) [720p]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/197160",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: S Sport Plus 2 HD • Hat 6 (BensTV) [720p]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/197160",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "S SPORT • Hat 1 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=821981_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "S SPORT • Hat 2 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=821981_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "⚜️⚜️ S SPORT ⚜️⚜️ • Hat 5 (XTV) [HD]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/44623",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "⚜️⚜️ S SPORT ⚜️⚜️ • Hat 6 (BensTV) [HD]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/44623",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
           }
         }
       }

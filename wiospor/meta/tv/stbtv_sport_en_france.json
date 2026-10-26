@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_en_france",
+    "type": "tv",
+    "name": "SPORT EN FRANCE",
+    "poster": "https://www.logolarimiz.com/Toplu/France/sport_en_france.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,19 +1,6 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "NTV ᵏᵃᵑᵏᵃ • Auto",
-      "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=7c4bb802-0c41-409e-8cd2-799984995694",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
       "name": "WioSpor • Aslan • Ekip TV",
       "title": "NTV HD • 720p",
       "url": "http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8",
@@ -172,7 +159,7 @@
     {
       "name": "WioSpor • Aslan • Realtop TV",
       "title": "NTV • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=197266&extension=ts&play_token=4Nw50op3di",
+      "url": "https://dogus-live.daioncdn.net/ntv/playlist.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -185,20 +172,7 @@
     {
       "name": "WioSpor • Aslan • Realtop TV",
       "title": "NTV • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=197247&extension=ts&play_token=sTEEqg3kAh",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Realtop TV",
-      "title": "NTV • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=197291&extension=ts&play_token=bpMCEGuEgT",
+      "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=7c4bb802-0c41-409e-8cd2-799984995694",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -275,6 +249,81 @@
       "url": "http://4u.eagle4u.org/play/live.php?mac=00:1A:79:A9:BA:5B&stream=10756&extension=ts",
       "behaviorHints": {
         "notWebReady": true
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| NTV 4K • Hat 3 [2160p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912921&extension=ts&play_token=pMx2tWmynz",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| NTV HD • Hat 3 [720p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912920&extension=ts&play_token=PCp7AXRGRc",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "DE: N-TV FHD • Hat 5 (XTV) [1080p]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/84997",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "DE: N-TV FHD • Hat 6 (BensTV) [1080p]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/84997",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: NTV 4K • Hat 4 [2160p]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=8703&extension=ts&play_token=kWrwKo1Y6N",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
       }
     }
   ]

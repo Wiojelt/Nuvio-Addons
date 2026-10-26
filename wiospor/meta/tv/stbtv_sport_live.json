@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_live",
+    "type": "tv",
+    "name": "SPORT LIVE",
+    "poster": "https://www.lyngsat-logo.com/logo/tv/ss/sport-live-dk.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

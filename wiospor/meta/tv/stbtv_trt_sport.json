@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt_sport",
+    "type": "tv",
+    "name": "TRT SPORT",
+    "poster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-spor-tr.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

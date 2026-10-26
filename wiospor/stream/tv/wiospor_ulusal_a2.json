@@ -1,8 +1,21 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "A2 TV ᵏᵃᵑᵏᵃ • Auto",
+      "name": "WioSpor • çifd2m",
+      "title": "A2 TV • Auto",
+      "url": "http://89.187.191.41/A2-HD-TR/video.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Ekip TV",
+      "title": "A2 HD • 720p",
       "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8",
       "behaviorHints": {
         "notWebReady": true,
@@ -30,19 +43,6 @@
       "name": "WioSpor • Aslan • Ekip TV",
       "title": "A2 HD • 720p",
       "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Yeni TV",
-      "title": "A2 • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196687&extension=ts&play_token=DGJnc2zcvx",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -120,20 +120,7 @@
     {
       "name": "WioSpor • Aslan • Realtop TV",
       "title": "A2 • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196671&extension=ts&play_token=9oLEqeVHKo",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Realtop TV",
-      "title": "A2 • Auto",
-      "url": "http://line.tivi-one.net/play/live.php?mac=00:1A:79:88:CC:0E&stream=196703&extension=ts&play_token=UppNkUMero",
+      "url": "http://me.mdmfista.com/play/live.php?mac=00:1A:79:F5:CE:D7&stream=196687&extension=ts&play_token=DGJnc2zcvx",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -146,7 +133,7 @@
     {
       "name": "WioSpor • Aslan • Biraz Sports",
       "title": "A2 • Auto",
-      "url": "https://andro.evrenesoglu155.click/checklist/androstreamlivea2.m3u8",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamlivea2.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -158,16 +145,61 @@
       }
     },
     {
-      "name": "WioSpor • Aslan • Karma Sports",
-      "title": "A2 • Auto",
-      "url": "https://andro.mangeinde4.lat/checklist/androstreamlivea2.m3u8",
+      "name": "WioSpor • StbTV",
+      "title": "TR| A2 4K • Hat 3 [2160p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912468&extension=ts&play_token=NPpOitGkdm",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Referer": "https://taraftariumizle.org/",
-            "Origin": "https://taraftariumizle.org/"
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR| A2 HD • Hat 3 [720p]",
+      "url": "http://line.vueott.com:80/play/live.php?mac=00:1A:79:B5:11:24&stream=912444&extension=ts&play_token=79XwDv5o1Y",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:B5:11:24; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: A2 FHD • Hat 5 (XTV) [1080p]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/129851",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: A2 FHD • Hat 6 (BensTV) [1080p]",
+      "url": "http://benstv2025.art:2095/zgggz3074/zggz00xxy2211/129851",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
           }
         }
       }

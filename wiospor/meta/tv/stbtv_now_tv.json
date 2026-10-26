@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_now_tv",
+    "type": "tv",
+    "name": "NOW TV",
+    "poster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/now-tr.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

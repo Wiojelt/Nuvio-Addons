@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_haber_turk_spor",
+    "type": "tv",
+    "name": "HABER TURK SPOR",
+    "poster": "http://103.176.90.154/picons/logos/logos/HABER-TURK-SPOR.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

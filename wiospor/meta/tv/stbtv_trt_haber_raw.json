@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt_haber_raw",
+    "type": "tv",
+    "name": "TRT HABER RAW",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/HEVC/TRT.HABER.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

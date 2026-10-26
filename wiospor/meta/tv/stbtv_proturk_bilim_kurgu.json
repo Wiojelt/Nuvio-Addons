@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_proturk_bilim_kurgu",
+    "type": "tv",
+    "name": "PROTURK BILIM KURGU",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

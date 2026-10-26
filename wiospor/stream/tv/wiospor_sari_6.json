@@ -1,14 +1,19 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "Exxen 6(andro) • Auto",
-      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamliveexn6.m3u8",
+      "name": "WioSpor • PatronHD",
+      "title": "EXXEN • Auto",
+      "url": "https://g1b.d72577a9dd0ec74.cfd/ex1/mono.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14; Mobile)",
+            "Origin": "https://patronsports2.cfd",
+            "Referer": "https://patronsports2.cfd/",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Dest": "empty"
           }
         }
       }
@@ -28,34 +33,8 @@
     },
     {
       "name": "WioSpor • Aslan • Yeni TV",
-      "title": "SPORT • Auto",
-      "url": "https://trn03.tulix.tv/gt-anews/index-1792302600-300.m3u8?token=0631e8753bcdf25bb2a5015db22ec082",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Yeni TV",
-      "title": "SPORT • Auto",
-      "url": "https://trn03.tulix.tv/gt-anews/index-1792299000-300.m3u8?token=0631e8753bcdf25bb2a5015db22ec082",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
-      "name": "WioSpor • Aslan • Yeni TV",
-      "title": "SPORT • Auto",
-      "url": "https://trn03.tulix.tv/gt-anews/index-1792313400-300.m3u8?token=0631e8753bcdf25bb2a5015db22ec082",
+      "title": "EXXEN SPORTS 6 • Auto",
+      "url": "http://me.mdmfista.com/play/live.php?mac=00:1A:79:F5:CE:D7&stream=15517&extension=ts&play_token=FK6YuooHjs",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -93,28 +72,28 @@
       }
     },
     {
-      "name": "WioSpor • Aslan • Realtop TV",
-      "title": "GOLD: EXXEN 6 • Auto",
-      "url": "http://204.52.191.254/play/live.php?mac=00:1A:79:76:D0:D3&stream=868645&extension=ts&play_token=KSW2RVLYhY",
-      "behaviorHints": {
-        "notWebReady": true,
-        "proxyHeaders": {
-          "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
-          }
-        }
-      }
-    },
-    {
       "name": "WioSpor • Aslan • Biraz Sports",
       "title": "Exxen Sports 6 • Auto",
-      "url": "https://andro.evrenesoglu155.click/checklist/androstreamliveexn6.m3u8",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamliveexn6.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             "Referer": "https://birazcikspor44.xyz/"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • Aslan • Yaşar Sports",
+      "title": "TR:Exxen 6 HD • 720p",
+      "url": "https://purple-fog-7608.han686314.workers.dev/androstreamliveexn6.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
           }
         }
       }
@@ -136,7 +115,7 @@
     {
       "name": "WioSpor • Aslan • Karma Sports",
       "title": "Exxen • Auto",
-      "url": "https://andro.mangeinde4.lat/checklist/androstreamliveexn8.m3u8",
+      "url": "https://andro.3749206.xyz/checklist/androstreamliveexn6.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -157,6 +136,96 @@
         "proxyHeaders": {
           "request": {
             "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "EXXEN SPORTS 6 • Hat 1 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=924956_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "EXXEN SPORTS 6 • Hat 2 [HD]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=924956_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "GOLD: EXXEN SPORTS 6 ʜᴅ • Hat 4 [HD]",
+      "url": "http://204.52.191.254:80/play/live.php?mac=00:1A:79:F1:E7:63&stream=868645&extension=ts&play_token=KJIo3weMjX",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:F1:E7:63; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "Sport 6 HD • Hat 1 [720p]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:36:DE:2B&stream=918613_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "Sport 6 HD • Hat 2 [720p]",
+      "url": "http://zerotv.eu:8080/play/live.php?mac=00:1A:79:12:4B:77&stream=918613_&extension=ts",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:12:4B:77; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
+          }
+        }
+      }
+    },
+    {
+      "name": "WioSpor • StbTV",
+      "title": "TR: EXXEN SPORT 6 FHD • Hat 5 (XTV) [1080p]",
+      "url": "http://xtvglobal.xyz:2095/mmrr7589/mmrr0202yy00/116627",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C)",
+            "Cookie": "mac=00:1A:79:36:DE:2B; stb_lang=en",
+            "X-User-Agent": "Model: MAG250; Link: Ethernet"
           }
         }
       }

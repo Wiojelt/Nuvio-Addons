@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sinema_tv_aile",
+    "type": "tv",
+    "name": "SINEMA TV AILE",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/BEIN.SMART/SINEMA.TV.AILE.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

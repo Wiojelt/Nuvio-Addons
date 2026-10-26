@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_moviesmart_turk",
+    "type": "tv",
+    "name": "MOVIESMART TURK",
+    "poster": "https://www.logolarimiz.com/europa/turkey/Movie.Smart.TURK.eno.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

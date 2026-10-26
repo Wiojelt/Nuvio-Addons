@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sinema_tv",
+    "type": "tv",
+    "name": "SINEMA TV",
+    "poster": "https://tvlogo.nl/files/ch/TR/sinema_tv.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

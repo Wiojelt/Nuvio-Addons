@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_orf_sport",
+    "type": "tv",
+    "name": "ORF SPORT+",
+    "poster": "https://tvlogo.nl/files/ch/GERMANY/orf_sport+.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

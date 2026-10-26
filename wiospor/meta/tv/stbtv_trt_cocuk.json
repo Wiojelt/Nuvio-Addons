@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt_cocuk",
+    "type": "tv",
+    "name": "TRT COCUK",
+    "poster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-cocuk-tr.png",
+    "posterShape": "landscape",
+    "description": "belgesel_cocuk"
+  }
+}

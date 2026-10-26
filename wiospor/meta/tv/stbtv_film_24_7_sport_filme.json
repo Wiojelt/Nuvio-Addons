@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_film_24_7_sport_filme",
+    "type": "tv",
+    "name": "FILM 24/7 SPORT FILME",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

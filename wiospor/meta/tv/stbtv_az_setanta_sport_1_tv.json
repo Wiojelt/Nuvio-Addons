@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_az_setanta_sport_1_tv",
+    "type": "tv",
+    "name": "AZ: SETANTA SPORT 1 TV",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

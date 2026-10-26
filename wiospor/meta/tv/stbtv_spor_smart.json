@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_spor_smart",
+    "type": "tv",
+    "name": "SPOR SMART",
+    "poster": "https://www.logolarimiz.com/europa/turkey/sporsmart1.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

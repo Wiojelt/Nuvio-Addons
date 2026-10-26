@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sinema_tv_yerli_2",
+    "type": "tv",
+    "name": "SINEMA TV YERLI 2",
+    "poster": "https://tvlogo.nl/files/ch/TR/sinemaYerli2.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

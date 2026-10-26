@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_ert_sport_1",
+    "type": "tv",
+    "name": "ERT SPORT 1",
+    "poster": "https://www.logolarimiz.com/Toplu/Greece/ertsport1.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

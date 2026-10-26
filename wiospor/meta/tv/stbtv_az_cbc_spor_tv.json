@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_az_cbc_spor_tv",
+    "type": "tv",
+    "name": "AZ: CBC SPOR TV",
+    "poster": "https://cdn.countryflags.com/thumbs/azerbaijan/flag-round-250.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

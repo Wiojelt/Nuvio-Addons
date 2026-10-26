@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_star_tv_hd",
+    "type": "tv",
+    "name": "Star TV HD",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/ULUSALL/STAR.YV.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

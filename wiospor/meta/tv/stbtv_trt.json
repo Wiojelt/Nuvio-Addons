@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt",
+    "type": "tv",
+    "name": "TRT",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/HEVC/TRT.4K.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

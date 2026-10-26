@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_dmax_turk_4k",
+    "type": "tv",
+    "name": "Dmax Turk 4K",
+    "poster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/dmax-tr.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

@@ -1,14 +1,16 @@
 {
   "streams": [
     {
-      "name": "WioSpor • Aslan • Kanka TV",
-      "title": "AY TV ᵏᵃᵑᵏᵃ • Auto",
-      "url": "https://cdn-aytv.yayin.com.tr/aytv/aytv/playlist.m3u8",
+      "name": "WioSpor • çifd2m",
+      "title": "[CANLI] Vakifbank - Galatasaray (TVF Sultanlar Ligi) • Auto",
+      "url": "https://g1b.d72577a9dd0ec74.cfd/trtspor2/mono.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
           "request": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Referer": "https://pasizle864.com/",
+            "Origin": "https://pasizle864.com"
           }
         }
       }
@@ -28,8 +30,8 @@
     },
     {
       "name": "WioSpor • Aslan • Yeni TV",
-      "title": "AY TV • Auto",
-      "url": "https://cdn-aytv.yayin.com.tr/aytv/aytv/chunklist_w1154669067.m3u8",
+      "title": "GALATASARAY TV • Auto",
+      "url": "http://me.mdmfista.com/play/live.php?mac=00:1A:79:F5:CE:D7&stream=696&extension=ts&play_token=7X0Jam6lh9",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {
@@ -53,9 +55,22 @@
       }
     },
     {
+      "name": "WioSpor • Aslan • Realtop TV",
+      "title": "AY TV • Auto",
+      "url": "https://cdn-aytv.yayin.com.tr/aytv/aytv/chunklist_w1154669067.m3u8",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+          }
+        }
+      }
+    },
+    {
       "name": "WioSpor • Aslan • Biraz Sports",
       "title": "Gs Tv • Auto",
-      "url": "https://andro.evrenesoglu155.click/checklist/androstreamlivegstv.m3u8",
+      "url": "https://andro.evrenesoglu219.click/checklist/androstreamlivegstv.m3u8",
       "behaviorHints": {
         "notWebReady": true,
         "proxyHeaders": {

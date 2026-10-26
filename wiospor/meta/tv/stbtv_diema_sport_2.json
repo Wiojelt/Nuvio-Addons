@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_diema_sport_2",
+    "type": "tv",
+    "name": "DIEMA SPORT 2",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

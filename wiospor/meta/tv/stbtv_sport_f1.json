@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_f1",
+    "type": "tv",
+    "name": "SPORT F1",
+    "poster": "https://www.logolarimiz.com/logo/germany/f1event.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

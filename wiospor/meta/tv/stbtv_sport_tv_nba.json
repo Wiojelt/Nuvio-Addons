@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_tv_nba",
+    "type": "tv",
+    "name": "SPORT TV NBA",
+    "poster": "https://www.logolarimiz.com/Toplu/Portekiz/sportv-nba.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

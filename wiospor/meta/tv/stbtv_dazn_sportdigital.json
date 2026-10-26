@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_dazn_sportdigital",
+    "type": "tv",
+    "name": "DAZN SPORTDIGITAL",
+    "poster": "https://tvlogo.nl/files/ch/GERMANY/sportdigital_fb.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

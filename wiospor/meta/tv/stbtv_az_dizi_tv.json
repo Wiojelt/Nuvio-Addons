@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_az_dizi_tv",
+    "type": "tv",
+    "name": "AZ: DIZI TV",
+    "poster": "https://cdn.countryflags.com/thumbs/azerbaijan/flag-round-250.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

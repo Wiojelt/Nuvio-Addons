@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt_muzik",
+    "type": "tv",
+    "name": "TRT MUZIK",
+    "poster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-muzik-tr.png",
+    "posterShape": "landscape",
+    "description": "belgesel_cocuk"
+  }
+}

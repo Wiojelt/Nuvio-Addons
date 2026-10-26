@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_now",
+    "type": "tv",
+    "name": "NOW",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/ULUSALL/NOW.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

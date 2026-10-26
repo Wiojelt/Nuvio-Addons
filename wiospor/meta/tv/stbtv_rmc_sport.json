@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_rmc_sport",
+    "type": "tv",
+    "name": "RMC SPORT",
+    "poster": "https://www.logolarimiz.com/Toplu/France/rmc_sport_uhd.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

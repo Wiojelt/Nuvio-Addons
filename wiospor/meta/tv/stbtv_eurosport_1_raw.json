@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_eurosport_1_raw",
+    "type": "tv",
+    "name": "EUROSPORT 1 RAW",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/TR.SPOR/EURO.SPORT.1.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_spor_kanali_local",
+    "type": "tv",
+    "name": "SPOR KANALI LOCAL",
+    "poster": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_news",
+    "type": "tv",
+    "name": "Sport NEWS",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDBKUy5NVPXeveFtAvK70DabE582wxybcCDS7MXWT&s=10",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_tv2_sport",
+    "type": "tv",
+    "name": "TV2 SPORT",
+    "poster": "https://www.logolarimiz.com/europa/nordic/denmark/tv2-sport-dk.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

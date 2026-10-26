@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sky_aci_sport_tv",
+    "type": "tv",
+    "name": "SKY ACI SPORT TV",
+    "poster": "https://www.logolarimiz.com/logo/Italy/sky-aci-sport.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

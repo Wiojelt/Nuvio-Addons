@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_trt_eba",
+    "type": "tv",
+    "name": "TRT EBA",
+    "poster": "https://tvlogo.nl/files/ch/TR/eba-tv-orta.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_neocine_turk",
+    "type": "tv",
+    "name": "NEOCINE TURK",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sports18_1",
+    "type": "tv",
+    "name": "Sports18 1",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

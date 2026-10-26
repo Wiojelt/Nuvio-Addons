@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sky_sport",
+    "type": "tv",
+    "name": "SKY SPORT",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO/DE/BAYRAK.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

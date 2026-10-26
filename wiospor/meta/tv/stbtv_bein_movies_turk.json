@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_bein_movies_turk",
+    "type": "tv",
+    "name": "BEIN MOVIES TURK",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/HEVC/BEIN.MOVIES.TURK.png",
+    "posterShape": "landscape",
+    "description": "sinema_dizi"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport_extra",
+    "type": "tv",
+    "name": "SPORT EXTRA",
+    "poster": "https://www.logolarimiz.com/Toplu/Romania/sport-extra-ro.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

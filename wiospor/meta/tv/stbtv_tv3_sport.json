@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_tv3_sport",
+    "type": "tv",
+    "name": "TV3 SPORT",
+    "poster": "https://www.logolarimiz.com/europa/nordic/denmark/tv3-sport-dk.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

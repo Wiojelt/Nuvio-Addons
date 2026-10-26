@@ -1,6 +1,21 @@
 {
   "streams": [
     {
+      "name": "WioSpor • LeoTV",
+      "title": "S-Sport+ HD • Auto",
+      "url": "https://bc4livecdn1001.shop/plus/index.m3u8?md5=bt9Vk3PFnYZG8xCxPU2GxA&expires=1793049503",
+      "behaviorHints": {
+        "notWebReady": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "Referer": "https://bc4liveiframe1001.shop/player/player2.php?id=plus",
+            "Origin": "https://bc4liveiframe1001.shop"
+          }
+        }
+      }
+    },
+    {
       "name": "WioSpor • Aslan • Ilook TV",
       "title": "Anal 4K • 2160p",
       "url": "http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/LNUZFZ7YFN4ACA/12190/index.m3u8",

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_nrt_sport",
+    "type": "tv",
+    "name": "NRT SPORT",
+    "poster": "http://img-cdn.curl.pk:8880/chimg/nrt.jpg",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

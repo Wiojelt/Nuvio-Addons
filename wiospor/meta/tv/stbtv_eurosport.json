@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_eurosport",
+    "type": "tv",
+    "name": "EUROSPORT",
+    "poster": "https://www.logolarimiz.com/Toplu/Czech/eurosport-1.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

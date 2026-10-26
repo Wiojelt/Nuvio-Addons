@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_setanta_sports_1_georgia",
+    "type": "tv",
+    "name": "Setanta Sports 1  Georgia",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

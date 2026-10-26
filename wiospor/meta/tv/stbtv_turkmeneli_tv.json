@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_turkmeneli_tv",
+    "type": "tv",
+    "name": "TURKMENELI TV",
+    "poster": "http://img-cdn.curl.pk:8880/channels_icon/78685356041.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

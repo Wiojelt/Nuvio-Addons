@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_nova_sports_extra_4",
+    "type": "tv",
+    "name": "NOVA SPORTS EXTRA 4",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

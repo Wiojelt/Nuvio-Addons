@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sporting_tv",
+    "type": "tv",
+    "name": "SPORTING TV",
+    "poster": "https://www.logolarimiz.com/Toplu/Portekiz/sporting-tv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

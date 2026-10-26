@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_setanta_sport",
+    "type": "tv",
+    "name": "SETANTA SPORT",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

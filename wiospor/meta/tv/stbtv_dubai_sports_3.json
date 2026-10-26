@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_dubai_sports_3",
+    "type": "tv",
+    "name": "Dubai Sports 3",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

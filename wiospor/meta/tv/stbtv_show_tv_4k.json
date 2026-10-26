@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_show_tv_4k",
+    "type": "tv",
+    "name": "Show TV 4K",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/ULUSALL/SHOW.TV.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_atv",
+    "type": "tv",
+    "name": "ATV",
+    "poster": "http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/ULUSALL/ATV.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

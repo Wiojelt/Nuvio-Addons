@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_turk_slow",
+    "type": "tv",
+    "name": "TURK SLOW",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "ulusal"
+  }
+}

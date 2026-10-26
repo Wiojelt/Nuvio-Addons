@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_sport2",
+    "type": "tv",
+    "name": "SPORT2",
+    "poster": "https://www.logolarimiz.com/Toplu/Czech/sport2.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}

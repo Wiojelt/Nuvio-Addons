@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "stbtv_ksa_sports_3",
+    "type": "tv",
+    "name": "KSA Sports 3",
+    "poster": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+    "posterShape": "landscape",
+    "description": "diger_spor"
+  }
+}
