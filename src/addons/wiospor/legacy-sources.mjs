@@ -771,8 +771,72 @@ async function beyazelma(wioChannel) {
   }
 }
 
+
+let leotvChannels = null, leotvAt = 0;
+const LEO_ROOT = 'https://leograndtv11.com';
+
+async function loadLeoChannels() {
+  if (leotvChannels && Date.now() - leotvAt < 15 * 60_000) return leotvChannels;
+  try {
+    const r = await fetch(LEO_ROOT, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(10000) });
+    if (!r.ok) return [];
+    const html = await r.text();
+    const serverDataMatch = html.match(/const\s+serverData\s*=\s*(\[[^;]+\]);/);
+    if (!serverDataMatch) return [];
+    const items = JSON.parse(serverDataMatch[1]);
+    const rows = (Array.isArray(items) ? items : [])
+      .filter(x => x?.sport === 'tv' && x?.channel && x?.home_name)
+      .map(x => ({ id: String(x.channel), title: x.home_name.trim() }));
+    if (rows.length) {
+      leotvChannels = rows;
+      leotvAt = Date.now();
+      return rows;
+    }
+  } catch {}
+  return [];
+}
+
+async function leotv(wioChannel) {
+  try {
+    const list = await loadLeoChannels();
+    const matched = list.filter(row => matches(wioChannel, row)).slice(0, 2);
+    const out = [];
+    for (const row of matched) {
+      try {
+        const playerUrl = `https://bc4liveiframe1001.shop/player/player2.php?id=${encodeURIComponent(row.id)}`;
+        const r = await fetch(playerUrl, { headers: { 'User-Agent': UA, Referer: `${LEO_ROOT}/` }, signal: AbortSignal.timeout(10000) });
+        if (!r.ok) continue;
+        const html = await r.text();
+        const vGuardVal = html.match(/id=["']_vGuard["'][^>]*data-val=["']([^"']+)["']/)?.[1];
+        const vGuardEnc = html.match(/id=["']_vGuard["'][^>]*data-enc=["']([^"']+)["']/)?.[1];
+        const keyArrayStr = html.match(/var\s+keyArray\s*=\s*(\[[^\]]+\]);/)?.[1];
+        const encStream = html.match(/var\s+primaryStream\s*=\s*decryptUrl\(['"]([^'"]+)['"]/)?.[1];
+        if (!vGuardVal || !vGuardEnc || !keyArrayStr || !encStream) continue;
+
+        const offset = parseInt(Buffer.from(vGuardVal, 'base64').toString('utf8').trim(), 10);
+        const ivJson = JSON.parse(Buffer.from(vGuardEnc, 'base64').toString('utf8'));
+        const keyJson = JSON.parse(keyArrayStr);
+
+        const keyBytes = Buffer.from(keyJson.map(x => (x - offset) & 0xff));
+        const ivBytes = Buffer.from(ivJson.map(x => (x - offset) & 0xff));
+
+        const cipherName = keyBytes.length === 32 ? 'aes-256-cbc' : 'aes-128-cbc';
+        const decipher = createDecipheriv(cipherName, keyBytes, ivBytes);
+        decipher.setAutoPadding(true);
+        const streamUrl = Buffer.concat([decipher.update(Buffer.from(encStream, 'base64')), decipher.final()]).toString('utf8').trim();
+        if (http(streamUrl)) {
+          out.push(stream('LeoTV', row.title, streamUrl, playerUrl, { 'User-Agent': UA, Referer: playerUrl }));
+        }
+      } catch {}
+    }
+    return out;
+  } catch {
+    return [];
+  }
+}
+
 export async function getLegacyStreams(wioChannel) {
-  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), cifd2m(wioChannel), atomspor(wioChannel), newtv(wioChannel), beyazelma(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
+  const settled = await Promise.allSettled([domates(wioChannel), inatBox(wioChannel), patron(wioChannel), vion(wioChannel), jest(wioChannel), papaz(wioChannel), cifd2m(wioChannel), atomspor(wioChannel), newtv(wioChannel), beyazelma(wioChannel), leotv(wioChannel), ...SOURCES.map(source => genericSource(source, wioChannel))]);
   const out = []; for (const item of settled) if (item.status === 'fulfilled') out.push(...item.value);
   const seen = new Set(); return out.filter(x => x.url && !seen.has(x.url) && seen.add(x.url));
 }
